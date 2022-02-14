@@ -43,8 +43,9 @@ public class ProjectAnalysisQuality {
     return targetComponentDefaultBranch;
   }
 
-  public void setTargetComponentDefaultBranch(String targetComponentDefaultBranch) {
+  public ProjectAnalysisQuality setTargetComponentDefaultBranch(String targetComponentDefaultBranch) {
     this.targetComponentDefaultBranch = targetComponentDefaultBranch;
+    return this;
   }
 
   public ProjectAnalysisDifferences getDifferences() {
@@ -72,5 +73,11 @@ public class ProjectAnalysisQuality {
   public ProjectAnalysisQuality setTargetComponentResult(ProjectAnalysisResult targetComponentResult) {
     this.targetComponentResult = targetComponentResult;
     return this;
+  }
+
+  @Override
+  public String toString() {
+    return "Project " + baseComponent.getName() + " has " + targetComponentResult.getIssues().size() + " issues " +
+      "(" + differences.getAdded().size() + " added / " + differences.getMissing().size() + " missing)";
   }
 }

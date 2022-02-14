@@ -49,7 +49,7 @@ public class ProjectAnalysis {
     apiConnector.getNavigationComponent(projectKey)
       .ifPresent(nc -> result.setQualityProfiles(nc.getQualityProfiles()));
 
-    long elapsed = (start - System.currentTimeMillis()) / 1000;
+    long elapsed = (System.currentTimeMillis() - start) / 1000;
     LOGGER.log(INFO, "Retrieved {0} components and {1} issues in {2} seconds",
       new Object[]{components.size(), issues.size(), elapsed});
 
@@ -87,11 +87,12 @@ public class ProjectAnalysis {
 
   public ProjectAnalysisQuality extractTargetResult(ProjectAnalysisQuality pq, List<Component> availableTargets) {
     findMatchingComponent(pq.getBaseComponent(), availableTargets).ifPresent(c ->
-      pq.setTargetComponent(c).setTargetComponentResult(
-        extractResult(
-          pq.getTargetComponent().getKey(),
-          pq.getTargetComponentDefaultBranch()
-        )));
+      pq.setTargetComponentDefaultBranch(apiConnector.getDefaultBranch(c.getKey()).getName())
+        .setTargetComponent(c).setTargetComponentResult(
+          extractResult(
+            pq.getTargetComponent().getKey(),
+            pq.getTargetComponentDefaultBranch()
+          )));
     return pq;
   }
 
@@ -103,7 +104,7 @@ public class ProjectAnalysis {
 
   private Optional<Component> findMatchingComponent(Component base, List<Component> availableTargets) {
     return availableTargets.stream()
-      .filter(component -> base.getKey().contains(component.getKey()))
+      .filter(component -> base.getName().equalsIgnoreCase(component.getName()))
       .findFirst();
   }
 }

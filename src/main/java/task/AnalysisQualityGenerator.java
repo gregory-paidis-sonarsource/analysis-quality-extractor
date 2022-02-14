@@ -9,7 +9,7 @@ import model.ProjectAnalysisQuality;
 
 public class AnalysisQualityGenerator {
 
-  private static final String SC_STAGING_URL = "https://sc-staging.io/";
+  private static final String SC_STAGING_URL = "https://sc-staging.io";
   private static final String ORG_AUTOSCAN_FOR_JAVA_CI = "autoscanforjavaci";
   private static final String ORG_AUTOSCAN_FOR_JAVA_FORK = "autoscanforjavafork";
 
@@ -28,6 +28,8 @@ public class AnalysisQualityGenerator {
       .filter(ProjectAnalysisQuality::hasTarget)
       .map(projectAnalysis::processDifferences)
       .collect(Collectors.toList());
+
+    projectsQuality.forEach(System.out::println);
 
     // TODO: Retrieve dependencies resolution
     // TODO: refine quality results (only issues differences? plugin version? quality profile?)
