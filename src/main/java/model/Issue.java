@@ -11,6 +11,7 @@ public class Issue {
   private String type;
   private TextRange textRange;
   private String component;
+  private String comparableComponent;
 
   public String getKey() {
     return key;
@@ -68,13 +69,20 @@ public class Issue {
     this.component = component;
   }
 
+  private String getComparableComponent() {
+    if (comparableComponent == null) {
+      comparableComponent = component.substring(component.indexOf(":"));
+    }
+    return comparableComponent;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;
     if (o == null || getClass() != o.getClass()) return false;
     Issue issue = (Issue) o;
     if (textRange != null && issue.textRange != null) {
-      return rule.equals(issue.rule) && textRange.equals(issue.textRange) && component.equals(issue.component);
+      return rule.equals(issue.rule) && textRange.equals(issue.textRange) && getComparableComponent().equals(issue.getComparableComponent());
     }
     if (textRange == null && issue.textRange != null) {
       return false;
@@ -82,12 +90,12 @@ public class Issue {
     if (textRange != null && issue.textRange == null) {
       return false;
     }
-    return rule.equals(issue.rule) && component.equals(issue.component);
+    return rule.equals(issue.rule) && getComparableComponent().equals(issue.getComparableComponent());
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(rule, textRange, component);
+    return Objects.hash(rule, textRange, getComparableComponent());
   }
 
   @Override
