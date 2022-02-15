@@ -1,9 +1,11 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
 group 'com.sonarsource.sonarcloud.extractor'
 version '1.0-SNAPSHOT'
+mainClassName = 'task.AnalysisQualityGenerator'
 
 repositories {
     mavenCentral()
