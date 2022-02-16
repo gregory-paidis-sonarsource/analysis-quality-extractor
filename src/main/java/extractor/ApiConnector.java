@@ -2,6 +2,7 @@ package extractor;
 
 import com.google.gson.Gson;
 import java.io.IOException;
+import java.io.StringReader;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
@@ -10,8 +11,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.logging.Logger;
+import javax.xml.stream.XMLInputFactory;
+import javax.xml.stream.XMLStreamException;
 import model.Component;
 import model.ComponentIssues;
+import model.ComponentRules;
 import model.ComponentSearchProjects;
 import model.ComponentTree;
 import model.Issue;
@@ -19,6 +23,8 @@ import model.NavigationComponent;
 import model.PluginsInstalled;
 import model.ProjectBranch;
 import model.ProjectBranches;
+import model.QualityProfile;
+import model.Rule;
 
 import static java.util.logging.Level.WARNING;
 
@@ -35,6 +41,7 @@ public class ApiConnector {
   private static final String API_PLUGINS_INSTALLED = "/api/plugins/installed";
   private static final String API_NAVIGATION_COMPONENT = "/api/navigation/component";
   private static final String API_PROJECT_BRANCHES_LIST = "/api/project_branches/list";
+  private static final String API_RULE_SEARCH = "/api/rules/search";
 
   private static final Gson GSON = new Gson();
 
@@ -126,6 +133,11 @@ public class ApiConnector {
   public List<Component> getOrganizationProjects(String organization) {
     URI uri = createURI(baseUrl, API_COMPONENTS_SEARCH_PROJECTS, "ps=500&organization=" + organization);
     return GSON.fromJson(doHttpRequest(uri), ComponentSearchProjects.class).getComponents();
+  }
+
+  public List<Rule> getRulesFromQualityProfile(QualityProfile qp) {
+    URI uri = createURI(baseUrl, API_RULE_SEARCH, "ps=" + PAGE_SIZE + "&languages=" + qp.getLanguage() + "&qprofile=" + qp.getKey() + "&activation=true");
+    return GSON.fromJson(doHttpRequest(uri), ComponentRules.class).getRules();
   }
 
   public ProjectBranch getDefaultBranch(String projectKey) {

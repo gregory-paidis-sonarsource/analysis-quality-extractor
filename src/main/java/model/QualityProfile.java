@@ -1,10 +1,13 @@
 package model;
 
+import java.util.List;
+
 public class QualityProfile {
 
   private String key;
   private String name;
   private String language;
+  private List<Rule> rules;
 
   public String getKey() {
     return key;
@@ -28,5 +31,13 @@ public class QualityProfile {
 
   public void setLanguage(String language) {
     this.language = language;
+  }
+
+  public List<Rule> getRules() {
+    return rules;
+  }
+
+  public void setRules(List<Rule> rules) {
+    this.rules = rules;
   }
 }

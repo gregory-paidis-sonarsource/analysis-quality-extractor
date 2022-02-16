@@ -11,6 +11,7 @@ import model.Issue;
 import model.ProjectAnalysisDifferences;
 import model.ProjectAnalysisQuality;
 import model.ProjectAnalysisResult;
+import model.QualityProfile;
 
 import static java.util.logging.Level.INFO;
 
@@ -47,7 +48,7 @@ public class ProjectAnalysis {
     apiConnector.getPluginsInstalled()
       .ifPresent(result::setPluginsInstalled);
     apiConnector.getNavigationComponent(projectKey)
-      .ifPresent(nc -> result.setQualityProfiles(nc.getQualityProfiles()));
+      .ifPresent(nc -> result.setQualityProfiles(extractRulesFromQualityProfiles(nc.getQualityProfiles())));
 
     long elapsed = (System.currentTimeMillis() - start) / 1000;
     LOGGER.log(INFO, "Retrieved {0} components and {1} issues in {2} seconds",
@@ -106,5 +107,10 @@ public class ProjectAnalysis {
     return availableTargets.stream()
       .filter(component -> base.getName().equalsIgnoreCase(component.getName()))
       .findFirst();
+  }
+
+  private List<QualityProfile> extractRulesFromQualityProfiles(List<QualityProfile> qualityProfiles) {
+    qualityProfiles.forEach(qp -> qp.setRules(apiConnector.getRulesFromQualityProfile(qp)));
+    return qualityProfiles;
   }
 }
