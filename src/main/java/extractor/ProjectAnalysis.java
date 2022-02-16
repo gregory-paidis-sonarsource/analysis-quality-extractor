@@ -87,6 +87,7 @@ public class ProjectAnalysis {
   }
 
   public ProjectAnalysisQuality extractTargetResult(ProjectAnalysisQuality pq, List<Component> availableTargets) {
+    LOGGER.log(INFO, "Processing: {0}", pq.getBaseComponent().getName());
     findMatchingComponent(pq.getBaseComponent(), availableTargets).ifPresent(c ->
       pq.setTargetComponentDefaultBranch(apiConnector.getDefaultBranch(c.getKey()).getName())
         .setTargetComponent(c).setTargetComponentResult(
