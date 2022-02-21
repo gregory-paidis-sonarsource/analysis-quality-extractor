@@ -32,12 +32,12 @@ public class AnalysisQualityGenerator {
     // [OOM] analysis has failed, too many dependencies (> 1G)
     "io.fabric8-fabric8-maven-plugin-build",
 
-    // Not eligible for unknown reason
+    // Not eligible because the repository has a "sonar-project.properties" file
     "jhipster",
     "jhipster-sample-app",
     "org.codehaus.sonar-plugins-sonar-sonargraph-plugin",
 
-    // Stupid projects without any java files
+    // Simple projects without any java files
     "org.assertj-assertj-parent-pom",
     "spring-velocity-support"
   ));
