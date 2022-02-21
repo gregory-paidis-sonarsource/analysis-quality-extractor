@@ -2,23 +2,25 @@ package extractor;
 
 import com.google.gson.Gson;
 import java.io.IOException;
-import java.io.StringReader;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.logging.Logger;
-import javax.xml.stream.XMLInputFactory;
-import javax.xml.stream.XMLStreamException;
 import model.Component;
 import model.ComponentIssues;
 import model.ComponentRules;
 import model.ComponentSearchProjects;
 import model.ComponentTree;
 import model.Issue;
+import model.measure.ComponentMeasure;
+import model.measure.Measure;
 import model.NavigationComponent;
 import model.PluginsInstalled;
 import model.ProjectBranch;
@@ -40,6 +42,7 @@ public class ApiConnector {
   private static final String API_SERVER_VERSION = "/api/server/version";
   private static final String API_PLUGINS_INSTALLED = "/api/plugins/installed";
   private static final String API_NAVIGATION_COMPONENT = "/api/navigation/component";
+  private static final String API_MEASURE_COMPONENT = "/api/measures/component";
   private static final String API_PROJECT_BRANCHES_LIST = "/api/project_branches/list";
   private static final String API_RULE_SEARCH = "/api/rules/search";
 
@@ -138,6 +141,20 @@ public class ApiConnector {
   public List<Rule> getRulesFromQualityProfile(QualityProfile qp) {
     URI uri = createURI(baseUrl, API_RULE_SEARCH, "ps=" + PAGE_SIZE + "&languages=" + qp.getLanguage() + "&qprofile=" + qp.getKey() + "&activation=true");
     return GSON.fromJson(doHttpRequest(uri), ComponentRules.class).getRules();
+  }
+
+  public Map<String, Integer> getLocPerLanguages(String projectKey) {
+    URI uri = createURI(baseUrl, API_MEASURE_COMPONENT, "componentKey=" + projectKey + "&metricKeys=ncloc_language_distribution");
+    Map<String, Integer> locPerLanguages = new HashMap<>();
+    List<Measure> measures = GSON.fromJson(doHttpRequest(uri), ComponentMeasure.class).getComponent().getMeasures();
+    if (measures.isEmpty()) {
+      return new HashMap<>();
+    }
+    String value = measures.get(0).getValue();
+    Arrays.stream(value.split(";"))
+      .map(pair -> pair.split("="))
+      .forEach(p -> locPerLanguages.put(p[0], Integer.parseInt(p[1])));
+    return locPerLanguages;
   }
 
   public ProjectBranch getDefaultBranch(String projectKey) {

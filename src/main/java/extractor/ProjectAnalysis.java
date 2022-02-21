@@ -50,6 +50,8 @@ public class ProjectAnalysis {
     apiConnector.getNavigationComponent(projectKey)
       .ifPresent(nc -> result.setQualityProfiles(extractRulesFromQualityProfiles(nc.getQualityProfiles())));
 
+    result.setLocPerLanguages(apiConnector.getLocPerLanguages(projectKey));
+
     long elapsed = (System.currentTimeMillis() - start) / 1000;
     LOGGER.log(INFO, "Retrieved {0} components and {1} issues in {2} seconds",
       new Object[]{components.size(), issues.size(), elapsed});

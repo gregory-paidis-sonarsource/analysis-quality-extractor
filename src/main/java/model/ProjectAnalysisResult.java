@@ -1,6 +1,7 @@
 package model;
 
 import java.util.List;
+import java.util.Map;
 
 public class ProjectAnalysisResult {
 
@@ -8,6 +9,7 @@ public class ProjectAnalysisResult {
   private String serverVersion;
   private PluginsInstalled pluginsInstalled;
   private List<QualityProfile> qualityProfiles;
+  private Map<String, Integer> locPerLanguages;
 
   public List<Issue> getIssues() {
     return issues;
@@ -43,5 +45,13 @@ public class ProjectAnalysisResult {
   public ProjectAnalysisResult setQualityProfiles(List<QualityProfile> qualityProfiles) {
     this.qualityProfiles = qualityProfiles;
     return this;
+  }
+
+  public Map<String, Integer> getLocPerLanguages() {
+    return locPerLanguages;
+  }
+
+  public void setLocPerLanguages(Map<String, Integer> locPerLanguages) {
+    this.locPerLanguages = locPerLanguages;
   }
 }
