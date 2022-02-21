@@ -11,6 +11,7 @@ import java.util.stream.Collectors;
 import model.Component;
 import model.ProjectAnalysisQuality;
 
+import static task.AnalysisQualityLocComparison.compareLoc;
 import static task.AnalysisQualityProcessing.processAnalysisQuality;
 
 public class AnalysisQualityGenerator {
@@ -65,6 +66,7 @@ public class AnalysisQualityGenerator {
 
 //    try {
 //      processAnalysisQuality(projectsQuality);
+//      compareLoc(projectsQuality);
 //    } catch (IOException e) {
 //      e.printStackTrace();
 //    }
