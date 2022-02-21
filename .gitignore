@@ -3,3 +3,4 @@
 build/*
 gradle/*
 src/main/output/*
+src/main/output_commons/*
