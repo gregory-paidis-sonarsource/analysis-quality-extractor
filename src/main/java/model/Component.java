@@ -7,6 +7,7 @@ public class Component {
   private String name;
   private String qualifier;
   private String language;
+  private String comparableKey;
 
   public String getOrganization() {
     return organization;
@@ -22,6 +23,13 @@ public class Component {
 
   public void setKey(String key) {
     this.key = key;
+  }
+
+  private String getComparableKey() {
+    if (comparableKey == null) {
+      comparableKey = key.substring(key.indexOf(":"));
+    }
+    return comparableKey;
   }
 
   public String getName() {

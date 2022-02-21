@@ -52,6 +52,8 @@ public class ProjectAnalysis {
 
     result.setLocPerLanguages(apiConnector.getLocPerLanguages(projectKey));
 
+    result.setComponents(components);
+
     long elapsed = (System.currentTimeMillis() - start) / 1000;
     LOGGER.log(INFO, "Retrieved {0} components and {1} issues in {2} seconds",
       new Object[]{components.size(), issues.size(), elapsed});

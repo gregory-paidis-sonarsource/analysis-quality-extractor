@@ -10,6 +10,8 @@ public class ProjectAnalysisResult {
   private PluginsInstalled pluginsInstalled;
   private List<QualityProfile> qualityProfiles;
   private Map<String, Integer> locPerLanguages;
+  // Store components (files) present in the analysis
+  private List<Component> components;
 
   public List<Issue> getIssues() {
     return issues;
@@ -53,5 +55,13 @@ public class ProjectAnalysisResult {
 
   public void setLocPerLanguages(Map<String, Integer> locPerLanguages) {
     this.locPerLanguages = locPerLanguages;
+  }
+
+  public List<Component> getComponents() {
+    return components;
+  }
+
+  public void setComponents(List<Component> components) {
+    this.components = components;
   }
 }
