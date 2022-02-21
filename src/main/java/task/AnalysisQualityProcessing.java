@@ -8,6 +8,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 import model.Issue;
 import model.ProjectAnalysisDifferences;
@@ -19,38 +20,42 @@ public class AnalysisQualityProcessing {
 
   private static final String HEADER = "Project name; Issues on base; FN; Detection (%); FP; Deviation (%)";
   private static final String VULNERABILITY = "VULNERABILITY";
-  private static final String OUTPUT_FOLDER = "src/main/output/";
-  private static final String OUTPUT_FOLDER_ALL = OUTPUT_FOLDER + "projects_all/";
-  private static final String OUTPUT_FOLDER_ONLY_JAVA = OUTPUT_FOLDER + "projects_only_java/";
 
-  private AnalysisQualityProcessing() {
+  private final Map<String, List<Issue>> countMissing = new HashMap<>();
+  private final Map<String, List<Issue>> countAdded = new HashMap<>();
+
+  private final List<Summary> summaryAll = new ArrayList<>();
+  private final List<Summary> summaryJava = new ArrayList<>();
+
+  private final Map<String, Integer> totalIssuesRaisedByRule = new HashMap<>();
+
+  private final Function<ProjectAnalysisDifferences, List<Issue>> getMissing;
+  private final Function<ProjectAnalysisDifferences, List<Issue>> getAdded;
+  private final Function<ProjectAnalysisDifferences, List<Issue>> getBaseIssues;
+
+  private final String outputFolder;
+  private final String outputFolderAll;
+  private final String outputFolderOnlyJava;
+
+  public AnalysisQualityProcessing(boolean onlyCommonComponents, String outputFolder) {
+    this.outputFolder = outputFolder;
+    this.outputFolderAll = outputFolder + "projects_all/";
+    this.outputFolderOnlyJava = outputFolder + "projects_only_java/";
+    if (onlyCommonComponents) {
+      getMissing = ProjectAnalysisDifferences::getMissingInCommonComponents;
+      getAdded = ProjectAnalysisDifferences::getAddedInCommonComponents;
+      getBaseIssues = ProjectAnalysisDifferences::getBaseIssuesInCommonComponents;
+    } else {
+      getMissing = ProjectAnalysisDifferences::getMissing;
+      getAdded = ProjectAnalysisDifferences::getAdded;
+      getBaseIssues = ProjectAnalysisDifferences::getBaseIssues;
+    }
   }
 
-  static void processAnalysisQuality(List<ProjectAnalysisQuality> projectsQuality) throws IOException {
-    Map<String, Integer> totalIssuesRaisedByRule = new HashMap<>();
+  public void process(List<ProjectAnalysisQuality> projectsQuality) throws IOException {
     populateRulesKeyFromQualityProfile(totalIssuesRaisedByRule, projectsQuality);
 
-    Map<String, List<Issue>> countMissing = new HashMap<>();
-    Map<String, List<Issue>> countAdded = new HashMap<>();
-
-    List<Summary> summaryAll = new ArrayList<>();
-    List<Summary> summaryJava = new ArrayList<>();
-
-    for (ProjectAnalysisQuality projectAnalysisQuality : projectsQuality) {
-      summaryAll.add(generateOutputForProject(projectAnalysisQuality, false));
-      summaryJava.add(generateOutputForProject(projectAnalysisQuality, true));
-      // Compute noisy rules
-      ProjectAnalysisDifferences differences = projectAnalysisQuality.getDifferences();
-      differences.getMissing().forEach(i -> incrementMap(countMissing, i));
-      differences.getAdded().forEach(i -> incrementMap(countAdded, i));
-      // Store number of issues by key
-      projectAnalysisQuality.getBaseComponentResult().getIssues().forEach(issue -> {
-          String ruleKey = issue.getRule();
-          Integer i = totalIssuesRaisedByRule.computeIfAbsent(ruleKey, k -> 0);
-          totalIssuesRaisedByRule.put(ruleKey, i + 1);
-        }
-      );
-    }
+    processAnalysisQuality(projectsQuality);
 
     writeNoisyRules(countAdded, countMissing);
 
@@ -62,6 +67,24 @@ public class AnalysisQualityProcessing {
     writeSummary(summaryJava, "summary_java");
   }
 
+  private void processAnalysisQuality(List<ProjectAnalysisQuality> projectsQuality) throws IOException {
+    for (ProjectAnalysisQuality projectAnalysisQuality : projectsQuality) {
+      summaryAll.add(generateOutputForProject(projectAnalysisQuality, false));
+      summaryJava.add(generateOutputForProject(projectAnalysisQuality, true));
+      // Compute noisy rules
+      ProjectAnalysisDifferences differences = projectAnalysisQuality.getDifferences();
+      getMissing.apply(differences).forEach(i -> incrementMap(countMissing, i));
+      getAdded.apply(differences).forEach(i -> incrementMap(countAdded, i));
+      // Store number of issues by key
+      getBaseIssues.apply(differences).forEach(issue -> {
+          String ruleKey = issue.getRule();
+          Integer i = totalIssuesRaisedByRule.computeIfAbsent(ruleKey, k -> 0);
+          totalIssuesRaisedByRule.put(ruleKey, i + 1);
+        }
+      );
+    }
+  }
+
   private static void populateRulesKeyFromQualityProfile(Map<String, Integer> totalIssuesRaisedByRule, List<ProjectAnalysisQuality> projectsQuality) {
     // Here we assume that the same quality profile is used for all projects
     projectsQuality.get(0).getBaseComponentResult().getQualityProfiles().forEach(qp ->
@@ -69,7 +92,7 @@ public class AnalysisQualityProcessing {
         totalIssuesRaisedByRule.put(r.getKey(), 0)));
   }
 
-  private static Summary generateOutputForProject(ProjectAnalysisQuality projectAnalysisQuality, boolean onlyJava) throws IOException {
+  private Summary generateOutputForProject(ProjectAnalysisQuality projectAnalysisQuality, boolean onlyJava) throws IOException {
     String name = projectAnalysisQuality.getBaseComponent().getName();
     ProjectAnalysisDifferences differences = projectAnalysisQuality.getDifferences();
 
@@ -79,23 +102,23 @@ public class AnalysisQualityProcessing {
     String folder;
 
     if (onlyJava) {
-      baseIssues = projectAnalysisQuality.getBaseComponentResult().getIssues().stream()
+      baseIssues = getBaseIssues.apply(differences).stream()
         .filter(i -> i.getRule().startsWith(JAVA_RULE_PREFIX))
         .collect(Collectors.toList());
-      added = differences.getAdded().stream()
+      added = getAdded.apply(differences).stream()
         .filter(i -> i.getRule().startsWith(JAVA_RULE_PREFIX))
         .collect(Collectors.toList());
-      missing = differences.getMissing().stream()
+      missing = getMissing.apply(differences).stream()
         .filter(i -> i.getRule().startsWith(JAVA_RULE_PREFIX))
         .collect(Collectors.toList());
 
-      folder = OUTPUT_FOLDER_ONLY_JAVA;
+      folder = outputFolderOnlyJava;
     } else {
-      baseIssues = projectAnalysisQuality.getBaseComponentResult().getIssues();
+      baseIssues = getBaseIssues.apply(differences);
 
-      added = differences.getAdded();
-      missing = differences.getMissing();
-      folder = OUTPUT_FOLDER_ALL;
+      added = getAdded.apply(differences);
+      missing = getMissing.apply(differences);
+      folder = outputFolderAll;
     }
 
     return generateOutputForProject(added, missing, baseIssues, folder, name);
@@ -173,8 +196,8 @@ public class AnalysisQualityProcessing {
     set.add(issue);
   }
 
-  private static void writeNoisyRules(Map<String, List<Issue>> countAdded, Map<String, List<Issue>> countMissing) throws IOException {
-    FileWriter fileWriter = new FileWriter(OUTPUT_FOLDER + "noisy_rules");
+  private void writeNoisyRules(Map<String, List<Issue>> countAdded, Map<String, List<Issue>> countMissing) throws IOException {
+    FileWriter fileWriter = new FileWriter(outputFolder + "noisy_rules");
     PrintWriter printWriter = new PrintWriter(fileWriter);
 
     printWriter.println("====== Noisy rules ======");
@@ -187,8 +210,8 @@ public class AnalysisQualityProcessing {
     printWriter.close();
   }
 
-  private static void writeNoisyRulesWithDetails(Map<String, List<Issue>> countAdded, Map<String, List<Issue>> countMissing) throws IOException {
-    FileWriter fileWriter = new FileWriter(OUTPUT_FOLDER + "noisy_rules_details");
+  private void writeNoisyRulesWithDetails(Map<String, List<Issue>> countAdded, Map<String, List<Issue>> countMissing) throws IOException {
+    FileWriter fileWriter = new FileWriter(outputFolder + "noisy_rules_details");
     PrintWriter printWriter = new PrintWriter(fileWriter);
 
     printWriter.println("====== Noisy rules ======");
@@ -214,8 +237,8 @@ public class AnalysisQualityProcessing {
     }
   }
 
-  private static void writeRulesStatistics(Map<String, Integer> totalIssuesRaisedByRule, Map<String, List<Issue>> countMissing, Map<String, List<Issue>> countAdded) throws IOException {
-    FileWriter fileWriter = new FileWriter(OUTPUT_FOLDER + "rules_summary");
+  private void writeRulesStatistics(Map<String, Integer> totalIssuesRaisedByRule, Map<String, List<Issue>> countMissing, Map<String, List<Issue>> countAdded) throws IOException {
+    FileWriter fileWriter = new FileWriter(outputFolder + "rules_summary");
     PrintWriter printWriter = new PrintWriter(fileWriter);
     printWriter.println("Rule Key; Issues number; FN; Detection (%); FP; Deviation (%)");
     for (Map.Entry<String, Integer> entry : totalIssuesRaisedByRule.entrySet()) {
@@ -239,8 +262,8 @@ public class AnalysisQualityProcessing {
     printWriter.close();
   }
 
-  private static void writeSummary(List<Summary> summary, String fileName) throws IOException {
-    FileWriter fileWriter = new FileWriter(OUTPUT_FOLDER + fileName);
+  private void writeSummary(List<Summary> summary, String fileName) throws IOException {
+    FileWriter fileWriter = new FileWriter(outputFolder + fileName);
     PrintWriter printWriter = new PrintWriter(fileWriter);
 
     printWriter.println("====== Summary ======");
