@@ -18,11 +18,28 @@ public class AnalysisQualityGenerator {
   private static final String SC_STAGING_URL = "https://squad-1-core.sc-dev.io";
   private static final String ORG_AUTOSCAN_FOR_JAVA_CI = "autoscanforjavaci";
   private static final String ORG_AUTOSCAN_FOR_JAVA_FORK = "autoscanforjavafork";
-
-
   private static final Set<String> FILTERED_PROJECTS = new HashSet<>(Arrays.asList(
-    // AltoroJ is used to populate cache and is not eligible to autoscan
-    "AltoroJ"
+    // [EMPTY] no java files in src/main or src/test but src/com/ibm/security/...
+    "AltoroJ",
+
+    // [EMPTY] no java files in src/main or src/test but src/com/sectooladdict/...
+    "wavsep",
+
+    // [OOM] analysis has failed at SCM publisher stage, the first time it is executed on this project, the SCM publisher
+    // requires more memory than available, but it works fine locally with more memory
+    "artemis",
+
+    // [OOM] analysis has failed, too many dependencies (> 1G)
+    "io.fabric8-fabric8-maven-plugin-build",
+
+    // Not eligible for unknown reason
+    "jhipster",
+    "jhipster-sample-app",
+    "org.codehaus.sonar-plugins-sonar-sonargraph-plugin",
+
+    // Stupid projects without any java files
+    "org.assertj-assertj-parent-pom",
+    "spring-velocity-support"
   ));
 
   public static void main(String[] args) {
