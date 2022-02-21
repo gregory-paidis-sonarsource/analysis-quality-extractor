@@ -3,6 +3,7 @@ package extractor;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -62,16 +63,40 @@ public class ProjectAnalysis {
   }
 
   public ProjectAnalysisDifferences processDifferences(ProjectAnalysisResult base, ProjectAnalysisResult target) {
-    List<Issue> missing = base.getIssues().stream()
+    List<Issue> baseIssues = base.getIssues();
+    List<Issue> missing = baseIssues.stream()
       .filter(issue -> !target.getIssues().contains(issue))
       .collect(Collectors.toList());
     List<Issue> added = target.getIssues().stream()
-      .filter(issue -> !base.getIssues().contains(issue))
+      .filter(issue -> !baseIssues.contains(issue))
+      .collect(Collectors.toList());
+
+    List<Component> targetComponents = target.getComponents();
+
+    Set<String> intersection = base.getComponents().stream()
+      .distinct()
+      .filter(targetComponents::contains)
+      .map(Component::getComparableKey)
+      .collect(Collectors.toSet());
+
+    List<Issue> missingInBoth = missing.stream()
+      .filter(i -> intersection.contains(i.getComparableComponent()))
+      .collect(Collectors.toList());
+    List<Issue> addedInBoth = added.stream()
+      .filter(i -> intersection.contains(i.getComparableComponent()))
+      .collect(Collectors.toList());
+
+    List<Issue> baseIssuesInBoth = baseIssues.stream()
+      .filter(i -> intersection.contains(i.getComparableComponent()))
       .collect(Collectors.toList());
 
     return new ProjectAnalysisDifferences()
       .setAdded(added)
-      .setMissing(missing);
+      .setMissing(missing)
+      .setAddedInCommonComponents(addedInBoth)
+      .setMissingInCommonComponents(missingInBoth)
+      .setBaseIssues(baseIssues)
+      .setBaseIssuesInCommonComponents(baseIssuesInBoth);
   }
 
   public ProjectAnalysisQuality toAnalysisQuality(Component component) {

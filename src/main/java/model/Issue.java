@@ -69,7 +69,7 @@ public class Issue {
     this.component = component;
   }
 
-  private String getComparableComponent() {
+  public String getComparableComponent() {
     if (comparableComponent == null) {
       comparableComponent = component.substring(component.indexOf(":"));
     }

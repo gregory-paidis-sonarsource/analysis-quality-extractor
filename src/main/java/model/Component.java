@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Objects;
+
 public class Component {
 
   private String organization;
@@ -21,15 +23,15 @@ public class Component {
     return key;
   }
 
-  public void setKey(String key) {
-    this.key = key;
-  }
-
-  private String getComparableKey() {
-    if (comparableKey == null) {
-      comparableKey = key.substring(key.indexOf(":"));
+  public String getComparableKey() {
+    if (this.comparableKey == null) {
+      this.comparableKey = key.substring(key.indexOf(":"));
     }
     return comparableKey;
+  }
+
+  public void setKey(String key) {
+    this.key = key;
   }
 
   public String getName() {
@@ -54,5 +56,18 @@ public class Component {
 
   public void setLanguage(String language) {
     this.language = language;
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    Component component = (Component) o;
+    return Objects.equals(getComparableKey(), component.getComparableKey());
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(getComparableKey());
   }
 }
