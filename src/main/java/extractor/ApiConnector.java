@@ -115,7 +115,7 @@ public class ApiConnector {
   }
 
   private Optional<ComponentIssues> getComponentIssues(int page, String componentKeys) {
-    URI uri = createURI(baseUrl, API_ISSUES_SEARCH, "ps=" + PAGE_SIZE + "&componentKeys=" + componentKeys + "&p=" + page);
+    URI uri = createURI(baseUrl, API_ISSUES_SEARCH, "ps=" + PAGE_SIZE + "&componentKeys=" + componentKeys + "&p=" + page + "&resolved=false");
     return Optional.ofNullable(GSON.fromJson(doHttpRequest(uri), ComponentIssues.class));
   }
 
