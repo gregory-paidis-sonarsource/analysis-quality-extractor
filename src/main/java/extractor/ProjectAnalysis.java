@@ -6,7 +6,6 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 import model.Component;
 import model.Issue;
 import model.ProjectAnalysisDifferences;
@@ -27,20 +26,18 @@ public class ProjectAnalysis {
   }
 
   public ProjectAnalysisResult extractResult(String projectKey, String branch) {
-    int pageSize = 50;
+    int pageSize = 25;
     long start = System.currentTimeMillis();
 
     List<Issue> issues = new ArrayList<>();
     List<Component> components = apiConnector.getAllComponents(projectKey, branch);
 
-    IntStream.range(0, components.size())
-      .filter(i -> i % pageSize == 0)
-      .forEach(i -> {
-        String componentKeys = components.subList(i, Math.min(i + pageSize - 1, components.size())).stream()
-          .map(Component::getKey)
-          .collect(Collectors.joining(","));
-        issues.addAll(apiConnector.getAllComponentIssues(componentKeys));
-      });
+    for (int i = 0; i < components.size(); i += pageSize) {
+      String componentKeys = components.subList(i, Math.min(i + pageSize, components.size())).stream()
+        .map(Component::getKey)
+        .collect(Collectors.joining(","));
+      issues.addAll(apiConnector.getAllComponentIssues(componentKeys));
+    }
 
     ProjectAnalysisResult result = new ProjectAnalysisResult()
       .setIssues(issues)
