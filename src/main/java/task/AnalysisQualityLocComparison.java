@@ -3,6 +3,8 @@ package task;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -18,6 +20,7 @@ public class AnalysisQualityLocComparison {
   }
 
   static void compareLoc(List<ProjectAnalysisQuality> projectsQuality) throws IOException {
+    Files.createDirectories(Paths.get(OUTPUT_FOLDER));
     FileWriter fileWriter = new FileWriter(OUTPUT_FOLDER + "comparison");
     PrintWriter printWriter = new PrintWriter(fileWriter);
 

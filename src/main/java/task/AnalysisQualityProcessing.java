@@ -3,6 +3,9 @@ package task;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -125,8 +128,7 @@ public class AnalysisQualityProcessing {
   }
 
   private static Summary generateOutputForProject(List<Issue> allAdded, List<Issue> allMissing, List<Issue> baseIssues, String folder, String name) throws IOException {
-    FileWriter fileWriter = new FileWriter(folder + name);
-    PrintWriter printWriter = new PrintWriter(fileWriter);
+    PrintWriter printWriter = printWriter(folder, name);
 
     List<Issue> added = allAdded.stream()
       .filter(i -> !i.getType().equals(VULNERABILITY))
@@ -197,8 +199,7 @@ public class AnalysisQualityProcessing {
   }
 
   private void writeNoisyRules(Map<String, List<Issue>> countAdded, Map<String, List<Issue>> countMissing) throws IOException {
-    FileWriter fileWriter = new FileWriter(outputFolder + "noisy_rules");
-    PrintWriter printWriter = new PrintWriter(fileWriter);
+    PrintWriter printWriter = printWriter(outputFolder, "noisy_rules");
 
     printWriter.println("====== Noisy rules ======");
     printWriter.println("Missing rules (FN) total");
@@ -211,8 +212,7 @@ public class AnalysisQualityProcessing {
   }
 
   private void writeNoisyRulesWithDetails(Map<String, List<Issue>> countAdded, Map<String, List<Issue>> countMissing) throws IOException {
-    FileWriter fileWriter = new FileWriter(outputFolder + "noisy_rules_details");
-    PrintWriter printWriter = new PrintWriter(fileWriter);
+    PrintWriter printWriter = printWriter(outputFolder, "noisy_rules_details");
 
     printWriter.println("====== Noisy rules ======");
     printWriter.println("====== Missing rules (FN) total ======");
@@ -238,8 +238,7 @@ public class AnalysisQualityProcessing {
   }
 
   private void writeRulesStatistics(Map<String, Integer> totalIssuesRaisedByRule, Map<String, List<Issue>> countMissing, Map<String, List<Issue>> countAdded) throws IOException {
-    FileWriter fileWriter = new FileWriter(outputFolder + "rules_summary");
-    PrintWriter printWriter = new PrintWriter(fileWriter);
+    PrintWriter printWriter = printWriter(outputFolder, "rules_summary");
     printWriter.println("Rule Key; Issues number; FN; Detection (%); FP; Deviation (%)");
     for (Map.Entry<String, Integer> entry : totalIssuesRaisedByRule.entrySet()) {
       String key = entry.getKey();
@@ -263,8 +262,7 @@ public class AnalysisQualityProcessing {
   }
 
   private void writeSummary(List<Summary> summary, String fileName) throws IOException {
-    FileWriter fileWriter = new FileWriter(outputFolder + fileName);
-    PrintWriter printWriter = new PrintWriter(fileWriter);
+    PrintWriter printWriter = printWriter(outputFolder, fileName);
 
     printWriter.println("====== Summary ======");
     printWriter.println("====== Bugs / Code Smells ======");
@@ -276,6 +274,12 @@ public class AnalysisQualityProcessing {
     summary.forEach(s -> printWriter.println(s.vulnerabilitySummary));
 
     printWriter.close();
+  }
+
+  private static PrintWriter printWriter(String folder, String fileName) throws IOException {
+    Files.createDirectories(Paths.get(folder));
+    FileWriter fileWriter = new FileWriter(folder + fileName);
+    return new PrintWriter(fileWriter);
   }
 
   static class Summary {
