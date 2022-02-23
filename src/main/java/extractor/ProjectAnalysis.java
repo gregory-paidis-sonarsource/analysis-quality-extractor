@@ -26,14 +26,22 @@ public class ProjectAnalysis {
   }
 
   public ProjectAnalysisResult extractResult(String projectKey, String branch) {
-    int pageSize = 25;
+    // TODO: depending on page size, this generate an URL too big
+    int pageSize = 5;
     long start = System.currentTimeMillis();
 
     List<Issue> issues = new ArrayList<>();
-    List<Component> components = apiConnector.getAllComponents(projectKey, branch);
+    List<Component> mainComponents = apiConnector.getAllComponents(projectKey, branch, "FIL");
+    for (int i = 0; i < mainComponents.size(); i += pageSize) {
+      String componentKeys = mainComponents.subList(i, Math.min(i + pageSize, mainComponents.size())).stream()
+        .map(Component::getKey)
+        .collect(Collectors.joining(","));
+      issues.addAll(apiConnector.getAllComponentIssues(componentKeys));
+    }
 
-    for (int i = 0; i < components.size(); i += pageSize) {
-      String componentKeys = components.subList(i, Math.min(i + pageSize, components.size())).stream()
+    List<Component> testComponents = apiConnector.getAllComponents(projectKey, branch, "UTS");
+    for (int i = 0; i < testComponents.size(); i += pageSize) {
+      String componentKeys = testComponents.subList(i, Math.min(i + pageSize, testComponents.size())).stream()
         .map(Component::getKey)
         .collect(Collectors.joining(","));
       issues.addAll(apiConnector.getAllComponentIssues(componentKeys));
@@ -49,12 +57,12 @@ public class ProjectAnalysis {
       .ifPresent(nc -> result.setQualityProfiles(extractRulesFromQualityProfiles(nc.getQualityProfiles())));
 
     result.setLocPerLanguages(apiConnector.getLocPerLanguages(projectKey));
-
-    result.setComponents(components);
+    mainComponents.addAll(testComponents);
+    result.setComponents(mainComponents);
 
     long elapsed = (System.currentTimeMillis() - start) / 1000;
-    LOGGER.log(INFO, "Retrieved {0} components and {1} issues in {2} seconds",
-      new Object[]{components.size(), issues.size(), elapsed});
+    LOGGER.log(INFO, "Retrieved {0} mainComponents and {1} issues in {2} seconds",
+      new Object[]{mainComponents.size(), issues.size(), elapsed});
 
     return result;
   }
