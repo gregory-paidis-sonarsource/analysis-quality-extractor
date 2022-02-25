@@ -60,11 +60,11 @@ public class ApiConnector {
     this.httpClient = httpClient;
   }
 
-  public List<Component> getAllComponents(String projectKey, String branch) {
+  public List<Component> getAllComponents(String projectKey, String branch, String qualifier) {
     int page = 1;
     List<Component> components = new ArrayList<>();
     do {
-      Optional<ComponentTree> tree = getComponentTree(page, projectKey, branch);
+      Optional<ComponentTree> tree = getComponentTree(page, projectKey, branch, qualifier);
       tree.ifPresent(componentTree ->
         components.addAll(componentTree.getComponents())
       );
@@ -77,15 +77,15 @@ public class ApiConnector {
     return components;
   }
 
-  private Optional<ComponentTree> getComponentTree(int page, String projectKey, String branch) {
-    URI uri = createURI(baseUrl, API_COMPONENTS_TREE, renderComponentTreePath(page, projectKey, branch));
+  private Optional<ComponentTree> getComponentTree(int page, String projectKey, String branch, String qualifier) {
+    URI uri = createURI(baseUrl, API_COMPONENTS_TREE, renderComponentTreePath(page, projectKey, branch, qualifier));
     return Optional.ofNullable(GSON.fromJson(doHttpRequest(uri), ComponentTree.class));
   }
 
-  private String renderComponentTreePath(int page, String projectKey, String branch) {
+  private String renderComponentTreePath(int page, String projectKey, String branch, String qualifier) {
     // TODO: create a url factory using request object
     return "ps=" + PAGE_SIZE + "&component=" +
-      projectKey + "&p=" + page + "&branch=" + branch + "&qualifiers=FIL";
+      projectKey + "&p=" + page + "&branch=" + branch + "&qualifiers=" + qualifier;
   }
 
   public List<Issue> getAllComponentIssues(String componentKeys) {
