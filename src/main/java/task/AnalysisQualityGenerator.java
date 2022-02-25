@@ -1,6 +1,9 @@
 package task;
 
+import com.amazonaws.services.logs.AWSLogs;
+import com.amazonaws.services.logs.AWSLogsClientBuilder;
 import extractor.ApiConnector;
+import extractor.MetricsConnector;
 import extractor.ProjectAnalysis;
 import java.io.IOException;
 import java.util.Arrays;
@@ -44,8 +47,10 @@ public class AnalysisQualityGenerator {
 
   public static void main(String[] args) {
 
+    AWSLogs logsClient = AWSLogsClientBuilder.defaultClient();
+    MetricsConnector cloudConnector = new MetricsConnector(logsClient);
     ApiConnector apiConnector = new ApiConnector(SC_STAGING_URL);
-    ProjectAnalysis projectAnalysis = new ProjectAnalysis(apiConnector);
+    ProjectAnalysis projectAnalysis = new ProjectAnalysis(apiConnector, cloudConnector);
 
     List<Component> baseComponents = apiConnector.getOrganizationProjects(ORG_AUTOSCAN_FOR_JAVA_CI);
     List<Component> targetComponents = apiConnector.getOrganizationProjects(ORG_AUTOSCAN_FOR_JAVA_FORK);
@@ -58,22 +63,21 @@ public class AnalysisQualityGenerator {
       .filter(p -> !p.getBaseComponentResult().getIssues().isEmpty())
       .map(pq -> projectAnalysis.extractTargetResult(pq, targetComponents))
       .filter(ProjectAnalysisQuality::hasTarget)
+      .map(projectAnalysis::extractMetrics)
       .map(projectAnalysis::processDifferences)
       .collect(Collectors.toList());
 
-    projectsQuality.forEach(System.out::println);
+    // projectsQuality.forEach(System.out::println);
 
-//    try {
-//      AnalysisQualityProcessing analysisQualityProcessing = new AnalysisQualityProcessing(false, "src/main/output/");
-//      analysisQualityProcessing.process(projectsQuality);
-//
-//      AnalysisQualityProcessing analysisQualityProcessing2 = new AnalysisQualityProcessing(true, "src/main/output_commons/");
-//      analysisQualityProcessing2.process(projectsQuality);
-//      compareLoc(projectsQuality);
-//    } catch (IOException e) {
-//      e.printStackTrace();
-//    }
-    // TODO: Retrieve dependencies resolution
-    // TODO: refine quality results (only issues differences? plugin version? quality profile?)
+    try {
+      AnalysisQualityProcessing analysisQualityProcessing = new AnalysisQualityProcessing(false, "src/main/output/");
+      analysisQualityProcessing.process(projectsQuality);
+
+      AnalysisQualityProcessing analysisQualityProcessing2 = new AnalysisQualityProcessing(true, "src/main/output_commons/");
+      analysisQualityProcessing2.process(projectsQuality);
+      compareLoc(projectsQuality);
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
   }
 }

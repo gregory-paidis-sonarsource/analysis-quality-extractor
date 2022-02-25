@@ -20,9 +20,11 @@ public class ProjectAnalysis {
   private static final Logger LOGGER = Logger.getLogger(ProjectAnalysis.class.getName());
 
   private final ApiConnector apiConnector;
+  private final MetricsConnector metricsConnector;
 
-  public ProjectAnalysis(ApiConnector apiConnector) {
+  public ProjectAnalysis(ApiConnector apiConnector, MetricsConnector metricsConnector) {
     this.apiConnector = apiConnector;
+    this.metricsConnector = metricsConnector;
   }
 
   public ProjectAnalysisResult extractResult(String projectKey, String branch) {
@@ -136,6 +138,16 @@ public class ProjectAnalysis {
     return pq.setDifferences(processDifferences(
       pq.getBaseComponentResult(), pq.getTargetComponentResult()
     ));
+  }
+
+  public ProjectAnalysisQuality extractMetrics(ProjectAnalysisQuality pq) {
+    pq.setTargetComponentAnalysisMetrics(
+      metricsConnector.getMetrics(
+        pq.getTargetComponent().getKey(),
+        pq.getTargetComponentDefaultBranch(),
+        pq.getBaseComponent().getAnalysisDate())
+    );
+    return pq;
   }
 
   private Optional<Component> findMatchingComponent(Component base, List<Component> availableTargets) {

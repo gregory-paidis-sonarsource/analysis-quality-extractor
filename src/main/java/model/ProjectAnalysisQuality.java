@@ -9,6 +9,7 @@ public class ProjectAnalysisQuality {
   private String targetComponentDefaultBranch;
   private ProjectAnalysisResult targetComponentResult;
   private ProjectAnalysisDifferences differences;
+  private ProjectAnalysisMetrics targetComponentAnalysisMetrics;
 
   public boolean hasTarget() {
     return this.targetComponent != null;
@@ -75,9 +76,27 @@ public class ProjectAnalysisQuality {
     return this;
   }
 
+  public ProjectAnalysisMetrics getTargetComponentAnalysisMetrics() {
+    return targetComponentAnalysisMetrics;
+  }
+
+  public void setTargetComponentAnalysisMetrics(ProjectAnalysisMetrics targetComponentAnalysisMetrics) {
+    this.targetComponentAnalysisMetrics = targetComponentAnalysisMetrics;
+  }
+
   @Override
   public String toString() {
-    return "Project " + baseComponent.getName() + " has " + targetComponentResult.getIssues().size() + " issues " +
-      "(" + differences.getAdded().size() + " added / " + differences.getMissing().size() + " missing)";
+    StringBuilder builder = new StringBuilder()
+      .append("Project ")
+      .append(baseComponent.getName())
+      .append(" has ")
+      .append(targetComponentResult.getIssues().size())
+      .append(" issues (")
+      .append(differences.getAdded().size())
+      .append(" added / ")
+      .append(differences.getMissing().size())
+      .append(" missing)");
+
+    return builder.toString();
   }
 }

@@ -4,7 +4,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -15,6 +14,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 import model.Issue;
 import model.ProjectAnalysisDifferences;
+import model.ProjectAnalysisMetrics;
 import model.ProjectAnalysisQuality;
 
 public class AnalysisQualityProcessing {
@@ -22,6 +22,7 @@ public class AnalysisQualityProcessing {
   private static final String JAVA_RULE_PREFIX = "java:";
 
   private static final String HEADER = "Project name; Issues on base; FN; Detection (%); FP; Deviation (%)";
+  private static final String HEADER_METRICS = "JavaAnalysisFinishedCount; WorkerForJavaCloneDuration; WorkerForJavaTaskDuration; DownloadedArtifactsPercentage; ParsedArtifactsCount; ConstructDependencyGraphDuration; DownloadDependenciesDuration; ResolveDependenciesDuration; WorkerForJavaQueueLatency";
   private static final String VULNERABILITY = "VULNERABILITY";
 
   private final Map<String, List<Issue>> countMissing = new HashMap<>();
@@ -124,10 +125,12 @@ public class AnalysisQualityProcessing {
       folder = outputFolderAll;
     }
 
-    return generateOutputForProject(added, missing, baseIssues, folder, name);
+    return generateOutputForProject(added, missing, baseIssues, folder, name,
+      projectAnalysisQuality.getTargetComponentAnalysisMetrics());
   }
 
-  private static Summary generateOutputForProject(List<Issue> allAdded, List<Issue> allMissing, List<Issue> baseIssues, String folder, String name) throws IOException {
+  private static Summary generateOutputForProject(List<Issue> allAdded, List<Issue> allMissing, List<Issue> baseIssues,
+    String folder, String name, ProjectAnalysisMetrics metrics) throws IOException {
     PrintWriter printWriter = printWriter(folder, name);
 
     List<Issue> added = allAdded.stream()
@@ -152,9 +155,11 @@ public class AnalysisQualityProcessing {
       .collect(Collectors.toList());
     printWriter.println("====== Vulnerabilities ======");
     String vulnerabilitySummary = printIssuesDifference(addedVulnerability, missingVulnerability, baseIssuesVulnerability, name, printWriter);
+    printWriter.println("====== Metrics ======");
+    String analysisMetricsSummary = printAnalysisMetrics(metrics, printWriter);
 
     printWriter.close();
-    return new Summary(bugSummary, vulnerabilitySummary);
+    return new Summary(bugSummary, vulnerabilitySummary, analysisMetricsSummary);
   }
 
   private static String printIssuesDifference(List<Issue> added, List<Issue> missing, long baseIssues, String baseComponentName, PrintWriter printWriter) {
@@ -261,6 +266,24 @@ public class AnalysisQualityProcessing {
     printWriter.close();
   }
 
+  private static String printAnalysisMetrics(ProjectAnalysisMetrics metrics, PrintWriter printWriter) {
+    printWriter.println(HEADER_METRICS);
+    String summary = String.format("%d;%d;%d;%f;%d;%d;%d;%d;%d",
+      metrics.getJavaAnalysisFinishedCount(),
+      metrics.getWorkerForJavaCloneDuration(),
+      metrics.getWorkerForJavaTaskDuration(),
+      metrics.getDownloadedArtifactsPercentage(),
+      metrics.getParsedArtifactsCount(),
+      metrics.getConstructDependencyGraphDuration(),
+      metrics.getDownloadDependenciesDuration(),
+      metrics.getResolveDependenciesDuration(),
+      metrics.getWorkerForJavaQueueLatency()
+    );
+    printWriter.println(summary);
+
+    return summary;
+  }
+
   private void writeSummary(List<Summary> summary, String fileName) throws IOException {
     PrintWriter printWriter = printWriter(outputFolder, fileName);
 
@@ -285,10 +308,12 @@ public class AnalysisQualityProcessing {
   static class Summary {
     String bugSummary;
     String vulnerabilitySummary;
+    String analysisMetrics;
 
-    public Summary(String bugSummary, String vulnerabilitySummary) {
+    public Summary(String bugSummary, String vulnerabilitySummary, String analysisMetricsSummary) {
       this.bugSummary = bugSummary;
       this.vulnerabilitySummary = vulnerabilitySummary;
+      this.analysisMetrics = analysisMetricsSummary;
     }
   }
 

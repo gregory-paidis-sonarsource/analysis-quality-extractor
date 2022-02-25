@@ -2,6 +2,8 @@ package model;
 
 import java.util.Objects;
 
+import java.util.Date;
+
 public class Component {
 
   private String organization;
@@ -9,6 +11,9 @@ public class Component {
   private String name;
   private String qualifier;
   private String language;
+  private Date analysisDate;
+  private String eligibilityStatus;
+  private boolean eligible;
   private String comparableKey;
 
   public String getOrganization() {
@@ -56,6 +61,30 @@ public class Component {
 
   public void setLanguage(String language) {
     this.language = language;
+  }
+
+  public Date getAnalysisDate() {
+    return analysisDate;
+  }
+
+  public void setAnalysisDate(Date analysisDate) {
+    this.analysisDate = analysisDate;
+  }
+
+  public String getEligibilityStatus() {
+    return eligibilityStatus;
+  }
+
+  public void setEligibilityStatus(String eligibilityStatus) {
+    this.eligibilityStatus = eligibilityStatus;
+  }
+
+  public boolean isEligible() {
+    return eligible;
+  }
+
+  public void setEligible(boolean eligible) {
+    this.eligible = eligible;
   }
 
   @Override

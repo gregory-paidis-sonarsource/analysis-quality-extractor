@@ -19,14 +19,14 @@ import model.ComponentRules;
 import model.ComponentSearchProjects;
 import model.ComponentTree;
 import model.Issue;
-import model.measure.ComponentMeasure;
-import model.measure.Measure;
 import model.NavigationComponent;
 import model.PluginsInstalled;
 import model.ProjectBranch;
 import model.ProjectBranches;
 import model.QualityProfile;
 import model.Rule;
+import model.measure.ComponentMeasure;
+import model.measure.Measure;
 
 import static java.util.logging.Level.WARNING;
 
@@ -134,7 +134,7 @@ public class ApiConnector {
   }
 
   public List<Component> getOrganizationProjects(String organization) {
-    URI uri = createURI(baseUrl, API_COMPONENTS_SEARCH_PROJECTS, "ps=500&organization=" + organization);
+    URI uri = createURI(baseUrl, API_COMPONENTS_SEARCH_PROJECTS, "ps=500&f=analysisDate&organization=" + organization);
     return GSON.fromJson(doHttpRequest(uri), ComponentSearchProjects.class).getComponents();
   }
 

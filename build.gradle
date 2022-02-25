@@ -3,18 +3,36 @@ plugins {
     id 'application'
 }
 
+sourceCompatibility = 11
+
 group 'com.sonarsource.sonarcloud.extractor'
 version '1.0-SNAPSHOT'
 mainClassName = 'task.AnalysisQualityGenerator'
 
 repositories {
-    mavenCentral()
+    maven {
+        url "https://repox.jfrog.io/repox/sonarsource"
+        // The environment variables ARTIFACTORY_USERNAME and ARTIFACTORY_PASSWORD are used on QA env
+        // On local box, please add artifactoryUsername and artifactoryPassword to ~/.gradle/gradle.properties
+        def artifactoryUsername = System.env.'ARTIFACTORY_USERNAME' ?: (project.hasProperty('artifactoryUsername') ? project.getProperty('artifactoryUsername') : '')
+        def artifactoryPassword = System.env.'ARTIFACTORY_PASSWORD' ?: (project.hasProperty('artifactoryPassword') ? project.getProperty('artifactoryPassword') : '')
+        if (artifactoryUsername && artifactoryPassword) {
+            credentials {
+                username artifactoryUsername
+                password artifactoryPassword
+            }
+        }
+    }
 }
 
 dependencies {
+    implementation platform('com.amazonaws:aws-java-sdk-bom:1.11.1000')
+    implementation 'com.amazonaws:aws-java-sdk-logs'
+    implementation 'com.amazonaws:aws-java-sdk-sts'
+
     implementation 'com.google.code.gson:gson:2.8.9'
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
 }
 
 test {
