@@ -1,6 +1,7 @@
 package extractor;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
@@ -70,9 +71,11 @@ public class ProjectAnalysis {
   }
 
   public ProjectAnalysisDifferences processDifferences(ProjectAnalysisResult base, ProjectAnalysisResult target) {
-    List<Issue> baseIssues = base.getIssues();
+    Set<Issue> baseIssues = new HashSet<>(base.getIssues());
+    Set<Issue> targetIssues = new HashSet<>(target.getIssues());
+
     List<Issue> missing = baseIssues.stream()
-      .filter(issue -> !target.getIssues().contains(issue))
+      .filter(issue -> !targetIssues.contains(issue))
       .collect(Collectors.toList());
     List<Issue> added = target.getIssues().stream()
       .filter(issue -> !baseIssues.contains(issue))
@@ -102,7 +105,7 @@ public class ProjectAnalysis {
       .setMissing(missing)
       .setAddedInCommonComponents(addedInBoth)
       .setMissingInCommonComponents(missingInBoth)
-      .setBaseIssues(baseIssues)
+      .setBaseIssues(base.getIssues())
       .setBaseIssuesInCommonComponents(baseIssuesInBoth);
   }
 
