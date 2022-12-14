@@ -1,0 +1,23 @@
+====== Noisy rules ======
+Missing rules (FN) total
+csharpsquid:S3900 = 90
+csharpsquid:S1128 = 45
+csharpsquid:S4005 = 4
+csharpsquid:S3881 = 2
+csharpsquid:S927 = 2
+csharpsquid:S3242 = 1
+csharpsquid:S4058 = 1
+external_roslyn:xUnit1004 = 1
+csharpsquid:S3216 = 1
+csharpsquid:S2933 = 1
+csharpsquid:S3903 = 1
+csharpsquid:S1075 = 1
+
+Added Rules (FP) total
+csharpsquid:S4058 = 20
+csharpsquid:S106 = 12
+csharpsquid:S2228 = 12
+csharpsquid:S3257 = 9
+csharpsquid:S2325 = 4
+csharpsquid:S3240 = 4
+csharpsquid:S1125 = 2

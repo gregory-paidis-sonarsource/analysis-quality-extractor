@@ -1,0 +1,183 @@
+====== Bugs ======
+Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
+flurl;824;116;85,922330;28;3,398058
+====== Added issues ======
+Rule: csharpsquid:S4058 (size: 10):
+  Component flurl-autoscan:src/Flurl.Http/HeaderExtensions.cs Issue AYUFt8MWQo91PT8Z_tpY Rule csharpsquid:S4058 Range 46:46:47:71
+  Component flurl-autoscan:src/Flurl.Http/Testing/HttpTestException.cs Issue AYUFt8F-Qo91PT8Z_tjy Rule csharpsquid:S4058 Range 33:33:13:44
+  Component flurl-autoscan:src/Flurl.Http/Testing/HttpTestSetup.cs Issue AYUFt8FtQo91PT8Z_tjn Rule csharpsquid:S4058 Range 91:91:46:70
+  Component flurl-autoscan:src/Flurl/Url.cs Issue AYUFt8OeQo91PT8Z_tsn Rule csharpsquid:S4058 Range 236:238:18:24
+  Component flurl-autoscan:src/Flurl/Url.cs Issue AYUFt8OeQo91PT8Z_tso Rule csharpsquid:S4058 Range 236:237:18:24
+  Component flurl-autoscan:src/Flurl.Http/Testing/Util.cs Issue AYUFt8HaQo91PT8Z_tlL Rule csharpsquid:S4058 Range 116:116:21:65
+  Component flurl-autoscan:src/Flurl/Url.cs Issue AYUFt8OfQo91PT8Z_ts6 Rule csharpsquid:S4058 Range 506:506:24:48
+  Component flurl-autoscan:src/Flurl/Url.cs Issue AYUFt8OfQo91PT8Z_ttG Rule csharpsquid:S4058 Range 614:614:56:75
+  Component flurl-autoscan:src/Flurl/Url.cs Issue AYUFt8OfQo91PT8Z_ttN Rule csharpsquid:S4058 Range 642:642:30:51
+  Component flurl-autoscan:src/Flurl/Url.cs Issue AYUFt8OfQo91PT8Z_ttL Rule csharpsquid:S4058 Range 656:656:8:27
+Rule: csharpsquid:S2325 (size: 1):
+  Component flurl-autoscan:src/Flurl.Http/Testing/HttpCallAssertion.cs Issue AYUFt8G2Qo91PT8Z_tkw Rule csharpsquid:S2325 Range 318:318:27:40
+Rule: csharpsquid:S1125 (size: 1):
+  Component flurl-autoscan:src/Flurl.Http/CookieCutter.cs Issue AYUFt8L4Qo91PT8Z_toh Rule csharpsquid:S1125 Range 232:232:57:64
+Rule: csharpsquid:S106 (size: 12):
+  Component flurl-autoscan:src/Flurl.CodeGen/ExtensionMethod.cs Issue AYUFt8PSQo91PT8Z_tuR Rule csharpsquid:S106 Range 58:58:3:20
+  Component flurl-autoscan:src/Flurl.CodeGen/Program.cs Issue AYUFt8PqQo91PT8Z_tu3 Rule csharpsquid:S106 Range 88:88:3:20
+  Component flurl-autoscan:src/Flurl.CodeGen/Program.cs Issue AYUFt8PqQo91PT8Z_tu5 Rule csharpsquid:S106 Range 102:102:5:22
+  Component flurl-autoscan:src/Flurl.CodeGen/Program.cs Issue AYUFt8PqQo91PT8Z_tvG Rule csharpsquid:S106 Range 112:112:4:21
+  Component flurl-autoscan:src/Flurl.CodeGen/Program.cs Issue AYUFt8PqQo91PT8Z_tvH Rule csharpsquid:S106 Range 141:141:5:22
+  Component flurl-autoscan:src/Flurl.CodeGen/Program.cs Issue AYUFt8PqQo91PT8Z_tu8 Rule csharpsquid:S106 Range 77:77:4:21
+  Component flurl-autoscan:PackageTesters/PackageTester.Shared/Tester.cs Issue AYUFt8RNQo91PT8Z_tvz Rule csharpsquid:S106 Range 44:44:4:21
+  Component flurl-autoscan:PackageTesters/PackageTester.Shared/Tester.cs Issue AYUFt8RNQo91PT8Z_tv0 Rule csharpsquid:S106 Range 48:48:4:21
+  Component flurl-autoscan:PackageTesters/PackageTester.Shared/Tester.cs Issue AYUFt8RNQo91PT8Z_tvu Rule csharpsquid:S106 Range 54:54:3:20
+  Component flurl-autoscan:PackageTesters/PackageTester.Shared/Tester.cs Issue AYUFt8RNQo91PT8Z_tvv Rule csharpsquid:S106 Range 57:57:4:21
+  Component flurl-autoscan:PackageTesters/PackageTester.Shared/Tester.cs Issue AYUFt8RNQo91PT8Z_tvw Rule csharpsquid:S106 Range 62:62:4:21
+  Component flurl-autoscan:PackageTesters/PackageTester.Shared/Tester.cs Issue AYUFt8RNQo91PT8Z_tvx Rule csharpsquid:S106 Range 63:63:4:21
+Rule: csharpsquid:S3240 (size: 4):
+  Component flurl-autoscan:src/Flurl.Http/Content/CapturedMultipartContent.cs Issue AYUFt8KwQo91PT8Z_tm_ Rule csharpsquid:S3240 Range 111:111:3:52
+  Component flurl-autoscan:src/Flurl.Http/DownloadExtensions.cs Issue AYUFt8IlQo91PT8Z_tlp Rule csharpsquid:S3240 Range 25:28:4:33
+  Component flurl-autoscan:src/Flurl.Http/FlurlRequest.cs Issue AYUFt8MgQo91PT8Z_tpv Rule csharpsquid:S3240 Range 337:337:3:45
+  Component flurl-autoscan:src/Flurl/Url.cs Issue AYUFt8OeQo91PT8Z_tsi Rule csharpsquid:S3240 Range 174:174:3:74
+
+====== Missing issues ======
+Rule: csharpsquid:S4058 (size: 1):
+  Component flurl:PackageTesters/PackageTester.Shared/Tester.cs Issue AWLO6_bwdkivt9iLtk0f Rule csharpsquid:S4058 Range 22:22:11:38
+Rule: csharpsquid:S4005 (size: 4):
+  Component flurl:src/Flurl.Http/CookieCutter.cs Issue AXnlqBalAJ_csGvOOCcE Rule csharpsquid:S4005 Range 111:111:18:44
+  Component flurl:src/Flurl.Http/FlurlRequest.cs Issue AXnlqBbiAJ_csGvOOCdN Rule csharpsquid:S4005 Range 289:289:16:33
+  Component flurl:src/Flurl.Http/FlurlRequest.cs Issue AXnlqBbiAJ_csGvOOCdO Rule csharpsquid:S4005 Range 291:291:16:57
+  Component flurl:src/Flurl.Http/FlurlRequest.cs Issue AWcyRUz8pccljlYa7hHk Rule csharpsquid:S4005 Range 164:164:17:72
+Rule: csharpsquid:S1128 (size: 45):
+  Component flurl:src/Flurl.Http/FlurlClient.cs Issue AXnlqBUbAJ_csGvOOCYY Rule csharpsquid:S1128 Range 3:3:0:33
+  Component flurl:src/Flurl.Http/IHttpSettingsContainer.cs Issue AW11T1qFCjEt1D4cDX-z Rule csharpsquid:S1128 Range 1:1:0:13
+  Component flurl:src/Flurl.Http/Configuration/DefaultFlurlClientFactory.cs Issue AXnlqBXNAJ_csGvOOCaX Rule csharpsquid:S1128 Range 4:4:0:18
+  Component flurl:src/Flurl.CodeGen/Metadata.cs Issue AXnlqBd_AJ_csGvOOCfw Rule csharpsquid:S1128 Range 1:1:0:13
+  Component flurl:src/Flurl.Http/Configuration/ISerializer.cs Issue AW11T1mXCjEt1D4cDX-l Rule csharpsquid:S1128 Range 1:1:0:13
+  Component flurl:src/Flurl/NullValueHandling.cs Issue AW11T1lLCjEt1D4cDX-f Rule csharpsquid:S1128 Range 2:2:0:33
+  Component flurl:src/Flurl.Http/Configuration/RedirectSettings.cs Issue AXnlqBXIAJ_csGvOOCaM Rule csharpsquid:S1128 Range 2:2:0:33
+  Component flurl:src/Flurl.Http/Configuration/PerBaseUrlFlurlClientFactory.cs Issue AW11T1mqCjEt1D4cDX-p Rule csharpsquid:S1128 Range 2:2:0:33
+  Component flurl:src/Flurl.Http/HeaderExtensions.cs Issue AXnlqBbRAJ_csGvOOCcg Rule csharpsquid:S1128 Range 3:3:0:33
+  Component flurl:src/Flurl.Http/ResponseExtensions.cs Issue AXnlqBcCAJ_csGvOOCdc Rule csharpsquid:S1128 Range 5:5:0:23
+  Component flurl:src/Flurl.Http/IHttpSettingsContainer.cs Issue AXnlqBY0AJ_csGvOOCal Rule csharpsquid:S1128 Range 2:2:0:33
+  Component flurl:src/Flurl.Http/Configuration/PerBaseUrlFlurlClientFactory.cs Issue AW11T1mqCjEt1D4cDX-o Rule csharpsquid:S1128 Range 1:1:0:13
+  Component flurl:src/Flurl.Http/HeaderExtensions.cs Issue AW11T1syCjEt1D4cDX-8 Rule csharpsquid:S1128 Range 6:6:0:29
+  Component flurl:src/Flurl.Http/Testing/FakeHttpMessageHandler.cs Issue AW11T1pFCjEt1D4cDX-x Rule csharpsquid:S1128 Range 1:1:0:13
+  Component flurl:src/Flurl.Http/Content/CapturedStringContent.cs Issue AXnlqBZDAJ_csGvOOCam Rule csharpsquid:S1128 Range 3:3:0:18
+  Component flurl:src/Flurl.Http/Configuration/RedirectSettings.cs Issue AXnlqBXIAJ_csGvOOCaL Rule csharpsquid:S1128 Range 1:1:0:13
+  Component flurl:src/Flurl.Http/Content/CapturedMultipartContent.cs Issue AXnlqBZTAJ_csGvOOCao Rule csharpsquid:S1128 Range 4:4:0:18
+  Component flurl:src/Flurl.Http/Configuration/PerBaseUrlFlurlClientFactory.cs Issue AW11T1mqCjEt1D4cDX-q Rule csharpsquid:S1128 Range 3:3:0:18
+  Component flurl:src/Flurl.Http/Configuration/RedirectSettings.cs Issue AXnlqBXIAJ_csGvOOCaP Rule csharpsquid:S1128 Range 5:5:0:18
+  Component flurl:src/Flurl.Http/Configuration/ISerializer.cs Issue AW11T1mXCjEt1D4cDX-m Rule csharpsquid:S1128 Range 2:2:0:33
+  Component flurl:src/Flurl.Http/Configuration/RedirectSettings.cs Issue AXnlqBXIAJ_csGvOOCaN Rule csharpsquid:S1128 Range 3:3:0:18
+  Component flurl:src/Flurl.Http/FlurlHttpException.cs Issue AXnlqBciAJ_csGvOOCeP Rule csharpsquid:S1128 Range 2:2:0:21
+  Component flurl:src/Flurl.Http/Configuration/DefaultFlurlClientFactory.cs Issue AXnlqBXNAJ_csGvOOCaY Rule csharpsquid:S1128 Range 5:5:0:29
+  Component flurl:src/Flurl.CodeGen/ExtensionMethod.cs Issue AXnlqBd6AJ_csGvOOCfg Rule csharpsquid:S1128 Range 4:4:0:18
+  Component flurl:src/Flurl.Http/Configuration/DefaultFlurlClientFactory.cs Issue AXnlqBXNAJ_csGvOOCaW Rule csharpsquid:S1128 Range 3:3:0:18
+  Component flurl:PackageTesters/PackageTester.Shared/Tester.cs Issue AW11T1wVCjEt1D4cDX_E Rule csharpsquid:S1128 Range 5:5:0:12
+  Component flurl:src/Flurl.CodeGen/HttpExtensionMethod.cs Issue AXnlqBeEAJ_csGvOOCf9 Rule csharpsquid:S1128 Range 1:1:0:33
+  Component flurl:src/Flurl.Http/Configuration/ISerializer.cs Issue AW11T1mXCjEt1D4cDX-n Rule csharpsquid:S1128 Range 4:4:0:18
+  Component flurl:src/Flurl.CodeGen/Metadata.cs Issue AXnlqBd_AJ_csGvOOCfx Rule csharpsquid:S1128 Range 4:4:0:18
+  Component flurl:src/Flurl.Http/Configuration/PerBaseUrlFlurlClientFactory.cs Issue AW11T1mqCjEt1D4cDX-s Rule csharpsquid:S1128 Range 5:5:0:29
+  Component flurl:src/Flurl.Http/FlurlClient.cs Issue AXnlqBUbAJ_csGvOOCYX Rule csharpsquid:S1128 Range 2:2:0:36
+  Component flurl:src/Flurl.Http/Configuration/DefaultFlurlClientFactory.cs Issue AXnlqBXNAJ_csGvOOCaU Rule csharpsquid:S1128 Range 1:1:0:13
+  Component flurl:PackageTesters/PackageTester.Shared/Tester.cs Issue AW11T1wVCjEt1D4cDX_D Rule csharpsquid:S1128 Range 2:2:0:33
+  Component flurl:src/Flurl.Http/Configuration/DefaultFlurlClientFactory.cs Issue AXnlqBXNAJ_csGvOOCaV Rule csharpsquid:S1128 Range 2:2:0:33
+  Component flurl:src/Flurl.Http/Content/CapturedJsonContent.cs Issue AXnlqBZ5AJ_csGvOOCaz Rule csharpsquid:S1128 Range 1:1:0:18
+  Component flurl:src/Flurl.Http/Configuration/PerBaseUrlFlurlClientFactory.cs Issue AW11T1mqCjEt1D4cDX-r Rule csharpsquid:S1128 Range 4:4:0:18
+  Component flurl:src/Flurl.Http/ResponseExtensions.cs Issue AXnlqBcCAJ_csGvOOCdb Rule csharpsquid:S1128 Range 4:4:0:22
+  Component flurl:src/Flurl/NullValueHandling.cs Issue AW11T1lLCjEt1D4cDX-e Rule csharpsquid:S1128 Range 1:1:0:13
+  Component flurl:src/Flurl/NullValueHandling.cs Issue AW11T1lLCjEt1D4cDX-g Rule csharpsquid:S1128 Range 3:3:0:18
+  Component flurl:src/Flurl.Http/HeaderExtensions.cs Issue AW11T1syCjEt1D4cDX-7 Rule csharpsquid:S1128 Range 4:4:0:18
+  Component flurl:src/Flurl.CodeGen/HttpExtensionMethod.cs Issue AXnlqBeEAJ_csGvOOCf- Rule csharpsquid:S1128 Range 2:2:0:18
+  Component flurl:src/Flurl.Http/Content/CapturedMultipartContent.cs Issue AXnlqBZTAJ_csGvOOCap Rule csharpsquid:S1128 Range 7:7:0:18
+  Component flurl:src/Flurl.Http/Configuration/RedirectSettings.cs Issue AXnlqBXIAJ_csGvOOCaO Rule csharpsquid:S1128 Range 4:4:0:22
+  Component flurl:src/Flurl.Http/Configuration/RedirectSettings.cs Issue AXnlqBXIAJ_csGvOOCaQ Rule csharpsquid:S1128 Range 6:6:0:29
+  Component flurl:src/Flurl.Http/Testing/TestHttpClientFactory.cs Issue AW11T1okCjEt1D4cDX-w Rule csharpsquid:S1128 Range 1:1:0:13
+Rule: csharpsquid:S3216 (size: 1):
+  Component flurl:src/Flurl.Http/FlurlResponse.cs Issue AXnlqBaFAJ_csGvOOCbe Rule csharpsquid:S3216 Range 205:205:25:68
+Rule: csharpsquid:S3900 (size: 64):
+  Component flurl:src/Flurl.Http/UrlBuilderExtensions.cs Issue AWcyRU1ipccljlYa7hJv Rule csharpsquid:S3900 Range 115:115:3:10
+  Component flurl:src/Flurl.Http/UrlBuilderExtensions.cs Issue AWcyRU1ipccljlYa7hJy Rule csharpsquid:S3900 Range 159:159:3:10
+  Component flurl:src/Flurl.Http/CookieJar.cs Issue AXnlqBWJAJ_csGvOOCZ9 Rule csharpsquid:S3900 Range 56:56:3:9
+  Component flurl:src/Flurl.Http/MultipartExtensions.cs Issue AWcyRU1OpccljlYa7hJK Rule csharpsquid:S3900 Range 22:22:42:49
+  Component flurl:src/Flurl.Http/SettingsExtensions.cs Issue AXnlqBa1AJ_csGvOOCcY Rule csharpsquid:S3900 Range 122:122:3:6
+  Component flurl:src/Flurl/Util/CommonExtensions.cs Issue AXnlqBczAJ_csGvOOCeY Rule csharpsquid:S3900 Range 78:78:47:56
+  Component flurl:src/Flurl.Http/ResponseExtensions.cs Issue AXnlqBcCAJ_csGvOOCds Rule csharpsquid:S3900 Range 76:76:20:28
+  Component flurl:src/Flurl.CodeGen/CodeWriter.cs Issue AWLO6_asdkivt9iLtkzW Rule csharpsquid:S3900 Range 27:27:32:36
+  Component flurl:src/Flurl/Url.cs Issue AWLO6_Z_dkivt9iLtkyK Rule csharpsquid:S3900 Range 300:300:20:28
+  Component flurl:src/Flurl.Http/UrlBuilderExtensions.cs Issue AWcyRU1ipccljlYa7hJk Rule csharpsquid:S3900 Range 31:31:3:10
+  Component flurl:src/Flurl.Http/UrlBuilderExtensions.cs Issue AWcyRU1ipccljlYa7hJl Rule csharpsquid:S3900 Range 42:42:3:10
+  Component flurl:src/Flurl.Http/SettingsExtensions.cs Issue AXnlqBa1AJ_csGvOOCcX Rule csharpsquid:S3900 Range 114:114:3:6
+  Component flurl:src/Flurl.Http/SettingsExtensions.cs Issue AWcyRU1YpccljlYa7hJd Rule csharpsquid:S3900 Range 103:103:3:6
+  Component flurl:src/Flurl.Http/SettingsExtensions.cs Issue AXnlqBa1AJ_csGvOOCcd Rule csharpsquid:S3900 Range 164:164:3:6
+  Component flurl:src/Flurl.CodeGen/CodeWriter.cs Issue AWLO6_asdkivt9iLtkzY Rule csharpsquid:S3900 Range 41:41:30:34
+  Component flurl:src/Flurl.Http/CookieExtensions.cs Issue AXnlqBYmAJ_csGvOOCag Rule csharpsquid:S3900 Range 20:20:43:50
+  Component flurl:src/Flurl.Http/CookieCutter.cs Issue AXnlqBalAJ_csGvOOCcF Rule csharpsquid:S3900 Range 167:167:7:13
+  Component flurl:src/Flurl.Http/SettingsExtensions.cs Issue AWcyRU1YpccljlYa7hJT Rule csharpsquid:S3900 Range 43:43:3:10
+  Component flurl:src/Flurl/Url.cs Issue AWLO6_Z_dkivt9iLtkyI Rule csharpsquid:S3900 Range 288:288:26:34
+  Component flurl:src/Flurl.Http/UrlBuilderExtensions.cs Issue AWcyRU1ipccljlYa7hJu Rule csharpsquid:S3900 Range 104:104:3:10
+  Component flurl:src/Flurl.Http/UrlBuilderExtensions.cs Issue AWcyRU1ipccljlYa7hJz Rule csharpsquid:S3900 Range 148:148:3:10
+  Component flurl:src/Flurl.Http/Configuration/IFlurlClientFactory.cs Issue AWcyRUx4pccljlYa7hFf Rule csharpsquid:S3900 Range 36:36:16:23
+  Component flurl:src/Flurl.Http/SettingsExtensions.cs Issue AXnlqBa1AJ_csGvOOCce Rule csharpsquid:S3900 Range 174:174:3:6
+  Component flurl:src/Flurl.Http/CookieExtensions.cs Issue AXnlqBYmAJ_csGvOOCah Rule csharpsquid:S3900 Range 54:54:3:10
+  Component flurl:src/Flurl.Http/UrlBuilderExtensions.cs Issue AWcyRU1ipccljlYa7hJj Rule csharpsquid:S3900 Range 20:20:3:10
+  Component flurl:src/Flurl.Http/UrlBuilderExtensions.cs Issue AWcyRU1ipccljlYa7hJr Rule csharpsquid:S3900 Range 81:81:3:10
+  Component flurl:src/Flurl.Http/UrlBuilderExtensions.cs Issue AWcyRU1ipccljlYa7hJ0 Rule csharpsquid:S3900 Range 169:169:3:10
+  Component flurl:src/Flurl.Http/UrlBuilderExtensions.cs Issue AWcyRU1ipccljlYa7hJn Rule csharpsquid:S3900 Range 55:55:3:10
+  Component flurl:src/Flurl/Url.cs Issue AWLO6_Z_dkivt9iLtkyS Rule csharpsquid:S3900 Range 415:415:23:28
+  Component flurl:src/Flurl.Http/ResponseExtensions.cs Issue AXnlqBcCAJ_csGvOOCdj Rule csharpsquid:S3900 Range 37:37:27:35
+  Component flurl:src/Flurl.CodeGen/CodeWriter.cs Issue AWLO6_asdkivt9iLtkzV Rule csharpsquid:S3900 Range 25:25:19:23
+  Component flurl:src/Flurl.Http/CookieJar.cs Issue AXnlqBWJAJ_csGvOOCZ- Rule csharpsquid:S3900 Range 52:52:20:26
+  Component flurl:src/Flurl.Http/CookieCutter.cs Issue AXnlqBalAJ_csGvOOCcJ Rule csharpsquid:S3900 Range 185:185:7:13
+  Component flurl:src/Flurl/Url.cs Issue AWLO6_Z_dkivt9iLtkyC Rule csharpsquid:S3900 Range 642:642:30:31
+  Component flurl:src/Flurl.Http/UrlBuilderExtensions.cs Issue AWcyRU1ipccljlYa7hJw Rule csharpsquid:S3900 Range 126:126:3:10
+  Component flurl:src/Flurl.Http/UrlBuilderExtensions.cs Issue AWcyRU1ipccljlYa7hJt Rule csharpsquid:S3900 Range 93:93:3:10
+  Component flurl:src/Flurl.Http/UrlBuilderExtensions.cs Issue AWcyRU1ipccljlYa7hJx Rule csharpsquid:S3900 Range 137:137:3:10
+  Component flurl:src/Flurl.Http/SettingsExtensions.cs Issue AXnlqBa1AJ_csGvOOCcf Rule csharpsquid:S3900 Range 184:184:3:6
+  Component flurl:src/Flurl.Http/UrlBuilderExtensions.cs Issue AWcyRU1ipccljlYa7hJq Rule csharpsquid:S3900 Range 70:70:3:10
+  Component flurl:src/Flurl.Http/ResponseExtensions.cs Issue AXnlqBcCAJ_csGvOOCdg Rule csharpsquid:S3900 Range 24:24:27:35
+  Component flurl:src/Flurl/Url.cs Issue AWcyRUuwpccljlYa7hEQ Rule csharpsquid:S3900 Range 543:543:58:61
+  Component flurl:src/Flurl.CodeGen/ExtensionMethod.cs Issue AXnlqBd6AJ_csGvOOCfl Rule csharpsquid:S3900 Range 60:60:3:9
+  Component flurl:src/Flurl.Http/ResponseExtensions.cs Issue AXnlqBcCAJ_csGvOOCdp Rule csharpsquid:S3900 Range 62:62:27:35
+  Component flurl:src/Flurl.Http/CookieExtensions.cs Issue AXnlqBYmAJ_csGvOOCak Rule csharpsquid:S3900 Range 34:34:43:50
+  Component flurl:src/Flurl.Http/CookieCutter.cs Issue AXnlqBalAJ_csGvOOCcG Rule csharpsquid:S3900 Range 84:84:7:13
+  Component flurl:src/Flurl.Http/SettingsExtensions.cs Issue AWcyRU1YpccljlYa7hJU Rule csharpsquid:S3900 Range 32:32:10:17
+  Component flurl:src/Flurl.Http/DownloadExtensions.cs Issue AWcyRUzJpccljlYa7hGe Rule csharpsquid:S3900 Range 24:24:27:34
+  Component flurl:src/Flurl.Http/SettingsExtensions.cs Issue AXnlqBa1AJ_csGvOOCcc Rule csharpsquid:S3900 Range 155:155:3:6
+  Component flurl:src/Flurl.Http/SettingsExtensions.cs Issue AWcyRU1YpccljlYa7hJX Rule csharpsquid:S3900 Range 54:54:3:6
+  Component flurl:src/Flurl.Http/SettingsExtensions.cs Issue AWcyRU1YpccljlYa7hJc Rule csharpsquid:S3900 Range 77:77:18:21
+  Component flurl:src/Flurl.Http/CookieCutter.cs Issue AXnlqBalAJ_csGvOOCcK Rule csharpsquid:S3900 Range 185:185:25:35
+  Component flurl:src/Flurl.Http/Configuration/PerBaseUrlFlurlClientFactory.cs Issue AWcyRUxRpccljlYa7hFA Rule csharpsquid:S3900 Range 22:22:52:55
+  Component flurl:src/Flurl.CodeGen/CodeWriter.cs Issue AWLO6_asdkivt9iLtkzX Rule csharpsquid:S3900 Range 30:30:23:27
+  Component flurl:src/Flurl.Http/HeaderExtensions.cs Issue AWcyRU0IpccljlYa7hIA Rule csharpsquid:S3900 Range 27:27:7:22
+  Component flurl:src/Flurl.Http/SettingsExtensions.cs Issue AXnlqBa1AJ_csGvOOCca Rule csharpsquid:S3900 Range 130:130:3:6
+  Component flurl:src/Flurl.Http/SettingsExtensions.cs Issue AWcyRU1YpccljlYa7hJb Rule csharpsquid:S3900 Range 65:65:3:6
+  Component flurl:src/Flurl.Http/HeaderExtensions.cs Issue AXnlqBbRAJ_csGvOOCci Rule csharpsquid:S3900 Range 25:25:7:22
+  Component flurl:src/Flurl.Http/Configuration/DefaultFlurlClientFactory.cs Issue AXnlqBXNAJ_csGvOOCaa Rule csharpsquid:S3900 Range 21:21:55:58
+  Component flurl:src/Flurl.Http/ResponseExtensions.cs Issue AXnlqBcCAJ_csGvOOCdv Rule csharpsquid:S3900 Range 93:93:27:35
+  Component flurl:src/Flurl.Http/SettingsExtensions.cs Issue AWcyRU1YpccljlYa7hJR Rule csharpsquid:S3900 Range 21:21:10:16
+  Component flurl:src/Flurl.Http/ResponseExtensions.cs Issue AXnlqBcCAJ_csGvOOCdm Rule csharpsquid:S3900 Range 50:50:27:35
+  Component flurl:src/Flurl.Http/SettingsExtensions.cs Issue AXnlqBa1AJ_csGvOOCcb Rule csharpsquid:S3900 Range 146:146:3:6
+  Component flurl:src/Flurl/Url.cs Issue AWLO6_Z_dkivt9iLtkyQ Rule csharpsquid:S3900 Range 426:426:23:28
+  Component flurl:src/Flurl.Http/SettingsExtensions.cs Issue AXnlqBa1AJ_csGvOOCcZ Rule csharpsquid:S3900 Range 138:138:3:6
+Rule: csharpsquid:S1075 (size: 1):
+  Component flurl:PackageTesters/PackageTester.Shared/Tester.cs Issue AWLO6_bwdkivt9iLtk0a Rule csharpsquid:S1075 Range 36:36:65:71
+====== Vulnerabilities ======
+Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
+flurl;0;0;NaN;12;Infinity
+====== Added issues ======
+Rule: csharpsquid:S2228 (size: 12):
+  Component flurl-autoscan:src/Flurl.CodeGen/ExtensionMethod.cs Issue AYUFt8PSQo91PT8Z_tuO Rule csharpsquid:S2228 Range 58:58:3:20
+  Component flurl-autoscan:src/Flurl.CodeGen/Program.cs Issue AYUFt8PqQo91PT8Z_tu2 Rule csharpsquid:S2228 Range 88:88:3:20
+  Component flurl-autoscan:src/Flurl.CodeGen/Program.cs Issue AYUFt8PqQo91PT8Z_tu4 Rule csharpsquid:S2228 Range 102:102:5:22
+  Component flurl-autoscan:src/Flurl.CodeGen/Program.cs Issue AYUFt8PqQo91PT8Z_tvD Rule csharpsquid:S2228 Range 112:112:4:21
+  Component flurl-autoscan:src/Flurl.CodeGen/Program.cs Issue AYUFt8PqQo91PT8Z_tvE Rule csharpsquid:S2228 Range 141:141:5:22
+  Component flurl-autoscan:src/Flurl.CodeGen/Program.cs Issue AYUFt8PqQo91PT8Z_tu6 Rule csharpsquid:S2228 Range 77:77:4:21
+  Component flurl-autoscan:PackageTesters/PackageTester.Shared/Tester.cs Issue AYUFt8RNQo91PT8Z_tvn Rule csharpsquid:S2228 Range 44:44:4:21
+  Component flurl-autoscan:PackageTesters/PackageTester.Shared/Tester.cs Issue AYUFt8RNQo91PT8Z_tvp Rule csharpsquid:S2228 Range 48:48:4:21
+  Component flurl-autoscan:PackageTesters/PackageTester.Shared/Tester.cs Issue AYUFt8RNQo91PT8Z_tvo Rule csharpsquid:S2228 Range 54:54:3:20
+  Component flurl-autoscan:PackageTesters/PackageTester.Shared/Tester.cs Issue AYUFt8RNQo91PT8Z_tvq Rule csharpsquid:S2228 Range 57:57:4:21
+  Component flurl-autoscan:PackageTesters/PackageTester.Shared/Tester.cs Issue AYUFt8RNQo91PT8Z_tvr Rule csharpsquid:S2228 Range 62:62:4:21
+  Component flurl-autoscan:PackageTesters/PackageTester.Shared/Tester.cs Issue AYUFt8RNQo91PT8Z_tvs Rule csharpsquid:S2228 Range 63:63:4:21
+
+====== Missing issues ======
+====== Metrics ======
+JavaAnalysisFinishedCount; WorkerForJavaCloneDuration; WorkerForJavaTaskDuration; DownloadedArtifactsPercentage; ParsedArtifactsCount; ConstructDependencyGraphDuration; DownloadDependenciesDuration; ResolveDependenciesDuration; WorkerForJavaQueueLatency
+No metric

@@ -1,0 +1,9 @@
+====== Summary ======
+====== Bugs / Code Smells ======
+Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
+flurl;890;116;86,966292;28;3,146067
+fody;584;34;94,178082;69;11,815068
+====== Vulnerabilities ======
+Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
+flurl;0;0;NaN;12;Infinity
+fody;22;0;100,000000;0;0,000000

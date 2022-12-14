@@ -2,7 +2,4 @@
 .idea
 build/*
 gradle/*
-src/main/output/*
-src/main/output_commons/*
-src/main/output_issues/*
 bin/
