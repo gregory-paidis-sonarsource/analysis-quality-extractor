@@ -51,21 +51,18 @@ public class ApiConnector {
   private static final String API_PROJECT_BRANCHES_LIST = "/api/project_branches/list";
   private static final String API_RULE_SEARCH = "/api/rules/search";
 
-  private static String SQ_TOKEN;
-
   private static final Gson GSON = new Gson();
 
   private final String baseUrl;
   private final HttpClient httpClient;
 
-  public ApiConnector(String baseUrl, String token) {
-    this(baseUrl, token, HttpClient.newHttpClient());
+  public ApiConnector(String baseUrl) {
+    this(baseUrl, HttpClient.newHttpClient());
   }
 
-  public ApiConnector(String baseUrl, String token, HttpClient httpClient) {
+  public ApiConnector(String baseUrl, HttpClient httpClient) {
     this.baseUrl = baseUrl;
     this.httpClient = httpClient;
-    this.SQ_TOKEN = token;
   }
 
   public List<Component> getAllComponents(String projectKey, String branch, String qualifier) {
@@ -115,9 +112,9 @@ public class ApiConnector {
 
   private Optional<ComponentIssues> getComponentIssues(int page, String componentKeys) {
     URI uri = createURI(baseUrl, API_ISSUES_SEARCH,
-        "ps=" + PAGE_SIZE + 
-        "&componentKeys=" + componentKeys + 
-        "&p=" + page + "&resolved=false");
+        "ps=" + PAGE_SIZE +
+            "&componentKeys=" + componentKeys +
+            "&p=" + page + "&resolved=false");
     return Optional.ofNullable(GSON.fromJson(doHttpRequest(uri), ComponentIssues.class));
   }
 
@@ -143,7 +140,7 @@ public class ApiConnector {
   public List<Component> getProjects(List<String> organization) {
     return organization.stream()
         .map(this::getProject)
-        .filter(Objects::nonNull) 
+        .filter(Objects::nonNull)
         .collect(Collectors.toList());
   }
 
@@ -197,9 +194,7 @@ public class ApiConnector {
     HttpRequest request = HttpRequest.newBuilder()
         .uri(uri)
         .setHeader(HttpHeaders.AUTHORIZATION, "Basic " +
-        // Base64.getEncoder().encodeToString((System.getenv("PEACH_TOKEN")
-        // +":").getBytes()))
-            Base64.getEncoder().encodeToString((SQ_TOKEN + ":").getBytes()))
+            Base64.getEncoder().encodeToString((System.getenv("PEACH_TOKEN") + ":").getBytes()))
         .build();
 
     try {

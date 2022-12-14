@@ -29,7 +29,8 @@ public class ProjectAnalysis {
   }
 
   public ProjectAnalysisResult extractResult(String projectKey, String branch) {
-    // TODO: depending on page size, this generate an URL too big
+    // This does not fetch project/assembly level issues, 
+    // so the number might be less in contrast to peachy issues/ tab
     int pageSize = 5;
     long start = System.currentTimeMillis();
 

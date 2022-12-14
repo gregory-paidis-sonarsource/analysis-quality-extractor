@@ -21,60 +21,58 @@ import static task.AnalysisResultFromFile.AUTOSCAN_SUFFIX;
 
 public class AnalysisResultWrite {
   private static final String SQ_INSTANCE_URL = "https://peach.sonarsource.com/";
-  private static final String SQ_TOKEN = "squ_0ec4617e71534a0fe9ded42a471b869cce612713";
-
 
   private static final List<String> projects = List.of(
-    // "auto-mapper",
-    // "codehub",
-    // "embedio",
-    // "fluentassertions",
-    // "flurl",
-    // "fody",
-    // "jabbr",
-    // "masstransit",
-    // "moq",
-    // "net5-solution",
-    // "net6-solution",
-     "net7-solution"
-    // "nhibernate",
-    // "nlog",
-    // "nodatime"
-    // "nopowershell",
-    // "northwind-traders",
-    // "nuget-server",
-    // "ocelot",
-    // "obsidian",
-    // "openiddict-core",
-    // "omnisharp-roslyn",
-    // "pascalabcnet",
-    // "pirahna-cms-legacy",
-    // "PowerShellEditorServices",
-    // "protoactor-dotnet",
-    // "refactoring-essentials",
-    // "refit",
-    // "screentogif",
-    // "servuo",
-    // "shadowsocks-windows",
-    // "sharex",
-    // "sharpcompress",
-    // "sharpdevelop-avalonedit",
-    // "sharpdevelop-wpfdesigner",
-    // "sharpziplib",
-    // "simplcommerce",
-    // "smartstore",
-    // "stripe",
-    // "stylecop",
-    // "system-wrapper"
+      // "auto-mapper"
+      // "codehub",
+      // "embedio",
+      // "fluentassertions",
+      "fody",
+      "flurl"
+  // "jabbr",
+  // "masstransit",
+  // "moq",
+  // "net5-solution",
+  // "net6-solution",
+  // "net7-solution"
+  // "nhibernate",
+  // "nlog",
+  // "nodatime"
+  // "nopowershell",
+  // "northwind-traders",
+  // "nuget-server",
+  // "ocelot",
+  // "obsidian",
+  // "openiddict-core",
+  // "omnisharp-roslyn",
+  // "pascalabcnet",
+  // "pirahna-cms-legacy",
+  // "PowerShellEditorServices",
+  // "protoactor-dotnet",
+  // "refactoring-essentials",
+  // "refit",
+  // "screentogif",
+  // "servuo",
+  // "shadowsocks-windows",
+  // "sharex",
+  // "sharpcompress",
+  // "sharpdevelop-avalonedit",
+  // "sharpdevelop-wpfdesigner",
+  // "sharpziplib",
+  // "simplcommerce",
+  // "smartstore",
+  // "stripe",
+  // "stylecop",
+  // "system-wrapper"
   );
 
   public static void main(String[] args) throws IOException {
     ExtractStatistics(true);
-    // ExtractStatistics(false);
+    ExtractStatistics(false);
   }
 
   private static void ExtractStatistics(boolean isBase) throws IOException {
-    ApiConnector apiConnector = new ApiConnector(SQ_INSTANCE_URL, SQ_TOKEN);
+    ApiConnector apiConnector = new ApiConnector(SQ_INSTANCE_URL);
     ProjectAnalysis projectAnalysis = new ProjectAnalysis(apiConnector, null);
 
     String outputFolder = isBase ? OUTPUT_FOLDER_BASE : OUTPUT_FOLDER_TARGET;
