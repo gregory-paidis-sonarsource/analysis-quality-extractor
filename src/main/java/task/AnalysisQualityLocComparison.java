@@ -15,6 +15,7 @@ import model.ProjectAnalysisResult;
 public class AnalysisQualityLocComparison {
 
   private static final String OUTPUT_FOLDER = "src/main/output/loc/";
+  private static final String LANGUAGE_MONIKER = "cs";
 
   private AnalysisQualityLocComparison() {
   }
@@ -24,7 +25,8 @@ public class AnalysisQualityLocComparison {
     FileWriter fileWriter = new FileWriter(OUTPUT_FOLDER + "comparison");
     PrintWriter printWriter = new PrintWriter(fileWriter);
 
-    printWriter.println("Project;Loc in base (CI); Loc in target (autoscan); Additional files in autoscan; additional files in CI; Additional files in autoscan (only java); additional files in CI (only java)");
+    printWriter.println(
+        "Project;Loc in base (CI); Loc in target (autoscan); Additional files in autoscan; additional files in CI; Additional files in autoscan (only lang-specific); additional files in CI (only lang-specific)");
 
     projectsQuality.forEach(p -> printWriter.println(getLocComparison(p)));
 
@@ -42,27 +44,33 @@ public class AnalysisQualityLocComparison {
     List<Component> targetComponents = targetComponentResult.getComponents();
 
     List<Component> missing = baseComponents.stream()
-      .filter(c -> !targetComponents.contains(c))
-      .collect(Collectors.toList());
-    List<Component> added = targetComponents.stream()
-      .filter(c -> !baseComponents.contains(c))
-      .collect(Collectors.toList());
+        .filter(c -> !targetComponents.contains(c))
+        .collect(Collectors.toList());
 
-    List<Component> missingOnlyJava = missing.stream()
-      .filter(c -> c.getLanguage().equals("java"))
-      .collect(Collectors.toList());
-    List<Component> addedOnlyJava = added.stream()
-      .filter(c -> c.getLanguage().equals("java"))
-      .collect(Collectors.toList());
+    List<Component> added = targetComponents.stream()
+        .filter(c -> !baseComponents.contains(c))
+        .collect(Collectors.toList());
+
+    List<Component> missingOnlyLangSpecific = missing.stream()
+        .filter(AnalysisQualityLocComparison::isLanguageSpecific)
+        .collect(Collectors.toList());
+
+    List<Component> addedOnlyLangSpecific = added.stream()
+        .filter(AnalysisQualityLocComparison::isLanguageSpecific)
+        .collect(Collectors.toList());
 
     return String.format("%s;%d;%d;%d;%d;%d;%d",
-      p.getBaseComponent().getKey(),
-      baseLoc.getOrDefault("java", 0),
-      targetLoc.getOrDefault("java", 0),
-      added.size(),
-      missing.size(),
-      addedOnlyJava.size(),
-      missingOnlyJava.size()
-    );
+        p.getBaseComponent().getKey(),
+        baseLoc.getOrDefault(LANGUAGE_MONIKER, 0),
+        targetLoc.getOrDefault(LANGUAGE_MONIKER, 0),
+        added.size(),
+        missing.size(),
+        addedOnlyLangSpecific.size(),
+        missingOnlyLangSpecific.size());
+  }
+
+  private static boolean isLanguageSpecific(Component c) {
+    var lang = c.getLanguage();
+    return lang != null && lang.equals(LANGUAGE_MONIKER);
   }
 }

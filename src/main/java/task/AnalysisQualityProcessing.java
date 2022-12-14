@@ -19,7 +19,7 @@ import model.ProjectAnalysisQuality;
 
 public class AnalysisQualityProcessing {
 
-  private static final String JAVA_RULE_PREFIX = "java:";
+  private static final String LANGUAGE_RULE_PREFIX = "csharpsquid:";
 
   private static final String HEADER = "Project name; Issues on base; FN; Detection (%); FP; Deviation (%)";
   private static final String HEADER_METRICS = "JavaAnalysisFinishedCount; WorkerForJavaCloneDuration; WorkerForJavaTaskDuration; DownloadedArtifactsPercentage; ParsedArtifactsCount; ConstructDependencyGraphDuration; DownloadDependenciesDuration; ResolveDependenciesDuration; WorkerForJavaQueueLatency";
@@ -29,7 +29,7 @@ public class AnalysisQualityProcessing {
   private final Map<String, List<Issue>> countAdded = new HashMap<>();
 
   private final List<Summary> summaryAll = new ArrayList<>();
-  private final List<Summary> summaryJava = new ArrayList<>();
+  private final List<Summary> summaryLanguageSpecific = new ArrayList<>();
 
   private final Map<String, Integer> totalIssuesRaisedByRule = new HashMap<>();
 
@@ -39,12 +39,12 @@ public class AnalysisQualityProcessing {
 
   private final String outputFolder;
   private final String outputFolderAll;
-  private final String outputFolderOnlyJava;
+  private final String outputFolderOnlyLangSpecific;
 
   public AnalysisQualityProcessing(boolean onlyCommonComponents, String outputFolder) {
     this.outputFolder = outputFolder;
     this.outputFolderAll = outputFolder + "projects_all/";
-    this.outputFolderOnlyJava = outputFolder + "projects_only_java/";
+    this.outputFolderOnlyLangSpecific = outputFolder + "projects_only_lang_specific/";
     if (onlyCommonComponents) {
       getMissing = ProjectAnalysisDifferences::getMissingInCommonComponents;
       getAdded = ProjectAnalysisDifferences::getAddedInCommonComponents;
@@ -68,13 +68,13 @@ public class AnalysisQualityProcessing {
     writeRulesStatistics(totalIssuesRaisedByRule, countMissing, countAdded);
 
     writeSummary(summaryAll, "summary_all");
-    writeSummary(summaryJava, "summary_java");
+    writeSummary(summaryLanguageSpecific, "summary_lang_specific");
   }
 
   private void processAnalysisQuality(List<ProjectAnalysisQuality> projectsQuality) throws IOException {
     for (ProjectAnalysisQuality projectAnalysisQuality : projectsQuality) {
       summaryAll.add(generateOutputForProject(projectAnalysisQuality, false));
-      summaryJava.add(generateOutputForProject(projectAnalysisQuality, true));
+      summaryLanguageSpecific.add(generateOutputForProject(projectAnalysisQuality, true));
       // Compute noisy rules
       ProjectAnalysisDifferences differences = projectAnalysisQuality.getDifferences();
       getMissing.apply(differences).forEach(i -> incrementMap(countMissing, i));
@@ -96,8 +96,8 @@ public class AnalysisQualityProcessing {
         totalIssuesRaisedByRule.put(r.getKey(), 0)));
   }
 
-  private Summary generateOutputForProject(ProjectAnalysisQuality projectAnalysisQuality, boolean onlyJava) throws IOException {
-    String name = projectAnalysisQuality.getBaseComponent().getName();
+  private Summary generateOutputForProject(ProjectAnalysisQuality projectAnalysisQuality, boolean onlyLangSpecific) throws IOException {
+    String name = projectAnalysisQuality.getBaseComponent().getName().replaceAll(":", "_");
     ProjectAnalysisDifferences differences = projectAnalysisQuality.getDifferences();
 
     List<Issue> baseIssues;
@@ -105,18 +105,18 @@ public class AnalysisQualityProcessing {
     List<Issue> missing;
     String folder;
 
-    if (onlyJava) {
+    if (onlyLangSpecific) {
       baseIssues = getBaseIssues.apply(differences).stream()
-        .filter(i -> i.getRule().startsWith(JAVA_RULE_PREFIX))
+        .filter(i -> i.getRule().startsWith(LANGUAGE_RULE_PREFIX))
         .collect(Collectors.toList());
       added = getAdded.apply(differences).stream()
-        .filter(i -> i.getRule().startsWith(JAVA_RULE_PREFIX))
+        .filter(i -> i.getRule().startsWith(LANGUAGE_RULE_PREFIX))
         .collect(Collectors.toList());
       missing = getMissing.apply(differences).stream()
-        .filter(i -> i.getRule().startsWith(JAVA_RULE_PREFIX))
+        .filter(i -> i.getRule().startsWith(LANGUAGE_RULE_PREFIX))
         .collect(Collectors.toList());
 
-      folder = outputFolderOnlyJava;
+      folder = outputFolderOnlyLangSpecific;
     } else {
       baseIssues = getBaseIssues.apply(differences);
 
@@ -268,17 +268,18 @@ public class AnalysisQualityProcessing {
 
   private static String printAnalysisMetrics(ProjectAnalysisMetrics metrics, PrintWriter printWriter) {
     printWriter.println(HEADER_METRICS);
-    String summary = String.format("%d;%d;%d;%f;%d;%d;%d;%d;%d",
-      metrics.getJavaAnalysisFinishedCount(),
-      metrics.getWorkerForJavaCloneDuration(),
-      metrics.getWorkerForJavaTaskDuration(),
-      metrics.getDownloadedArtifactsPercentage(),
-      metrics.getParsedArtifactsCount(),
-      metrics.getConstructDependencyGraphDuration(),
-      metrics.getDownloadDependenciesDuration(),
-      metrics.getResolveDependenciesDuration(),
-      metrics.getWorkerForJavaQueueLatency()
-    );
+    String summary = "No metric";
+//    String summary = String.format("%d;%d;%d;%f;%d;%d;%d;%d;%d",
+//      metrics.getJavaAnalysisFinishedCount(),
+//      metrics.getWorkerForJavaCloneDuration(),
+//      metrics.getWorkerForJavaTaskDuration(),
+//      metrics.getDownloadedArtifactsPercentage(),
+//      metrics.getParsedArtifactsCount(),
+//      metrics.getConstructDependencyGraphDuration(),
+//      metrics.getDownloadDependenciesDuration(),
+//      metrics.getResolveDependenciesDuration(),
+//      metrics.getWorkerForJavaQueueLatency()
+//    );
     printWriter.println(summary);
 
     return summary;

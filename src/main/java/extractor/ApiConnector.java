@@ -8,11 +8,14 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Base64;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.Optional;
 import java.util.logging.Logger;
+import java.util.stream.Collectors;
 import model.Component;
 import model.ComponentIssues;
 import model.ComponentRules;
@@ -27,6 +30,7 @@ import model.QualityProfile;
 import model.Rule;
 import model.measure.ComponentMeasure;
 import model.measure.Measure;
+import org.apache.http.HttpHeaders;
 
 import static java.util.logging.Level.WARNING;
 
@@ -38,6 +42,7 @@ public class ApiConnector {
 
   private static final String API_COMPONENTS_TREE = "/api/components/tree";
   private static final String API_COMPONENTS_SEARCH_PROJECTS = "/api/components/search_projects";
+  private static final String API_COMPONENTS_SEARCH = "/api/components/search";
   private static final String API_ISSUES_SEARCH = "/api/issues/search";
   private static final String API_SERVER_VERSION = "/api/server/version";
   private static final String API_PLUGINS_INSTALLED = "/api/plugins/installed";
@@ -46,18 +51,21 @@ public class ApiConnector {
   private static final String API_PROJECT_BRANCHES_LIST = "/api/project_branches/list";
   private static final String API_RULE_SEARCH = "/api/rules/search";
 
+  private static String SQ_TOKEN;
+
   private static final Gson GSON = new Gson();
 
   private final String baseUrl;
   private final HttpClient httpClient;
 
-  public ApiConnector(String baseUrl) {
-    this(baseUrl, HttpClient.newHttpClient());
+  public ApiConnector(String baseUrl, String token) {
+    this(baseUrl, token, HttpClient.newHttpClient());
   }
 
-  public ApiConnector(String baseUrl, HttpClient httpClient) {
+  public ApiConnector(String baseUrl, String token, HttpClient httpClient) {
     this.baseUrl = baseUrl;
     this.httpClient = httpClient;
+    this.SQ_TOKEN = token;
   }
 
   public List<Component> getAllComponents(String projectKey, String branch, String qualifier) {
@@ -65,9 +73,7 @@ public class ApiConnector {
     List<Component> components = new ArrayList<>();
     do {
       Optional<ComponentTree> tree = getComponentTree(page, projectKey, branch, qualifier);
-      tree.ifPresent(componentTree ->
-        components.addAll(componentTree.getComponents())
-      );
+      tree.ifPresent(componentTree -> components.addAll(componentTree.getComponents()));
       page++;
       if (tree.isPresent() && tree.get().getComponents().isEmpty()) {
         page = -1;
@@ -85,37 +91,34 @@ public class ApiConnector {
   private String renderComponentTreePath(int page, String projectKey, String branch, String qualifier) {
     // TODO: create a url factory using request object
     return "ps=" + PAGE_SIZE + "&component=" +
-      projectKey + "&p=" + page + "&branch=" + branch + "&qualifiers=" + qualifier;
+        projectKey + "&p=" + page + "&branch=" + branch + "&qualifiers=" + qualifier;
   }
 
   public List<Issue> getAllComponentIssues(String componentKeys) {
     int page = 1;
-    int total = 0;
-    List<Issue> issues = new ArrayList<>();
-    // TODO: Better pagination
-    // TODO: Consolidate pagination above extractor.ApiConnector.getAllComponents
+    List<Issue> totalResult = new ArrayList<>();
     do {
       Optional<ComponentIssues> componentIssues = getComponentIssues(page++, componentKeys);
       if (componentIssues.isPresent() && componentIssues.get().getIssues() != null) {
         if (componentIssues.get().getIssues().isEmpty()) {
           break;
         }
-        List<Issue> i = componentIssues.get().getIssues();
-        if (i != null) {
-          issues.addAll(i);
-          total += issues.size();
-          if (total >= componentIssues.get().getTotal()) {
-            break;
-          }
+        List<Issue> currentResult = componentIssues.get().getIssues();
+        if (currentResult != null) {
+          totalResult.addAll(currentResult);
         }
       }
     } while (true);
 
-    return issues;
+    return totalResult;
   }
 
   private Optional<ComponentIssues> getComponentIssues(int page, String componentKeys) {
-    URI uri = createURI(baseUrl, API_ISSUES_SEARCH, "ps=" + PAGE_SIZE + "&componentKeys=" + componentKeys + "&p=" + page + "&resolved=false");
+    URI uri = createURI(baseUrl, API_ISSUES_SEARCH,
+        "ps=" + PAGE_SIZE + 
+        // "&componentKeys=" + componentKeys + 
+         "&componentKeys=" + "nodatime-autoscan"+ 
+        "&p=" + page + "&resolved=false");
     return Optional.ofNullable(GSON.fromJson(doHttpRequest(uri), ComponentIssues.class));
   }
 
@@ -138,13 +141,38 @@ public class ApiConnector {
     return GSON.fromJson(doHttpRequest(uri), ComponentSearchProjects.class).getComponents();
   }
 
+  public List<Component> getProjects(List<String> organization) {
+    return organization.stream()
+        .map(this::getProject)
+        .filter(Objects::nonNull) 
+        .collect(Collectors.toList());
+  }
+
+  public Component getProject(String project) {
+    try {
+      URI uri = createURI(baseUrl, API_COMPONENTS_SEARCH, "qualifiers=TRK&q=" + project);
+      return GSON.fromJson(doHttpRequest(uri), ComponentSearchProjects.class)
+          .getComponents()
+          .stream()
+          .filter(p -> p.getKey().equals(project))
+          .findFirst()
+          .get();
+    } catch (Exception e) {
+      System.err.println("[ERROR] Fail to find project: " + project);
+      return null;
+    }
+
+  }
+
   public List<Rule> getRulesFromQualityProfile(QualityProfile qp) {
-    URI uri = createURI(baseUrl, API_RULE_SEARCH, "ps=" + PAGE_SIZE + "&languages=" + qp.getLanguage() + "&qprofile=" + qp.getKey() + "&activation=true");
+    URI uri = createURI(baseUrl, API_RULE_SEARCH,
+        "ps=" + PAGE_SIZE + "&languages=" + qp.getLanguage() + "&qprofile=" + qp.getKey() + "&activation=true");
     return GSON.fromJson(doHttpRequest(uri), ComponentRules.class).getRules();
   }
 
   public Map<String, Integer> getLocPerLanguages(String projectKey) {
-    URI uri = createURI(baseUrl, API_MEASURE_COMPONENT, "componentKey=" + projectKey + "&metricKeys=ncloc_language_distribution");
+    URI uri = createURI(baseUrl, API_MEASURE_COMPONENT,
+        "component=" + projectKey + "&metricKeys=ncloc_language_distribution");
     Map<String, Integer> locPerLanguages = new HashMap<>();
     List<Measure> measures = GSON.fromJson(doHttpRequest(uri), ComponentMeasure.class).getComponent().getMeasures();
     if (measures.isEmpty()) {
@@ -152,8 +180,8 @@ public class ApiConnector {
     }
     String value = measures.get(0).getValue();
     Arrays.stream(value.split(";"))
-      .map(pair -> pair.split("="))
-      .forEach(p -> locPerLanguages.put(p[0], Integer.parseInt(p[1])));
+        .map(pair -> pair.split("="))
+        .forEach(p -> locPerLanguages.put(p[0], Integer.parseInt(p[1])));
     return locPerLanguages;
   }
 
@@ -161,15 +189,19 @@ public class ApiConnector {
     URI uri = createURI(baseUrl, API_PROJECT_BRANCHES_LIST, "project=" + projectKey);
     List<ProjectBranch> projectBranches = GSON.fromJson(doHttpRequest(uri), ProjectBranches.class).getBranches();
     return projectBranches.stream()
-      .filter(ProjectBranch::isMain)
-      .findFirst()
-      .orElseThrow();
+        .filter(ProjectBranch::isMain)
+        .findFirst()
+        .orElseThrow();
   }
 
   private String doHttpRequest(URI uri) {
     HttpRequest request = HttpRequest.newBuilder()
-      .uri(uri)
-      .build();
+        .uri(uri)
+        .setHeader(HttpHeaders.AUTHORIZATION, "Basic " +
+        // Base64.getEncoder().encodeToString((System.getenv("PEACH_TOKEN")
+        // +":").getBytes()))
+            Base64.getEncoder().encodeToString((SQ_TOKEN + ":").getBytes()))
+        .build();
 
     try {
       HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
