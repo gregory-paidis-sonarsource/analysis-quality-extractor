@@ -1,0 +1,15 @@
+====== Bugs ======
+Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
+omnisharp-server;0;0;NaN;0;NaN
+====== Added issues ======
+
+====== Missing issues ======
+====== Vulnerabilities ======
+Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
+omnisharp-server;0;0;NaN;0;NaN
+====== Added issues ======
+
+====== Missing issues ======
+====== Metrics ======
+JavaAnalysisFinishedCount; WorkerForJavaCloneDuration; WorkerForJavaTaskDuration; DownloadedArtifactsPercentage; ParsedArtifactsCount; ConstructDependencyGraphDuration; DownloadDependenciesDuration; ResolveDependenciesDuration; WorkerForJavaQueueLatency
+No metric

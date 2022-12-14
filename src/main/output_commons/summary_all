@@ -1,9 +1,51 @@
 ====== Summary ======
 ====== Bugs / Code Smells ======
 Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
+akka;18444;1890;89,752765;2086;11,309911
+auto-mapper;0;0;NaN;0;NaN
+beyourmarket;2983;1039;65,169293;151;5,062018
+codehub;3942;546;86,149163;270;6,849315
+event-flow;0;0;NaN;0;NaN
+fluentassertions;1447;246;82,999309;1178;81,409813
 flurl;890;116;86,966292;28;3,146067
 fody;584;34;94,178082;23;3,938356
+jabbr;2330;490;78,969957;223;9,570815
+masstransit;22686;1529;93,260160;82;0,361456
+net5-solution;1134;143;87,389771;68;5,996473
+net6-solution;153;40;73,856209;1;0,653595
+net7-solution;0;0;NaN;0;NaN
+nhibernate;24482;3419;86,034638;344;1,405114
+nlog;0;0;NaN;0;NaN
+nodatime;2542;53;97,915028;74;2,911094
+nopowershell;433;13;96,997691;20;4,618938
+nuget-server;593;125;78,920742;489;82,462057
+obsidian;6604;1026;84,463961;197;2,983041
+ocelot;1862;362;80,558539;60;3,222342
+omnisharp-server;0;0;NaN;0;NaN
+openiddict-core;3562;280;92,139248;278;7,804604
+orchard-cms;0;0;NaN;0;NaN
 ====== Vulnerabilities ======
 Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
+akka;67;0;100,000000;101;150,746269
+auto-mapper;0;0;NaN;0;NaN
+beyourmarket;50;48;4,000000;0;0,000000
+codehub;244;0;100,000000;3;1,229508
+event-flow;0;0;NaN;0;NaN
+fluentassertions;1;0;100,000000;0;0,000000
 flurl;0;0;NaN;12;Infinity
 fody;22;0;100,000000;0;0,000000
+jabbr;0;0;NaN;6;Infinity
+masstransit;23;2;91,304348;0;0,000000
+net5-solution;11;0;100,000000;67;609,090909
+net6-solution;1;1;0,000000;0;0,000000
+net7-solution;0;0;NaN;0;NaN
+nhibernate;65;0;100,000000;0;0,000000
+nlog;0;0;NaN;0;NaN
+nodatime;0;0;NaN;55;Infinity
+nopowershell;0;0;NaN;11;Infinity
+nuget-server;3;0;100,000000;2;66,666667
+obsidian;23;0;100,000000;1;4,347826
+ocelot;1;0;100,000000;1;100,000000
+omnisharp-server;0;0;NaN;0;NaN
+openiddict-core;0;0;NaN;0;NaN
+orchard-cms;0;0;NaN;0;NaN

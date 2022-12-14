@@ -1,0 +1,595 @@
+====== Bugs ======
+Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
+ocelot;1862;362;80,558539;161;8,646617
+====== Added issues ======
+Rule: csharpsquid:S1118 (size: 5):
+  Component ocelot-autoscan:samples/AdministrationApi/Program.cs Issue AYURVQNwozEprKvtb1KL Rule csharpsquid:S1118 Range 16:16:15:22
+  Component ocelot-autoscan:samples/OcelotEureka/ApiGateway/Program.cs Issue AYURVQNaozEprKvtb1Jz Rule csharpsquid:S1118 Range 9:9:17:24
+  Component ocelot-autoscan:samples/OcelotEureka/DownstreamService/Program.cs Issue AYURVQNeozEprKvtb1J3 Rule csharpsquid:S1118 Range 7:7:17:24
+  Component ocelot-autoscan:samples/OcelotGraphQL/Program.cs Issue AYURVQNrozEprKvtb1KF Rule csharpsquid:S1118 Range 83:83:17:24
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/Program.cs Issue AYURVQNCozEprKvtb1JF Rule csharpsquid:S1118 Range 19:19:17:24
+Rule: csharpsquid:S1451 (size: 16):
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationService/ApiGateway.cs Issue AYURVQM5ozEprKvtb1I6 Rule csharpsquid:S1451 Range (empty)
+  Component ocelot-autoscan:samples/OcelotEureka/DownstreamService/Controllers/CategoryController.cs Issue AYURVQNjozEprKvtb1J9 Rule csharpsquid:S1451 Range (empty)
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/OcelotApplicationApiGateway.cs Issue AYURVQNVozEprKvtb1Jt Rule csharpsquid:S1451 Range (empty)
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationService/Program.cs Issue AYURVQM9ozEprKvtb1JD Rule csharpsquid:S1451 Range (empty)
+  Component ocelot-autoscan:samples/AdministrationApi/Program.cs Issue AYURVQNwozEprKvtb1KK Rule csharpsquid:S1451 Range (empty)
+  Component ocelot-autoscan:samples/OcelotEureka/ApiGateway/Program.cs Issue AYURVQNaozEprKvtb1J0 Rule csharpsquid:S1451 Range (empty)
+  Component ocelot-autoscan:samples/OcelotEureka/DownstreamService/Program.cs Issue AYURVQNeozEprKvtb1J4 Rule csharpsquid:S1451 Range (empty)
+  Component ocelot-autoscan:samples/OcelotGraphQL/Program.cs Issue AYURVQNrozEprKvtb1KE Rule csharpsquid:S1451 Range (empty)
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/Program.cs Issue AYURVQNCozEprKvtb1JG Rule csharpsquid:S1451 Range (empty)
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/ServiceEventListener.cs Issue AYURVQNLozEprKvtb1JZ Rule csharpsquid:S1451 Range (empty)
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/ServiceEventSource.cs Issue AYURVQNQozEprKvtb1Jk Rule csharpsquid:S1451 Range (empty)
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationService/ServiceEventSource.cs Issue AYURVQMrozEprKvtb1Ii Rule csharpsquid:S1451 Range (empty)
+  Component ocelot-autoscan:samples/OcelotEureka/DownstreamService/Startup.cs Issue AYURVQNnozEprKvtb1KA Rule csharpsquid:S1451 Range (empty)
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationService/Startup.cs Issue AYURVQM0ozEprKvtb1I1 Rule csharpsquid:S1451 Range (empty)
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/WebCommunicationListener.cs Issue AYURVQNGozEprKvtb1JL Rule csharpsquid:S1451 Range (empty)
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationService/Controllers/ValuesController.cs Issue AYURVQMvozEprKvtb1Iu Rule csharpsquid:S1451 Range (empty)
+Rule: csharpsquid:S1450 (size: 2):
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/WebCommunicationListener.cs Issue AYURVQNGozEprKvtb1JM Rule csharpsquid:S1450 Range 27:27:23:39
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/WebCommunicationListener.cs Issue AYURVQNGozEprKvtb1JN Rule csharpsquid:S1450 Range 28:28:23:37
+Rule: csharpsquid:S4462 (size: 1):
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/WebCommunicationListener.cs Issue AYURVQNGozEprKvtb1JO Rule csharpsquid:S4462 Range 81:81:20:38
+Rule: csharpsquid:S3253 (size: 1):
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationService/ServiceEventSource.cs Issue AYURVQMrozEprKvtb1Ik Rule csharpsquid:S3253 Range 24:24:37:45
+Rule: csharpsquid:S3011 (size: 1):
+  Component ocelot-autoscan:src/Ocelot/Middleware/Pipeline/OcelotPipelineBuilderExtensions.cs Issue AYURVP9UozEprKvtb08C Rule csharpsquid:S3011 Range 22:22:130:152
+Rule: csharpsquid:S2221 (size: 1):
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/WebCommunicationListener.cs Issue AYURVQNGozEprKvtb1JR Rule csharpsquid:S2221 Range 87:87:19:28
+Rule: csharpsquid:S3872 (size: 4):
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/ServiceEventSource.cs Issue AYURVQNQozEprKvtb1Jo Rule csharpsquid:S3872 Range 29:29:35:42
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/ServiceEventSource.cs Issue AYURVQNQozEprKvtb1Jq Rule csharpsquid:S3872 Range 41:41:35:42
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationService/ServiceEventSource.cs Issue AYURVQMrozEprKvtb1Im Rule csharpsquid:S3872 Range 47:47:35:42
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationService/ServiceEventSource.cs Issue AYURVQMrozEprKvtb1Il Rule csharpsquid:S3872 Range 58:58:35:42
+Rule: csharpsquid:S2223 (size: 1):
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/ServiceEventSource.cs Issue AYURVQNQozEprKvtb1Jm Rule csharpsquid:S2223 Range 18:18:41:48
+Rule: csharpsquid:S3257 (size: 27):
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationService/ApiGateway.cs Issue AYURVQM5ozEprKvtb1JA Rule csharpsquid:S3257 Range 32:32:23:46
+  Component ocelot-autoscan:test/Ocelot.Benchmarks/DictionaryBenchmarks.cs Issue AYURVQMJozEprKvtb1Hx Rule csharpsquid:S3257 Range 66:66:71:72
+  Component ocelot-autoscan:test/Ocelot.Benchmarks/DictionaryBenchmarks.cs Issue AYURVQMJozEprKvtb1Hy Rule csharpsquid:S3257 Range 66:66:74:82
+  Component ocelot-autoscan:test/Ocelot.Benchmarks/DictionaryBenchmarks.cs Issue AYURVQMJozEprKvtb1H0 Rule csharpsquid:S3257 Range 73:73:89:97
+  Component ocelot-autoscan:test/Ocelot.Benchmarks/DictionaryBenchmarks.cs Issue AYURVQMJozEprKvtb1Hz Rule csharpsquid:S3257 Range 73:73:86:87
+  Component ocelot-autoscan:src/Ocelot/DownstreamRouteFinder/Finder/DownstreamRouteCreator.cs Issue AYURVQAjozEprKvtb0_n Rule csharpsquid:S3257 Range 83:83:66:67
+  Component ocelot-autoscan:src/Ocelot/DownstreamRouteFinder/Finder/DownstreamRouteCreator.cs Issue AYURVQAjozEprKvtb0_o Rule csharpsquid:S3257 Range 83:83:69:70
+  Component ocelot-autoscan:src/Ocelot/Configuration/Validator/FileConfigurationFluentValidator.cs Issue AYURVP2bozEprKvtb01Q Rule csharpsquid:S3257 Range 32:32:30:36
+  Component ocelot-autoscan:src/Ocelot/Configuration/Validator/FileConfigurationFluentValidator.cs Issue AYURVP2bozEprKvtb01R Rule csharpsquid:S3257 Range 36:36:30:36
+  Component ocelot-autoscan:src/Ocelot/Configuration/Validator/FileConfigurationFluentValidator.cs Issue AYURVP2bozEprKvtb01S Rule csharpsquid:S3257 Range 36:36:38:45
+  Component ocelot-autoscan:src/Ocelot/Configuration/Validator/FileConfigurationFluentValidator.cs Issue AYURVP2bozEprKvtb01T Rule csharpsquid:S3257 Range 40:40:30:36
+  Component ocelot-autoscan:src/Ocelot/Configuration/Validator/FileConfigurationFluentValidator.cs Issue AYURVP2bozEprKvtb01U Rule csharpsquid:S3257 Range 40:40:38:45
+  Component ocelot-autoscan:src/Ocelot/Configuration/Validator/FileConfigurationFluentValidator.cs Issue AYURVP2bozEprKvtb01V Rule csharpsquid:S3257 Range 44:44:30:36
+  Component ocelot-autoscan:src/Ocelot/Configuration/Validator/FileConfigurationFluentValidator.cs Issue AYURVP2bozEprKvtb01W Rule csharpsquid:S3257 Range 48:48:30:36
+  Component ocelot-autoscan:src/Ocelot/Configuration/Validator/FileConfigurationFluentValidator.cs Issue AYURVP2bozEprKvtb01X Rule csharpsquid:S3257 Range 52:52:30:36
+  Component ocelot-autoscan:src/Ocelot/Configuration/Validator/FileConfigurationFluentValidator.cs Issue AYURVP2bozEprKvtb01Y Rule csharpsquid:S3257 Range 56:56:30:36
+  Component ocelot-autoscan:src/Ocelot/Requester/HttpClientBuilder.cs Issue AYURVP6WozEprKvtb05Z Rule csharpsquid:S3257 Range 51:51:69:76
+  Component ocelot-autoscan:src/Ocelot/Requester/HttpClientBuilder.cs Issue AYURVP6WozEprKvtb05a Rule csharpsquid:S3257 Range 51:51:78:89
+  Component ocelot-autoscan:src/Ocelot/Requester/HttpClientBuilder.cs Issue AYURVP6WozEprKvtb05b Rule csharpsquid:S3257 Range 51:51:91:96
+  Component ocelot-autoscan:src/Ocelot/Requester/HttpClientBuilder.cs Issue AYURVP6WozEprKvtb05c Rule csharpsquid:S3257 Range 51:51:98:104
+  Component ocelot-autoscan:src/Ocelot/LoadBalancer/LoadBalancers/LoadBalancerHouse.cs Issue AYURVQHUozEprKvtb1Gm Rule csharpsquid:S3257 Range 65:65:59:60
+  Component ocelot-autoscan:src/Ocelot/LoadBalancer/LoadBalancers/LoadBalancerHouse.cs Issue AYURVQHUozEprKvtb1Gn Rule csharpsquid:S3257 Range 65:65:62:63
+  Component ocelot-autoscan:src/Ocelot/Requester/MemoryHttpClientCache.cs Issue AYURVP6FozEprKvtb05E Rule csharpsquid:S3257 Range 18:18:56:57
+  Component ocelot-autoscan:src/Ocelot/Requester/MemoryHttpClientCache.cs Issue AYURVP6FozEprKvtb05F Rule csharpsquid:S3257 Range 18:18:59:67
+  Component ocelot-autoscan:src/Ocelot/Middleware/OcelotMiddlewareExtensions.cs Issue AYURVP99ozEprKvtb08w Rule csharpsquid:S3257 Range 61:61:40:44
+  Component ocelot-autoscan:samples/AdministrationApi/Program.cs Issue AYURVQNwozEprKvtb1KO Rule csharpsquid:S3257 Range 37:37:31:45
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationService/Controllers/ValuesController.cs Issue AYURVQMvozEprKvtb1Iv Rule csharpsquid:S3257 Range 16:16:23:29
+Rule: csharpsquid:S3059 (size: 5):
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationService/ApiGateway.cs Issue AYURVQM5ozEprKvtb1I8 Rule csharpsquid:S3059 Range 20:20:26:36
+  Component ocelot-autoscan:src/Ocelot/Infrastructure/DelayedMessage.cs Issue AYURVP8JozEprKvtb07E Rule csharpsquid:S3059 Range 3:3:19:33
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/OcelotApplicationApiGateway.cs Issue AYURVQNVozEprKvtb1Jv Rule csharpsquid:S3059 Range 15:15:26:49
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/ServiceEventListener.cs Issue AYURVQNLozEprKvtb1Jc Rule csharpsquid:S3059 Range 25:25:19:39
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationService/ServiceEventSource.cs Issue AYURVQMrozEprKvtb1Ip Rule csharpsquid:S3059 Range 12:12:26:44
+Rule: csharpsquid:S2325 (size: 3):
+  Component ocelot-autoscan:samples/OcelotEureka/DownstreamService/Startup.cs Issue AYURVQNnozEprKvtb1KB Rule csharpsquid:S2325 Range 33:33:20:29
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationService/Startup.cs Issue AYURVQM0ozEprKvtb1I2 Rule csharpsquid:S2325 Range 24:24:20:37
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationService/Startup.cs Issue AYURVQM0ozEprKvtb1I3 Rule csharpsquid:S2325 Range 30:30:20:29
+Rule: csharpsquid:S103 (size: 1):
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationService/ServiceEventSource.cs Issue AYURVQMrozEprKvtb1Ij Rule csharpsquid:S103 Range 108:108:0:210
+Rule: csharpsquid:S106 (size: 2):
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationService/ApiGateway.cs Issue AYURVQM5ozEprKvtb1I9 Rule csharpsquid:S106 Range 37:37:24:41
+  Component ocelot-autoscan:test/Ocelot.ManualTest/Program.cs Issue AYURVQMmozEprKvtb1If Rule csharpsquid:S106 Range 71:71:12:29
+Rule: csharpsquid:S108 (size: 1):
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/WebCommunicationListener.cs Issue AYURVQNGozEprKvtb1JP Rule csharpsquid:S108 Range 120:121:12:13
+Rule: csharpsquid:S107 (size: 1):
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationService/ServiceEventSource.cs Issue AYURVQMrozEprKvtb1Ir Rule csharpsquid:S107 Range 94:102:27:27
+Rule: common-cs:InsufficientLineCoverage (size: 16):
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationService/ApiGateway.cs Issue AYURVQM5ozEprKvtb1I4 Rule common-cs:InsufficientLineCoverage Range (empty)
+  Component ocelot-autoscan:samples/OcelotEureka/DownstreamService/Controllers/CategoryController.cs Issue AYURVQNjozEprKvtb1J7 Rule common-cs:InsufficientLineCoverage Range (empty)
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/OcelotApplicationApiGateway.cs Issue AYURVQNVozEprKvtb1Jr Rule common-cs:InsufficientLineCoverage Range (empty)
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationService/Program.cs Issue AYURVQM9ozEprKvtb1JB Rule common-cs:InsufficientLineCoverage Range (empty)
+  Component ocelot-autoscan:samples/AdministrationApi/Program.cs Issue AYURVQNwozEprKvtb1KI Rule common-cs:InsufficientLineCoverage Range (empty)
+  Component ocelot-autoscan:samples/OcelotEureka/ApiGateway/Program.cs Issue AYURVQNaozEprKvtb1Jw Rule common-cs:InsufficientLineCoverage Range (empty)
+  Component ocelot-autoscan:samples/OcelotEureka/DownstreamService/Program.cs Issue AYURVQNeozEprKvtb1J1 Rule common-cs:InsufficientLineCoverage Range (empty)
+  Component ocelot-autoscan:samples/OcelotGraphQL/Program.cs Issue AYURVQNrozEprKvtb1KC Rule common-cs:InsufficientLineCoverage Range (empty)
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/Program.cs Issue AYURVQNCozEprKvtb1JE Rule common-cs:InsufficientLineCoverage Range (empty)
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/ServiceEventListener.cs Issue AYURVQNLozEprKvtb1JV Rule common-cs:InsufficientLineCoverage Range (empty)
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/ServiceEventSource.cs Issue AYURVQNQozEprKvtb1Ji Rule common-cs:InsufficientLineCoverage Range (empty)
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationService/ServiceEventSource.cs Issue AYURVQMrozEprKvtb1Ig Rule common-cs:InsufficientLineCoverage Range (empty)
+  Component ocelot-autoscan:samples/OcelotEureka/DownstreamService/Startup.cs Issue AYURVQNnozEprKvtb1J- Rule common-cs:InsufficientLineCoverage Range (empty)
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationService/Startup.cs Issue AYURVQM0ozEprKvtb1Iz Rule common-cs:InsufficientLineCoverage Range (empty)
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/WebCommunicationListener.cs Issue AYURVQNGozEprKvtb1JJ Rule common-cs:InsufficientLineCoverage Range (empty)
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationService/Controllers/ValuesController.cs Issue AYURVQMvozEprKvtb1Is Rule common-cs:InsufficientLineCoverage Range (empty)
+Rule: csharpsquid:S1944 (size: 1):
+  Component ocelot-autoscan:src/Ocelot/DependencyInjection/ServiceCollectionExtensions.cs Issue AYURVQFBozEprKvtb1EY Rule csharpsquid:S1944 Range 13:13:33:47
+Rule: csharpsquid:S113 (size: 3):
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/OcelotApplicationApiGateway.cs Issue AYURVQNVozEprKvtb1Ju Rule csharpsquid:S113 Range 31:31:0:1
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/Program.cs Issue AYURVQNCozEprKvtb1JH Rule csharpsquid:S113 Range 51:51:0:1
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/ServiceEventListener.cs Issue AYURVQNLozEprKvtb1Jb Rule csharpsquid:S113 Range 94:94:0:1
+Rule: csharpsquid:S1104 (size: 1):
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/ServiceEventSource.cs Issue AYURVQNQozEprKvtb1Jl Rule csharpsquid:S1104 Range 18:18:41:75
+Rule: csharpsquid:S1301 (size: 1):
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/ServiceEventListener.cs Issue AYURVQNLozEprKvtb1Jf Rule csharpsquid:S1301 Range 85:85:12:18
+Rule: common-cs:InsufficientCommentDensity (size: 15):
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationService/ApiGateway.cs Issue AYURVQM5ozEprKvtb1I5 Rule common-cs:InsufficientCommentDensity Range (empty)
+  Component ocelot-autoscan:samples/OcelotEureka/DownstreamService/Controllers/CategoryController.cs Issue AYURVQNjozEprKvtb1J8 Rule common-cs:InsufficientCommentDensity Range (empty)
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/OcelotApplicationApiGateway.cs Issue AYURVQNVozEprKvtb1Js Rule common-cs:InsufficientCommentDensity Range (empty)
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationService/Program.cs Issue AYURVQM9ozEprKvtb1JC Rule common-cs:InsufficientCommentDensity Range (empty)
+  Component ocelot-autoscan:samples/AdministrationApi/Program.cs Issue AYURVQNwozEprKvtb1KJ Rule common-cs:InsufficientCommentDensity Range (empty)
+  Component ocelot-autoscan:samples/OcelotEureka/ApiGateway/Program.cs Issue AYURVQNaozEprKvtb1Jx Rule common-cs:InsufficientCommentDensity Range (empty)
+  Component ocelot-autoscan:samples/OcelotEureka/DownstreamService/Program.cs Issue AYURVQNeozEprKvtb1J2 Rule common-cs:InsufficientCommentDensity Range (empty)
+  Component ocelot-autoscan:samples/OcelotGraphQL/Program.cs Issue AYURVQNrozEprKvtb1KD Rule common-cs:InsufficientCommentDensity Range (empty)
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/ServiceEventListener.cs Issue AYURVQNLozEprKvtb1JW Rule common-cs:InsufficientCommentDensity Range (empty)
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/ServiceEventSource.cs Issue AYURVQNQozEprKvtb1Jj Rule common-cs:InsufficientCommentDensity Range (empty)
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationService/ServiceEventSource.cs Issue AYURVQMrozEprKvtb1Ih Rule common-cs:InsufficientCommentDensity Range (empty)
+  Component ocelot-autoscan:samples/OcelotEureka/DownstreamService/Startup.cs Issue AYURVQNnozEprKvtb1J_ Rule common-cs:InsufficientCommentDensity Range (empty)
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationService/Startup.cs Issue AYURVQM0ozEprKvtb1I0 Rule common-cs:InsufficientCommentDensity Range (empty)
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/WebCommunicationListener.cs Issue AYURVQNGozEprKvtb1JK Rule common-cs:InsufficientCommentDensity Range (empty)
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationService/Controllers/ValuesController.cs Issue AYURVQMvozEprKvtb1It Rule common-cs:InsufficientCommentDensity Range (empty)
+Rule: csharpsquid:S1186 (size: 3):
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationService/Controllers/ValuesController.cs Issue AYURVQMvozEprKvtb1Iw Rule csharpsquid:S1186 Range 28:28:20:24
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationService/Controllers/ValuesController.cs Issue AYURVQMvozEprKvtb1Ix Rule csharpsquid:S1186 Range 34:34:20:23
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationService/Controllers/ValuesController.cs Issue AYURVQMvozEprKvtb1Iy Rule csharpsquid:S1186 Range 40:40:20:26
+Rule: csharpsquid:S4055 (size: 6):
+  Component ocelot-autoscan:src/Ocelot/DownstreamRouteFinder/Finder/DownstreamRouteProviderFactory.cs Issue AYURVQAsozEprKvtb0_5 Rule csharpsquid:S4055 Range 27:27:39:127
+  Component ocelot-autoscan:src/Ocelot/Configuration/Repository/FileConfigurationPoller.cs Issue AYURVP3eozEprKvtb02o Rule csharpsquid:S4055 Range 42:42:35:84
+  Component ocelot-autoscan:src/Ocelot/Configuration/Repository/FileConfigurationPoller.cs Issue AYURVP3eozEprKvtb02p Rule csharpsquid:S4055 Range 61:61:35:84
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/WebCommunicationListener.cs Issue AYURVQNGozEprKvtb1JT Rule csharpsquid:S4055 Range 41:41:47:59
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/WebCommunicationListener.cs Issue AYURVQNGozEprKvtb1JU Rule csharpsquid:S4055 Range 56:56:47:75
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/WebCommunicationListener.cs Issue AYURVQNGozEprKvtb1JQ Rule csharpsquid:S4055 Range 115:115:55:77
+Rule: csharpsquid:S6354 (size: 2):
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/ServiceEventListener.cs Issue AYURVQNLozEprKvtb1Je Rule csharpsquid:S6354 Range 32:32:38:50
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/ServiceEventListener.cs Issue AYURVQNLozEprKvtb1Jh Rule csharpsquid:S6354 Range 60:60:27:42
+Rule: csharpsquid:S4056 (size: 5):
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/ServiceEventListener.cs Issue AYURVQNLozEprKvtb1Jd Rule csharpsquid:S4056 Range 32:32:38:81
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/ServiceEventListener.cs Issue AYURVQNLozEprKvtb1Jg Rule csharpsquid:S4056 Range 46:46:16:44
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/ServiceEventSource.cs Issue AYURVQNQozEprKvtb1Jp Rule csharpsquid:S4056 Range 33:33:35:63
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationService/ServiceEventSource.cs Issue AYURVQMrozEprKvtb1In Rule csharpsquid:S4056 Range 51:51:38:66
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationService/ServiceEventSource.cs Issue AYURVQMrozEprKvtb1Iq Rule csharpsquid:S4056 Range 72:72:38:66
+Rule: csharpsquid:S3242 (size: 2):
+  Component ocelot-autoscan:src/Ocelot/Configuration/Builder/DownstreamReRouteBuilder.cs Issue AYURVP13ozEprKvtb00j Rule csharpsquid:S3242 Range 80:80:76:81
+  Component ocelot-autoscan:src/Ocelot/Configuration/Builder/ReRouteBuilder.cs Issue AYURVP1uozEprKvtb00V Rule csharpsquid:S3242 Range 45:45:66:71
+Rule: csharpsquid:S4058 (size: 27):
+  Component ocelot-autoscan:src/Ocelot/Request/Creator/DownstreamRequestCreator.cs Issue AYURVP_fozEprKvtb0-i Rule csharpsquid:S4058 Range 26:26:15:57
+  Component ocelot-autoscan:src/Ocelot/DownstreamRouteFinder/Finder/DownstreamRouteCreator.cs Issue AYURVQAjozEprKvtb0_j Rule csharpsquid:S4058 Range 96:96:19:47
+  Component ocelot-autoscan:src/Ocelot/DownstreamUrlCreator/Middleware/DownstreamUrlCreatorMiddleware.cs Issue AYURVQDLozEprKvtb1Cs Rule csharpsquid:S4058 Range 82:82:27:71
+  Component ocelot-autoscan:src/Ocelot/DownstreamUrlCreator/Middleware/DownstreamUrlCreatorMiddleware.cs Issue AYURVQDLozEprKvtb1Ct Rule csharpsquid:S4058 Range 82:82:27:54
+  Component ocelot-autoscan:src/Ocelot/DownstreamUrlCreator/Middleware/DownstreamUrlCreatorMiddleware.cs Issue AYURVQDLozEprKvtb1Cu Rule csharpsquid:S4058 Range 84:84:20:66
+  Component ocelot-autoscan:src/Ocelot/DownstreamUrlCreator/Middleware/DownstreamUrlCreatorMiddleware.cs Issue AYURVQDLozEprKvtb1Cv Rule csharpsquid:S4058 Range 85:85:20:73
+  Component ocelot-autoscan:src/Ocelot/DownstreamUrlCreator/Middleware/DownstreamUrlCreatorMiddleware.cs Issue AYURVQDLozEprKvtb1Cn Rule csharpsquid:S4058 Range 113:113:19:45
+  Component ocelot-autoscan:src/Ocelot/Configuration/Creator/HeaderFindAndReplaceCreator.cs Issue AYURVPzbozEprKvtb0yP Rule csharpsquid:S4058 Range 30:30:20:45
+  Component ocelot-autoscan:src/Ocelot/Configuration/Creator/HeaderFindAndReplaceCreator.cs Issue AYURVPzbozEprKvtb0yQ Rule csharpsquid:S4058 Range 53:53:19:44
+  Component ocelot-autoscan:src/Ocelot/Configuration/Creator/HeaderFindAndReplaceCreator.cs Issue AYURVPzbozEprKvtb0yT Rule csharpsquid:S4058 Range 94:94:26:66
+  Component ocelot-autoscan:src/Ocelot/Headers/HttpContextRequestHeaderReplacer.cs Issue AYURVQECozEprKvtb1Df Rule csharpsquid:S4058 Range 16:16:35:77
+  Component ocelot-autoscan:samples/OcelotGraphQL/Program.cs Issue AYURVQNrozEprKvtb1KH Rule csharpsquid:S4058 Range 64:64:24:54
+  Component ocelot-autoscan:src/Ocelot/RateLimit/RateLimitCore.cs Issue AYURVP-KozEprKvtb09K Rule csharpsquid:S4058 Range 116:116:19:78
+  Component ocelot-autoscan:src/Ocelot/Cache/RegionCreator.cs Issue AYURVQAVozEprKvtb0_Y Rule csharpsquid:S4058 Range 18:18:37:82
+  Component ocelot-autoscan:src/Ocelot/Configuration/Validator/ReRouteFluentValidator.cs Issue AYURVP2tozEprKvtb013 Rule csharpsquid:S4058 Range 38:38:35:54
+  Component ocelot-autoscan:src/Ocelot/Configuration/Validator/ReRouteFluentValidator.cs Issue AYURVP2tozEprKvtb014 Rule csharpsquid:S4058 Range 42:42:35:60
+  Component ocelot-autoscan:src/Ocelot/Configuration/Validator/ReRouteFluentValidator.cs Issue AYURVP2tozEprKvtb015 Rule csharpsquid:S4058 Range 42:42:65:89
+  Component ocelot-autoscan:src/Ocelot/Configuration/Validator/ReRouteFluentValidator.cs Issue AYURVP2tozEprKvtb016 Rule csharpsquid:S4058 Range 49:49:35:54
+  Component ocelot-autoscan:src/Ocelot/Configuration/Validator/ReRouteFluentValidator.cs Issue AYURVP2tozEprKvtb018 Rule csharpsquid:S4058 Range 57:57:35:60
+  Component ocelot-autoscan:src/Ocelot/Configuration/Validator/ReRouteFluentValidator.cs Issue AYURVP2tozEprKvtb019 Rule csharpsquid:S4058 Range 57:57:65:89
+  Component ocelot-autoscan:src/Ocelot/Configuration/Creator/UpstreamTemplatePatternCreator.cs Issue AYURVPy4ozEprKvtb0xn Rule csharpsquid:S4058 Range 41:41:16:46
+  Component ocelot-autoscan:src/Ocelot/Configuration/Creator/UpstreamTemplatePatternCreator.cs Issue AYURVPy4ozEprKvtb0xo Rule csharpsquid:S4058 Range 44:44:35:71
+  Component ocelot-autoscan:src/Ocelot/Configuration/Creator/UpstreamTemplatePatternCreator.cs Issue AYURVPy4ozEprKvtb0xt Rule csharpsquid:S4058 Range 53:53:39:113
+  Component ocelot-autoscan:src/Ocelot/Configuration/Creator/UpstreamTemplatePatternCreator.cs Issue AYURVPy4ozEprKvtb0xu Rule csharpsquid:S4058 Range 57:57:39:134
+  Component ocelot-autoscan:src/Ocelot/DownstreamRouteFinder/UrlMatcher/UrlPathPlaceholderNameAndValueFinder.cs Issue AYURVQBGozEprKvtb1AN Rule csharpsquid:S4058 Range 81:81:20:76
+  Component ocelot-autoscan:src/Ocelot/DownstreamRouteFinder/UrlMatcher/UrlPathPlaceholderNameAndValueFinder.cs Issue AYURVQBGozEprKvtb1AO Rule csharpsquid:S4058 Range 86:86:20:79
+  Component ocelot-autoscan:src/Ocelot/DownstreamRouteFinder/UrlMatcher/UrlPathPlaceholderNameAndValueFinder.cs Issue AYURVQBGozEprKvtb1AW Rule csharpsquid:S4058 Range 91:91:19:78
+Rule: csharpsquid:S4136 (size: 2):
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/ServiceEventSource.cs Issue AYURVQNQozEprKvtb1Jn Rule csharpsquid:S4136 Range 29:29:20:27
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationService/ServiceEventSource.cs Issue AYURVQMrozEprKvtb1Io Rule csharpsquid:S4136 Range 47:47:20:27
+Rule: csharpsquid:S3445 (size: 1):
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/Program.cs Issue AYURVQNCozEprKvtb1JI Rule csharpsquid:S3445 Range 47:47:16:25
+Rule: csharpsquid:S2933 (size: 3):
+  Component ocelot-autoscan:samples/OcelotGraphQL/Program.cs Issue AYURVQNrozEprKvtb1KG Rule csharpsquid:S2933 Range 31:31:27:34
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/ServiceEventListener.cs Issue AYURVQNLozEprKvtb1JX Rule csharpsquid:S2933 Range 27:27:23:31
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationApiGateway/ServiceEventListener.cs Issue AYURVQNLozEprKvtb1JY Rule csharpsquid:S2933 Range 28:28:23:31
+Rule: csharpsquid:S2955 (size: 1):
+  Component ocelot-autoscan:src/Ocelot/Middleware/Pipeline/OcelotPipelineBuilderExtensions.cs Issue AYURVP9UozEprKvtb08G Rule csharpsquid:S2955 Range 229:229:27:31
+
+====== Missing issues ======
+Rule: external_roslyn:CS0414 (size: 2):
+  Component ocelot:test/Ocelot.UnitTests/DependencyInjection/OcelotBuilderTests.cs Issue AW6i-UCnmkQnGWm-CPQ5 Rule external_roslyn:CS0414 Range 27:27:29:40
+  Component ocelot:test/Ocelot.UnitTests/Configuration/RateLimitOptionsCreatorTests.cs Issue AW6i-UB7mkQnGWm-CPQ4 Rule external_roslyn:CS0414 Range 19:19:21:29
+Rule: external_roslyn:CS1998 (size: 2):
+  Component ocelot:test/Ocelot.AcceptanceTests/ResponseCodeTests.cs Issue AW6i-UGFmkQnGWm-CPRA Rule external_roslyn:CS1998 Range 56:56:91:93
+  Component ocelot:src/Ocelot/LoadBalancer/LoadBalancers/LoadBalancerFactory.cs Issue AWgY_a-tp_lYKo4e25kV Rule external_roslyn:CS1998 Range 18:18:51:54
+Rule: csharpsquid:S1449 (size: 1):
+  Component ocelot:src/Ocelot/Configuration/Validator/FileConfigurationFluentValidator.cs Issue AWgY_a3Ep_lYKo4e25dV Rule csharpsquid:S1449 Range 139:139:111:118
+Rule: external_roslyn:CS0649 (size: 4):
+  Component ocelot:test/Ocelot.UnitTests/DownstreamRouteFinder/DownstreamRouteFinderTests.cs Issue AW6i-UDfmkQnGWm-CPQ7 Rule external_roslyn:CS0649 Range 28:28:23:37
+  Component ocelot:test/Ocelot.Benchmarks/UrlPathToUrlPathTemplateMatcherBenchmarks.cs Issue AWgY_aoXp_lYKo4e25S0 Rule external_roslyn:CS0649 Range 17:17:23:37
+  Component ocelot:test/Ocelot.UnitTests/Configuration/FileConfigurationPollerTests.cs Issue AW6i-UAHmkQnGWm-CPQz Rule external_roslyn:CS0649 Range 29:29:39:54
+  Component ocelot:test/Ocelot.UnitTests/DownstreamRouteFinder/DownstreamRouteCreatorTests.cs Issue AW6i-UDTmkQnGWm-CPQ6 Rule external_roslyn:CS0649 Range 31:31:23:37
+Rule: csharpsquid:S1128 (size: 135):
+  Component ocelot:src/Ocelot/DownstreamRouteFinder/Middleware/DownstreamRouteFinderMiddlewareExtensions.cs Issue AW11Z14dpRghTRB9dztg Rule csharpsquid:S1128 Range 1:1:0:35
+  Component ocelot:src/Ocelot/Headers/RemoveOutputHeaders.cs Issue AW11Z2BcpRghTRB9dzts Rule csharpsquid:S1128 Range 4:4:0:36
+  Component ocelot:src/Ocelot/Responder/IHttpResponder.cs Issue AW11Z17bpRghTRB9dztk Rule csharpsquid:S1128 Range 4:4:0:36
+  Component ocelot:src/Ocelot/RateLimit/RateLimitCounter.cs Issue AW11Z1vApRghTRB9dztP Rule csharpsquid:S1128 Range 4:4:0:29
+  Component ocelot:src/Ocelot/Infrastructure/RequestData/HttpDataRepository.cs Issue AW11Z1l7pRghTRB9dzs8 Rule csharpsquid:S1128 Range 4:4:0:20
+  Component ocelot:src/Ocelot/Configuration/File/FileSecurityOptions.cs Issue AW11Z1NhpRghTRB9dzss Rule csharpsquid:S1128 Range 1:1:0:13
+  Component ocelot:test/Ocelot.Benchmarks/ExceptionHandlerMiddlewareBenchmarks.cs Issue AW11Z2WopRghTRB9dzui Rule csharpsquid:S1128 Range 13:13:0:32
+  Component ocelot:src/Ocelot/Security/ISecurityPolicy.cs Issue AW11Z2N-pRghTRB9dzuH Rule csharpsquid:S1128 Range 5:5:0:18
+  Component ocelot:src/Ocelot/Responder/Middleware/ResponderMiddlewareExtensions.cs Issue AW11Z17tpRghTRB9dztl Rule csharpsquid:S1128 Range 1:1:0:35
+  Component ocelot:src/Ocelot/Headers/Middleware/ClaimsToHeadersMiddleware.cs Issue AW11Z1_spRghTRB9dztq Rule csharpsquid:S1128 Range 5:5:0:40
+  Component ocelot:src/Ocelot/Configuration/Parser/ClaimToThingConfigurationParser.cs Issue AW11Z1WwpRghTRB9dzsy Rule csharpsquid:S1128 Range 4:4:0:20
+  Component ocelot:src/Ocelot/RateLimit/IRateLimitCounterHandler.cs Issue AW11Z1uvpRghTRB9dztM Rule csharpsquid:S1128 Range 4:4:0:29
+  Component ocelot:src/Ocelot/RateLimit/DistributedCacheRateLimitCounterHanlder.cs Issue AW11Z1vzpRghTRB9dztU Rule csharpsquid:S1128 Range 6:6:0:29
+  Component ocelot:src/Ocelot/RateLimit/RateLimitCore.cs Issue AW11Z1t5pRghTRB9dztC Rule csharpsquid:S1128 Range 9:9:0:29
+  Component ocelot:src/Ocelot/Configuration/File/FileRateLimitOptions.cs Issue AW11Z1L2pRghTRB9dzso Rule csharpsquid:S1128 Range 1:1:0:13
+  Component ocelot:src/Ocelot/RateLimit/MemoryCacheRateLimitCounterHandler.cs Issue AW11Z1uMpRghTRB9dztD Rule csharpsquid:S1128 Range 3:3:0:33
+  Component ocelot:src/Ocelot/Configuration/RateLimitOptions.cs Issue AW11Z1bHpRghTRB9dzs3 Rule csharpsquid:S1128 Range 3:3:0:29
+  Component ocelot:src/Ocelot/Headers/IAddHeadersToRequest.cs Issue AW11Z2CEpRghTRB9dztv Rule csharpsquid:S1128 Range 10:10:4:44
+  Component ocelot:test/Ocelot.Benchmarks/DownstreamRouteFinderMiddlewareBenchmarks.cs Issue AW11Z2WTpRghTRB9dzuW Rule csharpsquid:S1128 Range 12:12:0:22
+  Component ocelot:src/Ocelot/Configuration/RateLimitRule.cs Issue AW11Z1YhpRghTRB9dzsz Rule csharpsquid:S1128 Range 1:1:0:13
+  Component ocelot:src/Ocelot/Requester/IHttpClient.cs Issue AW11Z1e0pRghTRB9dzs5 Rule csharpsquid:S1128 Range 1:1:0:13
+  Component ocelot:src/Ocelot/Configuration/Creator/IHeaderFindAndReplaceCreator.cs Issue AW11Z1FXpRghTRB9dzsj Rule csharpsquid:S1128 Range 1:1:0:33
+  Component ocelot:src/Ocelot/QueryStrings/AddQueriesToRequest.cs Issue AW11Z2KApRghTRB9dzt- Rule csharpsquid:S1128 Range 8:8:0:22
+  Component ocelot:test/Ocelot.Benchmarks/DownstreamRouteFinderMiddlewareBenchmarks.cs Issue AW11Z2WTpRghTRB9dzub Rule csharpsquid:S1128 Range 21:21:0:40
+  Component ocelot:src/Ocelot/RateLimit/RateLimitHeaders.cs Issue AW11Z1uepRghTRB9dztI Rule csharpsquid:S1128 Range 4:4:0:18
+  Component ocelot:src/Ocelot/Configuration/Creator/SecurityOptionsCreator.cs Issue AW11Z1HzpRghTRB9dzsl Rule csharpsquid:S1128 Range 2:2:0:33
+  Component ocelot:test/Ocelot.Benchmarks/DownstreamRouteFinderMiddlewareBenchmarks.cs Issue AW11Z2WTpRghTRB9dzuX Rule csharpsquid:S1128 Range 13:13:0:32
+  Component ocelot:src/Ocelot/Configuration/RateLimitOptions.cs Issue AW11Z1bHpRghTRB9dzs2 Rule csharpsquid:S1128 Range 2:2:0:18
+  Component ocelot:src/Ocelot/ServiceDiscovery/ServiceDiscoveryProviderFactory.cs Issue AW11Z2GppRghTRB9dzt1 Rule csharpsquid:S1128 Range 10:10:4:22
+  Component ocelot:src/Ocelot/Claims/Middleware/ClaimsBuilderMiddlewareExtensions.cs Issue AW11Z2IWpRghTRB9dzt2 Rule csharpsquid:S1128 Range 1:1:0:35
+  Component ocelot:src/Ocelot/Configuration/File/FileRateLimitOptions.cs Issue AW11Z1L2pRghTRB9dzsp Rule csharpsquid:S1128 Range 2:2:0:33
+  Component ocelot:src/Ocelot/LoadBalancer/LoadBalancers/CookieStickySessions.cs Issue AW11Z2MppRghTRB9dzuC Rule csharpsquid:S1128 Range 5:5:4:37
+  Component ocelot:src/Ocelot/Security/Middleware/SecurityMiddlewareExtensions.cs Issue AW11Z2OdpRghTRB9dzuK Rule csharpsquid:S1128 Range 4:4:0:18
+  Component ocelot:src/Ocelot/DownstreamRouteFinder/Middleware/DownstreamRouteFinderMiddleware.cs Issue AW11Z14wpRghTRB9dzth Rule csharpsquid:S1128 Range 3:3:0:38
+  Component ocelot:src/Ocelot/Infrastructure/Claims/Parser/ClaimsParser.cs Issue AW11Z1kMpRghTRB9dzs6 Rule csharpsquid:S1128 Range 3:3:4:17
+  Component ocelot:src/Ocelot/RateLimit/RateLimitCounter.cs Issue AW11Z1vApRghTRB9dztO Rule csharpsquid:S1128 Range 3:3:0:18
+  Component ocelot:src/Ocelot/Configuration/Creator/HeaderFindAndReplaceCreator.cs Issue AW11Z1ILpRghTRB9dzsn Rule csharpsquid:S1128 Range 7:7:0:24
+  Component ocelot:src/Ocelot/Headers/IAddHeadersToRequest.cs Issue AW11Z2CEpRghTRB9dztu Rule csharpsquid:S1128 Range 6:6:4:26
+  Component ocelot:test/Ocelot.Benchmarks/ExceptionHandlerMiddlewareBenchmarks.cs Issue AW11Z2WopRghTRB9dzuh Rule csharpsquid:S1128 Range 12:12:0:22
+  Component ocelot:src/Ocelot/Headers/AddHeadersToRequest.cs Issue AW11Z2AkpRghTRB9dztr Rule csharpsquid:S1128 Range 13:13:4:28
+  Component ocelot:src/Ocelot/Claims/Middleware/ClaimsToClaimsMiddleware.cs Issue AW11Z2IppRghTRB9dzt5 Rule csharpsquid:S1128 Range 5:5:0:40
+  Component ocelot:src/Ocelot/Request/Middleware/DownstreamRequestInitialiserMiddleware.cs Issue AW11Z1yDpRghTRB9dzta Rule csharpsquid:S1128 Range 6:6:4:44
+  Component ocelot:src/Ocelot/Headers/IAddHeadersToResponse.cs Issue AW11Z2BtpRghTRB9dztt Rule csharpsquid:S1128 Range 7:7:4:40
+  Component ocelot:src/Ocelot/DownstreamUrlCreator/Middleware/DownstreamUrlCreatorMiddlewareExtensions.cs Issue AW11Z198pRghTRB9dztm Rule csharpsquid:S1128 Range 1:1:0:35
+  Component ocelot:src/Ocelot/Cache/Middleware/OutputCacheMiddlewareExtensions.cs Issue AW11Z10UpRghTRB9dztb Rule csharpsquid:S1128 Range 1:1:0:35
+  Component ocelot:src/Ocelot/Configuration/Creator/SecurityOptionsCreator.cs Issue AW11Z1HzpRghTRB9dzsk Rule csharpsquid:S1128 Range 1:1:0:13
+  Component ocelot:test/Ocelot.Benchmarks/DownstreamRouteFinderMiddlewareBenchmarks.cs Issue AW11Z2WTpRghTRB9dzuY Rule csharpsquid:S1128 Range 14:14:0:46
+  Component ocelot:src/Ocelot/Authorisation/Middleware/AuthorisationMiddleware.cs Issue AW11Z167pRghTRB9dztj Rule csharpsquid:S1128 Range 5:5:4:17
+  Component ocelot:src/Ocelot/Claims/Middleware/ClaimsToClaimsMiddleware.cs Issue AW11Z2IppRghTRB9dzt3 Rule csharpsquid:S1128 Range 3:3:0:32
+  Component ocelot:src/Ocelot/QueryStrings/IAddQueriesToRequest.cs Issue AW11Z2KSpRghTRB9dzt_ Rule csharpsquid:S1128 Range 2:2:0:32
+  Component ocelot:test/Ocelot.Benchmarks/DownstreamRouteFinderMiddlewareBenchmarks.cs Issue AW11Z2WTpRghTRB9dzuZ Rule csharpsquid:S1128 Range 17:17:0:22
+  Component ocelot:src/Ocelot/Configuration/Creator/ISecurityOptionsCreator.cs Issue AW11Z1CWpRghTRB9dzsg Rule csharpsquid:S1128 Range 3:3:0:33
+  Component ocelot:src/Ocelot/RateLimit/RateLimitHeaders.cs Issue AW11Z1uepRghTRB9dztJ Rule csharpsquid:S1128 Range 5:5:0:29
+  Component ocelot:src/Ocelot/Request/Middleware/HttpRequestBuilderMiddlewareExtensions.cs Issue AW11Z1xxpRghTRB9dztY Rule csharpsquid:S1128 Range 1:1:0:35
+  Component ocelot:src/Ocelot/RateLimit/ClientRateLimitProcessor.cs Issue AW11Z1wTpRghTRB9dztV Rule csharpsquid:S1128 Range 4:4:0:33
+  Component ocelot:test/Ocelot.Benchmarks/ExceptionHandlerMiddlewareBenchmarks.cs Issue AW11Z2WopRghTRB9dzuj Rule csharpsquid:S1128 Range 14:14:0:46
+  Component ocelot:src/Ocelot/QueryStrings/Middleware/ClaimsToQueryStringMiddleware.cs Issue AW11Z2JZpRghTRB9dzt7 Rule csharpsquid:S1128 Range 7:7:4:44
+  Component ocelot:src/Ocelot/Claims/Middleware/ClaimsToClaimsMiddleware.cs Issue AW11Z2IppRghTRB9dzt4 Rule csharpsquid:S1128 Range 4:4:0:46
+  Component ocelot:test/Ocelot.Benchmarks/ExceptionHandlerMiddlewareBenchmarks.cs Issue AW11Z2WopRghTRB9dzuk Rule csharpsquid:S1128 Range 17:17:0:22
+  Component ocelot:src/Ocelot/RateLimit/DistributedCacheRateLimitCounterHanlder.cs Issue AW11Z1vzpRghTRB9dztS Rule csharpsquid:S1128 Range 4:4:0:33
+  Component ocelot:src/Ocelot/Errors/Middleware/ExceptionHandlerMiddlewareExtensions.cs Issue AW11Z2DwpRghTRB9dzty Rule csharpsquid:S1128 Range 1:1:0:35
+  Component ocelot:src/Ocelot/Configuration/File/FileRateLimitRule.cs Issue AW11Z1OMpRghTRB9dzsu Rule csharpsquid:S1128 Range 3:3:0:18
+  Component ocelot:src/Ocelot/QueryStrings/IAddQueriesToRequest.cs Issue AW11Z2KSpRghTRB9dzuA Rule csharpsquid:S1128 Range 5:5:0:22
+  Component ocelot:src/Ocelot/Configuration/Creator/ISecurityOptionsCreator.cs Issue AW11Z1CWpRghTRB9dzsf Rule csharpsquid:S1128 Range 2:2:0:13
+  Component ocelot:src/Ocelot/RateLimit/IRateLimitCounterHandler.cs Issue AW11Z1uvpRghTRB9dztL Rule csharpsquid:S1128 Range 3:3:0:18
+  Component ocelot:src/Ocelot/DependencyInjection/ServiceCollectionExtensions.cs Issue AW11Z2EcpRghTRB9dztz Rule csharpsquid:S1128 Range 1:1:0:13
+  Component ocelot:test/Ocelot.Benchmarks/Properties/AssemblyInfo.cs Issue AW11Z2VjpRghTRB9dzuQ Rule csharpsquid:S1128 Range 2:2:0:38
+  Component ocelot:src/Ocelot/Headers/IRemoveOutputHeaders.cs Issue AW11Z2CVpRghTRB9dztw Rule csharpsquid:S1128 Range 3:3:0:36
+  Component ocelot:src/Ocelot/QueryStrings/AddQueriesToRequest.cs Issue AW11Z2KApRghTRB9dzt9 Rule csharpsquid:S1128 Range 3:3:0:32
+  Component ocelot:src/Ocelot/Configuration/File/FileSecurityOptions.cs Issue AW11Z1NhpRghTRB9dzst Rule csharpsquid:S1128 Range 3:3:0:18
+  Component ocelot:src/Ocelot/Security/Middleware/SecurityMiddlewareExtensions.cs Issue AW11Z2OdpRghTRB9dzuJ Rule csharpsquid:S1128 Range 3:3:0:33
+  Component ocelot:src/Ocelot/RateLimit/MemoryCacheRateLimitCounterHandler.cs Issue AW11Z1uMpRghTRB9dztF Rule csharpsquid:S1128 Range 5:5:0:29
+  Component ocelot:src/Ocelot/RateLimit/RateLimitCounter.cs Issue AW11Z1vApRghTRB9dztN Rule csharpsquid:S1128 Range 2:2:0:33
+  Component ocelot:test/Ocelot.Benchmarks/ExceptionHandlerMiddlewareBenchmarks.cs Issue AW11Z2WopRghTRB9dzug Rule csharpsquid:S1128 Range 11:11:0:35
+  Component ocelot:src/Ocelot/Configuration/Creator/IAuthenticationOptionsCreator.cs Issue AW11Z1DVpRghTRB9dzsi Rule csharpsquid:S1128 Range 1:1:0:33
+  Component ocelot:src/Ocelot/Headers/Middleware/HttpHeadersTransformationMiddlewareExtensions.cs Issue AW11Z1_bpRghTRB9dzto Rule csharpsquid:S1128 Range 1:1:0:35
+  Component ocelot:src/Ocelot/RateLimit/Middleware/ClientRateLimitMiddleware.cs Issue AW11Z1vfpRghTRB9dztQ Rule csharpsquid:S1128 Range 6:6:0:40
+  Component ocelot:src/Ocelot/Security/IPSecurity/IPSecurityPolicy.cs Issue AW11Z2OupRghTRB9dzuL Rule csharpsquid:S1128 Range 1:1:0:13
+  Component ocelot:src/Ocelot/RateLimit/Middleware/ClientRateLimitMiddleware.cs Issue AW11Z1vfpRghTRB9dztR Rule csharpsquid:S1128 Range 10:10:0:46
+  Component ocelot:src/Ocelot/Authorisation/Middleware/AuthorisationMiddleware.cs Issue AW11Z167pRghTRB9dzti Rule csharpsquid:S1128 Range 3:3:4:37
+  Component ocelot:test/Ocelot.Benchmarks/DownstreamRouteFinderMiddlewareBenchmarks.cs Issue AW11Z2WTpRghTRB9dzuS Rule csharpsquid:S1128 Range 3:3:0:16
+  Component ocelot:src/Ocelot/RateLimit/IRateLimitCounterHandler.cs Issue AW11Z1uvpRghTRB9dztK Rule csharpsquid:S1128 Range 2:2:0:33
+  Component ocelot:src/Ocelot/Configuration/File/FileRateLimitOptions.cs Issue AW11Z1L2pRghTRB9dzsq Rule csharpsquid:S1128 Range 3:3:0:18
+  Component ocelot:src/Ocelot/Configuration/SecurityOptions.cs Issue AW11Z1ZqpRghTRB9dzs1 Rule csharpsquid:S1128 Range 3:3:0:18
+  Component ocelot:src/Ocelot/RateLimit/RateLimitCore.cs Issue AW11Z1t5pRghTRB9dztB Rule csharpsquid:S1128 Range 6:6:0:18
+  Component ocelot:src/Ocelot/RequestId/Middleware/RequestIdMiddlewareExtensions.cs Issue AW11Z2DNpRghTRB9dztx Rule csharpsquid:S1128 Range 1:1:0:35
+  Component ocelot:src/Ocelot/Configuration/File/FileRateLimitOptions.cs Issue AW11Z1L2pRghTRB9dzsr Rule csharpsquid:S1128 Range 4:4:0:29
+  Component ocelot:src/Ocelot/Configuration/Parser/ClaimToThingConfigurationParser.cs Issue AW11Z1WwpRghTRB9dzsx Rule csharpsquid:S1128 Range 2:2:0:33
+  Component ocelot:src/Ocelot/QueryStrings/Middleware/ClaimsToQueryStringMiddleware.cs Issue AW11Z2JZpRghTRB9dzt6 Rule csharpsquid:S1128 Range 6:6:4:50
+  Component ocelot:src/Ocelot/LoadBalancer/LoadBalancers/LeastConnection.cs Issue AW11Z2KlpRghTRB9dzuB Rule csharpsquid:S1128 Range 5:5:0:20
+  Component ocelot:test/Ocelot.Benchmarks/AllTheThingsBenchmarks.cs Issue AW11Z2W_pRghTRB9dzul Rule csharpsquid:S1128 Range 14:14:0:46
+  Component ocelot:src/Ocelot/RateLimit/RateLimitHeaders.cs Issue AW11Z1uepRghTRB9dztG Rule csharpsquid:S1128 Range 2:2:0:13
+  Component ocelot:src/Ocelot/Authentication/Middleware/AuthenticationMiddleware.cs Issue AW11Z2PApRghTRB9dzuN Rule csharpsquid:S1128 Range 1:1:0:33
+  Component ocelot:src/Ocelot/Configuration/Repository/FileConfigurationPoller.cs Issue AW11Z1VdpRghTRB9dzsw Rule csharpsquid:S1128 Range 9:9:0:34
+  Component ocelot:test/Ocelot.Benchmarks/DownstreamRouteFinderMiddlewareBenchmarks.cs Issue AW11Z2WTpRghTRB9dzuV Rule csharpsquid:S1128 Range 11:11:0:35
+  Component ocelot:src/Ocelot/Security/Middleware/SecurityMiddlewareExtensions.cs Issue AW11Z2OdpRghTRB9dzuI Rule csharpsquid:S1128 Range 2:2:0:13
+  Component ocelot:src/Ocelot/RateLimit/ClientRateLimitProcessor.cs Issue AW11Z1wTpRghTRB9dztW Rule csharpsquid:S1128 Range 5:5:0:18
+  Component ocelot:test/Ocelot.Benchmarks/DownstreamRouteFinderMiddlewareBenchmarks.cs Issue AW11Z2WTpRghTRB9dzuT Rule csharpsquid:S1128 Range 7:7:0:35
+  Component ocelot:src/Ocelot/RateLimit/MemoryCacheRateLimitCounterHandler.cs Issue AW11Z1uMpRghTRB9dztE Rule csharpsquid:S1128 Range 4:4:0:18
+  Component ocelot:test/Ocelot.Benchmarks/DownstreamRouteFinderMiddlewareBenchmarks.cs Issue AW11Z2WTpRghTRB9dzuU Rule csharpsquid:S1128 Range 8:8:0:35
+  Component ocelot:src/Ocelot/Authentication/Middleware/AuthenticationMiddleware.cs Issue AW11Z2PApRghTRB9dzuO Rule csharpsquid:S1128 Range 5:5:0:20
+  Component ocelot:src/Ocelot/RateLimit/DistributedCacheRateLimitCounterHanlder.cs Issue AW11Z1vzpRghTRB9dztT Rule csharpsquid:S1128 Range 5:5:0:18
+  Component ocelot:src/Ocelot/Security/IPSecurity/IPSecurityPolicy.cs Issue AW11Z2OupRghTRB9dzuM Rule csharpsquid:S1128 Range 4:4:0:18
+  Component ocelot:src/Ocelot/RateLimit/RateLimitHeaders.cs Issue AW11Z1uepRghTRB9dztH Rule csharpsquid:S1128 Range 3:3:0:33
+  Component ocelot:src/Ocelot/DownstreamRouteFinder/Finder/IDownstreamRouteProvider.cs Issue AW11Z125pRghTRB9dztf Rule csharpsquid:S1128 Range 1:1:0:29
+  Component ocelot:src/Ocelot/Headers/Middleware/ClaimsToHeadersMiddleware.cs Issue AW11Z1_spRghTRB9dztp Rule csharpsquid:S1128 Range 4:4:0:46
+  Component ocelot:src/Ocelot/Configuration/Creator/SecurityOptionsCreator.cs Issue AW11Z1HzpRghTRB9dzsm Rule csharpsquid:S1128 Range 3:3:0:18
+  Component ocelot:test/Ocelot.Benchmarks/DownstreamRouteFinderMiddlewareBenchmarks.cs Issue AW11Z2WTpRghTRB9dzuc Rule csharpsquid:S1128 Range 23:23:0:31
+  Component ocelot:test/Ocelot.Benchmarks/AllTheThingsBenchmarks.cs Issue AW11Z2W_pRghTRB9dzum Rule csharpsquid:S1128 Range 19:19:0:38
+  Component ocelot:test/Ocelot.Benchmarks/UrlPathToUrlPathTemplateMatcherBenchmarks.cs Issue AW11Z2V1pRghTRB9dzuR Rule csharpsquid:S1128 Range 1:1:0:13
+  Component ocelot:src/Ocelot/Infrastructure/Extensions/ErrorListExtensions.cs Issue AW11Z1mypRghTRB9dzs- Rule csharpsquid:S1128 Range 5:5:0:38
+  Component ocelot:src/Ocelot/Infrastructure/IPlaceholders.cs Issue AW11Z1k2pRghTRB9dzs7 Rule csharpsquid:S1128 Range 1:1:0:22
+  Component ocelot:src/Ocelot/RateLimit/RateLimitCore.cs Issue AW11Z1t5pRghTRB9dztA Rule csharpsquid:S1128 Range 4:4:0:33
+  Component ocelot:test/Ocelot.Benchmarks/ExceptionHandlerMiddlewareBenchmarks.cs Issue AW11Z2WopRghTRB9dzuf Rule csharpsquid:S1128 Range 8:8:0:35
+  Component ocelot:src/Ocelot/DownstreamRouteFinder/Finder/DownstreamRouteCreator.cs Issue AW11Z11tpRghTRB9dztd Rule csharpsquid:S1128 Range 9:9:4:29
+  Component ocelot:src/Ocelot/Configuration/SecurityOptions.cs Issue AW11Z1ZqpRghTRB9dzs0 Rule csharpsquid:S1128 Range 1:1:0:13
+  Component ocelot:src/Ocelot/Cache/RegionCreator.cs Issue AW11Z11ApRghTRB9dztc Rule csharpsquid:S1128 Range 2:2:0:27
+  Component ocelot:test/Ocelot.Benchmarks/ExceptionHandlerMiddlewareBenchmarks.cs Issue AW11Z2WopRghTRB9dzue Rule csharpsquid:S1128 Range 7:7:0:35
+  Component ocelot:src/Ocelot/Requester/Middleware/HttpRequesterMiddlewareExtensions.cs Issue AW11Z1cypRghTRB9dzs4 Rule csharpsquid:S1128 Range 1:1:0:35
+  Component ocelot:src/Ocelot/LoadBalancer/LoadBalancers/CookieStickySessions.cs Issue AW11Z2MppRghTRB9dzuD Rule csharpsquid:S1128 Range 6:6:4:27
+  Component ocelot:test/Ocelot.Benchmarks/DownstreamRouteFinderMiddlewareBenchmarks.cs Issue AW11Z2WTpRghTRB9dzua Rule csharpsquid:S1128 Range 20:20:0:38
+  Component ocelot:src/Ocelot/QueryStrings/Middleware/ClaimsToQueryStringMiddlewareExtensions.cs Issue AW11Z2JtpRghTRB9dzt8 Rule csharpsquid:S1128 Range 3:3:4:39
+  Component ocelot:src/Ocelot/Configuration/File/FileRateLimitRule.cs Issue AW11Z1OMpRghTRB9dzsv Rule csharpsquid:S1128 Range 5:5:0:29
+  Component ocelot:src/Ocelot/RateLimit/ClientRateLimitProcessor.cs Issue AW11Z1wTpRghTRB9dztX Rule csharpsquid:S1128 Range 6:6:0:29
+  Component ocelot:src/Ocelot/Security/ISecurityPolicy.cs Issue AW11Z2N-pRghTRB9dzuG Rule csharpsquid:S1128 Range 4:4:0:33
+  Component ocelot:src/Ocelot/DownstreamRouteFinder/Finder/DownstreamRouteFinder.cs Issue AW11Z11_pRghTRB9dzte Rule csharpsquid:S1128 Range 5:5:0:20
+  Component ocelot:src/Ocelot/LoadBalancer/Middleware/LoadBalancingMiddlewareExtensions.cs Issue AW11Z2NspRghTRB9dzuE Rule csharpsquid:S1128 Range 1:1:0:35
+  Component ocelot:src/Ocelot/Configuration/Creator/ISecurityOptionsCreator.cs Issue AW11Z1CWpRghTRB9dzsh Rule csharpsquid:S1128 Range 4:4:0:18
+  Component ocelot:src/Ocelot/Security/ISecurityPolicy.cs Issue AW11Z2N-pRghTRB9dzuF Rule csharpsquid:S1128 Range 3:3:0:13
+  Component ocelot:src/Ocelot/Headers/Middleware/ClaimsToHeadersMiddlewareExtensions.cs Issue AW11Z1_IpRghTRB9dztn Rule csharpsquid:S1128 Range 1:1:0:35
+  Component ocelot:src/Ocelot/Authentication/Middleware/AuthenticationMiddleware.cs Issue AW11Z2PApRghTRB9dzuP Rule csharpsquid:S1128 Range 6:6:0:39
+  Component ocelot:test/Ocelot.Benchmarks/ExceptionHandlerMiddlewareBenchmarks.cs Issue AW11Z2WopRghTRB9dzud Rule csharpsquid:S1128 Range 3:3:0:16
+  Component ocelot:src/Ocelot/Request/Middleware/DownstreamRequestInitialiserMiddleware.cs Issue AW11Z1yDpRghTRB9dztZ Rule csharpsquid:S1128 Range 5:5:4:50
+  Component ocelot:src/Ocelot/Infrastructure/Extensions/ErrorListExtensions.cs Issue AW11Z1mypRghTRB9dzs9 Rule csharpsquid:S1128 Range 4:4:0:18
+  Component ocelot:src/Ocelot/DependencyInjection/IOcelotBuilder.cs Issue AW11Z2FvpRghTRB9dzt0 Rule csharpsquid:S1128 Range 1:1:0:13
+Rule: external_roslyn:SA1025 (size: 4):
+  Component ocelot:test/Ocelot.AcceptanceTests/AggregateTests.cs Issue AXpaSEShmzfLbE2uUGqn Rule external_roslyn:SA1025 Range 59:59:48:50
+  Component ocelot:test/Ocelot.AcceptanceTests/AggregateTests.cs Issue AXpaSEShmzfLbE2uUGqm Rule external_roslyn:SA1025 Range 43:43:48:50
+  Component ocelot:test/Ocelot.AcceptanceTests/AggregateTests.cs Issue AXpaSEShmzfLbE2uUGqo Rule external_roslyn:SA1025 Range 75:75:48:50
+  Component ocelot:test/Ocelot.AcceptanceTests/AggregateTests.cs Issue AXpaSEShmzfLbE2uUGqp Rule external_roslyn:SA1025 Range 91:91:48:50
+Rule: external_roslyn:SA1513 (size: 5):
+  Component ocelot:src/Ocelot/Middleware/Pipeline/OcelotPipelineBuilderExtensions.cs Issue AWgY_bCrp_lYKo4e25oG Rule external_roslyn:SA1513 Range 169:170:13:0
+  Component ocelot:src/Ocelot/Middleware/Pipeline/OcelotPipelineBuilderExtensions.cs Issue AWgY_bCrp_lYKo4e25oH Rule external_roslyn:SA1513 Range 173:174:13:0
+  Component ocelot:src/Ocelot/LoadBalancer/LoadBalancers/LoadBalancerHouse.cs Issue AWgY_a-zp_lYKo4e25kf Rule external_roslyn:SA1513 Range 49:50:17:0
+  Component ocelot:src/Ocelot/LoadBalancer/LoadBalancers/LoadBalancerHouse.cs Issue AWgY_a-zp_lYKo4e25ke Rule external_roslyn:SA1513 Range 37:38:25:0
+  Component ocelot:test/Ocelot.UnitTests/Security/SecurityMiddlewareTests.cs Issue AXpaSEPrmzfLbE2uUGqe Rule external_roslyn:SA1513 Range 46:47:9:0
+Rule: external_roslyn:SA1649 (size: 1):
+  Component ocelot:src/Ocelot/Claims/Middleware/ClaimsBuilderMiddlewareExtensions.cs Issue AWgY_atYp_lYKo4e25VS Rule external_roslyn:SA1649 Range 6:6:24:58
+Rule: external_roslyn:SA1505 (size: 3):
+  Component ocelot:test/Ocelot.AcceptanceTests/ConfigurationReloadTests.cs Issue AXpaSESMmzfLbE2uUGqk Rule external_roslyn:SA1505 Range 53:53:8:9
+  Component ocelot:src/Ocelot/Configuration/Creator/LoadBalancerOptionsCreator.cs Issue AWgY_ay4p_lYKo4e25Zn Rule external_roslyn:SA1505 Range 4:4:0:1
+  Component ocelot:src/Ocelot/Requester/OcelotHttpTracingHandler.cs Issue AWgY_bFvp_lYKo4e25q4 Rule external_roslyn:SA1505 Range 28:28:8:9
+Rule: csharpsquid:S4056 (size: 1):
+  Component ocelot:src/Ocelot/Configuration/Validator/FileConfigurationFluentValidator.cs Issue AWgY_a3Ep_lYKo4e25dT Rule csharpsquid:S4056 Range 139:139:109:120
+Rule: csharpsquid:S3242 (size: 11):
+  Component ocelot:src/Ocelot/LoadBalancer/LoadBalancers/LeastConnection.cs Issue AWgY_a-np_lYKo4e25kJ Rule csharpsquid:S3242 Range 103:103:54:62
+  Component ocelot:src/Ocelot/Requester/DelegatingHandlerHandlerFactory.cs Issue AWgY_bEYp_lYKo4e25p4 Rule csharpsquid:S3242 Range 89:89:109:132
+  Component ocelot:src/Ocelot/Middleware/Pipeline/OcelotPipelineBuilderExtensions.cs Issue AWgY_bCrp_lYKo4e25oA Rule csharpsquid:S3242 Range 119:119:53:71
+  Component ocelot:src/Ocelot/Infrastructure/Extensions/ErrorListExtensions.cs Issue AWgY_a9Zp_lYKo4e25jF Rule csharpsquid:S3242 Range 12:12:60:66
+  Component ocelot:src/Ocelot/Configuration/Validator/FileConfigurationFluentValidator.cs Issue AWgY_a3Ep_lYKo4e25dM Rule csharpsquid:S3242 Range 105:105:111:119
+  Component ocelot:src/Ocelot/Middleware/Pipeline/OcelotPipelineBuilderExtensions.cs Issue AWgY_bCrp_lYKo4e25oD Rule csharpsquid:S3242 Range 127:127:62:80
+  Component ocelot:src/Ocelot/Middleware/Multiplexer/Multiplexer.cs Issue AWgY_bB8p_lYKo4e25nJ Rule csharpsquid:S3242 Range 59:59:96:114
+  Component ocelot:src/Ocelot/Configuration/Validator/FileConfigurationFluentValidator.cs Issue AWgY_a3Ep_lYKo4e25dU Rule csharpsquid:S3242 Range 121:121:30:38
+  Component ocelot:src/Ocelot/Configuration/Validator/FileConfigurationFluentValidator.cs Issue AWgY_a3Ep_lYKo4e25dR Rule csharpsquid:S3242 Range 161:161:39:56
+  Component ocelot:src/Ocelot/Configuration/Validator/FileConfigurationFluentValidator.cs Issue AWgY_a3Ep_lYKo4e25dQ Rule csharpsquid:S3242 Range 150:150:39:56
+  Component ocelot:src/Ocelot/Configuration/Validator/FileConfigurationFluentValidator.cs Issue AWgY_a3Ep_lYKo4e25dO Rule csharpsquid:S3242 Range 113:113:30:38
+Rule: external_roslyn:SA1515 (size: 6):
+  Component ocelot:test/Ocelot.ManualTest/Program.cs Issue AXg6j-VW50Z392C5JYNL Rule external_roslyn:SA1515 Range 41:41:24:26
+  Component ocelot:src/Ocelot/Middleware/OcelotMiddlewareExtensions.cs Issue AWgY_bA8p_lYKo4e25mh Rule external_roslyn:SA1515 Range 79:79:12:14
+  Component ocelot:test/Ocelot.UnitTests/Configuration/Validation/FileConfigurationFluentValidatorTests.cs Issue AXpaSENcmzfLbE2uUGqX Rule external_roslyn:SA1515 Range 36:36:12:14
+  Component ocelot:test/Ocelot.UnitTests/DependencyInjection/ConfigurationBuilderExtensionsTests.cs Issue AXpaSEQLmzfLbE2uUGqg Rule external_roslyn:SA1515 Range 31:31:12:14
+  Component ocelot:test/Ocelot.UnitTests/Configuration/Validation/ReRouteFluentValidatorTests.cs Issue AXpaSENSmzfLbE2uUGqW Rule external_roslyn:SA1515 Range 30:30:12:14
+  Component ocelot:src/Ocelot/Middleware/OcelotPipelineConfiguration.cs Issue AWgY_bBDp_lYKo4e25mk Rule external_roslyn:SA1515 Range 43:43:8:10
+Rule: external_roslyn:SA1129 (size: 1):
+  Component ocelot:test/Ocelot.UnitTests/Configuration/FileConfigurationPollerTests.cs Issue AXpaSEMcmzfLbE2uUGqU Rule external_roslyn:SA1129 Range 45:45:31:54
+Rule: external_roslyn:SA1508 (size: 7):
+  Component ocelot:src/Ocelot/Logging/OcelotDiagnosticListener.cs Issue AWgY_bAMp_lYKo4e25lr Rule external_roslyn:SA1508 Range 19:19:8:9
+  Component ocelot:test/Ocelot.UnitTests/Configuration/SecurityOptionsCreatorTests.cs Issue AXpaSEONmzfLbE2uUGqZ Rule external_roslyn:SA1508 Range 71:71:4:5
+  Component ocelot:test/Ocelot.AcceptanceTests/Steps.cs Issue AXpaSETnmzfLbE2uUGqq Rule external_roslyn:SA1508 Range 802:802:8:9
+  Component ocelot:test/Ocelot.UnitTests/Configuration/ReRouteKeyCreatorTests.cs Issue AXpaSEOpmzfLbE2uUGqb Rule external_roslyn:SA1508 Range 84:84:4:5
+  Component ocelot:test/Ocelot.UnitTests/DownstreamRouteFinder/DownstreamRouteCreatorTests.cs Issue AXpaSEQ4mzfLbE2uUGqi Rule external_roslyn:SA1508 Range 228:228:8:9
+  Component ocelot:src/Ocelot/Infrastructure/Placeholders.cs Issue AWgY_a9Gp_lYKo4e25i1 Rule external_roslyn:SA1508 Range 30:30:12:13
+  Component ocelot:test/Ocelot.UnitTests/Configuration/Validation/FileQoSOptionsFluentValidatorTests.cs Issue AXpaSEM8mzfLbE2uUGqV Rule external_roslyn:SA1508 Range 68:68:8:9
+Rule: external_roslyn:SA1507 (size: 7):
+  Component ocelot:test/Ocelot.UnitTests/Headers/AddHeadersToRequestPlainTests.cs Issue AXpaSERjmzfLbE2uUGqj Rule external_roslyn:SA1507 Range 78:80:0:0
+  Component ocelot:test/Ocelot.AcceptanceTests/ContentTests.cs Issue AXpaSESXmzfLbE2uUGql Rule external_roslyn:SA1507 Range 125:127:0:0
+  Component ocelot:test/Ocelot.UnitTests/Middleware/OcelotPiplineBuilderTests.cs Issue AXpaSEL6mzfLbE2uUGqT Rule external_roslyn:SA1507 Range 81:84:0:0
+  Component ocelot:test/Ocelot.UnitTests/DependencyInjection/ConfigurationBuilderExtensionsTests.cs Issue AXpaSEQLmzfLbE2uUGqh Rule external_roslyn:SA1507 Range 26:28:0:0
+  Component ocelot:test/Ocelot.UnitTests/Responder/HttpContextResponderTests.cs Issue AXpaSEK7mzfLbE2uUGqP Rule external_roslyn:SA1507 Range 68:70:0:0
+  Component ocelot:test/Ocelot.UnitTests/Configuration/SecurityOptionsCreatorTests.cs Issue AXpaSEONmzfLbE2uUGqa Rule external_roslyn:SA1507 Range 51:53:0:0
+  Component ocelot:test/Ocelot.UnitTests/Security/IPSecurityPolicyTests.cs Issue AXpaSEPymzfLbE2uUGqf Rule external_roslyn:SA1507 Range 63:65:0:0
+Rule: external_roslyn:xUnit1004 (size: 1):
+  Component ocelot:test/Ocelot.AcceptanceTests/CustomMiddlewareTests.cs Issue AXpaSETxmzfLbE2uUGqr Rule external_roslyn:xUnit1004 Range 288:288:14:254
+Rule: csharpsquid:S2699 (size: 7):
+  Component ocelot:test/Ocelot.UnitTests/LoadBalancer/CookieStickySessionsTests.cs Issue AXpaSEPcmzfLbE2uUGqd Rule csharpsquid:S2699 Range 90:90:20:34
+  Component ocelot:test/Ocelot.UnitTests/Responder/ResponderMiddlewareTests.cs Issue AXpaSELJmzfLbE2uUGqR Rule csharpsquid:S2699 Range 51:51:20:44
+  Component ocelot:test/Ocelot.UnitTests/Middleware/OcelotPiplineBuilderTests.cs Issue AXpaSEL6mzfLbE2uUGqS Rule csharpsquid:S2699 Range 91:91:20:54
+  Component ocelot:test/Ocelot.UnitTests/Responder/HttpContextResponderTests.cs Issue AXpaSEK7mzfLbE2uUGqO Rule csharpsquid:S2699 Range 85:85:20:49
+  Component ocelot:test/Ocelot.UnitTests/Configuration/HashCreationTests.cs Issue AXpaSEN0mzfLbE2uUGqY Rule csharpsquid:S2699 Range 12:12:20:47
+  Component ocelot:test/Ocelot.UnitTests/LoadBalancer/LeastConnectionTests.cs Issue AXpaSEPVmzfLbE2uUGqc Rule csharpsquid:S2699 Range 31:31:20:68
+  Component ocelot:test/Ocelot.UnitTests/Responder/ResponderMiddlewareTests.cs Issue AXpaSELJmzfLbE2uUGqQ Rule csharpsquid:S2699 Range 42:42:20:48
+Rule: csharpsquid:S2931 (size: 1):
+  Component ocelot:src/Ocelot/Infrastructure/InMemoryBus.cs Issue AWgY_a87p_lYKo4e25ij Rule csharpsquid:S2931 Range 9:9:17:28
+Rule: csharpsquid:S3900 (size: 153):
+  Component ocelot:src/Ocelot/Middleware/Pipeline/OcelotPipelineExtensions.cs Issue AWgY_bCyp_lYKo4e25oJ Rule csharpsquid:S3900 Range 44:44:33:54
+  Component ocelot:src/Ocelot/QueryStrings/AddQueriesToRequest.cs Issue AWgY_bDAp_lYKo4e25oQ Rule csharpsquid:S3900 Range 27:27:65:82
+  Component ocelot:src/Ocelot/Headers/AddHeadersToRequest.cs Issue AWgY_a6-p_lYKo4e25hF Rule csharpsquid:S3900 Range 40:40:29:46
+  Component ocelot:src/Ocelot/Configuration/Creator/SecurityOptionsCreator.cs Issue AWgY_azip_lYKo4e25aT Rule csharpsquid:S3900 Range 12:12:39:54
+  Component ocelot:src/Ocelot/Headers/HttpContextRequestHeaderReplacer.cs Issue AW-SHBmjvNiUxyUYDGx_ Rule csharpsquid:S3900 Range 14:14:19:26
+  Component ocelot:src/Ocelot/LoadBalancer/LoadBalancers/LoadBalancerHouse.cs Issue AW-SHBzTvNiUxyUYDGyA Rule csharpsquid:S3900 Range 58:58:89:96
+  Component ocelot:src/Ocelot/Headers/Middleware/ClaimsToHeadersMiddleware.cs Issue AWgY_a71p_lYKo4e25h3 Rule csharpsquid:S3900 Range 27:27:16:23
+  Component ocelot:src/Ocelot/LoadBalancer/LoadBalancers/LoadBalancerHouse.cs Issue AW-SHBzTvNiUxyUYDGyB Rule csharpsquid:S3900 Range 27:27:47:54
+  Component ocelot:src/Ocelot/Middleware/Pipeline/OcelotPipelineExtensions.cs Issue AWgY_bCyp_lYKo4e25oK Rule csharpsquid:S3900 Range 134:134:19:26
+  Component ocelot:src/Ocelot/Headers/AddHeadersToResponse.cs Issue AWgY_a7Ep_lYKo4e25hR Rule csharpsquid:S3900 Range 23:23:31:41
+  Component ocelot:src/Ocelot/Authentication/Middleware/AuthenticationMiddleware.cs Issue AWgY_aq-p_lYKo4e25Tj Rule csharpsquid:S3900 Range 25:25:16:23
+  Component ocelot:src/Ocelot/RateLimit/RateLimitCore.cs Issue AWgY_bD1p_lYKo4e25o2 Rule csharpsquid:S3900 Range 26:26:23:29
+  Component ocelot:src/Ocelot/Configuration/Creator/LoadBalancerOptionsCreator.cs Issue AWgY_ay4p_lYKo4e25Zl Rule csharpsquid:S3900 Range 11:11:26:33
+  Component ocelot:src/Ocelot/Middleware/OcelotMiddleware.cs Issue AWgY_bAwp_lYKo4e25mG Rule csharpsquid:S3900 Range 29:29:30:35
+  Component ocelot:src/Ocelot/Configuration/Creator/RequestIdKeyCreator.cs Issue AWgY_azLp_lYKo4e25Z5 Rule csharpsquid:S3900 Range 9:9:50:61
+  Component ocelot:src/Ocelot/Headers/AddHeadersToRequest.cs Issue AWgY_a6-p_lYKo4e25hL Rule csharpsquid:S3900 Range 57:57:35:42
+  Component ocelot:src/Ocelot/Configuration/Creator/ClaimsToThingCreator.cs Issue AWgY_awfp_lYKo4e25YA Rule csharpsquid:S3900 Range 23:23:34:49
+  Component ocelot:src/Ocelot/Configuration/Creator/ReRouteKeyCreator.cs Issue AWgY_azQp_lYKo4e25Z_ Rule csharpsquid:S3900 Range 16:16:22:33
+  Component ocelot:src/Ocelot/LoadBalancer/LoadBalancers/CookieStickySessions.cs Issue AWgY_a-Lp_lYKo4e25jy Rule csharpsquid:S3900 Range 48:48:22:29
+  Component ocelot:src/Ocelot/LoadBalancer/LoadBalancers/LoadBalancerFactory.cs Issue AWgY_a-tp_lYKo4e25kT Rule csharpsquid:S3900 Range 29:29:20:27
+  Component ocelot:src/Ocelot/Responder/Middleware/ResponderMiddleware.cs Issue AWgY_bIIp_lYKo4e25sw Rule csharpsquid:S3900 Range 25:25:18:31
+  Component ocelot:src/Ocelot/QueryStrings/Middleware/ClaimsToQueryStringMiddleware.cs Issue AWgY_bDNp_lYKo4e25od Rule csharpsquid:S3900 Range 27:27:16:23
+  Component ocelot:src/Ocelot/RateLimit/Middleware/ClientRateLimitMiddleware.cs Issue AWgY_bEKp_lYKo4e25po Rule csharpsquid:S3900 Range 120:120:47:53
+  Component ocelot:src/Ocelot/Headers/RemoveOutputHeaders.cs Issue AWgY_a7up_lYKo4e25hw Rule csharpsquid:S3900 Range 23:23:12:19
+  Component ocelot:src/Ocelot/DownstreamUrlCreator/Middleware/DownstreamUrlCreatorMiddleware.cs Issue AWgY_a59p_lYKo4e25gQ Rule csharpsquid:S3900 Range 21:21:22:35
+  Component ocelot:src/Ocelot/DownstreamRouteFinder/UrlMatcher/UrlPathPlaceholderNameAndValueFinder.cs Issue AWgY_a5yp_lYKo4e25fz Rule csharpsquid:S3900 Range 19:19:66:78
+  Component ocelot:src/Ocelot/Authorisation/ClaimsAuthoriser.cs Issue AWgY_arSp_lYKo4e25Tw Rule csharpsquid:S3900 Range 22:22:64:79
+  Component ocelot:src/Ocelot/Infrastructure/Extensions/StringExtensions.cs Issue AWgY_a9kp_lYKo4e25jV Rule csharpsquid:S3900 Range 17:17:32:36
+  Component ocelot:src/Ocelot/Authorisation/ClaimsAuthoriser.cs Issue AWgY_arSp_lYKo4e25Tv Rule csharpsquid:S3900 Range 20:20:37:59
+  Component ocelot:src/Ocelot/RateLimit/RateLimitCore.cs Issue AWgY_bD1p_lYKo4e25pA Rule csharpsquid:S3900 Range 105:105:25:31
+  Component ocelot:src/Ocelot/ServiceDiscovery/ServiceDiscoveryProviderFactory.cs Issue AWgY_bJkp_lYKo4e25t0 Rule csharpsquid:S3900 Range 29:29:16:23
+  Component ocelot:src/Ocelot/RateLimit/Middleware/ClientRateLimitMiddleware.cs Issue AWgY_bEKp_lYKo4e25pi Rule csharpsquid:S3900 Range 115:115:121:125
+  Component ocelot:src/Ocelot/Headers/AddHeadersToResponse.cs Issue AWgY_a7Ep_lYKo4e25hS Rule csharpsquid:S3900 Range 39:39:20:28
+  Component ocelot:src/Ocelot/Requester/DelegatingHandlerHandlerFactory.cs Issue AWgY_bEYp_lYKo4e25p1 Rule csharpsquid:S3900 Range 26:26:22:35
+  Component ocelot:src/Ocelot/Configuration/Creator/ClaimsToThingCreator.cs Issue AWgY_awfp_lYKo4e25X9 Rule csharpsquid:S3900 Range 15:15:22:35
+  Component ocelot:src/Ocelot/Configuration/Creator/QoSOptionsCreator.cs Issue AWgY_ay-p_lYKo4e25Zr Rule csharpsquid:S3900 Range 23:23:28:35
+  Component ocelot:src/Ocelot/Security/Middleware/SecurityMiddleware.cs Issue AWgY_bJFp_lYKo4e25ti Rule csharpsquid:S3900 Range 16:16:19:32
+  Component ocelot:src/Ocelot/Request/Creator/DownstreamRequestCreator.cs Issue AWgY_bG_p_lYKo4e25rt Rule csharpsquid:S3900 Range 28:28:20:27
+  Component ocelot:src/Ocelot/DownstreamRouteFinder/Middleware/DownstreamRouteFinderMiddleware.cs Issue AWgY_a5Jp_lYKo4e25fZ Rule csharpsquid:S3900 Range 31:31:34:41
+  Component ocelot:src/Ocelot/Headers/AddHeadersToRequest.cs Issue AWgY_a6-p_lYKo4e25hE Rule csharpsquid:S3900 Range 31:31:35:49
+  Component ocelot:src/Ocelot/Requester/Middleware/HttpRequesterMiddleware.cs Issue AWgY_bGHp_lYKo4e25rH Rule csharpsquid:S3900 Range 35:35:12:19
+  Component ocelot:src/Ocelot/Middleware/Multiplexer/UserDefinedResponseAggregator.cs Issue AWgY_bCOp_lYKo4e25ni Rule csharpsquid:S3900 Range 26:26:16:31
+  Component ocelot:src/Ocelot/Headers/AddHeadersToResponse.cs Issue AWgY_a7Ep_lYKo4e25hT Rule csharpsquid:S3900 Range 35:35:20:28
+  Component ocelot:src/Ocelot/Configuration/Creator/QoSOptionsCreator.cs Issue AWgY_ay-p_lYKo4e25Zt Rule csharpsquid:S3900 Range 30:30:28:35
+  Component ocelot:src/Ocelot/RateLimit/Middleware/ClientRateLimitMiddleware.cs Issue AWgY_bEKp_lYKo4e25pe Rule csharpsquid:S3900 Range 90:90:16:27
+  Component ocelot:src/Ocelot/Logging/OcelotDiagnosticListener.cs Issue AWgY_bAMp_lYKo4e25ll Rule csharpsquid:S3900 Range 31:31:66:73
+  Component ocelot:src/Ocelot/QueryStrings/AddQueriesToRequest.cs Issue AWgY_bDAp_lYKo4e25oR Rule csharpsquid:S3900 Range 29:29:35:49
+  Component ocelot:src/Ocelot/Middleware/Multiplexer/UserDefinedResponseAggregator.cs Issue AWgY_bCOp_lYKo4e25nh Rule csharpsquid:S3900 Range 30:30:16:31
+  Component ocelot:src/Ocelot/Middleware/Multiplexer/Multiplexer.cs Issue AWgY_bB8p_lYKo4e25nF Rule csharpsquid:S3900 Range 19:19:52:59
+  Component ocelot:src/Ocelot/Responder/Middleware/ResponderMiddleware.cs Issue AWgY_bIIp_lYKo4e25s0 Rule csharpsquid:S3900 Range 36:36:16:23
+  Component ocelot:src/Ocelot/Configuration/Creator/HeaderFindAndReplaceCreator.cs Issue AWgY_aw8p_lYKo4e25YY Rule csharpsquid:S3900 Range 28:28:33:44
+  Component ocelot:src/Ocelot/Configuration/Builder/ReRouteBuilder.cs Issue AWgY_av2p_lYKo4e25Xi Rule csharpsquid:S3900 Range 47:47:35:40
+  Component ocelot:src/Ocelot/Configuration/Creator/HttpHandlerOptionsCreator.cs Issue AWgY_axIp_lYKo4e25Yt Rule csharpsquid:S3900 Range 19:19:47:54
+  Component ocelot:src/Ocelot/QueryStrings/Middleware/ClaimsToQueryStringMiddleware.cs Issue AWgY_bDNp_lYKo4e25oa Rule csharpsquid:S3900 Range 19:19:23:36
+  Component ocelot:src/Ocelot/Configuration/Repository/FileConfigurationPoller.cs Issue AWgY_a2Op_lYKo4e25ch Rule csharpsquid:S3900 Range 35:35:22:29
+  Component ocelot:src/Ocelot/RateLimit/RateLimitCore.cs Issue AWgY_bD1p_lYKo4e25o6 Rule csharpsquid:S3900 Range 81:81:23:29
+  Component ocelot:src/Ocelot/Authorisation/Middleware/AuthorisationMiddleware.cs Issue AWgY_asCp_lYKo4e25UN Rule csharpsquid:S3900 Range 21:21:18:31
+  Component ocelot:src/Ocelot/Logging/OcelotDiagnosticListener.cs Issue AWgY_bAMp_lYKo4e25ln Rule csharpsquid:S3900 Range 45:45:60:71
+  Component ocelot:src/Ocelot/Infrastructure/Waiter.cs Issue AWgY_a9Rp_lYKo4e25jA Rule csharpsquid:S3900 Range 37:37:20:29
+  Component ocelot:src/Ocelot/RateLimit/RateLimitCore.cs Issue AWgY_bD1p_lYKo4e25o3 Rule csharpsquid:S3900 Range 73:73:23:29
+  Component ocelot:src/Ocelot/Configuration/Creator/ConfigurationCreator.cs Issue AWgY_awlp_lYKo4e25YG Rule csharpsquid:S3900 Range 34:34:84:101
+  Component ocelot:src/Ocelot/LoadBalancer/Middleware/LoadBalancingMiddleware.cs Issue AWgY_a_ep_lYKo4e25k9 Rule csharpsquid:S3900 Range 17:17:22:35
+  Component ocelot:src/Ocelot/Middleware/OcelotMiddleware.cs Issue AWgY_bAwp_lYKo4e25mF Rule csharpsquid:S3900 Range 21:21:33:39
+  Component ocelot:src/Ocelot/Logging/OcelotDiagnosticListener.cs Issue AWgY_bAMp_lYKo4e25lj Rule csharpsquid:S3900 Range 24:24:68:77
+  Component ocelot:src/Ocelot/RateLimit/Middleware/ClientRateLimitMiddleware.cs Issue AWgY_bEKp_lYKo4e25ph Rule csharpsquid:S3900 Range 115:115:27:35
+  Component ocelot:src/Ocelot/Headers/HttpContextRequestHeaderReplacer.cs Issue AW-SHBmjvNiUxyUYDGx- Rule csharpsquid:S3900 Range 12:12:30:36
+  Component ocelot:src/Ocelot/RateLimit/Middleware/ClientRateLimitMiddleware.cs Issue AWgY_bEKp_lYKo4e25pf Rule csharpsquid:S3900 Range 90:90:58:64
+  Component ocelot:src/Ocelot/DownstreamUrlCreator/UrlTemplateReplacer/DownstreamTemplatePathPlaceholderReplacer.cs Issue AWgY_a6Sp_lYKo4e25gj Rule csharpsquid:S3900 Range 17:17:56:87
+  Component ocelot:src/Ocelot/Headers/HttpResponseHeaderReplacer.cs Issue AW-SHBmNvNiUxyUYDGx9 Rule csharpsquid:S3900 Range 25:25:30:36
+  Component ocelot:src/Ocelot/RateLimit/Middleware/ClientRateLimitMiddleware.cs Issue AWgY_bEKp_lYKo4e25pb Rule csharpsquid:S3900 Range 32:32:26:33
+  Component ocelot:src/Ocelot/Claims/Middleware/ClaimsToClaimsMiddleware.cs Issue AWgY_atep_lYKo4e25VV Rule csharpsquid:S3900 Range 19:19:22:35
+  Component ocelot:src/Ocelot/LoadBalancer/Middleware/LoadBalancingMiddleware.cs Issue AWgY_a_ep_lYKo4e25lC Rule csharpsquid:S3900 Range 25:25:60:67
+  Component ocelot:src/Ocelot/Logging/OcelotDiagnosticListener.cs Issue AWgY_bAMp_lYKo4e25li Rule csharpsquid:S3900 Range 16:16:22:29
+  Component ocelot:src/Ocelot/Infrastructure/Waiter.cs Issue AWgY_a9Rp_lYKo4e25i9 Rule csharpsquid:S3900 Range 21:21:20:29
+  Component ocelot:src/Ocelot/RateLimit/RateLimitCore.cs Issue AWgY_bD1p_lYKo4e25pB Rule csharpsquid:S3900 Range 105:105:57:72
+  Component ocelot:src/Ocelot/Errors/Middleware/ExceptionHandlerMiddleware.cs Issue AWgY_a6sp_lYKo4e25gw Rule csharpsquid:S3900 Range 26:26:23:36
+  Component ocelot:src/Ocelot/RateLimit/Middleware/ClientRateLimitMiddleware.cs Issue AWgY_bEKp_lYKo4e25pm Rule csharpsquid:S3900 Range 104:104:48:63
+  Component ocelot:src/Ocelot/Headers/HttpResponseHeaderReplacer.cs Issue AW-SHBmNvNiUxyUYDGx8 Rule csharpsquid:S3900 Range 22:22:27:34
+  Component ocelot:src/Ocelot/Claims/AddClaimsToRequest.cs Issue AWgY_atLp_lYKo4e25VK Rule csharpsquid:S3900 Range 24:24:51:58
+  Component ocelot:src/Ocelot/DownstreamRouteFinder/Finder/DownstreamRouteFinder.cs Issue AWgY_a4sp_lYKo4e25e- Rule csharpsquid:S3900 Range 25:25:37:50
+  Component ocelot:test/Ocelot.ManualTest/Program.cs Issue AXg6j-VW50Z392C5JYNK Rule csharpsquid:S3900 Range 71:71:30:37
+  Component ocelot:src/Ocelot/Configuration/Creator/UpstreamTemplatePatternCreator.cs Issue AWgY_azup_lYKo4e25ah Rule csharpsquid:S3900 Range 18:18:35:42
+  Component ocelot:src/Ocelot/Configuration/Creator/DownstreamAddressesCreator.cs Issue AWgY_awrp_lYKo4e25YL Rule csharpsquid:S3900 Range 11:11:19:26
+  Component ocelot:src/Ocelot/RateLimit/Middleware/ClientRateLimitMiddleware.cs Issue AWgY_bEKp_lYKo4e25pk Rule csharpsquid:S3900 Range 115:115:275:286
+  Component ocelot:src/Ocelot/DownstreamUrlCreator/UrlTemplateReplacer/DownstreamTemplatePathPlaceholderReplacer.cs Issue AWgY_a6Sp_lYKo4e25gi Rule csharpsquid:S3900 Range 15:15:34:56
+  Component ocelot:src/Ocelot/Requester/QoS/QosFactory.cs Issue AWgY_bGZp_lYKo4e25rS Rule csharpsquid:S3900 Range 30:30:123:130
+  Component ocelot:src/Ocelot/DownstreamRouteFinder/Finder/DownstreamRouteProviderFactory.cs Issue AWgY_a4yp_lYKo4e25fI Rule csharpsquid:S3900 Range 25:25:17:23
+  Component ocelot:src/Ocelot/Headers/Middleware/ClaimsToHeadersMiddleware.cs Issue AWgY_a71p_lYKo4e25h0 Rule csharpsquid:S3900 Range 19:19:22:35
+  Component ocelot:src/Ocelot/RateLimit/RateLimitCore.cs Issue AWgY_bD1p_lYKo4e25pJ Rule csharpsquid:S3900 Range 129:129:20:28
+  Component ocelot:src/Ocelot/Middleware/Pipeline/OcelotPipelineBuilderExtensions.cs Issue AWgY_bCrp_lYKo4e25n4 Rule csharpsquid:S3900 Range 31:31:19:22
+  Component ocelot:src/Ocelot/Configuration/Creator/HttpHandlerOptionsCreator.cs Issue AWgY_axIp_lYKo4e25Yu Rule csharpsquid:S3900 Range 21:21:42:49
+  Component ocelot:src/Ocelot/Middleware/Multiplexer/InMemoryResponseAggregatorFactory.cs Issue AWgY_bBrp_lYKo4e25m4 Rule csharpsquid:S3900 Range 18:18:37:44
+  Component ocelot:src/Ocelot/WebSockets/Middleware/WebSocketsProxyMiddleware.cs Issue AWgY_bKgp_lYKo4e25ul Rule csharpsquid:S3900 Range 63:63:24:31
+  Component ocelot:src/Ocelot/Configuration/Creator/AuthenticationOptionsCreator.cs Issue AWgY_awap_lYKo4e25X4 Rule csharpsquid:S3900 Range 9:9:45:52
+  Component ocelot:src/Ocelot/Authorisation/Middleware/AuthorisationMiddleware.cs Issue AWgY_asCp_lYKo4e25UR Rule csharpsquid:S3900 Range 30:30:37:44
+  Component ocelot:src/Ocelot/DownstreamRouteFinder/Middleware/DownstreamRouteFinderMiddleware.cs Issue AWgY_a5Jp_lYKo4e25fW Rule csharpsquid:S3900 Range 22:22:22:35
+  Component ocelot:src/Ocelot/DownstreamRouteFinder/UrlMatcher/UrlPathPlaceholderNameAndValueFinder.cs Issue AWgY_a5yp_lYKo4e25f0 Rule csharpsquid:S3900 Range 21:21:21:25
+  Component ocelot:src/Ocelot/Headers/AddHeadersToRequest.cs Issue AWgY_a6-p_lYKo4e25hC Rule csharpsquid:S3900 Range 24:24:22:29
+  Component ocelot:src/Ocelot/Configuration/Repository/DiskFileConfigurationRepository.cs Issue AWgY_a2Hp_lYKo4e25cU Rule csharpsquid:S3900 Range 19:19:109:127
+  Component ocelot:src/Ocelot/Logging/OcelotDiagnosticListener.cs Issue AWgY_bAMp_lYKo4e25lo Rule csharpsquid:S3900 Range 52:52:61:70
+  Component ocelot:src/Ocelot/RequestId/Middleware/ReRouteRequestIdMiddleware.cs Issue AWgY_bG3p_lYKo4e25rl Rule csharpsquid:S3900 Range 21:21:23:36
+  Component ocelot:src/Ocelot/RateLimit/Middleware/ClientRateLimitMiddleware.cs Issue AWgY_bEKp_lYKo4e25pp Rule csharpsquid:S3900 Range 124:124:16:27
+  Component ocelot:src/Ocelot/RateLimit/Middleware/ClientRateLimitMiddleware.cs Issue AWgY_bEKp_lYKo4e25pl Rule csharpsquid:S3900 Range 104:104:16:22
+  Component ocelot:src/Ocelot/Headers/Middleware/HttpHeadersTransformationMiddleware.cs Issue AWgY_a8Bp_lYKo4e25iD Rule csharpsquid:S3900 Range 32:32:28:35
+  Component ocelot:src/Ocelot/Request/Middleware/DownstreamRequestInitialiserMiddleware.cs Issue AWgY_bHjp_lYKo4e25sN Rule csharpsquid:S3900 Range 21:21:22:35
+  Component ocelot:src/Ocelot/Responder/HttpContextResponder.cs Issue AWgY_bH2p_lYKo4e25sl Rule csharpsquid:S3900 Range 28:28:40:48
+  Component ocelot:src/Ocelot/Security/IPSecurity/IPSecurityPolicy.cs Issue AWgY_bI3p_lYKo4e25ta Rule csharpsquid:S3900 Range 16:16:33:40
+  Component ocelot:src/Ocelot/RateLimit/RateLimitCore.cs Issue AWgY_bD1p_lYKo4e25pD Rule csharpsquid:S3900 Range 122:122:66:70
+  Component ocelot:src/Ocelot/Claims/AddClaimsToRequest.cs Issue AWgY_atLp_lYKo4e25VJ Rule csharpsquid:S3900 Range 22:22:35:49
+  Component ocelot:src/Ocelot/Configuration/Creator/RateLimitOptionsCreator.cs Issue AWgY_azFp_lYKo4e25Z1 Rule csharpsquid:S3900 Range 13:13:40:59
+  Component ocelot:src/Ocelot/Middleware/OcelotMiddleware.cs Issue AWgY_bAwp_lYKo4e25mH Rule csharpsquid:S3900 Range 30:30:12:19
+  Component ocelot:src/Ocelot/Request/Middleware/DownstreamRequestInitialiserMiddleware.cs Issue AWgY_bHjp_lYKo4e25sR Rule csharpsquid:S3900 Range 30:30:61:68
+  Component ocelot:src/Ocelot/Infrastructure/Extensions/StringValuesExtensions.cs Issue AWgY_a9qp_lYKo4e25ja Rule csharpsquid:S3900 Range 10:10:16:28
+  Component ocelot:src/Ocelot/Cache/Middleware/OutputCacheMiddleware.cs Issue AWgY_as9p_lYKo4e25U8 Rule csharpsquid:S3900 Range 27:27:17:24
+  Component ocelot:src/Ocelot/Logging/OcelotDiagnosticListener.cs Issue AWgY_bAMp_lYKo4e25lm Rule csharpsquid:S3900 Range 38:38:67:74
+  Component ocelot:src/Ocelot/DownstreamUrlCreator/Middleware/DownstreamUrlCreatorMiddleware.cs Issue AWgY_a59p_lYKo4e25gT Rule csharpsquid:S3900 Range 30:30:25:32
+  Component ocelot:src/Ocelot/Configuration/Parser/ClaimToThingConfigurationParser.cs Issue AWgY_a1op_lYKo4e25cA Rule csharpsquid:S3900 Range 19:19:35:40
+  Component ocelot:src/Ocelot/Middleware/Multiplexer/ServiceLocatorDefinedAggregatorProvider.cs Issue AWgY_bCCp_lYKo4e25nR Rule csharpsquid:S3900 Range 21:21:40:47
+  Component ocelot:src/Ocelot/Headers/AddHeadersToResponse.cs Issue AWgY_a7Ep_lYKo4e25hP Rule csharpsquid:S3900 Range 17:17:22:29
+  Component ocelot:src/Ocelot/Requester/DelegatingHandlerHandlerFactory.cs Issue AWgY_bEYp_lYKo4e25p2 Rule csharpsquid:S3900 Range 56:56:16:33
+  Component ocelot:src/Ocelot/DependencyInjection/ConfigurationBuilderExtensions.cs Issue AWgY_a30p_lYKo4e25eN Rule csharpsquid:S3900 Range 27:27:12:19
+  Component ocelot:src/Ocelot/Requester/HttpClientBuilder.cs Issue AWgY_bEjp_lYKo4e25qG Rule csharpsquid:S3900 Range 37:37:24:31
+  Component ocelot:src/Ocelot/RateLimit/Middleware/ClientRateLimitMiddleware.cs Issue AWgY_bEJp_lYKo4e25pV Rule csharpsquid:S3900 Range 23:23:22:35
+  Component ocelot:src/Ocelot/Requester/HttpClientHttpRequester.cs Issue AWgY_bEpp_lYKo4e25qR Rule csharpsquid:S3900 Range 36:36:58:65
+  Component ocelot:src/Ocelot/Logging/OcelotDiagnosticListener.cs Issue AWgY_bAMp_lYKo4e25lk Rule csharpsquid:S3900 Range 25:25:18:25
+  Component ocelot:src/Ocelot/Requester/HttpClientHttpRequester.cs Issue AWgY_bEpp_lYKo4e25qO Rule csharpsquid:S3900 Range 22:22:22:35
+  Component ocelot:src/Ocelot/Configuration/Builder/DownstreamReRouteBuilder.cs Issue AWgY_avkp_lYKo4e25XN Rule csharpsquid:S3900 Range 82:82:35:40
+  Component ocelot:src/Ocelot/Configuration/Creator/QoSOptionsCreator.cs Issue AWgY_ay-p_lYKo4e25Zv Rule csharpsquid:S3900 Range 13:13:53:60
+  Component ocelot:src/Ocelot/DownstreamRouteFinder/Finder/DownstreamRouteProviderFactory.cs Issue AWgY_a4yp_lYKo4e25fH Rule csharpsquid:S3900 Range 17:17:22:29
+  Component ocelot:src/Ocelot/Requester/Middleware/HttpRequesterMiddleware.cs Issue AWgY_bGHp_lYKo4e25rE Rule csharpsquid:S3900 Range 15:15:23:36
+  Component ocelot:src/Ocelot/Configuration/Creator/RequestIdKeyCreator.cs Issue AWgY_azLp_lYKo4e25Z6 Rule csharpsquid:S3900 Range 13:13:18:37
+  Component ocelot:src/Ocelot/Requester/HttpExeptionToErrorMapper.cs Issue AWgY_bE1p_lYKo4e25qZ Rule csharpsquid:S3900 Range 19:19:23:32
+  Component ocelot:src/Ocelot/Configuration/Creator/ReRouteKeyCreator.cs Issue AWgY_azQp_lYKo4e25aA Rule csharpsquid:S3900 Range 13:13:57:68
+  Component ocelot:src/Ocelot/Headers/AddHeadersToRequest.cs Issue AWgY_a6-p_lYKo4e25hK Rule csharpsquid:S3900 Range 55:55:32:39
+  Component ocelot:src/Ocelot/RateLimit/Middleware/ClientRateLimitMiddleware.cs Issue AWgY_bEKp_lYKo4e25pq Rule csharpsquid:S3900 Range 127:127:12:23
+  Component ocelot:src/Ocelot/WebSockets/Middleware/WebSocketsProxyMiddleware.cs Issue AWgY_bKgp_lYKo4e25uc Rule csharpsquid:S3900 Range 25:25:23:36
+  Component ocelot:src/Ocelot/Cache/RegionCreator.cs Issue AWgY_asvp_lYKo4e25Ut Rule csharpsquid:S3900 Range 16:16:42:49
+  Component ocelot:src/Ocelot/Middleware/Multiplexer/Multiplexer.cs Issue AWgY_bB8p_lYKo4e25nG Rule csharpsquid:S3900 Range 23:23:62:69
+  Component ocelot:src/Ocelot/Headers/Middleware/HttpHeadersTransformationMiddleware.cs Issue AWgY_a8Bp_lYKo4e25iA Rule csharpsquid:S3900 Range 21:21:22:35
+  Component ocelot:src/Ocelot/Authorisation/ScopesAuthoriser.cs Issue AWgY_arpp_lYKo4e25UA Rule csharpsquid:S3900 Range 27:27:60:75
+  Component ocelot:src/Ocelot/Claims/Middleware/ClaimsToClaimsMiddleware.cs Issue AWgY_atep_lYKo4e25VY Rule csharpsquid:S3900 Range 27:27:16:23
+  Component ocelot:src/Ocelot/Responder/HttpContextResponder.cs Issue AWgY_bH2p_lYKo4e25sm Rule csharpsquid:S3900 Range 49:49:12:19
+  Component ocelot:src/Ocelot/Configuration/Parser/ParsingConfigurationHeaderError.cs Issue AWgY_a2Ap_lYKo4e25cQ Rule csharpsquid:S3900 Range 9:9:62:71
+  Component ocelot:src/Ocelot/DownstreamRouteFinder/Finder/DownstreamRouteCreator.cs Issue AW-SHBZhvNiUxyUYDGx5 Rule csharpsquid:S3900 Range 38:38:99:112
+  Component ocelot:src/Ocelot/Errors/Middleware/ExceptionHandlerMiddleware.cs Issue AWgY_a6sp_lYKo4e25g0 Rule csharpsquid:S3900 Range 49:49:16:23
+  Component ocelot:src/Ocelot/Logging/OcelotDiagnosticListener.cs Issue AWgY_bAMp_lYKo4e25lp Rule csharpsquid:S3900 Range 58:58:60:71
+  Component ocelot:src/Ocelot/RateLimit/Middleware/ClientRateLimitMiddleware.cs Issue AWgY_bEKp_lYKo4e25pj Rule csharpsquid:S3900 Range 115:115:202:219
+  Component ocelot:src/Ocelot/Configuration/Creator/ReRouteOptionsCreator.cs Issue AWgY_azWp_lYKo4e25aF Rule csharpsquid:S3900 Range 14:14:60:71
+  Component ocelot:src/Ocelot/Cache/Middleware/OutputCacheMiddleware.cs Issue AWgY_as9p_lYKo4e25U3 Rule csharpsquid:S3900 Range 19:19:22:35
+  Component ocelot:src/Ocelot/Configuration/Creator/HeaderFindAndReplaceCreator.cs Issue AWgY_aw8p_lYKo4e25YX Rule csharpsquid:S3900 Range 19:19:22:29
+  Component ocelot:src/Ocelot/Middleware/Pipeline/OcelotPipelineBuilder.cs Issue AWgY_bCmp_lYKo4e25ny Rule csharpsquid:S3900 Range 24:24:34:41
+  Component ocelot:src/Ocelot/Authentication/Middleware/AuthenticationMiddleware.cs Issue AWgY_aq-p_lYKo4e25Td Rule csharpsquid:S3900 Range 18:18:19:32
+  Component ocelot:src/Ocelot/Middleware/DownstreamResponse.cs Issue AWgY_bAgp_lYKo4e25l5 Rule csharpsquid:S3900 Range 19:19:18:26
+Rule: external_roslyn:CS0168 (size: 1):
+  Component ocelot:src/Ocelot/Infrastructure/Placeholders.cs Issue AWgY_a9Gp_lYKo4e25i0 Rule external_roslyn:CS0168 Range 72:72:33:34
+Rule: external_roslyn:CS0169 (size: 8):
+  Component ocelot:test/Ocelot.UnitTests/Configuration/Validation/ReRouteFluentValidatorTests.cs Issue AW6i-UApmkQnGWm-CPQ1 Rule external_roslyn:CS0169 Range 21:21:45:66
+  Component ocelot:test/Ocelot.AcceptanceTests/ReasonPhraseTests.cs Issue AW6i-UFSmkQnGWm-CPQ9 Rule external_roslyn:CS0169 Range 17:17:22:36
+  Component ocelot:test/Ocelot.UnitTests/Configuration/SecurityOptionsCreatorTests.cs Issue AW6i-UBTmkQnGWm-CPQ2 Rule external_roslyn:CS0169 Range 16:16:40:57
+  Component ocelot:test/Ocelot.AcceptanceTests/HttpClientCachingTests.cs Issue AW6i-UE9mkQnGWm-CPQ8 Rule external_roslyn:CS0169 Range 18:18:23:38
+  Component ocelot:test/Ocelot.UnitTests/Configuration/FileInternalConfigurationCreatorTests.cs Issue AW6i-UAUmkQnGWm-CPQ0 Rule external_roslyn:CS0169 Range 26:26:49:56
+  Component ocelot:test/Ocelot.UnitTests/Configuration/ReRoutesCreatorTests.cs Issue AW6i-UBemkQnGWm-CPQ3 Rule external_roslyn:CS0169 Range 49:49:32:48
+  Component ocelot:test/Ocelot.AcceptanceTests/ReasonPhraseTests.cs Issue AW6i-UFSmkQnGWm-CPQ- Rule external_roslyn:CS0169 Range 18:18:21:45
+  Component ocelot:test/Ocelot.AcceptanceTests/ReasonPhraseTests.cs Issue AW6i-UFSmkQnGWm-CPQ_ Rule external_roslyn:CS0169 Range 16:16:23:35
+Rule: external_roslyn:xUnit1013 (size: 1):
+  Component ocelot:test/Ocelot.IntegrationTests/HeaderTests.cs Issue AXpaSEWUmzfLbE2uUGqs Rule external_roslyn:xUnit1013 Range 164:164:26:52
+====== Vulnerabilities ======
+Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
+ocelot;1;0;100,000000;2;200,000000
+====== Added issues ======
+Rule: csharpsquid:S2228 (size: 2):
+  Component ocelot-autoscan:samples/OcelotServiceFabric/src/OcelotApplicationService/ApiGateway.cs Issue AYURVQM5ozEprKvtb1I7 Rule csharpsquid:S2228 Range 37:37:24:41
+  Component ocelot-autoscan:test/Ocelot.ManualTest/Program.cs Issue AYURVQMmozEprKvtb1Ie Rule csharpsquid:S2228 Range 71:71:12:29
+
+====== Missing issues ======
+====== Metrics ======
+JavaAnalysisFinishedCount; WorkerForJavaCloneDuration; WorkerForJavaTaskDuration; DownloadedArtifactsPercentage; ParsedArtifactsCount; ConstructDependencyGraphDuration; DownloadDependenciesDuration; ResolveDependenciesDuration; WorkerForJavaQueueLatency
+No metric
