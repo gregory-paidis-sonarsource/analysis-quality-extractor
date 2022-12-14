@@ -36,10 +36,10 @@ public class AnalysisResultWrite {
     // "moq",
     // "net5-solution",
     // "net6-solution",
-    // "net7-solution",
+     "net7-solution"
     // "nhibernate",
     // "nlog",
-    "nodatime"
+    // "nodatime"
     // "nopowershell",
     // "northwind-traders",
     // "nuget-server",
