@@ -1,6 +1,6 @@
 ====== Bugs ======
 Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
-openiddict-core;3562;280;92,139248;278;7,804604
+openiddict-core;3562;287;91,942729;285;8,001123
 ====== Added issues ======
 Rule: common-cs:InsufficientLineCoverage (size: 6):
   Component openiddict-core-autoscan:test/OpenIddict.Server.AspNetCore.IntegrationTests/OpenIddictServerAspNetCoreIntegrationTests.Authentication.cs Issue AYURVtv3ozEprKvtco89 Rule common-cs:InsufficientLineCoverage Range (empty)
@@ -43,6 +43,14 @@ Rule: common-cs:InsufficientCommentDensity (size: 6):
   Component openiddict-core-autoscan:test/OpenIddict.Server.Owin.IntegrationTests/OpenIddictServerOwinIntegrationTests.cs Issue AYURVtwiozEprKvtco9M Rule common-cs:InsufficientCommentDensity Range (empty)
 Rule: csharpsquid:S1200 (size: 1):
   Component openiddict-core-autoscan:src/OpenIddict.Server/OpenIddictServerHandlers.cs Issue AYURVthCozEprKvtcohH Rule csharpsquid:S1200 Range 2710:2710:21:52
+Rule: csharpsquid:S1067 (size: 7):
+  Component openiddict-core-autoscan:samples/Mvc.Server/Controllers/ManageController.cs Issue AYURVtVzozEprKvtcoGS Rule csharpsquid:S1067 Range 41:48:12:20
+  Component openiddict-core-autoscan:src/OpenIddict.EntityFramework/Stores/OpenIddictAuthorizationStore.cs Issue AYURVtrwozEprKvtco4E Rule csharpsquid:S1067 Range 312:318:19:59
+  Component openiddict-core-autoscan:src/OpenIddict.NHibernate/Stores/OpenIddictAuthorizationStore.cs Issue AYURVtniozEprKvtcoyt Rule csharpsquid:S1067 Range 317:323:20:60
+  Component openiddict-core-autoscan:src/OpenIddict.Server.AspNetCore/OpenIddictServerAspNetCoreHandlers.cs Issue AYURVtt-ozEprKvtco6g Rule csharpsquid:S1067 Range 94:105:16:118
+  Component openiddict-core-autoscan:src/OpenIddict.Server.Owin/OpenIddictServerOwinHandlers.cs Issue AYURVteZozEprKvtcoaV Rule csharpsquid:S1067 Range 94:105:16:118
+  Component openiddict-core-autoscan:src/OpenIddict.NHibernate/Stores/OpenIddictTokenStore.cs Issue AYURVtnpozEprKvtcozM Rule csharpsquid:S1067 Range 313:321:44:76
+  Component openiddict-core-autoscan:src/OpenIddict.EntityFramework/Stores/OpenIddictTokenStore.cs Issue AYURVtrjozEprKvtco3V Rule csharpsquid:S1067 Range 281:287:19:51
 Rule: csharpsquid:S1451 (size: 6):
   Component openiddict-core-autoscan:test/OpenIddict.Server.AspNetCore.IntegrationTests/OpenIddictServerAspNetCoreIntegrationTests.Authentication.cs Issue AYURVtv3ozEprKvtco8_ Rule csharpsquid:S1451 Range (empty)
   Component openiddict-core-autoscan:test/OpenIddict.Server.AspNetCore.IntegrationTests/OpenIddictServerAspNetCoreIntegrationTests.Exchange.cs Issue AYURVtvtozEprKvtco8z Rule csharpsquid:S1451 Range (empty)
@@ -313,8 +321,15 @@ Rule: csharpsquid:S1200 (size: 4):
   Component openiddict-core:src/OpenIddict.Validation.DataProtection/OpenIddictValidationDataProtectionFormatter.cs Issue AYOyOE89NX2bJEeHumZk Rule csharpsquid:S1200 Range 21:21:17:60
   Component openiddict-core:src/OpenIddict.Validation.DataProtection/OpenIddictValidationDataProtectionHandlers.cs Issue AW8fCQSAMC6hVNLsG0J_ Rule csharpsquid:S1200 Range 38:38:21:48
   Component openiddict-core:src/OpenIddict.Server.DataProtection/OpenIddictServerDataProtectionHandlers.cs Issue AW8fCQUFMC6hVNLsG0Ll Rule csharpsquid:S1200 Range 50:50:21:48
-Rule: csharpsquid:S1067 (size: 1):
+Rule: csharpsquid:S1067 (size: 8):
+  Component openiddict-core:samples/Mvc.Server/Controllers/ManageController.cs Issue AYUTWFBLqk4UyBXYlF9q Rule csharpsquid:S1067 Range 42:48:16:20
+  Component openiddict-core:src/OpenIddict.EntityFramework/Stores/OpenIddictTokenStore.cs Issue AYUTWErzqk4UyBXYlF9j Rule csharpsquid:S1067 Range 282:286:26:44
   Component openiddict-core:src/OpenIddict.Server/OpenIddictServerHandlers.Discovery.cs Issue AW8fCQEHMC6hVNLsGzxZ Rule csharpsquid:S1067 Range 1269:1273:28:98
+  Component openiddict-core:src/OpenIddict.EntityFramework/Stores/OpenIddictAuthorizationStore.cs Issue AYUTWEsJqk4UyBXYlF9k Rule csharpsquid:S1067 Range 313:317:26:52
+  Component openiddict-core:src/OpenIddict.NHibernate/Stores/OpenIddictTokenStore.cs Issue AYUTWEiCqk4UyBXYlF9d Rule csharpsquid:S1067 Range 316:320:51:69
+  Component openiddict-core:src/OpenIddict.Server.Owin/OpenIddictServerOwinHandlers.cs Issue AYUTWELlqk4UyBXYlF9Y Rule csharpsquid:S1067 Range 95:105:20:118
+  Component openiddict-core:src/OpenIddict.Server.AspNetCore/OpenIddictServerAspNetCoreHandlers.cs Issue AYUTWE23qk4UyBXYlF9n Rule csharpsquid:S1067 Range 95:105:20:118
+  Component openiddict-core:src/OpenIddict.NHibernate/Stores/OpenIddictAuthorizationStore.cs Issue AYUTWEhvqk4UyBXYlF9c Rule csharpsquid:S1067 Range 318:322:27:53
 Rule: csharpsquid:S3240 (size: 3):
   Component openiddict-core:src/OpenIddict.NHibernate/Stores/OpenIddictTokenStore.cs Issue AW8fCQJpMC6hVNLsGz_y Rule csharpsquid:S3240 Range 888:888:12:14
   Component openiddict-core:src/OpenIddict.NHibernate/Stores/OpenIddictTokenStore.cs Issue AW8fCQJpMC6hVNLsGz_v Rule csharpsquid:S3240 Range 860:860:12:14

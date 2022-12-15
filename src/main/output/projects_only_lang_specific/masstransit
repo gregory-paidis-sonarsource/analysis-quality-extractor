@@ -1,6 +1,6 @@
 ====== Bugs ======
 Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
-masstransit;18969;1520;91,986926;93;0,490274
+masstransit;18963;1520;91,984391;99;0,522069
 ====== Added issues ======
 Rule: csharpsquid:S1118 (size: 1):
   Component masstransit-autoscan:Samples/Sample.AzureServiceBusTransport/Program.cs Issue AYURcopywnv8wyLt0pz6 Rule csharpsquid:S1118 Range 13:13:10:17
@@ -23,6 +23,13 @@ Rule: csharpsquid:S112 (size: 1):
 Rule: csharpsquid:S1200 (size: 2):
   Component masstransit-autoscan:MassTransit/Saga/InMemorySagaRepository.cs Issue AYURcmBUwnv8wyLt0lV7 Rule csharpsquid:S1200 Range 26:26:17:39
   Component masstransit-autoscan:MassTransit.Host/MassTransitHostService.cs Issue AYURcolnwnv8wyLt0pxc Rule csharpsquid:S1200 Range 26:26:18:40
+Rule: csharpsquid:S1067 (size: 6):
+  Component masstransit-autoscan:MassTransit/Courier/RoutingSlipEventPublisher.cs Issue AYURcmH0wnv8wyLt0liR Rule csharpsquid:S1067 Range 99:114:111:39
+  Component masstransit-autoscan:MassTransit/Courier/RoutingSlipEventPublisher.cs Issue AYURcmH0wnv8wyLt0liS Rule csharpsquid:S1067 Range 120:133:107:39
+  Component masstransit-autoscan:MassTransit/Courier/RoutingSlipEventPublisher.cs Issue AYURcmH0wnv8wyLt0liT Rule csharpsquid:S1067 Range 139:151:115:39
+  Component masstransit-autoscan:MassTransit/Courier/RoutingSlipEventPublisher.cs Issue AYURcmH0wnv8wyLt0liU Rule csharpsquid:S1067 Range 158:173:91:51
+  Component masstransit-autoscan:MassTransit/Courier/RoutingSlipEventPublisher.cs Issue AYURcmH0wnv8wyLt0liV Rule csharpsquid:S1067 Range 180:192:97:51
+  Component masstransit-autoscan:MassTransit/Courier/RoutingSlipEventPublisher.cs Issue AYURcmH0wnv8wyLt0liW Rule csharpsquid:S1067 Range 199:214:129:39
 Rule: csharpsquid:S1144 (size: 3):
   Component masstransit-autoscan:Persistence/MassTransit.DapperIntegration/DapperSagaRepository.cs Issue AYURcnrVwnv8wyLt0obK Rule csharpsquid:S1144 Range 280:297:12:13
   Component masstransit-autoscan:Persistence/MassTransit.RedisIntegration/DatabaseExtensions.cs Issue AYURcnuxwnv8wyLt0ogw Rule csharpsquid:S1144 Range 73:76:12:13

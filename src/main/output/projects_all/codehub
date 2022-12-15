@@ -1,6 +1,6 @@
 ====== Bugs ======
 Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
-codehub;3942;546;86,149163;270;6,849315
+codehub;3941;551;86,018777;276;7,003299
 ====== Added issues ======
 Rule: csharpsquid:S3906 (size: 4):
   Component codehub-autoscan:CodeHub.iOS/ViewControllers/ViewModelDrivenDialogViewController.cs Issue AYURU5juozEprKvtbiwB Rule csharpsquid:S3906 Range 262:262:21:58
@@ -20,6 +20,13 @@ Rule: csharpsquid:S1125 (size: 1):
   Component codehub-autoscan:CodeHub.iOS/ViewControllers/Gists/GistEditViewController.cs Issue AYURU5g8ozEprKvtbir3 Rule csharpsquid:S1125 Range 190:190:61:68
 Rule: csharpsquid:S1200 (size: 1):
   Component codehub-autoscan:CodeHub.iOS/DialogElements/EntryElement.cs Issue AYURU5nNozEprKvtbi4S Rule csharpsquid:S1200 Range 10:10:17:29
+Rule: csharpsquid:S1067 (size: 6):
+  Component codehub-autoscan:CodeHub.iOS/Views/BlurredAlertView.cs Issue AYURU5qiozEprKvtbjBk Rule csharpsquid:S1067 Range 74:84:33:62
+  Component codehub-autoscan:CodeHub.iOS/ViewControllers/Application/EnterpriseSupportViewController.cs Issue AYURU5jpozEprKvtbivW Rule csharpsquid:S1067 Range 94:113:55:44
+  Component codehub-autoscan:CodeHub.iOS/ViewControllers/Application/EnterpriseSupportViewController.cs Issue AYURU5jpozEprKvtbivX Rule csharpsquid:S1067 Range 116:135:57:44
+  Component codehub-autoscan:CodeHub.Core/Filters/IssuesFilterModel.cs Issue AYURU5KjozEprKvtbiUE Rule csharpsquid:S1067 Range 81:81:23:362
+  Component codehub-autoscan:CodeHub.iOS/ViewControllers/Accounts/NewAccountViewController.cs Issue AYURU5YUozEprKvtbijL Rule csharpsquid:S1067 Range 42:51:33:66
+  Component codehub-autoscan:CodeHub.iOS/ViewControllers/Accounts/NewAccountViewController.cs Issue AYURU5YUozEprKvtbijM Rule csharpsquid:S1067 Range 96:105:37:44
 Rule: csharpsquid:S1144 (size: 54):
   Component codehub-autoscan:CodeHub.iOS/ViewControllers/Accounts/AccountsViewController.cs Issue AYURU5YvozEprKvtbijn Rule csharpsquid:S1144 Range 104:107:12:13
   Component codehub-autoscan:CodeHub.iOS/ViewControllers/Accounts/AccountsViewController.cs Issue AYURU5YvozEprKvtbijp Rule csharpsquid:S1144 Range 109:112:12:13
@@ -526,6 +533,12 @@ Rule: csharpsquid:S1144 (size: 3):
   Component codehub:CodeHub.iOS/ViewControllers/PullRequests/PullRequestDiffViewController.cs Issue AWc6nLsZ-D5hmrSZEjGX Rule csharpsquid:S1144 Range 126:126:33:37
   Component codehub:CodeHub.iOS/Setup.cs Issue AWc6nLYz-D5hmrSZEihC Rule csharpsquid:S1144 Range 79:90:8:9
   Component codehub:CodeHub.iOS/ViewControllers/Source/CommitDiffViewController.cs Issue AWc6nLsJ-D5hmrSZEjF0 Rule csharpsquid:S1144 Range 123:123:33:37
+Rule: csharpsquid:S1067 (size: 5):
+  Component codehub:CodeHub.iOS/ViewControllers/Accounts/NewAccountViewController.cs Issue AYUTVKQTqk4UyBXYinOP Rule csharpsquid:S1067 Range 97:105:20:44
+  Component codehub:CodeHub.iOS/ViewControllers/Application/EnterpriseSupportViewController.cs Issue AYUTVKShqk4UyBXYinOS Rule csharpsquid:S1067 Range 117:135:16:44
+  Component codehub:CodeHub.iOS/ViewControllers/Application/EnterpriseSupportViewController.cs Issue AYUTVKShqk4UyBXYinOR Rule csharpsquid:S1067 Range 95:113:16:44
+  Component codehub:CodeHub.iOS/Views/BlurredAlertView.cs Issue AYUTVKiMqk4UyBXYinOT Rule csharpsquid:S1067 Range 75:84:16:62
+  Component codehub:CodeHub.iOS/ViewControllers/Accounts/NewAccountViewController.cs Issue AYUTVKQTqk4UyBXYinOQ Rule csharpsquid:S1067 Range 43:51:16:66
 Rule: csharpsquid:S1185 (size: 1):
   Component codehub:CodeHub.iOS/Setup.cs Issue AWc6nLYz-D5hmrSZEihD Rule csharpsquid:S1185 Range 36:43:8:9
 Rule: csharpsquid:S4055 (size: 36):

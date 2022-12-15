@@ -1,6 +1,6 @@
 ====== Bugs ======
 Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
-nlog;3607;3605;0,055448;3639;100,887164
+nlog;3620;3618;0,055249;3639;100,524862
 ====== Added issues ======
 Rule: csharpsquid:S1698 (size: 1):
   Component nlog-autoscan:NLog/LogEventInfo.cs Issue AYURVHiownv8wyLtv_mw Rule csharpsquid:S1698 Range 291:291:36:38
@@ -4487,21 +4487,34 @@ Rule: csharpsquid:S1226 (size: 3):
   Component nlog:src/NLog/Targets/FileTarget.cs Issue AWc2B_WO1tP2i4lKtI4u Rule csharpsquid:S1226 Range 1868:1868:16:33
   Component nlog:src/NLog/Layouts/XmlLayout.cs Issue AWc2B_Q61tP2i4lKtIv0 Rule csharpsquid:S1226 Range 428:428:16:27
   Component nlog:src/NLog/Config/LoggingConfigurationParser.cs Issue AWc2B-4S1tP2i4lKtINv Rule csharpsquid:S1226 Range 865:865:16:26
-Rule: csharpsquid:S1067 (size: 14):
+Rule: csharpsquid:S1067 (size: 27):
+  Component nlog:src/NLog.WindowsIdentity/Properties/AssemblyInfo.cs Issue AYUTWWegqk4UyBXYldcX Rule csharpsquid:S1067 Range 50:50:4:106
+  Component nlog:src/NLog/Targets/EventLogTarget.cs Issue AYUTWVMcqk4UyBXYlXod Rule csharpsquid:S1067 Range 34:34:4:88
   Component nlog:src/NLog/Config/ConfigurationItemFactory.cs Issue AWc2B-3M1tP2i4lKtIJy Rule csharpsquid:S1067 Range 464:470:20:107
+  Component nlog:src/NLog/LogReceiverService/SoapLogReceiverClient.cs Issue AYUTWU3Hqk4UyBXYlWFJ Rule csharpsquid:S1067 Range 34:34:4:80
   Component nlog:src/NLog/Targets/FileTarget.cs Issue AWc2B_WO1tP2i4lKtI3w Rule csharpsquid:S1067 Range 1495:1495:20:136
+  Component nlog:src/NLog/LogFactory.cs Issue AYUTWWZ8qk4UyBXYldEr Rule csharpsquid:S1067 Range 1007:1007:4:72
+  Component nlog:src/NLog/Properties/AssemblyInfo.cs Issue AYUTWWYnqk4UyBXYlc_i Rule csharpsquid:S1067 Range 50:50:4:106
   Component nlog:src/NLog/LayoutRenderers/MessageLayoutRenderer.cs Issue AWc2B_Je1tP2i4lKtIlx Rule csharpsquid:S1067 Range 82:82:33:204
+  Component nlog:src/NLog/Internal/FileAppenders/BaseFileAppender.cs Issue AYUTWVvJqk4UyBXYlaHm Rule csharpsquid:S1067 Range 216:216:4:70
   Component nlog:src/NLog/Internal/FileAppenders/BaseMutexFileAppender.cs Issue AWc2B_C21tP2i4lKtIcf Rule csharpsquid:S1067 Range 96:96:20:183
   Component nlog:src/NLog/Targets/TargetWithContext.cs Issue AWc2B_ZZ1tP2i4lKtI7I Rule csharpsquid:S1067 Range 542:542:16:145
+  Component nlog:src/NLog/Internal/FileAppenders/WindowsMultiProcessFileAppender.cs Issue AYUTWVxBqk4UyBXYlaOo Rule csharpsquid:S1067 Range 34:34:4:69
+  Component nlog:src/NLog/Targets/LogReceiverWebServiceTarget.cs Issue AYUTWVF5qk4UyBXYlXKK Rule csharpsquid:S1067 Range 34:34:4:79
   Component nlog:src/NLog/Layouts/XmlLayout.cs Issue AWc2B_Q61tP2i4lKtIva Rule csharpsquid:S1067 Range 320:326:24:72
   Component nlog:src/NLog/Internal/ObjectGraphScanner.cs Issue AWc2B-981tP2i4lKtIUm Rule csharpsquid:S1067 Range 170:170:16:161
   Component nlog:src/NLog/Internal/UrlHelper.cs Issue AWDb0nd9-O6vncpHITRS Rule csharpsquid:S1067 Range 191:191:19:93
   Component nlog:src/NLog/Common/InternalLogger.cs Issue AWDb0nMU-O6vncpHIS5X Rule csharpsquid:S1067 Range 346:352:19:36
+  Component nlog:src/NLog/Targets/OutputDebugStringTarget.cs Issue AYUTWVEsqk4UyBXYlXCV Rule csharpsquid:S1067 Range 34:34:4:64
   Component nlog:src/NLog/Internal/PropertyHelper.cs Issue AWc2B--11tP2i4lKtIWc Rule csharpsquid:S1067 Range 98:103:20:85
-  Component nlog:src/NLog/Targets/FileTarget.cs Issue AWc2B_WO1tP2i4lKtI3x Rule csharpsquid:S1067 Range 1901:1901:48:197
+  Component nlog:src/NLog/Targets/OutputDebugStringTarget.cs Issue AYUTWVEsqk4UyBXYlXCW Rule csharpsquid:S1067 Range 93:93:4:64
   Component nlog:src/NLog/Targets/TargetWithContext.cs Issue AWc2B_ZZ1tP2i4lKtI7H Rule csharpsquid:S1067 Range 129:134:19:77
   Component nlog:src/NLog/MappedDiagnosticsLogicalContext.cs Issue AWc2B-zc1tP2i4lKtIGJ Rule csharpsquid:S1067 Range 111:113:32:282
+  Component nlog:src/NLog/Internal/FileAppenders/BaseFileAppender.cs Issue AYUTWVvJqk4UyBXYlaHn Rule csharpsquid:S1067 Range 271:271:4:70
+  Component nlog:src/NLog.Wcf/Properties/AssemblyInfo.cs Issue AYUTWWexqk4UyBXYlddp Rule csharpsquid:S1067 Range 50:50:4:106
+  Component nlog:src/NLog/Targets/ConsoleTargetHelper.cs Issue AYUTWVMHqk4UyBXYlXmi Rule csharpsquid:S1067 Range 46:46:4:72
   Component nlog:src/NLog/LayoutRenderers/Wrappers/FileSystemNormalizeLayoutRendererWrapper.cs Issue AWc2B_M21tP2i4lKtIqK Rule csharpsquid:S1067 Range 96:96:19:90
+  Component nlog:src/NLog.WindowsEventLog/Properties/AssemblyInfo.cs Issue AYUTWWduqk4UyBXYldZx Rule csharpsquid:S1067 Range 50:50:4:106
 Rule: csharpsquid:S1066 (size: 32):
   Component nlog:src/NLog/Targets/Target.cs Issue AWc2B_ZC1tP2i4lKtI6z Rule csharpsquid:S1066 Range 497:497:16:18
   Component nlog:src/NLog/Targets/Wrappers/FallbackGroupTarget.cs Issue AWc2B_ct1tP2i4lKtI-O Rule csharpsquid:S1066 Range 131:131:28:30

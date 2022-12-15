@@ -156,10 +156,29 @@ Rule: external_roslyn:CS1574 (size: 15):
   Component akka:contrib/cluster/Akka.DistributedData/Replicator.cs Issue AWcW2cb8Je8TA5tRWZHQ Rule external_roslyn:CS1574 Range 223:223:44:51
 Rule: csharpsquid:S3928 (size: 1):
   Component nhibernate:NHibernate/AdoNet/SqlClientSqlCommandSet.cs Issue AWhRiF0rQ-6_BfF5WLRb Rule csharpsquid:S3928 Range 105:106:10:101
-Rule: csharpsquid:S1067 (size: 3):
+Rule: csharpsquid:S1067 (size: 22):
+  Component beyourmarket:BeYourMarket.Web/Controllers/ManageController.cs Issue AYUTUvyFqk4UyBXYhpq1 Rule csharpsquid:S1067 Range 134:140:16:20
+  Component codehub:CodeHub.iOS/ViewControllers/Accounts/NewAccountViewController.cs Issue AYUTVKQTqk4UyBXYinOP Rule csharpsquid:S1067 Range 97:105:20:44
+  Component codehub:CodeHub.iOS/ViewControllers/Application/EnterpriseSupportViewController.cs Issue AYUTVKShqk4UyBXYinOS Rule csharpsquid:S1067 Range 117:135:16:44
+  Component codehub:CodeHub.iOS/ViewControllers/Application/EnterpriseSupportViewController.cs Issue AYUTVKShqk4UyBXYinOR Rule csharpsquid:S1067 Range 95:113:16:44
+  Component codehub:CodeHub.iOS/Views/BlurredAlertView.cs Issue AYUTVKiMqk4UyBXYinOT Rule csharpsquid:S1067 Range 75:84:16:62
+  Component codehub:CodeHub.iOS/ViewControllers/Accounts/NewAccountViewController.cs Issue AYUTVKQTqk4UyBXYinOQ Rule csharpsquid:S1067 Range 43:51:16:66
   Component fluentassertions:Src/FluentAssertions/Common/NetStandardReflector.cs Issue AWDbwder-O6vncpHIRNx Rule csharpsquid:S1067 Range 28:33:19:57
   Component fluentassertions:Src/FluentAssertions/Common/FullFrameworkReflector.cs Issue AWDbwdeM-O6vncpHIRNF Rule csharpsquid:S1067 Range 26:31:19:57
+  Component net5-solution:Net5/S1067.cs Issue AX9KfvSTkhQIqndBXT2U Rule csharpsquid:S1067 Range 8:8:21:57
+  Component nodatime:NodaTime/Calendars/GregorianYearMonthDayCalculator.cs Issue AW6i-XmEmkQnGWm-CVIG Rule csharpsquid:S1067 Range 91:95:35:86
+  Component nodatime:NodaTime/Calendars/GJYearMonthDayCalculator.cs Issue AW6i-XnamkQnGWm-CVNM Rule csharpsquid:S1067 Range 60:64:31:82
+  Component nodatime:NodaTime/Calendars/GregorianYearMonthDayCalculator.cs Issue AW6i-XmEmkQnGWm-CVIF Rule csharpsquid:S1067 Range 83:87:35:86
+  Component nodatime:NodaTime/Calendars/GJYearMonthDayCalculator.cs Issue AW6i-XnamkQnGWm-CVNL Rule csharpsquid:S1067 Range 52:56:31:82
+  Component obsidian:Obsidian.API/_Types/ChatMessage.cs Issue AYUVBYaoqk4UyBXYevWa Rule csharpsquid:S1067 Range 163:163:24:110
+  Component openiddict-core:samples/Mvc.Server/Controllers/ManageController.cs Issue AYUTWFBLqk4UyBXYlF9q Rule csharpsquid:S1067 Range 42:48:16:20
+  Component openiddict-core:src/OpenIddict.EntityFramework/Stores/OpenIddictTokenStore.cs Issue AYUTWErzqk4UyBXYlF9j Rule csharpsquid:S1067 Range 282:286:26:44
   Component openiddict-core:src/OpenIddict.Server/OpenIddictServerHandlers.Discovery.cs Issue AW8fCQEHMC6hVNLsGzxZ Rule csharpsquid:S1067 Range 1269:1273:28:98
+  Component openiddict-core:src/OpenIddict.EntityFramework/Stores/OpenIddictAuthorizationStore.cs Issue AYUTWEsJqk4UyBXYlF9k Rule csharpsquid:S1067 Range 313:317:26:52
+  Component openiddict-core:src/OpenIddict.NHibernate/Stores/OpenIddictTokenStore.cs Issue AYUTWEiCqk4UyBXYlF9d Rule csharpsquid:S1067 Range 316:320:51:69
+  Component openiddict-core:src/OpenIddict.Server.Owin/OpenIddictServerOwinHandlers.cs Issue AYUTWELlqk4UyBXYlF9Y Rule csharpsquid:S1067 Range 95:105:20:118
+  Component openiddict-core:src/OpenIddict.Server.AspNetCore/OpenIddictServerAspNetCoreHandlers.cs Issue AYUTWE23qk4UyBXYlF9n Rule csharpsquid:S1067 Range 95:105:20:118
+  Component openiddict-core:src/OpenIddict.NHibernate/Stores/OpenIddictAuthorizationStore.cs Issue AYUTWEhvqk4UyBXYlF9c Rule csharpsquid:S1067 Range 318:322:27:53
 Rule: csharpsquid:S1186 (size: 2):
   Component nhibernate:NHibernate/Context/WcfOperationSessionContext.cs Issue AWhRiGRcQ-6_BfF5WL9P Rule csharpsquid:S1186 Range 56:56:14:20
   Component nhibernate:NHibernate/Context/WcfOperationSessionContext.cs Issue AWhRiGRcQ-6_BfF5WL9Q Rule csharpsquid:S1186 Range 55:55:14:20
@@ -12495,11 +12514,45 @@ Rule: csharpsquid:S1104 (size: 5):
   Component fluentassertions-autoscan:Tests/Shared.Specs/FormatterSpecs.cs Issue AYURVW6cwnv8wyLtwLH_ Rule csharpsquid:S1104 Range 717:717:26:31
 Rule: csharpsquid:S4060 (size: 1):
   Component fluentassertions-autoscan:Tests/Shared.Specs/PropertyInfoSelectorSpecs.cs Issue AYURVW6gwnv8wyLtwLIm Rule csharpsquid:S4060 Range 183:183:17:39
-Rule: csharpsquid:S1067 (size: 4):
+Rule: csharpsquid:S1067 (size: 38):
   Component akka-autoscan:core/Akka.Remote.TestKit/BarrierCoordinator.cs Issue AYURSXFJwnv8wyLtvi4a Rule csharpsquid:S1067 Range 88:91:23:55
+  Component akka-autoscan:contrib/cluster/Akka.Cluster.Tools/Singleton/ClusterSingletonManager.cs Issue AYURSYZ8wnv8wyLtvnA7 Rule csharpsquid:S1067 Range 1447:1487:25:13
+  Component akka-autoscan:core/Akka.Remote/Transport/DotNetty/DotNettyTransportSettings.cs Issue AYURSXs1wnv8wyLtvkb5 Rule csharpsquid:S1067 Range 79:105:19:57
   Component akka-autoscan:core/Akka.MultiNodeTestRunner.Shared/Reporting/MultiNodeMessage.cs Issue AYURSYJzwnv8wyLtvmRF Rule csharpsquid:S1067 Range 101:105:19:56
+  Component akka-autoscan:contrib/cluster/Akka.DistributedData/ORSet.cs Issue AYURSYfYwnv8wyLtvnYh Rule csharpsquid:S1067 Range 186:257:202:9
   Component akka-autoscan:core/Akka.MultiNodeTestRunner.Shared/Reporting/TestRunTree.cs Issue AYURSYJlwnv8wyLtvmQC Rule csharpsquid:S1067 Range 251:256:19:46
   Component akka-autoscan:core/Akka.MultiNodeTestRunner.Shared/Reporting/TestRunTree.cs Issue AYURSYJlwnv8wyLtvmQD Rule csharpsquid:S1067 Range 396:401:19:46
+  Component beyourmarket-autoscan:BeYourMarket.Web/Controllers/ManageController.cs Issue AYURVDXVnSJipuBJLdhw Rule csharpsquid:S1067 Range 133:140:12:20
+  Component codehub-autoscan:CodeHub.iOS/Views/BlurredAlertView.cs Issue AYURU5qiozEprKvtbjBk Rule csharpsquid:S1067 Range 74:84:33:62
+  Component codehub-autoscan:CodeHub.iOS/ViewControllers/Application/EnterpriseSupportViewController.cs Issue AYURU5jpozEprKvtbivW Rule csharpsquid:S1067 Range 94:113:55:44
+  Component codehub-autoscan:CodeHub.iOS/ViewControllers/Application/EnterpriseSupportViewController.cs Issue AYURU5jpozEprKvtbivX Rule csharpsquid:S1067 Range 116:135:57:44
+  Component codehub-autoscan:CodeHub.Core/Filters/IssuesFilterModel.cs Issue AYURU5KjozEprKvtbiUE Rule csharpsquid:S1067 Range 81:81:23:362
+  Component codehub-autoscan:CodeHub.iOS/ViewControllers/Accounts/NewAccountViewController.cs Issue AYURU5YUozEprKvtbijL Rule csharpsquid:S1067 Range 42:51:33:66
+  Component codehub-autoscan:CodeHub.iOS/ViewControllers/Accounts/NewAccountViewController.cs Issue AYURU5YUozEprKvtbijM Rule csharpsquid:S1067 Range 96:105:37:44
+  Component masstransit-autoscan:MassTransit/Courier/RoutingSlipEventPublisher.cs Issue AYURcmH0wnv8wyLt0liR Rule csharpsquid:S1067 Range 99:114:111:39
+  Component masstransit-autoscan:MassTransit/Courier/RoutingSlipEventPublisher.cs Issue AYURcmH0wnv8wyLt0liS Rule csharpsquid:S1067 Range 120:133:107:39
+  Component masstransit-autoscan:MassTransit/Courier/RoutingSlipEventPublisher.cs Issue AYURcmH0wnv8wyLt0liT Rule csharpsquid:S1067 Range 139:151:115:39
+  Component masstransit-autoscan:MassTransit/Courier/RoutingSlipEventPublisher.cs Issue AYURcmH0wnv8wyLt0liU Rule csharpsquid:S1067 Range 158:173:91:51
+  Component masstransit-autoscan:MassTransit/Courier/RoutingSlipEventPublisher.cs Issue AYURcmH0wnv8wyLt0liV Rule csharpsquid:S1067 Range 180:192:97:51
+  Component masstransit-autoscan:MassTransit/Courier/RoutingSlipEventPublisher.cs Issue AYURcmH0wnv8wyLt0liW Rule csharpsquid:S1067 Range 199:214:129:39
+  Component net5-solution-autoscan:Net5/S1067.cs Issue AYURVMzvwnv8wyLtwDlW Rule csharpsquid:S1067 Range 8:8:16:57
+  Component nhibernate-autoscan:NHibernate/Persister/Entity/AbstractEntityPersister.cs Issue AYURWIEtozEprKvtdkAk Rule csharpsquid:S1067 Range 3535:3537:6:31
+  Component nhibernate-autoscan:NHibernate/Mapping/Any.cs Issue AYURWG7mozEprKvtdhie Rule csharpsquid:S1067 Range 36:59:10:6
+  Component nodatime-autoscan:NodaTime/Calendars/GJYearMonthDayCalculator.cs Issue AYURVPlIwnv8wyLtwGnj Rule csharpsquid:S1067 Range 52:56:16:82
+  Component nodatime-autoscan:NodaTime/Calendars/GJYearMonthDayCalculator.cs Issue AYURVPlIwnv8wyLtwGnk Rule csharpsquid:S1067 Range 60:64:16:82
+  Component nodatime-autoscan:NodaTime/Calendars/GregorianYearMonthDayCalculator.cs Issue AYURVPkiwnv8wyLtwGin Rule csharpsquid:S1067 Range 83:87:20:86
+  Component nodatime-autoscan:NodaTime/Calendars/GregorianYearMonthDayCalculator.cs Issue AYURVPkiwnv8wyLtwGio Rule csharpsquid:S1067 Range 91:95:20:86
+  Component nodatime-autoscan:NodaTime/Text/Patterns/TimePatternHelper.cs Issue AYURVPhgwnv8wyLtwGbM Rule csharpsquid:S1067 Range 160:234:19:13
+  Component obsidian-autoscan:Obsidian.API/_Types/ChatMessage.cs Issue AYURVGpIozEprKvtbq3I Rule csharpsquid:S1067 Range 153:169:64:9
+  Component obsidian-autoscan:Obsidian.API/Noise/TransitionMap.cs Issue AYURVGwqozEprKvtbq_d Rule csharpsquid:S1067 Range 33:43:18:18
+  Component obsidian-autoscan:Obsidian.API/Noise/VoronoiBiomes.cs Issue AYURVGxVozEprKvtbrAf Rule csharpsquid:S1067 Range 326:329:16:97
+  Component openiddict-core-autoscan:samples/Mvc.Server/Controllers/ManageController.cs Issue AYURVtVzozEprKvtcoGS Rule csharpsquid:S1067 Range 41:48:12:20
+  Component openiddict-core-autoscan:src/OpenIddict.EntityFramework/Stores/OpenIddictAuthorizationStore.cs Issue AYURVtrwozEprKvtco4E Rule csharpsquid:S1067 Range 312:318:19:59
+  Component openiddict-core-autoscan:src/OpenIddict.NHibernate/Stores/OpenIddictAuthorizationStore.cs Issue AYURVtniozEprKvtcoyt Rule csharpsquid:S1067 Range 317:323:20:60
+  Component openiddict-core-autoscan:src/OpenIddict.Server.AspNetCore/OpenIddictServerAspNetCoreHandlers.cs Issue AYURVtt-ozEprKvtco6g Rule csharpsquid:S1067 Range 94:105:16:118
+  Component openiddict-core-autoscan:src/OpenIddict.Server.Owin/OpenIddictServerOwinHandlers.cs Issue AYURVteZozEprKvtcoaV Rule csharpsquid:S1067 Range 94:105:16:118
+  Component openiddict-core-autoscan:src/OpenIddict.NHibernate/Stores/OpenIddictTokenStore.cs Issue AYURVtnpozEprKvtcozM Rule csharpsquid:S1067 Range 313:321:44:76
+  Component openiddict-core-autoscan:src/OpenIddict.EntityFramework/Stores/OpenIddictTokenStore.cs Issue AYURVtrjozEprKvtco3V Rule csharpsquid:S1067 Range 281:287:19:51
 Rule: csharpsquid:S1066 (size: 2):
   Component akka-autoscan:core/Akka.Remote.TestKit/MultiNodeSpec.cs Issue AYURSXEewnv8wyLtvi0f Rule csharpsquid:S1066 Range 705:705:16:18
   Component akka-autoscan:core/Akka.Remote.TestKit/Player.cs Issue AYURSXEHwnv8wyLtviyX Rule csharpsquid:S1066 Range 98:98:20:22

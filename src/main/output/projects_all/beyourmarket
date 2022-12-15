@@ -1,6 +1,6 @@
 ====== Bugs ======
 Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
-beyourmarket;2983;1039;65,169293;166;5,564868
+beyourmarket;2983;1040;65,135769;167;5,598391
 ====== Added issues ======
 Rule: common-cs:InsufficientLineCoverage (size: 2):
   Component beyourmarket-autoscan:Tests/BeYourMarket.Test/BeYourMarketTest.cs Issue AYURVDeSnSJipuBJLdyD Rule common-cs:InsufficientLineCoverage Range (empty)
@@ -25,6 +25,8 @@ Rule: common-cs:InsufficientCommentDensity (size: 2):
   Component beyourmarket-autoscan:Frameworks/Repository.Pattern/Repository.cs Issue AYURVDbtnSJipuBJLduF Rule common-cs:InsufficientCommentDensity Range (empty)
 Rule: csharpsquid:S1200 (size: 1):
   Component beyourmarket-autoscan:Frameworks/Repository.Pattern.Ef6/Repository.cs Issue AYURVDcTnSJipuBJLdvR Rule csharpsquid:S1200 Range 23:23:17:27
+Rule: csharpsquid:S1067 (size: 1):
+  Component beyourmarket-autoscan:BeYourMarket.Web/Controllers/ManageController.cs Issue AYURVDXVnSJipuBJLdhw Rule csharpsquid:S1067 Range 133:140:12:20
 Rule: csharpsquid:S1451 (size: 4):
   Component beyourmarket-autoscan:BeYourMarket.Common/Properties/AssemblyInfo.cs Issue AYURVDecnSJipuBJLdyS Rule csharpsquid:S1451 Range (empty)
   Component beyourmarket-autoscan:Tests/BeYourMarket.Test/Properties/AssemblyInfo.cs Issue AYURVDeXnSJipuBJLdyR Rule csharpsquid:S1451 Range (empty)
@@ -909,6 +911,8 @@ Rule: csharpsquid:S1168 (size: 1):
 Rule: csharpsquid:S1200 (size: 2):
   Component beyourmarket:BeYourMarket.Web/Global.asax.cs Issue AWorlJZM8C-TAjqan8va Rule csharpsquid:S1200 Range 18:18:17:31
   Component beyourmarket:BeYourMarket.Web/Areas/Admin/Controllers/InstallController.cs Issue AWorlJUy8C-TAjqan8ia Rule csharpsquid:S1200 Range 31:31:17:34
+Rule: csharpsquid:S1067 (size: 1):
+  Component beyourmarket:BeYourMarket.Web/Controllers/ManageController.cs Issue AYUTUvyFqk4UyBXYhpq1 Rule csharpsquid:S1067 Range 134:140:16:20
 Rule: csharpsquid:S1075 (size: 2):
   Component beyourmarket:Plugins/Plugin.Payment.Stripe/Controllers/PaymentStripeController.cs Issue AWorlJjA8C-TAjqan84b Rule csharpsquid:S1075 Range 201:201:44:84
   Component beyourmarket:Plugins/Plugin.Payment.Stripe/Controllers/PaymentStripeController.cs Issue AWorlJjA8C-TAjqan84a Rule csharpsquid:S1075 Range 181:181:40:86

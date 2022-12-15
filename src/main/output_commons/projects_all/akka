@@ -1,6 +1,6 @@
 ====== Bugs ======
 Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
-akka;18444;1890;89,752765;2086;11,309911
+akka;18441;1890;89,751098;2089;11,328019
 ====== Added issues ======
 Rule: csharpsquid:S1858 (size: 1):
   Component akka-autoscan:core/Akka.MultiNodeTestRunner.Shared/Sinks/FileSystemAppenderActor.cs Issue AYURSYG7wnv8wyLtvmLO Rule csharpsquid:S1858 Range 28:28:51:62
@@ -292,9 +292,12 @@ Rule: csharpsquid:S1104 (size: 3):
   Component akka-autoscan:core/Akka.MultiNodeTestRunner.Shared/ExitCodeContainer.cs Issue AYURSYJYwnv8wyLtvmP3 Rule csharpsquid:S1104 Range 19:19:26:38
   Component akka-autoscan:core/Akka.MultiNodeTestRunner.Shared/Persistence/JsonPersistentTestRunStore.cs Issue AYURSYJLwnv8wyLtvmPk Rule csharpsquid:S1104 Range 44:59:45:9
   Component akka-autoscan:core/Akka.MultiNodeTestRunner.Shared/TrxReporter/Models/UnitTest.cs Issue AYURSYH-wnv8wyLtvmNw Rule csharpsquid:S1104 Range 33:33:36:72
-Rule: csharpsquid:S1067 (size: 4):
+Rule: csharpsquid:S1067 (size: 7):
   Component akka-autoscan:core/Akka.Remote.TestKit/BarrierCoordinator.cs Issue AYURSXFJwnv8wyLtvi4a Rule csharpsquid:S1067 Range 88:91:23:55
+  Component akka-autoscan:contrib/cluster/Akka.Cluster.Tools/Singleton/ClusterSingletonManager.cs Issue AYURSYZ8wnv8wyLtvnA7 Rule csharpsquid:S1067 Range 1447:1487:25:13
+  Component akka-autoscan:core/Akka.Remote/Transport/DotNetty/DotNettyTransportSettings.cs Issue AYURSXs1wnv8wyLtvkb5 Rule csharpsquid:S1067 Range 79:105:19:57
   Component akka-autoscan:core/Akka.MultiNodeTestRunner.Shared/Reporting/MultiNodeMessage.cs Issue AYURSYJzwnv8wyLtvmRF Rule csharpsquid:S1067 Range 101:105:19:56
+  Component akka-autoscan:contrib/cluster/Akka.DistributedData/ORSet.cs Issue AYURSYfYwnv8wyLtvnYh Rule csharpsquid:S1067 Range 186:257:202:9
   Component akka-autoscan:core/Akka.MultiNodeTestRunner.Shared/Reporting/TestRunTree.cs Issue AYURSYJlwnv8wyLtvmQC Rule csharpsquid:S1067 Range 251:256:19:46
   Component akka-autoscan:core/Akka.MultiNodeTestRunner.Shared/Reporting/TestRunTree.cs Issue AYURSYJlwnv8wyLtvmQD Rule csharpsquid:S1067 Range 396:401:19:46
 Rule: csharpsquid:S1066 (size: 2):

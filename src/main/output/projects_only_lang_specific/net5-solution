@@ -1,6 +1,6 @@
 ====== Bugs ======
 Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
-net5-solution;853;18;97,889801;68;7,971864
+net5-solution;853;19;97,772567;69;8,089097
 ====== Added issues ======
 Rule: csharpsquid:S2325 (size: 1):
   Component net5-solution-autoscan:Net5/S3927.cs Issue AYURVMzrwnv8wyLtwDlS Rule csharpsquid:S2325 Range 9:9:20:37
@@ -72,6 +72,8 @@ Rule: csharpsquid:S106 (size: 67):
   Component net5-solution-autoscan:Net5Samples/VariousPatternsOfPatterns/Program.cs Issue AYURVM4awnv8wyLtwDxv Rule csharpsquid:S106 Range 59:59:12:29
   Component net5-solution-autoscan:Net5/S4583.Part1.cs Issue AYURVM2Ewnv8wyLtwDrX Rule csharpsquid:S106 Range 42:42:12:29
   Component net5-solution-autoscan:Net5/TargetTypedNew.cs Issue AYURVM2dwnv8wyLtwDsD Rule csharpsquid:S106 Range 18:18:12:29
+Rule: csharpsquid:S1067 (size: 1):
+  Component net5-solution-autoscan:Net5/S1067.cs Issue AYURVMzvwnv8wyLtwDlW Rule csharpsquid:S1067 Range 8:8:16:57
 
 ====== Missing issues ======
 Rule: csharpsquid:S3242 (size: 1):
@@ -99,6 +101,8 @@ Rule: csharpsquid:S2930 (size: 2):
 Rule: csharpsquid:S3900 (size: 2):
   Component net5-solution:Net5/S3267.cs Issue AX9KfvSAkhQIqndBXT2J Rule csharpsquid:S3900 Range 12:12:36:46
   Component net5-solution:Net5/S3267.cs Issue AX9KfvSAkhQIqndBXT2I Rule csharpsquid:S3900 Range 27:27:36:46
+Rule: csharpsquid:S1067 (size: 1):
+  Component net5-solution:Net5/S1067.cs Issue AX9KfvSTkhQIqndBXT2U Rule csharpsquid:S1067 Range 8:8:21:57
 Rule: csharpsquid:S1075 (size: 1):
   Component net5-solution:Net5/Main.cs Issue AX9KfvOVkhQIqndBXTy- Rule csharpsquid:S1075 Range 88:88:25:38
 Rule: csharpsquid:S3927 (size: 1):

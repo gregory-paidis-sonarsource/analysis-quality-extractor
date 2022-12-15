@@ -1,6 +1,6 @@
 ====== Bugs ======
 Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
-nhibernate;21560;3414;84,165121;453;2,101113
+nhibernate;21558;3414;84,163652;455;2,110585
 ====== Added issues ======
 Rule: csharpsquid:S1118 (size: 3):
   Component nhibernate-autoscan:NHibernate.Example.Web/Program.cs Issue AYURWI3nozEprKvtdl1q Rule csharpsquid:S1118 Range 15:15:14:21
@@ -374,6 +374,9 @@ Rule: csharpsquid:S1144 (size: 74):
   Component nhibernate-autoscan:NHibernate/Hql/Ast/ANTLR/SqlGenerator.cs Issue AYURWH8TozEprKvtdjn_ Rule csharpsquid:S1144 Range 385:393:2:3
   Component nhibernate-autoscan:NHibernate/Hql/Ast/ANTLR/SqlGenerator.cs Issue AYURWH8TozEprKvtdjoA Rule csharpsquid:S1144 Range 395:406:2:3
   Component nhibernate-autoscan:NHibernate/Linq/ReWriters/SubQueryConditionalExpander.cs Issue AYURWHcGozEprKvtdik3 Rule csharpsquid:S1144 Range 92:116:3:4
+Rule: csharpsquid:S1067 (size: 2):
+  Component nhibernate-autoscan:NHibernate/Persister/Entity/AbstractEntityPersister.cs Issue AYURWIEtozEprKvtdkAk Rule csharpsquid:S1067 Range 3535:3537:6:31
+  Component nhibernate-autoscan:NHibernate/Mapping/Any.cs Issue AYURWG7mozEprKvtdhie Rule csharpsquid:S1067 Range 36:59:10:6
 Rule: csharpsquid:S1186 (size: 4):
   Component nhibernate-autoscan:NHibernate/Linq/ResultOperators/ClientSideTransformOperator.cs Issue AYURWHc4ozEprKvtdimm Rule csharpsquid:S1186 Range 25:25:26:46
   Component nhibernate-autoscan:NHibernate.Example.Web/Pages/Index.cshtml.cs Issue AYURWI3iozEprKvtdl1n Rule csharpsquid:S1186 Range 12:12:14:19

@@ -27,15 +27,12 @@ public class AnalysisResultWrite {
     "auto-mapper",
     "beyourmarket",
     "codehub",
-    "embedio",
     "event-flow",
     "fluentassertions",
     "flurl",
     "fody",
     "jabbr",
-    "lucenenet",
     "masstransit",
-    "moq",
     "net5-solution",
     "net6-solution",
     "net7-solution",
@@ -43,16 +40,10 @@ public class AnalysisResultWrite {
     "nlog",
     "nodatime",
     "nopowershell",
-    "northwind-traders",
     "nuget-server",
     "ocelot",
     "obsidian",
-    "odata",
-    "openiddict-core",
-    "orchard-cms",
-    "omnisharp-roslyn",
-    "omnisharp-server",
-    "pascalabcnet"
+    "openiddict-core"
   );
 
   public static void main(String[] args) throws IOException {

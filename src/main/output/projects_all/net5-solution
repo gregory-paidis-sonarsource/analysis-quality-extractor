@@ -1,6 +1,6 @@
 ====== Bugs ======
 Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
-net5-solution;1134;143;87,389771;68;5,996473
+net5-solution;1134;144;87,301587;69;6,084656
 ====== Added issues ======
 Rule: csharpsquid:S2325 (size: 1):
   Component net5-solution-autoscan:Net5/S3927.cs Issue AYURVMzrwnv8wyLtwDlS Rule csharpsquid:S2325 Range 9:9:20:37
@@ -72,6 +72,8 @@ Rule: csharpsquid:S106 (size: 67):
   Component net5-solution-autoscan:Net5Samples/VariousPatternsOfPatterns/Program.cs Issue AYURVM4awnv8wyLtwDxv Rule csharpsquid:S106 Range 59:59:12:29
   Component net5-solution-autoscan:Net5/S4583.Part1.cs Issue AYURVM2Ewnv8wyLtwDrX Rule csharpsquid:S106 Range 42:42:12:29
   Component net5-solution-autoscan:Net5/TargetTypedNew.cs Issue AYURVM2dwnv8wyLtwDsD Rule csharpsquid:S106 Range 18:18:12:29
+Rule: csharpsquid:S1067 (size: 1):
+  Component net5-solution-autoscan:Net5/S1067.cs Issue AYURVMzvwnv8wyLtwDlW Rule csharpsquid:S1067 Range 8:8:16:57
 
 ====== Missing issues ======
 Rule: external_roslyn:CS0649 (size: 4):
@@ -162,6 +164,8 @@ Rule: external_roslyn:CS0219 (size: 7):
   Component net5-solution:Net5/S3353.cs Issue AX9KfvX2khQIqndBXT9T Rule external_roslyn:CS0219 Range 7:7:17:20
   Component net5-solution:Net5/Main.cs Issue AX9KfvOVkhQIqndBXTzG Rule external_roslyn:CS0219 Range 91:91:7:9
   Component net5-solution:Net5/Main.cs Issue AX9KfvOVkhQIqndBXTzI Rule external_roslyn:CS0219 Range 93:93:7:9
+Rule: csharpsquid:S1067 (size: 1):
+  Component net5-solution:Net5/S1067.cs Issue AX9KfvSTkhQIqndBXT2U Rule csharpsquid:S1067 Range 8:8:21:57
 Rule: external_roslyn:CA1507 (size: 1):
   Component net5-solution:Net5/S3928.cs Issue AX9KfvZWkhQIqndBXT_D Rule external_roslyn:CA1507 Range 12:12:48:55
 Rule: csharpsquid:S3242 (size: 1):

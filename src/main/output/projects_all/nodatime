@@ -1,6 +1,6 @@
 ====== Bugs ======
 Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
-nodatime;2542;53;97,915028;74;2,911094
+nodatime;2541;57;97,756789;79;3,109012
 ====== Added issues ======
 Rule: csharpsquid:S4058 (size: 1):
   Component nodatime-autoscan:NodaTime.TzValidate.NzdCompatibility/ZoneDumper.cs Issue AYURVPwfwnv8wyLtwG0G Rule csharpsquid:S4058 Range 127:127:23:67
@@ -81,6 +81,12 @@ Rule: csharpsquid:S1144 (size: 7):
   Component nodatime-autoscan:NodaTime.TzdbCompiler/Tzdb/TzdbStreamWriter.cs Issue AYURVP0awnv8wyLtwG4Q Rule csharpsquid:S1144 Range 198:198:12:55
   Component nodatime-autoscan:NodaTime.TzdbCompiler/Tzdb/TzdbStreamWriter.cs Issue AYURVP0awnv8wyLtwG4R Rule csharpsquid:S1144 Range 199:199:12:88
   Component nodatime-autoscan:NodaTime.TzdbCompiler/Tzdb/TzdbStreamWriter.cs Issue AYURVP0awnv8wyLtwG4S Rule csharpsquid:S1144 Range 201:208:12:13
+Rule: csharpsquid:S1067 (size: 5):
+  Component nodatime-autoscan:NodaTime/Calendars/GJYearMonthDayCalculator.cs Issue AYURVPlIwnv8wyLtwGnj Rule csharpsquid:S1067 Range 52:56:16:82
+  Component nodatime-autoscan:NodaTime/Calendars/GJYearMonthDayCalculator.cs Issue AYURVPlIwnv8wyLtwGnk Rule csharpsquid:S1067 Range 60:64:16:82
+  Component nodatime-autoscan:NodaTime/Calendars/GregorianYearMonthDayCalculator.cs Issue AYURVPkiwnv8wyLtwGin Rule csharpsquid:S1067 Range 83:87:20:86
+  Component nodatime-autoscan:NodaTime/Calendars/GregorianYearMonthDayCalculator.cs Issue AYURVPkiwnv8wyLtwGio Rule csharpsquid:S1067 Range 91:95:20:86
+  Component nodatime-autoscan:NodaTime/Text/Patterns/TimePatternHelper.cs Issue AYURVPhgwnv8wyLtwGbM Rule csharpsquid:S1067 Range 160:234:19:13
 
 ====== Missing issues ======
 Rule: csharpsquid:S4055 (size: 10):
@@ -144,6 +150,11 @@ Rule: csharpsquid:S3900 (size: 29):
   Component nodatime:NodaTime/DateInterval.cs Issue AW6i-Xq4mkQnGWm-CVRR Rule csharpsquid:S3900 Range 152:152:28:36
   Component nodatime:NodaTime.TzValidate.NodaDump/ZoneDumper.cs Issue AW6i-YARmkQnGWm-CVg3 Rule csharpsquid:S3900 Range 67:67:20:26
   Component nodatime:NodaTime/DateInterval.cs Issue AW6i-Xq4mkQnGWm-CVRY Rule csharpsquid:S3900 Range 227:227:45:53
+Rule: csharpsquid:S1067 (size: 4):
+  Component nodatime:NodaTime/Calendars/GregorianYearMonthDayCalculator.cs Issue AW6i-XmEmkQnGWm-CVIG Rule csharpsquid:S1067 Range 91:95:35:86
+  Component nodatime:NodaTime/Calendars/GJYearMonthDayCalculator.cs Issue AW6i-XnamkQnGWm-CVNM Rule csharpsquid:S1067 Range 60:64:31:82
+  Component nodatime:NodaTime/Calendars/GregorianYearMonthDayCalculator.cs Issue AW6i-XmEmkQnGWm-CVIF Rule csharpsquid:S1067 Range 83:87:35:86
+  Component nodatime:NodaTime/Calendars/GJYearMonthDayCalculator.cs Issue AW6i-XnamkQnGWm-CVNL Rule csharpsquid:S1067 Range 52:56:31:82
 Rule: external_roslyn:CS8767 (size: 1):
   Component nodatime:NodaTime.Test/PeriodBuilderTest.cs Issue AXNdECtiaeNjxQ1eoArm Rule external_roslyn:CS8767 Range 165:165:24:30
 ====== Vulnerabilities ======

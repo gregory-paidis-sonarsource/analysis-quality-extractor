@@ -1,6 +1,6 @@
 ====== Bugs ======
 Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
-auto-mapper;1617;1617;0,000000;1745;107,915894
+auto-mapper;1616;1616;0,000000;1745;107,982673
 ====== Added issues ======
 Rule: csharpsquid:S1854 (size: 1):
   Component auto-mapper-autoscan:src/AutoMapper/Execution/ProxyGenerator.cs Issue AYURVH_9ozEprKvtbvar Rule csharpsquid:S1854 Range 138:139:24:92
@@ -2145,10 +2145,9 @@ Rule: csharpsquid:S1226 (size: 3):
 Rule: csharpsquid:S4060 (size: 2):
   Component auto-mapper:AutoMapper/IgnoreMapAttribute.cs Issue AWcdi-iaHHoIz9y39BA2 Rule csharpsquid:S4060 Range 9:9:17:35
   Component auto-mapper:AutoMapper/Configuration/Conventions/MapToAttribute.cs Issue AWcdi-m7HHoIz9y39BGJ Rule csharpsquid:S4060 Range 7:7:17:31
-Rule: csharpsquid:S1067 (size: 5):
+Rule: csharpsquid:S1067 (size: 4):
   Component auto-mapper:AutoMapper/TypeDetails.cs Issue AWcdi-lSHHoIz9y39BEE Rule csharpsquid:S1067 Range 192:194:28:73
   Component auto-mapper:AutoMapper/MapperConfiguration.cs Issue AWcdi-kPHHoIz9y39BCj Rule csharpsquid:S1067 Range 251:256:16:72
-  Component auto-mapper:AutoMapper/XpressionMapper/Extensions/VisitorExtensions.cs Issue AWcyMbSTpccljlYa6DVY Rule csharpsquid:S1067 Range 133:135:27:113
   Component auto-mapper:AutoMapper/XpressionMapper/MapIncludesVisitor.cs Issue AWcyMbQ3pccljlYa6DTo Rule csharpsquid:S1067 Range 100:102:16:207
   Component auto-mapper:AutoMapper/TypeMap.cs Issue AWcyMbBCpccljlYa6DQi Rule csharpsquid:S1067 Range 352:357:45:67
 Rule: csharpsquid:S1066 (size: 2):

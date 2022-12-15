@@ -1,6 +1,6 @@
 ====== Bugs ======
 Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
-obsidian;6604;1026;84,463961;197;2,983041
+obsidian;6602;1027;84,444108;200;3,029385
 ====== Added issues ======
 Rule: csharpsquid:S4058 (size: 2):
   Component obsidian-autoscan:Obsidian.SourceGenerators/CodeBuilder.cs Issue AYURVHAzozEprKvtbrNu Rule csharpsquid:S4058 Range 186:186:18:44
@@ -191,6 +191,10 @@ Rule: csharpsquid:S106 (size: 1):
   Component obsidian-autoscan:Obsidian.ConsoleApp/Program.cs Issue AYURVHBdozEprKvtbrOT Rule csharpsquid:S106 Range 21:21:8:25
 Rule: csharpsquid:S1144 (size: 1):
   Component obsidian-autoscan:Obsidian/Utilities/Registry/Registry.cs Issue AYURVGSQozEprKvtbqNL Rule csharpsquid:S1144 Range 307:307:8:42
+Rule: csharpsquid:S1067 (size: 3):
+  Component obsidian-autoscan:Obsidian.API/_Types/ChatMessage.cs Issue AYURVGpIozEprKvtbq3I Rule csharpsquid:S1067 Range 153:169:64:9
+  Component obsidian-autoscan:Obsidian.API/Noise/TransitionMap.cs Issue AYURVGwqozEprKvtbq_d Rule csharpsquid:S1067 Range 33:43:18:18
+  Component obsidian-autoscan:Obsidian.API/Noise/VoronoiBiomes.cs Issue AYURVGxVozEprKvtbrAf Rule csharpsquid:S1067 Range 326:329:16:97
 Rule: csharpsquid:S4261 (size: 14):
   Component obsidian-autoscan:Obsidian/Utilities/BalancingTimer.cs Issue AYURVGVmozEprKvtbqVm Rule csharpsquid:S4261 Range 34:34:33:53
   Component obsidian-autoscan:Obsidian/Utilities/Extensions.cs Issue AYURVGTyozEprKvtbqP- Rule csharpsquid:S4261 Range 106:106:37:50
@@ -498,6 +502,8 @@ Rule: external_roslyn:CS8600 (size: 49):
   Component obsidian:Obsidian/Plugins/PluginContainer.cs Issue AYOyOLYySqCZtk9NdBLD Rule external_roslyn:CS8600 Range 100:100:40:111
 Rule: external_roslyn:CA1854 (size: 1):
   Component obsidian:Obsidian/WorldData/Generators/Overworld/Decorators/DecoratorFactory.cs Issue AYOyOLeUSqCZtk9NdBSq Rule external_roslyn:CA1854 Range 11:11:12:42
+Rule: csharpsquid:S1067 (size: 1):
+  Component obsidian:Obsidian.API/_Types/ChatMessage.cs Issue AYUVBYaoqk4UyBXYevWa Rule csharpsquid:S1067 Range 163:163:24:110
 Rule: csharpsquid:S1144 (size: 1):
   Component obsidian:Obsidian/Utilities/Registry/Registry.cs Issue AYOyOLTbSqCZtk9NdA_x Rule csharpsquid:S1144 Range 307:307:36:40
 Rule: csharpsquid:S4261 (size: 1):
