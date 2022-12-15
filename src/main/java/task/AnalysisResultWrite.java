@@ -24,25 +24,21 @@ public class AnalysisResultWrite {
 
   private static final List<String> projects = List.of(
     "akka",
-    "auto-mapper",
     "beyourmarket",
     "codehub",
-    "event-flow",
-    "fluentassertions",
     "flurl",
     "fody",
     "jabbr",
+    "fluentassertions",
     "masstransit",
     "net5-solution",
     "net6-solution",
-    "net7-solution",
     "nhibernate",
-    "nlog",
     "nodatime",
     "nopowershell",
     "nuget-server",
-    "ocelot",
     "obsidian",
+    "ocelot",
     "openiddict-core"
   );
 

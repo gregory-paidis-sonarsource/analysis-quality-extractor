@@ -2,10 +2,8 @@
 ====== Bugs / Code Smells ======
 Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
 akka;16702;1177;92,952940;3052;18,273261
-auto-mapper;1314;1314;0,000000;1402;106,697108
 beyourmarket;2629;1034;60,669456;163;6,200076
 codehub;3338;537;83,912522;276;8,268424
-event-flow;1983;1980;0,151286;2559;129,046899
 fluentassertions;1180;238;79,830508;1596;135,254237
 flurl;824;116;85,922330;28;3,398058
 fody;453;33;92,715232;55;12,141280
@@ -13,9 +11,7 @@ jabbr;1830;490;73,224044;214;11,693989
 masstransit;18963;1520;91,984391;99;0,522069
 net5-solution;853;19;97,772567;69;8,089097
 net6-solution;91;13;85,714286;1;1,098901
-net7-solution;113;113;0,000000;111;98,230088
 nhibernate;21558;3414;84,163652;455;2,110585
-nlog;3620;3618;0,055249;3639;100,524862
 nodatime;2237;56;97,496647;79;3,531515
 nopowershell;367;13;96,457766;20;5,449591
 nuget-server;460;125;72,826087;440;95,652174
@@ -25,10 +21,8 @@ openiddict-core;3078;240;92,202729;273;8,869396
 ====== Vulnerabilities ======
 Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
 akka;67;0;100,000000;159;237,313433
-auto-mapper;0;0;NaN;27;Infinity
 beyourmarket;46;44;4,347826;0;0,000000
 codehub;244;0;100,000000;3;1,229508
-event-flow;3;3;0,000000;12;400,000000
 fluentassertions;1;0;100,000000;0;0,000000
 flurl;0;0;NaN;12;Infinity
 fody;22;0;100,000000;0;0,000000
@@ -36,9 +30,7 @@ jabbr;0;0;NaN;6;Infinity
 masstransit;23;2;91,304348;5;21,739130
 net5-solution;11;0;100,000000;67;609,090909
 net6-solution;1;1;0,000000;0;0,000000
-net7-solution;0;0;NaN;0;NaN
 nhibernate;65;0;100,000000;1;1,538462
-nlog;2;2;0,000000;18;900,000000
 nodatime;0;0;NaN;55;Infinity
 nopowershell;0;0;NaN;11;Infinity
 nuget-server;3;0;100,000000;2;66,666667
