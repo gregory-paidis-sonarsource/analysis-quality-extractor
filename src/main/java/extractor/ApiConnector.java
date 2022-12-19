@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Base64;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
@@ -50,6 +51,31 @@ public class ApiConnector {
   private static final String API_MEASURE_COMPONENT = "/api/measures/component";
   private static final String API_PROJECT_BRANCHES_LIST = "/api/project_branches/list";
   private static final String API_RULE_SEARCH = "/api/rules/search";
+
+  private static HashSet<String> EXCLUDED_RULES = new HashSet<String>(
+    List.of(
+        "S5131",
+        "S2083",
+        "S2078",
+        "S2076",
+        "S5883",
+        "S6350",
+        "S2631",
+        "S3649",
+        "S2091",
+        "S5144",
+        "S5145",
+        "S5146",
+        "S5167",
+        "S5135",
+        "S5334",
+        "S6096",
+        "S6287",
+        "S2228",
+        "S3900",
+        "S3904",
+        "S3992",
+        "S1128"));
 
   private static final Gson GSON = new Gson();
 
@@ -102,6 +128,12 @@ public class ApiConnector {
         }
         List<Issue> currentResult = componentIssues.get().getIssues();
         if (currentResult != null) {
+
+          currentResult.removeIf(i -> {
+            var parts = i.getRule().split(":");
+            return parts.length < 2 || EXCLUDED_RULES.contains(parts[1]); 
+          });
+
           totalResult.addAll(currentResult);
         }
       }
