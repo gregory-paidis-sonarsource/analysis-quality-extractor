@@ -1,6 +1,6 @@
 ====== Bugs ======
 Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
-net6-solution;153;40;73,856209;1;0,653595
+net6-solution;90;13;85,555556;1;1,111111
 ====== Added issues ======
 Rule: csharpsquid:S2325 (size: 1):
   Component net6-solution-autoscan:Net6/LambdaAttributes.cs Issue AYURU3Z8wnv8wyLtv-Yd Rule csharpsquid:S2325 Range 5:5:20:27
@@ -10,12 +10,6 @@ Rule: csharpsquid:S3906 (size: 3):
   Component net6-solution:Net6/StaticAbstractMembersInInterfaces.cs Issue AXycgGFRhnDq77FFOtVG Rule csharpsquid:S3906 Range 26:26:28:34
   Component net6-solution:Net6/StaticAbstractMembersInInterfaces.cs Issue AXycgGFRhnDq77FFOtVH Rule csharpsquid:S3906 Range 27:27:28:34
   Component net6-solution:Net6/StaticAbstractMembersInInterfaces.cs Issue AXycgGFRhnDq77FFOtVD Rule csharpsquid:S3906 Range 9:9:30:36
-Rule: external_roslyn:CS1998 (size: 1):
-  Component net6-solution:Net6/AllowAsyncMethodBuilderAttributeOnMethods.cs Issue AXycgGFlhnDq77FFOtVu Rule external_roslyn:CS1998 Range 6:6:26:36
-Rule: external_roslyn:CA1018 (size: 1):
-  Component net6-solution:Net6/GenericAttributes.cs Issue AXycgGFchnDq77FFOtVk Rule external_roslyn:CA1018 Range 4:4:17:28
-Rule: csharpsquid:S4060 (size: 1):
-  Component net6-solution:Net6/GenericAttributes.cs Issue AXycgGFchnDq77FFOtVg Rule csharpsquid:S4060 Range 4:4:17:28
 Rule: csharpsquid:S4055 (size: 5):
   Component net6-solution:Net6/StaticAbstractMembersInInterfaces.cs Issue AXycgGFRhnDq77FFOtVM Rule csharpsquid:S4055 Range 23:23:52:70
   Component net6-solution:Net6/LambdaAttributes.cs Issue AXycgGFNhnDq77FFOtU9 Rule csharpsquid:S4055 Range 8:8:74:88
@@ -27,46 +21,16 @@ Rule: csharpsquid:S2222 (size: 2):
   Component net6-solution:Net6/MutexAclTest.cs Issue AX765C48yl625pGxiMER Rule csharpsquid:S2222 Range 24:24:16:31
 Rule: csharpsquid:S3993 (size: 1):
   Component net6-solution:Net6/GenericAttributes.cs Issue AXycgGFchnDq77FFOtVi Rule csharpsquid:S3993 Range 4:4:17:28
-Rule: external_roslyn:CA1416 (size: 11):
-  Component net6-solution:Net6/MutexAclTest.cs Issue AX3Fu1xeI3PCaQXm4SEL Rule external_roslyn:CA1416 Range 35:35:50:103
-  Component net6-solution:Net6/MutexAclTest.cs Issue AX3Fu1xeI3PCaQXm4SEO Rule external_roslyn:CA1416 Range 16:16:17:100
-  Component net6-solution:Net6/MutexAclTest.cs Issue AX3Fu1xeI3PCaQXm4SER Rule external_roslyn:CA1416 Range 11:11:21:89
-  Component net6-solution:Net6/MutexAclTest.cs Issue AX3Fu1xeI3PCaQXm4SEM Rule external_roslyn:CA1416 Range 35:35:21:104
-  Component net6-solution:Net6/MutexAclTest.cs Issue AX3Fu1xeI3PCaQXm4SEP Rule external_roslyn:CA1416 Range 34:34:21:89
-  Component net6-solution:Net6/MutexAclTest.cs Issue AX3Fu1xeI3PCaQXm4SEQ Rule external_roslyn:CA1416 Range 41:41:21:90
-  Component net6-solution:Net6/MutexAclTest.cs Issue AX3Fu1xeI3PCaQXm4SEK Rule external_roslyn:CA1416 Range 42:42:50:103
-  Component net6-solution:Net6/MutexAclTest.cs Issue AX3Fu1xeI3PCaQXm4SES Rule external_roslyn:CA1416 Range 22:22:48:101
-  Component net6-solution:Net6/MutexAclTest.cs Issue AX3Fu1xeI3PCaQXm4SEJ Rule external_roslyn:CA1416 Range 22:22:16:117
-  Component net6-solution:Net6/MutexAclTest.cs Issue AX3Fu1xeI3PCaQXm4SET Rule external_roslyn:CA1416 Range 16:16:46:99
-  Component net6-solution:Net6/MutexAclTest.cs Issue AX3Fu1xeI3PCaQXm4SEN Rule external_roslyn:CA1416 Range 42:42:21:104
-Rule: external_roslyn:CA1822 (size: 10):
-  Component net6-solution:Net6/AnonymousTypesInWithExpressions.cs Issue AXycgGGChnDq77FFOtWV Rule external_roslyn:CA1822 Range 5:5:20:27
-  Component net6-solution:Net6/LambdaAttributes.cs Issue AXycgGFNhnDq77FFOtU_ Rule external_roslyn:CA1822 Range 5:5:20:27
-  Component net6-solution:Net6/GenericAttributes.cs Issue AXycgGFchnDq77FFOtVl Rule external_roslyn:CA1822 Range 14:14:20:27
-  Component net6-solution:Net6/ExtendedPropertyPatterns.cs Issue AXycgGGLhnDq77FFOtWk Rule external_roslyn:CA1822 Range 7:7:16:23
-  Component net6-solution:Net6/FileScopedNamespaceDeclaration.cs Issue AXycgGGGhnDq77FFOtWd Rule external_roslyn:CA1822 Range 5:5:16:27
-  Component net6-solution:Net6/LambdasWithExplicitReturnType.cs Issue AXycgGFXhnDq77FFOtVc Rule external_roslyn:CA1822 Range 5:5:20:27
-  Component net6-solution:Net6/AllowAsyncMethodBuilderAttributeOnMethods.cs Issue AXycgGFlhnDq77FFOtVv Rule external_roslyn:CA1822 Range 6:6:26:36
-  Component net6-solution:Net6/AssignmentAndDeclarationInSameDeconstruction.cs Issue AXycgGF-hnDq77FFOtWQ Rule external_roslyn:CA1822 Range 5:5:20:27
-  Component net6-solution:Net6/StructuresAsLeftHandOperandsInWithExpressions.cs Issue AXycgGFphnDq77FFOtV1 Rule external_roslyn:CA1822 Range 5:5:20:27
-  Component net6-solution:Net6/GlobalUsingDirectives.cs Issue AXycgGF1hnDq77FFOtWF Rule external_roslyn:CA1822 Range 7:7:16:23
 Rule: csharpsquid:S106 (size: 1):
   Component net6-solution:NullableReferenceTypesExample/NullableReferenceTypesExample.cs Issue AXycgGGShnDq77FFOtWr Rule csharpsquid:S106 Range 20:20:12:29
-Rule: external_roslyn:CS0169 (size: 1):
-  Component net6-solution:Net6/Deconstruction.cs Issue AYKHRWn3_EM48ISr7Cvd Rule external_roslyn:CS0169 Range 7:7:24:29
-Rule: external_roslyn:CS0067 (size: 1):
-  Component net6-solution:Net6/StaticAbstractMembersInInterfaces.cs Issue AXycgGFRhnDq77FFOtVQ Rule external_roslyn:CS0067 Range 26:26:35:37
-Rule: external_roslyn:CS8632 (size: 2):
-  Component net6-solution:Net6/Deconstruction.cs Issue AYKHRWn3_EM48ISr7Cvb Rule external_roslyn:CS8632 Range 9:9:21:22
-  Component net6-solution:Net6/Deconstruction.cs Issue AYKHRWn3_EM48ISr7Cvc Rule external_roslyn:CS8632 Range 7:7:22:23
+Rule: csharpsquid:S4060 (size: 1):
+  Component net6-solution:Net6/GenericAttributes.cs Issue AXycgGFchnDq77FFOtVg Rule csharpsquid:S4060 Range 4:4:17:28
 ====== Vulnerabilities ======
 Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
-net6-solution;1;1;0,000000;0;0,000000
+net6-solution;0;0;NaN;0;NaN
 ====== Added issues ======
 
 ====== Missing issues ======
-Rule: csharpsquid:S2228 (size: 1):
-  Component net6-solution:NullableReferenceTypesExample/NullableReferenceTypesExample.cs Issue AXycgGGShnDq77FFOtWq Rule csharpsquid:S2228 Range 20:20:12:29
 ====== Metrics ======
 JavaAnalysisFinishedCount; WorkerForJavaCloneDuration; WorkerForJavaTaskDuration; DownloadedArtifactsPercentage; ParsedArtifactsCount; ConstructDependencyGraphDuration; DownloadDependenciesDuration; ResolveDependenciesDuration; WorkerForJavaQueueLatency
 No metric

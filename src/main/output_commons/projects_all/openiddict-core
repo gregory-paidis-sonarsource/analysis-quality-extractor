@@ -1,14 +1,7 @@
 ====== Bugs ======
 Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
-openiddict-core;3562;287;91,942729;285;8,001123
+openiddict-core;3006;168;94,411178;273;9,081836
 ====== Added issues ======
-Rule: common-cs:InsufficientLineCoverage (size: 6):
-  Component openiddict-core-autoscan:test/OpenIddict.Server.AspNetCore.IntegrationTests/OpenIddictServerAspNetCoreIntegrationTests.Authentication.cs Issue AYURVtv3ozEprKvtco89 Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component openiddict-core-autoscan:test/OpenIddict.Server.AspNetCore.IntegrationTests/OpenIddictServerAspNetCoreIntegrationTests.Exchange.cs Issue AYURVtvtozEprKvtco8x Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component openiddict-core-autoscan:test/OpenIddict.Server.AspNetCore.IntegrationTests/OpenIddictServerAspNetCoreIntegrationTests.cs Issue AYURVtvyozEprKvtco83 Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component openiddict-core-autoscan:test/OpenIddict.Server.Owin.IntegrationTests/OpenIddictServerOwinIntegrationTests.Authentication.cs Issue AYURVtwdozEprKvtco9E Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component openiddict-core-autoscan:test/OpenIddict.Server.Owin.IntegrationTests/OpenIddictServerOwinIntegrationTests.Exchange.cs Issue AYURVtwnozEprKvtco9Q Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component openiddict-core-autoscan:test/OpenIddict.Server.Owin.IntegrationTests/OpenIddictServerOwinIntegrationTests.cs Issue AYURVtwiozEprKvtco9L Rule common-cs:InsufficientLineCoverage Range (empty)
 Rule: csharpsquid:S2583 (size: 2):
   Component openiddict-core-autoscan:src/OpenIddict.Abstractions/Primitives/OpenIddictConverter.cs Issue AYURVtbAozEprKvtcoPQ Rule csharpsquid:S2583 Range 110:110:20:33
   Component openiddict-core-autoscan:src/OpenIddict.Abstractions/Primitives/OpenIddictMessage.cs Issue AYURVta1ozEprKvtcoPI Rule csharpsquid:S2583 Range 353:353:20:33
@@ -34,13 +27,6 @@ Rule: csharpsquid:S2325 (size: 9):
   Component openiddict-core-autoscan:samples/Mvc.Server/Controllers/ManageController.cs Issue AYURVtVzozEprKvtcoGW Rule csharpsquid:S2325 Range 84:84:29:43
   Component openiddict-core-autoscan:samples/Mvc.Server/Controllers/ManageController.cs Issue AYURVtVzozEprKvtcoGy Rule csharpsquid:S2325 Range 318:318:21:30
   Component openiddict-core-autoscan:samples/Mvc.Server/Startup.cs Issue AYURVtXHozEprKvtcoIi Rule csharpsquid:S2325 Range 136:136:20:29
-Rule: common-cs:InsufficientCommentDensity (size: 6):
-  Component openiddict-core-autoscan:test/OpenIddict.Server.AspNetCore.IntegrationTests/OpenIddictServerAspNetCoreIntegrationTests.Authentication.cs Issue AYURVtv3ozEprKvtco8- Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component openiddict-core-autoscan:test/OpenIddict.Server.AspNetCore.IntegrationTests/OpenIddictServerAspNetCoreIntegrationTests.Exchange.cs Issue AYURVtvtozEprKvtco8y Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component openiddict-core-autoscan:test/OpenIddict.Server.AspNetCore.IntegrationTests/OpenIddictServerAspNetCoreIntegrationTests.cs Issue AYURVtvyozEprKvtco84 Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component openiddict-core-autoscan:test/OpenIddict.Server.Owin.IntegrationTests/OpenIddictServerOwinIntegrationTests.Authentication.cs Issue AYURVtwdozEprKvtco9F Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component openiddict-core-autoscan:test/OpenIddict.Server.Owin.IntegrationTests/OpenIddictServerOwinIntegrationTests.Exchange.cs Issue AYURVtwnozEprKvtco9R Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component openiddict-core-autoscan:test/OpenIddict.Server.Owin.IntegrationTests/OpenIddictServerOwinIntegrationTests.cs Issue AYURVtwiozEprKvtco9M Rule common-cs:InsufficientCommentDensity Range (empty)
 Rule: csharpsquid:S1200 (size: 1):
   Component openiddict-core-autoscan:src/OpenIddict.Server/OpenIddictServerHandlers.cs Issue AYURVthCozEprKvtcohH Rule csharpsquid:S1200 Range 2710:2710:21:52
 Rule: csharpsquid:S1067 (size: 7):
@@ -300,22 +286,6 @@ Rule: csharpsquid:S4261 (size: 239):
   Component openiddict-core-autoscan:samples/Mvc.Server/Controllers/UserinfoController.cs Issue AYURVtVnozEprKvtcoF6 Rule csharpsquid:S4261 Range 26:26:41:49
 
 ====== Missing issues ======
-Rule: csharpsquid:S1128 (size: 15):
-  Component openiddict-core:src/OpenIddict.Validation/OpenIddictValidationBuilder.cs Issue AW8fCP2OMC6hVNLsGzVg Rule csharpsquid:S1128 Range 12:12:0:37
-  Component openiddict-core:src/OpenIddict.Abstractions/Managers/IOpenIddictTokenManager.cs Issue AW8fCP2-MC6hVNLsGzWH Rule csharpsquid:S1128 Range 3:3:0:35
-  Component openiddict-core:src/OpenIddict.Abstractions/Caches/IOpenIddictApplicationCache.cs Issue AW8fCP6SMC6hVNLsGzcr Rule csharpsquid:S1128 Range 8:8:0:35
-  Component openiddict-core:src/OpenIddict.Validation.DataProtection/OpenIddictValidationDataProtectionConfiguration.cs Issue AW8fCQRbMC6hVNLsG0JR Rule csharpsquid:S1128 Range 11:11:0:37
-  Component openiddict-core:src/OpenIddict.EntityFrameworkCore/OpenIddictEntityFrameworkCoreHelpers.cs Issue AW8fCP_pMC6hVNLsGzoI Rule csharpsquid:S1128 Range 9:9:0:18
-  Component openiddict-core:src/OpenIddict.Server/OpenIddictServerEvents.cs Issue AW8fCQFsMC6hVNLsGz0W Rule csharpsquid:S1128 Range 8:8:0:33
-  Component openiddict-core:src/OpenIddict.Server/OpenIddictServerBuilder.cs Issue AW8fCQBeMC6hVNLsGzpK Rule csharpsquid:S1128 Range 12:12:0:37
-  Component openiddict-core:src/OpenIddict.Server/OpenIddictServerHandlers.Exchange.cs Issue AW8fCQEYMC6hVNLsGzxi Rule csharpsquid:S1128 Range 10:10:0:18
-  Component openiddict-core:src/OpenIddict.Server.Owin/OpenIddictServerOwinMiddlewareFactory.cs Issue AW8fCP8dMC6hVNLsGzju Rule csharpsquid:S1128 Range 12:12:0:35
-  Component openiddict-core:src/OpenIddict.Server.Owin/OpenIddictServerOwinHandler.cs Issue AW8fCP73MC6hVNLsGzi3 Rule csharpsquid:S1128 Range 9:9:0:29
-  Component openiddict-core:src/OpenIddict.EntityFrameworkCore/OpenIddictEntityFrameworkCoreHelpers.cs Issue AW8fCP_pMC6hVNLsGzoH Rule csharpsquid:S1128 Range 8:8:0:33
-  Component openiddict-core:samples/Mvc.Server/Controllers/AuthorizationController.cs Issue AW8fCQb1MC6hVNLsG0RE Rule csharpsquid:S1128 Range 14:14:0:32
-  Component openiddict-core:src/OpenIddict.Abstractions/Caches/IOpenIddictTokenCache.cs Issue AW8fCP6ZMC6hVNLsGzcv Rule csharpsquid:S1128 Range 8:8:0:35
-  Component openiddict-core:src/OpenIddict.EntityFrameworkCore/OpenIddictEntityFrameworkCoreHelpers.cs Issue AW8fCP_pMC6hVNLsGzoJ Rule csharpsquid:S1128 Range 10:10:0:23
-  Component openiddict-core:src/OpenIddict.Validation.Owin/OpenIddictValidationOwinMiddlewareFactory.cs Issue AW8fCQA-MC6hVNLsGzox Rule csharpsquid:S1128 Range 12:12:0:35
 Rule: csharpsquid:S1200 (size: 4):
   Component openiddict-core:samples/Mvc.Server/Controllers/AccountController.cs Issue AW8fCQcEMC6hVNLsG0Ra Rule csharpsquid:S1200 Range 15:15:17:34
   Component openiddict-core:src/OpenIddict.Validation.DataProtection/OpenIddictValidationDataProtectionFormatter.cs Issue AYOyOE89NX2bJEeHumZk Rule csharpsquid:S1200 Range 21:21:17:60
@@ -417,11 +387,6 @@ Rule: csharpsquid:S3358 (size: 2):
   Component openiddict-core:src/OpenIddict.Server/OpenIddictServerHandlers.Discovery.cs Issue AW8fCQEHMC6hVNLsGzxe Rule csharpsquid:S3358 Range 1404:1404:38:125
 Rule: csharpsquid:S126 (size: 1):
   Component openiddict-core:src/OpenIddict.Server/OpenIddictServerHandlers.Discovery.cs Issue AW8fCQEHMC6hVNLsGzxa Rule csharpsquid:S126 Range 1371:1371:24:31
-Rule: external_roslyn:xUnit1004 (size: 4):
-  Component openiddict-core:test/OpenIddict.Server.IntegrationTests/OpenIddictServerIntegrationTests.Authentication.cs Issue AXpaSujmmzfLbE2uU3LU Rule external_roslyn:xUnit1004 Range 723:723:14:94
-  Component openiddict-core:test/OpenIddict.Server.IntegrationTests/OpenIddictServerIntegrationTests.Authentication.cs Issue AXpaSujmmzfLbE2uU3LT Rule external_roslyn:xUnit1004 Range 744:744:14:94
-  Component openiddict-core:test/OpenIddict.Server.AspNetCore.IntegrationTests/OpenIddictServerAspNetCoreIntegrationTests.Authentication.cs Issue AXpaSujSmzfLbE2uU3LS Rule external_roslyn:xUnit1004 Range 18:18:14:98
-  Component openiddict-core:test/OpenIddict.Server.Owin.IntegrationTests/OpenIddictServerOwinIntegrationTests.Authentication.cs Issue AXpaSujumzfLbE2uU3LV Rule external_roslyn:xUnit1004 Range 18:18:14:98
 Rule: csharpsquid:S3216 (size: 74):
   Component openiddict-core:src/OpenIddict.Server.Owin/OpenIddictServerOwinHandlers.cs Issue AW8fCP7kMC6hVNLsGzin Rule csharpsquid:S3216 Range 1014:1014:26:105
   Component openiddict-core:src/OpenIddict.Validation.AspNetCore/OpenIddictValidationAspNetCoreHandlers.cs Issue AW8fCQO0MC6hVNLsG0FY Rule csharpsquid:S3216 Range 296:296:22:117
@@ -497,112 +462,10 @@ Rule: csharpsquid:S3216 (size: 74):
   Component openiddict-core:src/OpenIddict.Server.Owin/OpenIddictServerOwinHandlers.Session.cs Issue AW8fCP84MC6hVNLsGzkG Rule csharpsquid:S3216 Range 112:112:38:108
   Component openiddict-core:src/OpenIddict.EntityFramework/Stores/OpenIddictScopeStore.cs Issue AW8fCQPrMC6hVNLsG0Gp Rule csharpsquid:S3216 Range 201:203:25:78
   Component openiddict-core:src/OpenIddict.EntityFramework/Stores/OpenIddictAuthorizationStore.cs Issue AW8fCQQDMC6hVNLsG0IQ Rule csharpsquid:S3216 Range 785:785:40:122
-Rule: csharpsquid:S3900 (size: 57):
-  Component openiddict-core:src/OpenIddict.Server.DataProtection/OpenIddictServerDataProtectionFormatter.cs Issue AW-SJeiyvNiUxyUYEgHV Rule csharpsquid:S3900 Range 247:247:38:47
-  Component openiddict-core:src/OpenIddict.EntityFramework/Stores/OpenIddictAuthorizationStore.cs Issue AW-SJeTlvNiUxyUYEgHS Rule csharpsquid:S3900 Range 862:862:16:22
-  Component openiddict-core:src/OpenIddict.EntityFrameworkCore/Stores/OpenIddictAuthorizationStore.cs Issue AW-SJdcHvNiUxyUYEgG1 Rule csharpsquid:S3900 Range 928:928:16:22
-  Component openiddict-core:samples/Mvc.Server/Controllers/ManageController.cs Issue AW8fCQcYMC6hVNLsG0Sa Rule csharpsquid:S3900 Range 248:248:71:76
-  Component openiddict-core:src/OpenIddict.MongoDb/Stores/OpenIddictApplicationStore.cs Issue AW-SJeKFvNiUxyUYEgHH Rule csharpsquid:S3900 Range 721:721:16:27
-  Component openiddict-core:src/OpenIddict.Core/Caches/OpenIddictApplicationCache.cs Issue AW8fCQHUMC6hVNLsGz3W Rule csharpsquid:S3900 Range 42:42:21:29
-  Component openiddict-core:src/OpenIddict.Core/Caches/OpenIddictTokenCache.cs Issue AW8fCQG5MC6hVNLsGz2W Rule csharpsquid:S3900 Range 42:42:21:29
-  Component openiddict-core:src/OpenIddict.Core/Managers/OpenIddictAuthorizationManager.cs Issue AW8fCQISMC6hVNLsGz8H Rule csharpsquid:S3900 Range 38:38:20:28
-  Component openiddict-core:src/OpenIddict.NHibernate/Stores/OpenIddictApplicationStore.cs Issue AW-SJd-mvNiUxyUYEgHC Rule csharpsquid:S3900 Range 858:858:16:25
-  Component openiddict-core:src/OpenIddict.NHibernate/Stores/OpenIddictApplicationStore.cs Issue AW-SJd-mvNiUxyUYEgHE Rule csharpsquid:S3900 Range 920:920:16:25
-  Component openiddict-core:samples/Mvc.Server/Controllers/ManageController.cs Issue AW8fCQcYMC6hVNLsG0SR Rule csharpsquid:S3900 Range 72:72:71:78
-  Component openiddict-core:src/OpenIddict.MongoDb/Stores/OpenIddictApplicationStore.cs Issue AW-SJeKFvNiUxyUYEgHG Rule csharpsquid:S3900 Range 748:748:16:25
-  Component openiddict-core:src/OpenIddict.Server.Owin/OpenIddictServerOwinMiddleware.cs Issue AW8fCP9IMC6hVNLsGzkO Rule csharpsquid:S3900 Range 34:34:25:32
-  Component openiddict-core:src/OpenIddict.Core/Caches/OpenIddictAuthorizationCache.cs Issue AW8fCQHKMC6hVNLsGz28 Rule csharpsquid:S3900 Range 42:42:21:29
-  Component openiddict-core:src/OpenIddict.MongoDb/Stores/OpenIddictApplicationStore.cs Issue AW-SJeKFvNiUxyUYEgHI Rule csharpsquid:S3900 Range 806:806:16:25
-  Component openiddict-core:src/OpenIddict.EntityFrameworkCore/Stores/OpenIddictApplicationStore.cs Issue AW-SJdcvvNiUxyUYEgG4 Rule csharpsquid:S3900 Range 964:964:16:25
-  Component openiddict-core:src/OpenIddict.MongoDb/Stores/OpenIddictApplicationStore.cs Issue AW-SJeKFvNiUxyUYEgHJ Rule csharpsquid:S3900 Range 833:833:16:28
-  Component openiddict-core:samples/Mvc.Server/Controllers/ManageController.cs Issue AW8fCQcYMC6hVNLsG0SS Rule csharpsquid:S3900 Range 101:101:84:89
-  Component openiddict-core:samples/Mvc.Server/Controllers/AccountController.cs Issue AW8fCQcEMC6hVNLsG0Rt Rule csharpsquid:S3900 Range 255:255:62:67
-  Component openiddict-core:src/OpenIddict.MongoDb/Stores/OpenIddictScopeStore.cs Issue AW-SJeLQvNiUxyUYEgHL Rule csharpsquid:S3900 Range 583:583:16:25
-  Component openiddict-core:samples/Mvc.Server/Controllers/AccountController.cs Issue AW8fCQcEMC6hVNLsG0R4 Rule csharpsquid:S3900 Range 412:412:67:72
-  Component openiddict-core:src/OpenIddict.Core/Caches/OpenIddictAuthorizationCache.cs Issue AW8fCQHKMC6hVNLsGz27 Rule csharpsquid:S3900 Range 38:38:28:35
-  Component openiddict-core:src/OpenIddict.EntityFrameworkCore/Stores/OpenIddictApplicationStore.cs Issue AW-SJdcvvNiUxyUYEgG3 Rule csharpsquid:S3900 Range 902:902:16:25
-  Component openiddict-core:src/OpenIddict.NHibernate/Stores/OpenIddictAuthorizationStore.cs Issue AW-SJd9lvNiUxyUYEgHA Rule csharpsquid:S3900 Range 814:814:16:22
-  Component openiddict-core:src/OpenIddict.EntityFramework/Stores/OpenIddictApplicationStore.cs Issue AW-SJeR_vNiUxyUYEgHP Rule csharpsquid:S3900 Range 824:824:16:27
-  Component openiddict-core:src/OpenIddict.Validation/OpenIddictValidationEvents.cs Issue AW8fCP22MC6hVNLsGzWE Rule csharpsquid:S3900 Range 243:243:47:58
-  Component openiddict-core:src/OpenIddict.NHibernate/Stores/OpenIddictApplicationStore.cs Issue AW-SJd-mvNiUxyUYEgHD Rule csharpsquid:S3900 Range 950:950:16:28
-  Component openiddict-core:samples/Mvc.Server/Helpers/FormValueRequiredAttribute.cs Issue AW8fCQdOMC6hVNLsG0S1 Rule csharpsquid:S3900 Range 19:19:30:37
-  Component openiddict-core:samples/Mvc.Server/Controllers/ManageController.cs Issue AW8fCQcYMC6hVNLsG0SZ Rule csharpsquid:S3900 Range 213:213:74:79
-  Component openiddict-core:src/OpenIddict.NHibernate/Stores/OpenIddictApplicationStore.cs Issue AW-SJd-mvNiUxyUYEgHB Rule csharpsquid:S3900 Range 827:827:16:27
-  Component openiddict-core:src/OpenIddict.Abstractions/Primitives/OpenIddictExtensions.cs Issue AW8fCP4FMC6hVNLsGzZ9 Rule csharpsquid:S3900 Range 586:586:16:28
-  Component openiddict-core:src/OpenIddict.Core/Caches/OpenIddictTokenCache.cs Issue AW8fCQG5MC6hVNLsGz2V Rule csharpsquid:S3900 Range 38:38:28:35
-  Component openiddict-core:samples/Mvc.Server/Controllers/AccountController.cs Issue AW8fCQcEMC6hVNLsG0Rm Rule csharpsquid:S3900 Range 106:106:60:65
-  Component openiddict-core:samples/Mvc.Server/Controllers/AccountController.cs Issue AW8fCQcEMC6hVNLsG0Ry Rule csharpsquid:S3900 Range 304:304:58:63
-  Component openiddict-core:src/OpenIddict.Core/Managers/OpenIddictApplicationManager.cs Issue AW8fCQHxMC6hVNLsGz5a Rule csharpsquid:S3900 Range 44:44:20:28
-  Component openiddict-core:src/OpenIddict.EntityFramework/Stores/OpenIddictApplicationStore.cs Issue AW-SJeR_vNiUxyUYEgHO Rule csharpsquid:S3900 Range 917:917:16:25
-  Component openiddict-core:samples/Mvc.Server/Controllers/AccountController.cs Issue AW8fCQcEMC6hVNLsG0R5 Rule csharpsquid:S3900 Range 363:363:76:81
-  Component openiddict-core:samples/Mvc.Server/Startup.cs Issue AW8fCQdcMC6hVNLsG0TF Rule csharpsquid:S3900 Range 166:166:28:31
-  Component openiddict-core:src/OpenIddict.Core/Caches/OpenIddictScopeCache.cs Issue AW8fCQHCMC6hVNLsGz2t Rule csharpsquid:S3900 Range 42:42:21:29
-  Component openiddict-core:src/OpenIddict.EntityFramework/Stores/OpenIddictApplicationStore.cs Issue AW-SJeR_vNiUxyUYEgHQ Rule csharpsquid:S3900 Range 947:947:16:28
-  Component openiddict-core:samples/Mvc.Server/Controllers/ManageController.cs Issue AW8fCQcYMC6hVNLsG0ST Rule csharpsquid:S3900 Range 161:161:77:82
-  Component openiddict-core:src/OpenIddict.Validation.Owin/OpenIddictValidationOwinMiddleware.cs Issue AW8fCP_5MC6hVNLsGzoP Rule csharpsquid:S3900 Range 34:34:25:32
-  Component openiddict-core:src/OpenIddict.NHibernate/Stores/OpenIddictScopeStore.cs Issue AW-SJd_IvNiUxyUYEgHF Rule csharpsquid:S3900 Range 644:644:16:25
-  Component openiddict-core:src/OpenIddict.EntityFramework/Stores/OpenIddictScopeStore.cs Issue AW-SJeSivNiUxyUYEgHR Rule csharpsquid:S3900 Range 595:595:16:25
-  Component openiddict-core:src/OpenIddict.EntityFrameworkCore/Stores/OpenIddictApplicationStore.cs Issue AW-SJdcvvNiUxyUYEgG5 Rule csharpsquid:S3900 Range 994:994:16:28
-  Component openiddict-core:src/OpenIddict.MongoDb/Stores/OpenIddictAuthorizationStore.cs Issue AW-SJeKqvNiUxyUYEgHK Rule csharpsquid:S3900 Range 809:809:16:22
-  Component openiddict-core:src/OpenIddict.Core/Managers/OpenIddictScopeManager.cs Issue AW8fCQIFMC6hVNLsGz7O Rule csharpsquid:S3900 Range 36:36:20:28
-  Component openiddict-core:src/OpenIddict.EntityFrameworkCore/Stores/OpenIddictApplicationStore.cs Issue AW-SJdcuvNiUxyUYEgG2 Rule csharpsquid:S3900 Range 871:871:16:27
-  Component openiddict-core:src/OpenIddict.Core/Managers/OpenIddictScopeManager.cs Issue AW-SJd5jvNiUxyUYEgG_ Rule csharpsquid:S3900 Range 523:523:16:22
-  Component openiddict-core:src/OpenIddict.Core/Managers/OpenIddictTokenManager.cs Issue AW8fCQHeMC6hVNLsGz3n Rule csharpsquid:S3900 Range 38:38:20:28
-  Component openiddict-core:src/OpenIddict.EntityFrameworkCore/Stores/OpenIddictScopeStore.cs Issue AW-SJddsvNiUxyUYEgG6 Rule csharpsquid:S3900 Range 610:610:16:25
-  Component openiddict-core:src/OpenIddict.Core/Caches/OpenIddictApplicationCache.cs Issue AW8fCQHUMC6hVNLsGz3V Rule csharpsquid:S3900 Range 38:38:28:35
-  Component openiddict-core:src/OpenIddict.Core/Caches/OpenIddictScopeCache.cs Issue AW8fCQHCMC6hVNLsGz2s Rule csharpsquid:S3900 Range 38:38:28:35
-  Component openiddict-core:src/OpenIddict.Core/Caches/OpenIddictScopeCache.cs Issue AW-SJd3BvNiUxyUYEgG- Rule csharpsquid:S3900 Range 243:243:16:21
-  Component openiddict-core:samples/Mvc.Server/Controllers/AccountController.cs Issue AW8fCQcEMC6hVNLsG0Ru Rule csharpsquid:S3900 Range 201:201:60:65
-  Component openiddict-core:samples/Mvc.Server/Controllers/AccountController.cs Issue AW8fCQcEMC6hVNLsG0Rn Rule csharpsquid:S3900 Range 61:61:70:75
-  Component openiddict-core:src/OpenIddict.EntityFramework/Stores/OpenIddictApplicationStore.cs Issue AW-SJeR_vNiUxyUYEgHN Rule csharpsquid:S3900 Range 855:855:16:25
 Rule: csharpsquid:S138 (size: 1):
   Component openiddict-core:src/OpenIddict.Server/OpenIddictServerHandlers.Discovery.cs Issue AW8fCQEHMC6hVNLsGzwy Rule csharpsquid:S138 Range 1259:1259:33:44
 Rule: csharpsquid:S3626 (size: 1):
   Component openiddict-core:src/OpenIddict.Abstractions/Primitives/OpenIddictParameter.cs Issue AW8fCP4fMC6hVNLsGzbi Rule csharpsquid:S3626 Range 400:400:12:24
-Rule: external_roslyn:CS8425 (size: 43):
-  Component openiddict-core:src/OpenIddict.MongoDb/Stores/OpenIddictApplicationStore.cs Issue AXMw8aHNwbSXySH_7CXA Rule external_roslyn:CS8425 Range 593:593:44:56
-  Component openiddict-core:src/OpenIddict.NHibernate/Stores/OpenIddictAuthorizationStore.cs Issue AXMw8Z-fwbSXySH_7BX4 Rule external_roslyn:CS8425 Range 705:705:44:56
-  Component openiddict-core:src/OpenIddict.MongoDb/Stores/OpenIddictAuthorizationStore.cs Issue AXMw8aHpwbSXySH_7CaF Rule external_roslyn:CS8425 Range 346:346:51:63
-  Component openiddict-core:src/OpenIddict.NHibernate/Stores/OpenIddictTokenStore.cs Issue AXMw8Z-7wbSXySH_7BbD Rule external_roslyn:CS8425 Range 207:207:43:55
-  Component openiddict-core:src/OpenIddict.MongoDb/Stores/OpenIddictTokenStore.cs Issue AXMw8aGxwbSXySH_7CUd Rule external_roslyn:CS8425 Range 254:254:43:55
-  Component openiddict-core:src/OpenIddict.MongoDb/Stores/OpenIddictAuthorizationStore.cs Issue AXMw8aHpwbSXySH_7CaE Rule external_roslyn:CS8425 Range 311:311:51:63
-  Component openiddict-core:src/OpenIddict.EntityFramework/OpenIddictEntityFrameworkHelpers.cs Issue AXMw8aNewbSXySH_7DFV Rule external_roslyn:CS8425 Range 78:78:38:50
-  Component openiddict-core:src/OpenIddict.EntityFrameworkCore/OpenIddictEntityFrameworkCoreHelpers.cs Issue AXMw8ZtHwbSXySH_6_g_ Rule external_roslyn:CS8425 Range 137:137:38:50
-  Component openiddict-core:src/OpenIddict.NHibernate/Stores/OpenIddictApplicationStore.cs Issue AXMw8Z_VwbSXySH_7BeC Rule external_roslyn:CS8425 Range 700:700:44:56
-  Component openiddict-core:src/OpenIddict.MongoDb/Stores/OpenIddictAuthorizationStore.cs Issue AXMw8aHpwbSXySH_7CaH Rule external_roslyn:CS8425 Range 660:660:44:56
-  Component openiddict-core:src/OpenIddict.MongoDb/Stores/OpenIddictApplicationStore.cs Issue AXMw8aHNwbSXySH_7CW_ Rule external_roslyn:CS8425 Range 236:236:49:61
-  Component openiddict-core:src/OpenIddict.NHibernate/OpenIddictNHibernateHelpers.cs Issue AXMw8aC6wbSXySH_7B4- Rule external_roslyn:CS8425 Range 94:94:38:50
-  Component openiddict-core:src/OpenIddict.MongoDb/Stores/OpenIddictAuthorizationStore.cs Issue AXMw8aHpwbSXySH_7CaD Rule external_roslyn:CS8425 Range 258:258:51:63
-  Component openiddict-core:src/OpenIddict.NHibernate/Stores/OpenIddictAuthorizationStore.cs Issue AXMw8Z-fwbSXySH_7BX2 Rule external_roslyn:CS8425 Range 364:364:51:63
-  Component openiddict-core:src/OpenIddict.NHibernate/Stores/OpenIddictTokenStore.cs Issue AXMw8Z-7wbSXySH_7BbH Rule external_roslyn:CS8425 Range 375:375:43:55
-  Component openiddict-core:src/OpenIddict.NHibernate/Stores/OpenIddictScopeStore.cs Issue AXMw8Z_uwbSXySH_7Bg0 Rule external_roslyn:CS8425 Range 264:264:43:55
-  Component openiddict-core:src/OpenIddict.MongoDb/Stores/OpenIddictTokenStore.cs Issue AXMw8aGxwbSXySH_7CUh Rule external_roslyn:CS8425 Range 721:721:44:56
-  Component openiddict-core:src/OpenIddict.MongoDb/Stores/OpenIddictApplicationStore.cs Issue AXMw8aHNwbSXySH_7CW- Rule external_roslyn:CS8425 Range 207:207:49:61
-  Component openiddict-core:src/OpenIddict.MongoDb/Stores/OpenIddictTokenStore.cs Issue AXMw8aGxwbSXySH_7CUc Rule external_roslyn:CS8425 Range 204:204:43:55
-  Component openiddict-core:src/OpenIddict.Core/Managers/OpenIddictScopeManager.cs Issue AXMw8Z7nwbSXySH_7BEY Rule external_roslyn:CS8425 Range 530:530:43:55
-  Component openiddict-core:src/OpenIddict.NHibernate/Stores/OpenIddictTokenStore.cs Issue AXMw8Z-7wbSXySH_7BbI Rule external_roslyn:CS8425 Range 453:453:43:55
-  Component openiddict-core:src/OpenIddict.MongoDb/Stores/OpenIddictTokenStore.cs Issue AXMw8aGxwbSXySH_7CUb Rule external_roslyn:CS8425 Range 161:161:43:55
-  Component openiddict-core:src/OpenIddict.NHibernate/Stores/OpenIddictTokenStore.cs Issue AXMw8Z-7wbSXySH_7BbG Rule external_roslyn:CS8425 Range 343:343:43:55
-  Component openiddict-core:src/OpenIddict.NHibernate/Stores/OpenIddictTokenStore.cs Issue AXMw8Z-7wbSXySH_7BbJ Rule external_roslyn:CS8425 Range 812:812:44:56
-  Component openiddict-core:src/OpenIddict.NHibernate/Stores/OpenIddictTokenStore.cs Issue AXMw8Z-7wbSXySH_7BbF Rule external_roslyn:CS8425 Range 308:308:43:55
-  Component openiddict-core:src/OpenIddict.MongoDb/Stores/OpenIddictScopeStore.cs Issue AXMw8aIDwbSXySH_7Cdd Rule external_roslyn:CS8425 Range 228:228:43:55
-  Component openiddict-core:src/OpenIddict.NHibernate/Stores/OpenIddictTokenStore.cs Issue AXMw8Z-7wbSXySH_7BbE Rule external_roslyn:CS8425 Range 254:254:43:55
-  Component openiddict-core:src/OpenIddict.MongoDb/Stores/OpenIddictScopeStore.cs Issue AXMw8aIDwbSXySH_7Cde Rule external_roslyn:CS8425 Range 469:469:44:56
-  Component openiddict-core:src/OpenIddict.MongoDb/Stores/OpenIddictTokenStore.cs Issue AXMw8aGxwbSXySH_7CUe Rule external_roslyn:CS8425 Range 286:286:43:55
-  Component openiddict-core:src/OpenIddict.MongoDb/Stores/OpenIddictScopeStore.cs Issue AXMw8aIDwbSXySH_7Cdc Rule external_roslyn:CS8425 Range 198:198:43:55
-  Component openiddict-core:src/OpenIddict.NHibernate/Stores/OpenIddictScopeStore.cs Issue AXMw8Z_uwbSXySH_7Bgz Rule external_roslyn:CS8425 Range 234:234:43:55
-  Component openiddict-core:src/OpenIddict.MongoDb/Stores/OpenIddictAuthorizationStore.cs Issue AXMw8aHpwbSXySH_7CaG Rule external_roslyn:CS8425 Range 398:398:51:63
-  Component openiddict-core:src/OpenIddict.NHibernate/Stores/OpenIddictApplicationStore.cs Issue AXMw8Z_VwbSXySH_7BeA Rule external_roslyn:CS8425 Range 252:252:49:61
-  Component openiddict-core:src/OpenIddict.MongoDb/Stores/OpenIddictAuthorizationStore.cs Issue AXMw8aHpwbSXySH_7CaB Rule external_roslyn:CS8425 Range 165:165:51:63
-  Component openiddict-core:src/OpenIddict.NHibernate/Stores/OpenIddictAuthorizationStore.cs Issue AXMw8Z-fwbSXySH_7BXz Rule external_roslyn:CS8425 Range 212:212:51:63
-  Component openiddict-core:src/OpenIddict.MongoDb/Stores/OpenIddictTokenStore.cs Issue AXMw8aGxwbSXySH_7CUg Rule external_roslyn:CS8425 Range 388:388:43:55
-  Component openiddict-core:src/OpenIddict.NHibernate/Stores/OpenIddictAuthorizationStore.cs Issue AXMw8Z-fwbSXySH_7BX0 Rule external_roslyn:CS8425 Range 258:258:51:63
-  Component openiddict-core:src/OpenIddict.NHibernate/Stores/OpenIddictAuthorizationStore.cs Issue AXMw8Z-fwbSXySH_7BX1 Rule external_roslyn:CS8425 Range 311:311:51:63
-  Component openiddict-core:src/OpenIddict.NHibernate/Stores/OpenIddictApplicationStore.cs Issue AXMw8Z_VwbSXySH_7BeB Rule external_roslyn:CS8425 Range 287:287:49:61
-  Component openiddict-core:src/OpenIddict.MongoDb/Stores/OpenIddictAuthorizationStore.cs Issue AXMw8aHpwbSXySH_7CaC Rule external_roslyn:CS8425 Range 208:208:51:63
-  Component openiddict-core:src/OpenIddict.NHibernate/Stores/OpenIddictScopeStore.cs Issue AXMw8Z_uwbSXySH_7Bg1 Rule external_roslyn:CS8425 Range 531:531:44:56
-  Component openiddict-core:src/OpenIddict.NHibernate/Stores/OpenIddictAuthorizationStore.cs Issue AXMw8Z-fwbSXySH_7BX3 Rule external_roslyn:CS8425 Range 416:416:51:63
-  Component openiddict-core:src/OpenIddict.MongoDb/Stores/OpenIddictTokenStore.cs Issue AXMw8aGxwbSXySH_7CUf Rule external_roslyn:CS8425 Range 315:315:43:55
 Rule: csharpsquid:S109 (size: 3):
   Component openiddict-core:src/OpenIddict.Server/OpenIddictServerConfiguration.cs Issue AW8fCQCwMC6hVNLsGzs2 Rule csharpsquid:S109 Range 331:331:79:81
   Component openiddict-core:src/OpenIddict.Server/OpenIddictServerBuilder.cs Issue AW8fCQBeMC6hVNLsGzp- Rule csharpsquid:S109 Range 248:248:109:110

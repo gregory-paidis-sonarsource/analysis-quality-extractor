@@ -1,6 +1,6 @@
 ====== Bugs ======
 Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
-nodatime;2237;56;97,496647;79;3,531515
+nodatime;2203;22;99,001362;79;3,586019
 ====== Added issues ======
 Rule: csharpsquid:S4058 (size: 1):
   Component nodatime-autoscan:NodaTime.TzValidate.NzdCompatibility/ZoneDumper.cs Issue AYURVPwfwnv8wyLtwG0G Rule csharpsquid:S4058 Range 127:127:23:67
@@ -108,48 +108,12 @@ Rule: csharpsquid:S3871 (size: 1):
   Component nodatime:NodaTime/Utility/Preconditions.cs Issue AW6i-XpqmkQnGWm-CVQg Rule csharpsquid:S3871 Range 185:185:19:45
 Rule: csharpsquid:S4027 (size: 1):
   Component nodatime:NodaTime/Utility/Preconditions.cs Issue AW6i-XpqmkQnGWm-CVQh Rule csharpsquid:S4027 Range 185:185:19:45
-Rule: csharpsquid:S1128 (size: 5):
-  Component nodatime:NodaTime.TzdbCompiler/Tzdb/ParserHelper.cs Issue AW6i-X93mkQnGWm-CVe0 Rule csharpsquid:S1128 Range 5:5:0:28
-  Component nodatime:NodaTime.TzValidate.NzdCompatibility/Program.cs Issue AW6i-X3ymkQnGWm-CVYd Rule csharpsquid:S1128 Range 10:10:0:22
-  Component nodatime:NodaTime.TzdbCompiler/Tzdb/Tokens.cs Issue AW6i-X-AmkQnGWm-CVfF Rule csharpsquid:S1128 Range 5:5:0:28
-  Component nodatime:NodaTime.TzValidate.NodaDump/Program.cs Issue AW6i-YAYmkQnGWm-CVg9 Rule csharpsquid:S1128 Range 11:11:0:22
-  Component nodatime:NodaTime/Calendars/EraCalculator.cs Issue AW6i-Xl8mkQnGWm-CVIC Rule csharpsquid:S1128 Range 5:5:0:33
 Rule: csharpsquid:S2699 (size: 2):
   Component nodatime:NodaTime.Test/Calendars/UmAlQuraYearMonthDayCalculatorTest.cs Issue AXpaR8W2xQKVngmssGyK Rule csharpsquid:S2699 Range 99:99:20:32
   Component nodatime:NodaTime.Test/Calendars/PersianCalendarSystemTest.cs Issue AXpaR8WvxQKVngmssGyJ Rule csharpsquid:S2699 Range 74:74:20:32
 Rule: csharpsquid:S1200 (size: 2):
   Component nodatime:NodaTime.TzdbCompiler/Tzdb/TzdbStreamWriter.cs Issue AW6i-X9UmkQnGWm-CVdi Rule csharpsquid:S1200 Range 30:30:26:42
   Component nodatime:NodaTime.TzdbCompiler/Tzdb/TzdbZoneInfoParser.cs Issue AW6i-X_ImkQnGWm-CVf2 Rule csharpsquid:S1200 Range 16:16:19:37
-Rule: csharpsquid:S3900 (size: 29):
-  Component nodatime:NodaTime.TzValidate.NodaDump/ZoneDumper.cs Issue AW6i-YARmkQnGWm-CVg4 Rule csharpsquid:S3900 Range 72:72:20:26
-  Component nodatime:NodaTime/LocalTime.cs Issue AW6i-XuHmkQnGWm-CVT6 Rule csharpsquid:S3900 Range 446:446:41:47
-  Component nodatime:NodaTime/Period.cs Issue AW6i-XwgmkQnGWm-CVXy Rule csharpsquid:S3900 Range 345:345:16:23
-  Component nodatime:NodaTime/LocalDateTime.cs Issue AW6i-XsymkQnGWm-CVSc Rule csharpsquid:S3900 Range 835:835:19:23
-  Component nodatime:NodaTime.TzValidate.NzdCompatibility/ZoneDumper.cs Issue AW6i-X3omkQnGWm-CVYY Rule csharpsquid:S3900 Range 72:72:20:26
-  Component nodatime:NodaTime/LocalDate.cs Issue AW6i-XuSmkQnGWm-CVUX Rule csharpsquid:S3900 Range 352:352:41:47
-  Component nodatime:NodaTime/Period.cs Issue AW6i-XwgmkQnGWm-CVXz Rule csharpsquid:S3900 Range 345:345:32:42
-  Component nodatime:NodaTime/Period.cs Issue AW6i-XwgmkQnGWm-CVXv Rule csharpsquid:S3900 Range 306:306:16:20
-  Component nodatime:NodaTime/Period.cs Issue AW6i-XwgmkQnGWm-CVXw Rule csharpsquid:S3900 Range 306:306:29:34
-  Component nodatime:NodaTime/PeriodBuilder.cs Issue AW6i-XvTmkQnGWm-CVV1 Rule csharpsquid:S3900 Range 105:105:20:26
-  Component nodatime:NodaTime/Extensions/StopwatchExtensions.cs Issue AW6i-XsNmkQnGWm-CVR- Rule csharpsquid:S3900 Range 22:22:19:28
-  Component nodatime:NodaTime/LocalDateTime.cs Issue AW6i-XsymkQnGWm-CVSd Rule csharpsquid:S3900 Range 859:859:19:23
-  Component nodatime:NodaTime/YearMonth.cs Issue AW6i-XtSmkQnGWm-CVSv Rule csharpsquid:S3900 Range 105:105:12:20
-  Component nodatime:NodaTime/ZonedDateTime.cs Issue AW6i-XrBmkQnGWm-CVRh Rule csharpsquid:S3900 Range 78:78:57:61
-  Component nodatime:NodaTime/LocalDate.cs Issue AW6i-XuSmkQnGWm-CVUg Rule csharpsquid:S3900 Range 599:599:19:23
-  Component nodatime:NodaTime/TimeZones/DateTimeZoneCache.cs Issue AW6i-XdwmkQnGWm-CU92 Rule csharpsquid:S3900 Range 55:55:29:35
-  Component nodatime:NodaTime/ZonedDateTime.cs Issue AW6i-XrBmkQnGWm-CVRj Rule csharpsquid:S3900 Range 96:96:35:39
-  Component nodatime:NodaTime/LocalDateTime.cs Issue AW6i-XsymkQnGWm-CVSe Rule csharpsquid:S3900 Range 879:879:19:23
-  Component nodatime:NodaTime/ZonedDateTime.cs Issue AW6i-XrBmkQnGWm-CVRi Rule csharpsquid:S3900 Range 66:66:57:61
-  Component nodatime:NodaTime/DateInterval.cs Issue AW6i-Xq4mkQnGWm-CVRX Rule csharpsquid:S3900 Range 209:209:18:26
-  Component nodatime:NodaTime/LocalDateTime.cs Issue AW6i-XsymkQnGWm-CVSY Rule csharpsquid:S3900 Range 511:511:51:57
-  Component nodatime:NodaTime/LocalDateTime.cs Issue AW6i-XsymkQnGWm-CVSb Rule csharpsquid:S3900 Range 554:554:52:58
-  Component nodatime:NodaTime/LocalTime.cs Issue AW6i-XuHmkQnGWm-CVT8 Rule csharpsquid:S3900 Range 482:482:41:47
-  Component nodatime:NodaTime/LocalDate.cs Issue AW6i-XuSmkQnGWm-CVUR Rule csharpsquid:S3900 Range 305:305:41:47
-  Component nodatime:NodaTime.TzValidate.NzdCompatibility/ZoneDumper.cs Issue AW6i-X3omkQnGWm-CVYX Rule csharpsquid:S3900 Range 67:67:20:26
-  Component nodatime:NodaTime/LocalDate.cs Issue AW6i-XuSmkQnGWm-CVUM Rule csharpsquid:S3900 Range 107:107:12:20
-  Component nodatime:NodaTime/DateInterval.cs Issue AW6i-Xq4mkQnGWm-CVRR Rule csharpsquid:S3900 Range 152:152:28:36
-  Component nodatime:NodaTime.TzValidate.NodaDump/ZoneDumper.cs Issue AW6i-YARmkQnGWm-CVg3 Rule csharpsquid:S3900 Range 67:67:20:26
-  Component nodatime:NodaTime/DateInterval.cs Issue AW6i-Xq4mkQnGWm-CVRY Rule csharpsquid:S3900 Range 227:227:45:53
 Rule: csharpsquid:S1067 (size: 4):
   Component nodatime:NodaTime/Calendars/GregorianYearMonthDayCalculator.cs Issue AW6i-XmEmkQnGWm-CVIG Rule csharpsquid:S1067 Range 91:95:35:86
   Component nodatime:NodaTime/Calendars/GJYearMonthDayCalculator.cs Issue AW6i-XnamkQnGWm-CVNM Rule csharpsquid:S1067 Range 60:64:31:82
@@ -157,64 +121,8 @@ Rule: csharpsquid:S1067 (size: 4):
   Component nodatime:NodaTime/Calendars/GJYearMonthDayCalculator.cs Issue AW6i-XnamkQnGWm-CVNL Rule csharpsquid:S1067 Range 52:56:31:82
 ====== Vulnerabilities ======
 Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
-nodatime;0;0;NaN;55;Infinity
+nodatime;0;0;NaN;0;NaN
 ====== Added issues ======
-Rule: csharpsquid:S2228 (size: 55):
-  Component nodatime-autoscan:NodaTime.TzdbCompiler/Program.cs Issue AYURVP1kwnv8wyLtwG7C Rule csharpsquid:S2228 Range 61:61:16:33
-  Component nodatime-autoscan:NodaTime.TzdbCompiler/Program.cs Issue AYURVP1kwnv8wyLtwG7J Rule csharpsquid:S2228 Range 106:106:12:29
-  Component nodatime-autoscan:NodaTime.TzdbCompiler/Program.cs Issue AYURVP1kwnv8wyLtwG6- Rule csharpsquid:S2228 Range 112:112:12:29
-  Component nodatime-autoscan:NodaTime.TzdbCompiler/Program.cs Issue AYURVP1kwnv8wyLtwG6_ Rule csharpsquid:S2228 Range 113:113:12:29
-  Component nodatime-autoscan:NodaTime.TzdbCompiler/Program.cs Issue AYURVP1kwnv8wyLtwG7A Rule csharpsquid:S2228 Range 114:114:12:29
-  Component nodatime-autoscan:NodaTime.TzdbCompiler/Program.cs Issue AYURVP1kwnv8wyLtwG7B Rule csharpsquid:S2228 Range 115:115:12:29
-  Component nodatime-autoscan:NodaTime.TzdbCompiler/Program.cs Issue AYURVP1kwnv8wyLtwG7D Rule csharpsquid:S2228 Range 116:116:12:29
-  Component nodatime-autoscan:NodaTime.TzdbCompiler/Program.cs Issue AYURVP1kwnv8wyLtwG7E Rule csharpsquid:S2228 Range 117:117:12:29
-  Component nodatime-autoscan:NodaTime.NzdPrinter/Program.cs Issue AYURVP2zwnv8wyLtwG9g Rule csharpsquid:S2228 Range 27:27:16:33
-  Component nodatime-autoscan:NodaTime.NzdPrinter/Program.cs Issue AYURVP2zwnv8wyLtwG9i Rule csharpsquid:S2228 Range 32:32:12:29
-  Component nodatime-autoscan:NodaTime.NzdPrinter/Program.cs Issue AYURVP2zwnv8wyLtwG9j Rule csharpsquid:S2228 Range 36:36:16:33
-  Component nodatime-autoscan:NodaTime.NzdPrinter/Program.cs Issue AYURVP2zwnv8wyLtwG9l Rule csharpsquid:S2228 Range 47:47:24:41
-  Component nodatime-autoscan:NodaTime.NzdPrinter/Program.cs Issue AYURVP2zwnv8wyLtwG9m Rule csharpsquid:S2228 Range 65:65:16:33
-  Component nodatime-autoscan:NodaTime.NzdPrinter/Program.cs Issue AYURVP2zwnv8wyLtwG9H Rule csharpsquid:S2228 Range 74:74:12:29
-  Component nodatime-autoscan:NodaTime.NzdPrinter/Program.cs Issue AYURVP2zwnv8wyLtwG9I Rule csharpsquid:S2228 Range 85:85:12:29
-  Component nodatime-autoscan:NodaTime.NzdPrinter/Program.cs Issue AYURVP2zwnv8wyLtwG9K Rule csharpsquid:S2228 Range 87:87:12:29
-  Component nodatime-autoscan:NodaTime.NzdPrinter/Program.cs Issue AYURVP2zwnv8wyLtwG9L Rule csharpsquid:S2228 Range 97:97:20:37
-  Component nodatime-autoscan:NodaTime.NzdPrinter/Program.cs Issue AYURVP2zwnv8wyLtwG9G Rule csharpsquid:S2228 Range 104:104:12:29
-  Component nodatime-autoscan:NodaTime.NzdPrinter/Program.cs Issue AYURVP2zwnv8wyLtwG9J Rule csharpsquid:S2228 Range 107:107:16:33
-  Component nodatime-autoscan:NodaTime.NzdPrinter/Program.cs Issue AYURVP2zwnv8wyLtwG9Q Rule csharpsquid:S2228 Range 114:114:12:29
-  Component nodatime-autoscan:NodaTime.NzdPrinter/Program.cs Issue AYURVP2zwnv8wyLtwG9T Rule csharpsquid:S2228 Range 122:122:16:33
-  Component nodatime-autoscan:NodaTime.NzdPrinter/Program.cs Issue AYURVP2zwnv8wyLtwG9X Rule csharpsquid:S2228 Range 133:133:16:33
-  Component nodatime-autoscan:NodaTime.NzdPrinter/Program.cs Issue AYURVP2zwnv8wyLtwG9a Rule csharpsquid:S2228 Range 134:134:16:33
-  Component nodatime-autoscan:NodaTime.NzdPrinter/Program.cs Issue AYURVP2zwnv8wyLtwG9b Rule csharpsquid:S2228 Range 135:135:16:33
-  Component nodatime-autoscan:NodaTime.NzdPrinter/Program.cs Issue AYURVP2zwnv8wyLtwG9c Rule csharpsquid:S2228 Range 139:139:16:33
-  Component nodatime-autoscan:NodaTime.NzdPrinter/Program.cs Issue AYURVP2zwnv8wyLtwG9N Rule csharpsquid:S2228 Range 146:146:12:29
-  Component nodatime-autoscan:NodaTime.NzdPrinter/Program.cs Issue AYURVP2zwnv8wyLtwG9R Rule csharpsquid:S2228 Range 147:147:12:29
-  Component nodatime-autoscan:NodaTime.NzdPrinter/Program.cs Issue AYURVP2zwnv8wyLtwG9S Rule csharpsquid:S2228 Range 148:148:12:29
-  Component nodatime-autoscan:NodaTime.NzdPrinter/Program.cs Issue AYURVP2zwnv8wyLtwG9U Rule csharpsquid:S2228 Range 149:149:12:29
-  Component nodatime-autoscan:NodaTime.NzdPrinter/Program.cs Issue AYURVP2zwnv8wyLtwG9V Rule csharpsquid:S2228 Range 152:152:16:33
-  Component nodatime-autoscan:NodaTime.NzdPrinter/Program.cs Issue AYURVP2zwnv8wyLtwG90 Rule csharpsquid:S2228 Range 159:159:12:29
-  Component nodatime-autoscan:NodaTime.NzdPrinter/Program.cs Issue AYURVP2zwnv8wyLtwG91 Rule csharpsquid:S2228 Range 168:168:16:33
-  Component nodatime-autoscan:NodaTime.NzdPrinter/Program.cs Issue AYURVP2zwnv8wyLtwG92 Rule csharpsquid:S2228 Range 175:175:12:29
-  Component nodatime-autoscan:NodaTime.NzdPrinter/Program.cs Issue AYURVP2zwnv8wyLtwG94 Rule csharpsquid:S2228 Range 193:193:16:33
-  Component nodatime-autoscan:NodaTime.NzdPrinter/Program.cs Issue AYURVP2zwnv8wyLtwG99 Rule csharpsquid:S2228 Range 200:200:12:29
-  Component nodatime-autoscan:NodaTime.NzdPrinter/Program.cs Issue AYURVP2zwnv8wyLtwG9- Rule csharpsquid:S2228 Range 205:205:16:33
-  Component nodatime-autoscan:NodaTime.Tools.DumpTimeZoneInfo/Program.cs Issue AYURVP16wnv8wyLtwG7d Rule csharpsquid:S2228 Range 17:17:16:33
-  Component nodatime-autoscan:NodaTime.Tools.DumpTimeZoneInfo/Program.cs Issue AYURVP16wnv8wyLtwG7g Rule csharpsquid:S2228 Range 34:34:16:33
-  Component nodatime-autoscan:NodaTime.Tools.DumpTimeZoneInfo/Program.cs Issue AYURVP16wnv8wyLtwG7h Rule csharpsquid:S2228 Range 41:41:12:29
-  Component nodatime-autoscan:NodaTime.Tools.DumpTimeZoneInfo/Program.cs Issue AYURVP16wnv8wyLtwG7i Rule csharpsquid:S2228 Range 42:42:12:29
-  Component nodatime-autoscan:NodaTime.Tools.DumpTimeZoneInfo/Program.cs Issue AYURVP16wnv8wyLtwG7j Rule csharpsquid:S2228 Range 43:43:12:29
-  Component nodatime-autoscan:NodaTime.Tools.DumpTimeZoneInfo/Program.cs Issue AYURVP16wnv8wyLtwG7k Rule csharpsquid:S2228 Range 44:44:12:29
-  Component nodatime-autoscan:NodaTime.Tools.DumpTimeZoneInfo/Program.cs Issue AYURVP16wnv8wyLtwG7l Rule csharpsquid:S2228 Range 45:45:12:29
-  Component nodatime-autoscan:NodaTime.Tools.DumpTimeZoneInfo/Program.cs Issue AYURVP16wnv8wyLtwG7m Rule csharpsquid:S2228 Range 46:46:12:29
-  Component nodatime-autoscan:NodaTime.Tools.DumpTimeZoneInfo/Program.cs Issue AYURVP16wnv8wyLtwG7o Rule csharpsquid:S2228 Range 50:50:16:33
-  Component nodatime-autoscan:NodaTime.Tools.DumpTimeZoneInfo/Program.cs Issue AYURVP16wnv8wyLtwG7n Rule csharpsquid:S2228 Range 66:66:12:29
-  Component nodatime-autoscan:NodaTime.Tools.ValidateHistoricalNzd/Program.cs Issue AYURVP1_wnv8wyLtwG77 Rule csharpsquid:S2228 Range 32:32:16:33
-  Component nodatime-autoscan:NodaTime.Tools.ValidateHistoricalNzd/Program.cs Issue AYURVP1_wnv8wyLtwG78 Rule csharpsquid:S2228 Range 40:40:16:33
-  Component nodatime-autoscan:NodaTime.TzdbCompiler/Tzdb/TzdbDatabase.cs Issue AYURVP1Kwnv8wyLtwG6I Rule csharpsquid:S2228 Range 158:158:12:29
-  Component nodatime-autoscan:NodaTime.TzdbCompiler/Tzdb/TzdbDatabase.cs Issue AYURVP1Kwnv8wyLtwG6J Rule csharpsquid:S2228 Range 159:159:12:29
-  Component nodatime-autoscan:NodaTime.TzdbCompiler/Tzdb/TzdbDatabase.cs Issue AYURVP1Kwnv8wyLtwG6K Rule csharpsquid:S2228 Range 160:160:12:29
-  Component nodatime-autoscan:NodaTime.TzdbCompiler/Tzdb/TzdbDatabase.cs Issue AYURVP1Kwnv8wyLtwG6L Rule csharpsquid:S2228 Range 161:161:12:29
-  Component nodatime-autoscan:NodaTime.TzdbCompiler/Tzdb/TzdbDatabase.cs Issue AYURVP1Kwnv8wyLtwG6M Rule csharpsquid:S2228 Range 162:162:12:29
-  Component nodatime-autoscan:NodaTime.TzdbCompiler/Tzdb/TzdbDatabase.cs Issue AYURVP1Kwnv8wyLtwG6N Rule csharpsquid:S2228 Range 163:163:12:29
-  Component nodatime-autoscan:NodaTime.TzdbCompiler/Tzdb/TzdbDatabase.cs Issue AYURVP1Kwnv8wyLtwG6O Rule csharpsquid:S2228 Range 164:164:12:29
 
 ====== Missing issues ======
 ====== Metrics ======

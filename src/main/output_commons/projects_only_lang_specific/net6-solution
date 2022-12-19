@@ -1,6 +1,6 @@
 ====== Bugs ======
 Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
-net6-solution;91;13;85,714286;1;1,098901
+net6-solution;90;13;85,555556;1;1,111111
 ====== Added issues ======
 Rule: csharpsquid:S2325 (size: 1):
   Component net6-solution-autoscan:Net6/LambdaAttributes.cs Issue AYURU3Z8wnv8wyLtv-Yd Rule csharpsquid:S2325 Range 5:5:20:27
@@ -27,12 +27,10 @@ Rule: csharpsquid:S4060 (size: 1):
   Component net6-solution:Net6/GenericAttributes.cs Issue AXycgGFchnDq77FFOtVg Rule csharpsquid:S4060 Range 4:4:17:28
 ====== Vulnerabilities ======
 Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
-net6-solution;1;1;0,000000;0;0,000000
+net6-solution;0;0;NaN;0;NaN
 ====== Added issues ======
 
 ====== Missing issues ======
-Rule: csharpsquid:S2228 (size: 1):
-  Component net6-solution:NullableReferenceTypesExample/NullableReferenceTypesExample.cs Issue AXycgGGShnDq77FFOtWq Rule csharpsquid:S2228 Range 20:20:12:29
 ====== Metrics ======
 JavaAnalysisFinishedCount; WorkerForJavaCloneDuration; WorkerForJavaTaskDuration; DownloadedArtifactsPercentage; ParsedArtifactsCount; ConstructDependencyGraphDuration; DownloadDependenciesDuration; ResolveDependenciesDuration; WorkerForJavaQueueLatency
 No metric

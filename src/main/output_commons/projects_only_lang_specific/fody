@@ -1,6 +1,6 @@
 ====== Bugs ======
 Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
-fody;453;33;92,715232;23;5,077263
+fody;427;7;98,360656;23;5,386417
 ====== Added issues ======
 Rule: csharpsquid:S4058 (size: 10):
   Component fody-autoscan:FodyCommon/AssemblyLocation.cs Issue AYUKo7Pefdyiyv2-2mQi Rule csharpsquid:S4058 Range 9:13:19:36
@@ -39,33 +39,6 @@ Rule: csharpsquid:S3881 (size: 2):
 Rule: csharpsquid:S927 (size: 2):
   Component fody:FodyIsolated/AssemblyResolver.cs Issue AXsWE3BSmipdtTAWDQ77 Rule csharpsquid:S927 Range 54:54:69:90
   Component fody:FodyIsolated/AssemblyResolver.cs Issue AXsWE3BSmipdtTAWDQ78 Rule csharpsquid:S927 Range 59:59:69:90
-Rule: csharpsquid:S3900 (size: 26):
-  Component fody:Fody/WeaversHistory.cs Issue AW-tNMeTXLgpnf6711O3 Rule csharpsquid:S3900 Range 12:12:35:46
-  Component fody:FodyIsolated/WeaverInitialiser.cs Issue AWc3NdTp97K2b7lhtHt3 Rule csharpsquid:S3900 Range 16:16:8:22
-  Component fody:Fody/Verify/Verifier.cs Issue AWB1aURd6yPcqi2kgCqW Rule csharpsquid:S3900 Range 102:102:35:48
-  Component fody:FodyIsolated/WeaverInitialiser.cs Issue AWc3NdTp97K2b7lhtHt4 Rule csharpsquid:S3900 Range 13:13:12:26
-  Component fody:FodyHelpers/TypeSystem.cs Issue AWc3NdWR97K2b7lhtHvp Rule csharpsquid:S3900 Range 14:14:30:36
-  Component fody:FodyIsolated/AssemblyResolver.cs Issue AW-tNMV9XLgpnf6711O0 Rule csharpsquid:S3900 Range 63:63:44:65
-  Component fody:FodyIsolated/AssemblyResolverHelper.cs Issue AXsWE2_9mipdtTAWDQ7q Rule csharpsquid:S3900 Range 7:7:15:23
-  Component fody:Fody/ExceptionExtensions.cs Issue AXsWE28kmipdtTAWDQ64 Rule csharpsquid:S3900 Range 10:10:12:18
-  Component fody:FodyHelpers/Testing/WeaverTestHelper.cs Issue AWB1aUVq6yPcqi2kgCtx Rule csharpsquid:S3900 Range 51:51:12:18
-  Component fody:FodyIsolated/AssemblyResolver.cs Issue AXsWE3BSmipdtTAWDQ76 Rule csharpsquid:S3900 Range 17:17:33:48
-  Component fody:FodyCommon/IsolatedAssemblyLoadContext.cs Issue AXsWE3C4mipdtTAWDQ8n Rule csharpsquid:S3900 Range 42:42:12:24
-  Component fody:FodyIsolated/TypeFinder.cs Issue AWB1aUT06yPcqi2kgCri Rule csharpsquid:S3900 Range 12:12:19:31
-  Component fody:FodyIsolated/FodyVersion.cs Issue AXsWE2_4mipdtTAWDQ7k Rule csharpsquid:S3900 Range 19:19:34:42
-  Component fody:Fody/ConfigFileFinder/ConfigFileFinder.cs Issue AXsWE28VmipdtTAWDQ6f Rule csharpsquid:S3900 Range 44:44:35:46
-  Component fody:Fody/XmlExtensions.cs Issue AWB1aURQ6yPcqi2kgCpz Rule csharpsquid:S3900 Range 10:10:12:20
-  Component fody:FodyHelpers/Testing/TestAssemblyResolver.cs Issue AXsWE3FTmipdtTAWDQ8_ Rule csharpsquid:S3900 Range 28:28:27:31
-  Component fody:FodyIsolated/ExceptionExtensions.cs Issue AWB1aUTT6yPcqi2kgCqt Rule csharpsquid:S3900 Range 11:11:40:49
-  Component fody:FodyIsolated/DelegateBuilder.cs Issue AWc3NdSI97K2b7lhtHtO Rule csharpsquid:S3900 Range 33:33:48:58
-  Component fody:FodyIsolated/DelegateBuilder.cs Issue AW-tNMYaXLgpnf6711O1 Rule csharpsquid:S3900 Range 16:16:41:51
-  Component fody:Fody/ExceptionExtensions.cs Issue AXsWE28kmipdtTAWDQ65 Rule csharpsquid:S3900 Range 14:14:12:18
-  Component fody:FodyIsolated/DelegateBuilder.cs Issue AWc3NdSI97K2b7lhtHtP Rule csharpsquid:S3900 Range 39:39:12:22
-  Component fody:Fody/XmlExtensions.cs Issue AWB1aURQ6yPcqi2kgCp0 Rule csharpsquid:S3900 Range 30:30:24:30
-  Component fody:Fody/Verify/Verifier.cs Issue AW-tNMcrXLgpnf6711O2 Rule csharpsquid:S3900 Range 88:88:35:48
-  Component fody:FodyIsolated/WeaverInitialiser.cs Issue AWB1aUUM6yPcqi2kgCsL Rule csharpsquid:S3900 Range 10:10:12:23
-  Component fody:FodyIsolated/TypeFinder.cs Issue AWB1aUT06yPcqi2kgCrj Rule csharpsquid:S3900 Range 22:22:6:18
-  Component fody:Fody/ExceptionExtensions.cs Issue AXsWE28kmipdtTAWDQ63 Rule csharpsquid:S3900 Range 7:7:28:37
 Rule: csharpsquid:S2933 (size: 1):
   Component fody:FodyCommon/IsolatedAssemblyLoadContext.cs Issue AWc3NdXk97K2b7lhtHwF Rule csharpsquid:S2933 Range 7:7:14:23
 Rule: csharpsquid:S3903 (size: 1):

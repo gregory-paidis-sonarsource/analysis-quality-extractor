@@ -1,6 +1,6 @@
 ====== Bugs ======
 Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
-fluentassertions;1447;246;82,999309;1727;119,350380
+fluentassertions;1017;75;92,625369;1596;156,932153
 ====== Added issues ======
 Rule: csharpsquid:S122 (size: 2):
   Component fluentassertions-autoscan:Tests/Shared.Specs/CollectionAssertionSpecs.cs Issue AYUV4CF4qk4UyBXYJBzH Rule csharpsquid:S122 Range 1562:1562:12:55
@@ -638,74 +638,6 @@ Rule: csharpsquid:S3928 (size: 14):
   Component fluentassertions-autoscan:Tests/Shared.Specs/ExceptionAssertionSpecs.cs Issue AYUV4CDNqk4UyBXYJBpW Rule csharpsquid:S3928 Range 475:475:33:60
   Component fluentassertions-autoscan:Tests/Shared.Specs/ExceptionAssertionSpecs.cs Issue AYUV4CDNqk4UyBXYJBpX Rule csharpsquid:S3928 Range 506:506:69:96
   Component fluentassertions-autoscan:Tests/Shared.Specs/ExceptionAssertionSpecs.cs Issue AYUV4CDNqk4UyBXYJBpc Rule csharpsquid:S3928 Range 846:846:44:67
-Rule: common-cs:InsufficientLineCoverage (size: 67):
-  Component fluentassertions-autoscan:Tests/Shared.Specs/AggregateExceptionAssertionSpecs.cs Issue AYUV4CFAqk4UyBXYJBxp Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/AndWhichConstraintSpecs.cs Issue AYUV4CBbqk4UyBXYJBhd Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/AssertionFailureSpecs.cs Issue AYUV4CFRqk4UyBXYJByA Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/AssertionScopeSpecs.cs Issue AYUV4CGTqk4UyBXYJB2N Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/AsyncFunctionExceptionAssertionSpecs.cs Issue AYUV4CFjqk4UyBXYJByx Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/BasicEquivalencySpecs.cs Issue AYUV4CEzqk4UyBXYJBvU Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/BooleanAssertionSpecs.cs Issue AYUV4CGsqk4UyBXYJB3_ Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/CollectionAssertionSpecs.cs Issue AYUV4CF4qk4UyBXYJBzD Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/CollectionEquivalencySpecs.cs Issue AYUV4CD2qk4UyBXYJBqt Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/ComparableSpecs.cs Issue AYUV4CGFqk4UyBXYJB1U Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/DateTimeAssertionSpecs.cs Issue AYUV4CGhqk4UyBXYJB3C Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/DateTimeOffsetAssertionSpecs.cs Issue AYUV4CGNqk4UyBXYJB1g Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/DateTimeOffsetValueFormatterSpecs.cs Issue AYUV4CCnqk4UyBXYJBlo Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/DictionaryEquivalencySpecs.cs Issue AYUV4CEKqk4UyBXYJBs3 Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/EnumAssertionSpecs.cs Issue AYUV4CCiqk4UyBXYJBlf Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/EventAssertionSpecs.cs Issue AYUV4CE7qk4UyBXYJBxS Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/ExceptionAssertionSpecs.cs Issue AYUV4CDNqk4UyBXYJBo- Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/ExecutionTimeAssertionsSpecs.cs Issue AYUV4CDvqk4UyBXYJBqo Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/ExtensibilityRelatedEquivalencySpecs.cs Issue AYUV4CCWqk4UyBXYJBkq Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/FindAssembly.cs Issue AYUV4CB6qk4UyBXYJBj- Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/FluentDateTimeSpecs.cs Issue AYUV4CEEqk4UyBXYJBso Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/FormatterSpecs.cs Issue AYUV4CBvqk4UyBXYJBjL Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/TestFrameworks/NSpec2.Net45.Specs/FrameworkSpecs.cs Issue AYUV4B_3qk4UyBXYJBgN Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/TestFrameworks/XUnit2.Net45.Specs/FrameworkSpecs.cs Issue AYUV4B_xqk4UyBXYJBgJ Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/TestFrameworks/MSTestV2.Net45.Specs/FrameworkSpecs.cs Issue AYUV4CAhqk4UyBXYJBgm Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/TestFrameworks/MSpec.Net45.Specs/FrameworkSpecs.cs Issue AYUV4CAMqk4UyBXYJBgX Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/TestFrameworks/NSpec3.Net45.Specs/FrameworkSpecs.cs Issue AYUV4CAHqk4UyBXYJBgT Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/TestFrameworks/NUnit2.Net45.Specs/FrameworkSpecs.cs Issue AYUV4CArqk4UyBXYJBgr Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/TestFrameworks/XUnit.Net45.Specs/FrameworkSpecs.cs Issue AYUV4CAXqk4UyBXYJBgi Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/GenericCollectionAssertionOfStringSpecs.cs Issue AYUV4CFYqk4UyBXYJByF Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/TestFrameworks/NSpec.Net45.Specs/FrameworkSpecs.cs Issue AYUV4CBFqk4UyBXYJBg0 Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/TestFrameworks/NUnit3.Net45.Specs/FrameworkSpecs.cs Issue AYUV4CA7qk4UyBXYJBgw Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/GenericCollectionAssertionsSpecs.cs Issue AYUV4CCuqk4UyBXYJBlv Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/GenericDictionaryAssertionSpecs.cs Issue AYUV4CDGqk4UyBXYJBnv Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/GuidAssertionSpecs.cs Issue AYUV4CCKqk4UyBXYJBkV Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/MethodBaseAssertionSpecs.cs Issue AYUV4CCFqk4UyBXYJBkD Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/MethodInfoAssertionSpecs.cs Issue AYUV4CGZqk4UyBXYJB2b Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/MethodInfoSelectorAssertionSpecs.cs Issue AYUV4CDYqk4UyBXYJBpl Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/MethodInfoSelectorSpecs.cs Issue AYUV4CDpqk4UyBXYJBqU Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/NullableBooleanAssertionSpecs.cs Issue AYUV4CDTqk4UyBXYJBpf Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/NullableGuidAssertionSpecs.cs Issue AYUV4CFGqk4UyBXYJBxs Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/NullableNumericAssertionSpecs.cs Issue AYUV4CDjqk4UyBXYJBpv Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/NullableSimpleTimeSpanAssertionSpecs.cs Issue AYUV4CEeqk4UyBXYJBu_ Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/NumericAssertionSpecs.cs Issue AYUV4CG_qk4UyBXYJB4X Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/ObjectAssertionSpecs.cs Issue AYUV4CCcqk4UyBXYJBlD Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/ObjectCastingSpecs.cs Issue AYUV4CFuqk4UyBXYJBy_ Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/PropertyInfoAssertionSpecs.cs Issue AYUV4CBLqk4UyBXYJBg4 Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/PropertyInfoSelectorAssertionSpecs.cs Issue AYUV4CBpqk4UyBXYJBi1 Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/PropertyInfoSelectorSpecs.cs Issue AYUV4CB0qk4UyBXYJBjz Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/ReferenceTypeAssertionsSpecs.cs Issue AYUV4CGnqk4UyBXYJB3x Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/SimpleTimeSpanAssertionSpecs.cs Issue AYUV4CEpqk4UyBXYJBvH Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/StringAssertionSpecs.cs Issue AYUV4CEYqk4UyBXYJBtV Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/ThrowAssertionsSpecs.cs Issue AYUV4CEkqk4UyBXYJBvE Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/TimeSpanConversionExtensionSpecs.cs Issue AYUV4CCQqk4UyBXYJBkc Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/TimeSpanFormatterSpecs.cs Issue AYUV4CFeqk4UyBXYJByt Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/TypeAssertionSpecs.cs Issue AYUV4CC9qk4UyBXYJBmb Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/TypeEnumerableExtensionsSpecs.cs Issue AYUV4CG4qk4UyBXYJB4Q Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/TypeExtensionsSpecs.cs Issue AYUV4CEPqk4UyBXYJBtI Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/TypeSelectorSpecs.cs Issue AYUV4CF_qk4UyBXYJB1E Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/XAttributeAssertionSpecs.cs Issue AYUV4CBWqk4UyBXYJBhQ Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/XAttributeFormatterSpecs.cs Issue AYUV4CDeqk4UyBXYJBpq Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/XDocumentAssertionSpecs.cs Issue AYUV4CD-qk4UyBXYJBra Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/XDocumentFormatterSpecs.cs Issue AYUV4CFpqk4UyBXYJBy6 Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/XElementAssertionSpecs.cs Issue AYUV4CBiqk4UyBXYJBhh Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/XElementFormatterSpecs.cs Issue AYUV4CCzqk4UyBXYJBmV Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/XmlElementAssertionSpecs.cs Issue AYUV4CFLqk4UyBXYJBxy Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/XmlNodeAssertionSpecs.cs Issue AYUV4CGyqk4UyBXYJB4D Rule common-cs:InsufficientLineCoverage Range (empty)
 Rule: csharpsquid:S113 (size: 25):
   Component fluentassertions-autoscan:Tests/Shared.Specs/AssertionFailureSpecs.cs Issue AYUV4CFRqk4UyBXYJByD Rule csharpsquid:S113 Range 113:113:0:1
   Component fluentassertions-autoscan:Tests/Shared.Specs/AssertionScopeSpecs.cs Issue AYUV4CGTqk4UyBXYJB2Q Rule csharpsquid:S113 Range 232:232:0:1
@@ -740,71 +672,6 @@ Rule: csharpsquid:S1104 (size: 3):
   Component fluentassertions-autoscan:Tests/Shared.Specs/BasicEquivalencySpecs.cs Issue AYUV4CEzqk4UyBXYJBv4 Rule csharpsquid:S1104 Range 3908:3908:22:33
   Component fluentassertions-autoscan:Tests/Shared.Specs/ExceptionAssertionSpecs.cs Issue AYUV4CDNqk4UyBXYJBpE Rule csharpsquid:S1104 Range 898:898:29:57
   Component fluentassertions-autoscan:Tests/Shared.Specs/FormatterSpecs.cs Issue AYUV4CBvqk4UyBXYJBjS Rule csharpsquid:S1104 Range 717:717:26:31
-Rule: common-cs:InsufficientCommentDensity (size: 64):
-  Component fluentassertions-autoscan:Tests/Shared.Specs/AggregateExceptionAssertionSpecs.cs Issue AYUV4CFAqk4UyBXYJBxq Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/AndWhichConstraintSpecs.cs Issue AYUV4CBbqk4UyBXYJBhe Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/AssertionFailureSpecs.cs Issue AYUV4CFRqk4UyBXYJByB Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/AssertionScopeSpecs.cs Issue AYUV4CGTqk4UyBXYJB2O Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/AsyncFunctionExceptionAssertionSpecs.cs Issue AYUV4CFjqk4UyBXYJByy Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/BasicEquivalencySpecs.cs Issue AYUV4CEzqk4UyBXYJBvV Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/BooleanAssertionSpecs.cs Issue AYUV4CGtqk4UyBXYJB4A Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/CollectionAssertionSpecs.cs Issue AYUV4CF4qk4UyBXYJBzE Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/CollectionEquivalencySpecs.cs Issue AYUV4CD2qk4UyBXYJBqu Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/ComparableSpecs.cs Issue AYUV4CGFqk4UyBXYJB1V Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/DateTimeOffsetValueFormatterSpecs.cs Issue AYUV4CCnqk4UyBXYJBlp Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/DictionaryEquivalencySpecs.cs Issue AYUV4CEKqk4UyBXYJBs4 Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/EnumAssertionSpecs.cs Issue AYUV4CCiqk4UyBXYJBlg Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/EventAssertionSpecs.cs Issue AYUV4CE7qk4UyBXYJBxT Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/ExceptionAssertionSpecs.cs Issue AYUV4CDNqk4UyBXYJBo_ Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/ExecutionTimeAssertionsSpecs.cs Issue AYUV4CDvqk4UyBXYJBqp Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/ExtensibilityRelatedEquivalencySpecs.cs Issue AYUV4CCWqk4UyBXYJBkr Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/FindAssembly.cs Issue AYUV4CB6qk4UyBXYJBj_ Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/FluentDateTimeSpecs.cs Issue AYUV4CEEqk4UyBXYJBsp Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/FormatterSpecs.cs Issue AYUV4CBvqk4UyBXYJBjM Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/TestFrameworks/NSpec2.Net45.Specs/FrameworkSpecs.cs Issue AYUV4B_3qk4UyBXYJBgO Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/TestFrameworks/XUnit2.Net45.Specs/FrameworkSpecs.cs Issue AYUV4B_xqk4UyBXYJBgK Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/TestFrameworks/MSTestV2.Net45.Specs/FrameworkSpecs.cs Issue AYUV4CAhqk4UyBXYJBgn Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/TestFrameworks/MSpec.Net45.Specs/FrameworkSpecs.cs Issue AYUV4CAMqk4UyBXYJBgY Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/TestFrameworks/NSpec3.Net45.Specs/FrameworkSpecs.cs Issue AYUV4CAHqk4UyBXYJBgU Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/TestFrameworks/NUnit2.Net45.Specs/FrameworkSpecs.cs Issue AYUV4CArqk4UyBXYJBgs Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/TestFrameworks/XUnit.Net45.Specs/FrameworkSpecs.cs Issue AYUV4CAXqk4UyBXYJBgj Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/GenericCollectionAssertionOfStringSpecs.cs Issue AYUV4CFYqk4UyBXYJByG Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/TestFrameworks/NSpec.Net45.Specs/FrameworkSpecs.cs Issue AYUV4CBFqk4UyBXYJBg1 Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/TestFrameworks/NUnit3.Net45.Specs/FrameworkSpecs.cs Issue AYUV4CA7qk4UyBXYJBgx Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/GenericCollectionAssertionsSpecs.cs Issue AYUV4CCuqk4UyBXYJBlw Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/GenericDictionaryAssertionSpecs.cs Issue AYUV4CDGqk4UyBXYJBnw Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/GuidAssertionSpecs.cs Issue AYUV4CCKqk4UyBXYJBkW Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/MethodBaseAssertionSpecs.cs Issue AYUV4CCFqk4UyBXYJBkE Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/MethodInfoAssertionSpecs.cs Issue AYUV4CGZqk4UyBXYJB2c Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/MethodInfoSelectorAssertionSpecs.cs Issue AYUV4CDYqk4UyBXYJBpm Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/MethodInfoSelectorSpecs.cs Issue AYUV4CDpqk4UyBXYJBqV Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/NullableBooleanAssertionSpecs.cs Issue AYUV4CDTqk4UyBXYJBpg Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/NullableGuidAssertionSpecs.cs Issue AYUV4CFGqk4UyBXYJBxt Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/NullableNumericAssertionSpecs.cs Issue AYUV4CDjqk4UyBXYJBpw Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/NullableSimpleTimeSpanAssertionSpecs.cs Issue AYUV4CEeqk4UyBXYJBvA Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/ObjectAssertionSpecs.cs Issue AYUV4CCcqk4UyBXYJBlE Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/ObjectCastingSpecs.cs Issue AYUV4CFuqk4UyBXYJBzA Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/PropertyInfoSelectorAssertionSpecs.cs Issue AYUV4CBpqk4UyBXYJBi2 Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/PropertyInfoSelectorSpecs.cs Issue AYUV4CB0qk4UyBXYJBj0 Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/ReferenceTypeAssertionsSpecs.cs Issue AYUV4CGnqk4UyBXYJB3y Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Src/SolutionInfo.cs Issue AYUV4CWpqk4UyBXYJCNR Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/SimpleTimeSpanAssertionSpecs.cs Issue AYUV4CEpqk4UyBXYJBvI Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/StringAssertionSpecs.cs Issue AYUV4CEYqk4UyBXYJBtW Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/ThrowAssertionsSpecs.cs Issue AYUV4CEkqk4UyBXYJBvF Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/TimeSpanConversionExtensionSpecs.cs Issue AYUV4CCQqk4UyBXYJBkd Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/TimeSpanFormatterSpecs.cs Issue AYUV4CFeqk4UyBXYJByu Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/TypeAssertionSpecs.cs Issue AYUV4CC9qk4UyBXYJBmc Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/TypeEnumerableExtensionsSpecs.cs Issue AYUV4CG4qk4UyBXYJB4R Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/TypeExtensionsSpecs.cs Issue AYUV4CEPqk4UyBXYJBtJ Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/TypeSelectorSpecs.cs Issue AYUV4CF_qk4UyBXYJB1F Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/XAttributeAssertionSpecs.cs Issue AYUV4CBWqk4UyBXYJBhR Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/XAttributeFormatterSpecs.cs Issue AYUV4CDeqk4UyBXYJBpr Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/XDocumentAssertionSpecs.cs Issue AYUV4CD-qk4UyBXYJBrb Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/XDocumentFormatterSpecs.cs Issue AYUV4CFpqk4UyBXYJBy7 Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/XElementAssertionSpecs.cs Issue AYUV4CBiqk4UyBXYJBhi Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/XElementFormatterSpecs.cs Issue AYUV4CCzqk4UyBXYJBmW Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/XmlElementAssertionSpecs.cs Issue AYUV4CFLqk4UyBXYJBxz Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions-autoscan:Tests/Shared.Specs/XmlNodeAssertionSpecs.cs Issue AYUV4CGyqk4UyBXYJB4E Rule common-cs:InsufficientCommentDensity Range (empty)
 Rule: csharpsquid:S4060 (size: 3):
   Component fluentassertions-autoscan:Tests/Shared.Specs/MethodInfoSelectorSpecs.cs Issue AYUV4CDpqk4UyBXYJBqa Rule csharpsquid:S4060 Range 243:243:17:37
   Component fluentassertions-autoscan:Tests/Shared.Specs/PropertyInfoSelectorSpecs.cs Issue AYUV4CB0qk4UyBXYJBj5 Rule csharpsquid:S4060 Range 183:183:17:39
@@ -1816,77 +1683,9 @@ Rule: csharpsquid:S2933 (size: 5):
   Component fluentassertions-autoscan:Tests/TestFrameworks/MSpec.Net45.Specs/FrameworkSpecs.cs Issue AYUV4CAMqk4UyBXYJBgc Rule csharpsquid:S2933 Range 13:13:11:40
 
 ====== Missing issues ======
-Rule: common-cs:InsufficientLineCoverage (size: 4):
-  Component fluentassertions:Src/FluentAssertions/Common/AppSettingsConfigurationStore.cs Issue AWDbwdc3-O6vncpHIRMS Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions:Src/FluentAssertions/ObjectAssertionsExtensions.cs Issue AWDbwdZq-O6vncpHIRIe Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions:Src/FluentAssertions/Xml/XmlNodeFormatter.cs Issue AWDbwdwK-O6vncpHIRhh Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component fluentassertions:Src/FluentAssertions/Common/FullFrameworkReflector.cs Issue AWDbwdeM-O6vncpHIRND Rule common-cs:InsufficientLineCoverage Range (empty)
 Rule: csharpsquid:S1449 (size: 2):
   Component fluentassertions:Src/FluentAssertions/Common/FullFrameworkReflector.cs Issue AWDbwdeM-O6vncpHIRNV Rule csharpsquid:S1449 Range 24:24:53:60
   Component fluentassertions:Src/FluentAssertions/Common/NetStandardReflector.cs Issue AWDbwder-O6vncpHIRN7 Rule csharpsquid:S1449 Range 26:26:43:50
-Rule: csharpsquid:S1128 (size: 58):
-  Component fluentassertions:Src/FluentAssertions/EventRaisingExtensions.cs Issue AW11cE9LCjEt1D4cHssb Rule csharpsquid:S1128 Range 6:6:0:30
-  Component fluentassertions:Src/FluentAssertions/Collections/SelfReferencingCollectionAssertions.cs Issue AW11cE57CjEt1D4cHssX Rule csharpsquid:S1128 Range 4:4:0:25
-  Component fluentassertions:Src/FluentAssertions/Formatting/UInt16ValueFormatter.cs Issue AW11cElACjEt1D4cHsr3 Rule csharpsquid:S1128 Range 1:1:0:33
-  Component fluentassertions:Src/FluentAssertions/Formatting/Int16ValueFormatter.cs Issue AW11cEkLCjEt1D4cHsr0 Rule csharpsquid:S1128 Range 1:1:0:33
-  Component fluentassertions:Src/FluentAssertions/Execution/MessageBuilder.cs Issue AW11cEvjCjEt1D4cHssM Rule csharpsquid:S1128 Range 7:7:0:30
-  Component fluentassertions:Src/FluentAssertions/Execution/LateBoundTestFramework.cs Issue AW11cExVCjEt1D4cHssO Rule csharpsquid:S1128 Range 2:2:0:16
-  Component fluentassertions:Src/FluentAssertions/AssertionExtensions.Actions.cs Issue AW11cE9rCjEt1D4cHssc Rule csharpsquid:S1128 Range 4:4:0:24
-  Component fluentassertions:Src/FluentAssertions/Formatting/DefaultValueFormatter.cs Issue AW11cEm-CjEt1D4cHsr- Rule csharpsquid:S1128 Range 4:4:0:24
-  Component fluentassertions:Src/FluentAssertions/Formatting/SByteValueFormatter.cs Issue AW11cEqNCjEt1D4cHssJ Rule csharpsquid:S1128 Range 1:1:0:33
-  Component fluentassertions:Src/FluentAssertions/Equivalency/DictionaryEquivalencyStep.cs Issue AW11cEdjCjEt1D4cHsrs Rule csharpsquid:S1128 Range 4:4:0:24
-  Component fluentassertions:Src/FluentAssertions/EventRaisingExtensions.cs Issue AW11cE9LCjEt1D4cHssa Rule csharpsquid:S1128 Range 2:2:0:28
-  Component fluentassertions:Src/FluentAssertions/Equivalency/Matching/MustMatchByNameRule.cs Issue AW11cEdECjEt1D4cHsrr Rule csharpsquid:S1128 Range 1:1:0:24
-  Component fluentassertions:Src/FluentAssertions/Formatting/NullValueFormatter.cs Issue AW11cEkuCjEt1D4cHsr2 Rule csharpsquid:S1128 Range 1:1:0:33
-  Component fluentassertions:Src/FluentAssertions/Equivalency/GenericEnumerableEquivalencyStep.cs Issue AW11cES_CjEt1D4cHsrl Rule csharpsquid:S1128 Range 5:5:0:24
-  Component fluentassertions:Src/FluentAssertions/Formatting/DecimalValueFormatter.cs Issue AW11cEiqCjEt1D4cHsrw Rule csharpsquid:S1128 Range 1:1:0:33
-  Component fluentassertions:Src/FluentAssertions/Formatting/ByteValueFormatter.cs Issue AW11cEpoCjEt1D4cHssG Rule csharpsquid:S1128 Range 1:1:0:33
-  Component fluentassertions:Src/FluentAssertions/Equivalency/CollectionMemberSubjectInfo.cs Issue AW11cEcYCjEt1D4cHsrq Rule csharpsquid:S1128 Range 2:2:0:24
-  Component fluentassertions:Src/FluentAssertions/Formatting/AggregateExceptionValueFormatter.cs Issue AW11cEp6CjEt1D4cHssI Rule csharpsquid:S1128 Range 2:2:0:33
-  Component fluentassertions:Src/FluentAssertions/Equivalency/GenericDictionaryEquivalencyStep.cs Issue AW11cESYCjEt1D4cHsri Rule csharpsquid:S1128 Range 5:5:0:24
-  Component fluentassertions:Src/FluentAssertions/Formatting/UInt64ValueFormatter.cs Issue AW11cEnRCjEt1D4cHsr_ Rule csharpsquid:S1128 Range 1:1:0:33
-  Component fluentassertions:Src/FluentAssertions/Formatting/Formatter.cs Issue AW11cEmsCjEt1D4cHsr9 Rule csharpsquid:S1128 Range 5:5:0:27
-  Component fluentassertions:Src/FluentAssertions/Formatting/Int64ValueFormatter.cs Issue AW11cElRCjEt1D4cHsr4 Rule csharpsquid:S1128 Range 1:1:0:33
-  Component fluentassertions:Src/FluentAssertions/Formatting/StringValueFormatter.cs Issue AW11cEpWCjEt1D4cHssF Rule csharpsquid:S1128 Range 2:2:0:33
-  Component fluentassertions:Src/FluentAssertions/Formatting/GuidValueFormatter.cs Issue AW11cEqfCjEt1D4cHssK Rule csharpsquid:S1128 Range 2:2:0:33
-  Component fluentassertions:Src/FluentAssertions/Execution/LateBoundTestFramework.cs Issue AW11cExWCjEt1D4cHssP Rule csharpsquid:S1128 Range 5:5:0:29
-  Component fluentassertions:Src/FluentAssertions/Xml/XmlReaderValidator.cs Issue AW11cE4OCjEt1D4cHssV Rule csharpsquid:S1128 Range 6:6:0:29
-  Component fluentassertions:Src/FluentAssertions/Equivalency/AssertionContext.cs Issue AW11cEbNCjEt1D4cHsro Rule csharpsquid:S1128 Range 1:1:0:24
-  Component fluentassertions:Src/FluentAssertions/Collections/SelfReferencingCollectionAssertions.cs Issue AW11cE57CjEt1D4cHssY Rule csharpsquid:S1128 Range 7:7:0:30
-  Component fluentassertions:Src/FluentAssertions/Formatting/PropertyInfoFormatter.cs Issue AW11cEjNCjEt1D4cHsry Rule csharpsquid:S1128 Range 1:1:0:33
-  Component fluentassertions:Src/FluentAssertions/Formatting/SingleValueFormatter.cs Issue AW11cEi7CjEt1D4cHsrx Rule csharpsquid:S1128 Range 1:1:0:33
-  Component fluentassertions:Src/FluentAssertions/Equivalency/DictionaryEquivalencyStep.cs Issue AW11cEdjCjEt1D4cHsrt Rule csharpsquid:S1128 Range 1:1:0:13
-  Component fluentassertions:Src/FluentAssertions/Events/IMonitor.cs Issue AW11cE71CjEt1D4cHssZ Rule csharpsquid:S1128 Range 2:2:0:24
-  Component fluentassertions:Src/FluentAssertions/Formatting/ExceptionValueFormatter.cs Issue AW11cEl2CjEt1D4cHsr6 Rule csharpsquid:S1128 Range 2:2:0:33
-  Component fluentassertions:Src/FluentAssertions/Xml/XmlReaderValidator.cs Issue AW11cE4OCjEt1D4cHssU Rule csharpsquid:S1128 Range 5:5:0:18
-  Component fluentassertions:Src/FluentAssertions/Execution/LateBoundTestFramework.cs Issue AW11cExWCjEt1D4cHssR Rule csharpsquid:S1128 Range 3:3:0:18
-  Component fluentassertions:Src/FluentAssertions/Formatting/XDocumentValueFormatter.cs Issue AW11cEoCCjEt1D4cHssC Rule csharpsquid:S1128 Range 1:1:0:33
-  Component fluentassertions:Src/FluentAssertions/Execution/MessageBuilder.cs Issue AW11cEvjCjEt1D4cHssL Rule csharpsquid:S1128 Range 4:4:0:33
-  Component fluentassertions:Tests/AssemblyA/Properties/AssemblyInfo.cs Issue AW11cEQzCjEt1D4cHsre Rule csharpsquid:S1128 Range 2:2:0:38
-  Component fluentassertions:Src/FluentAssertions/AssertionExtensions.Actions.cs Issue AW11cE9rCjEt1D4cHssd Rule csharpsquid:S1128 Range 5:5:0:29
-  Component fluentassertions:Src/FluentAssertions/Formatting/AttributeBasedFormatter.cs Issue AW11cEo0CjEt1D4cHssE Rule csharpsquid:S1128 Range 3:3:0:16
-  Component fluentassertions:Src/FluentAssertions/Equivalency/ISubjectInfo.cs Issue AW11cESECjEt1D4cHsrh Rule csharpsquid:S1128 Range 2:2:0:24
-  Component fluentassertions:Src/FluentAssertions/Equivalency/EquivalencyValidator.cs Issue AW11cESsCjEt1D4cHsrk Rule csharpsquid:S1128 Range 2:2:0:33
-  Component fluentassertions:Src/FluentAssertions/Formatting/UInt32ValueFormatter.cs Issue AW11cEmICjEt1D4cHsr7 Rule csharpsquid:S1128 Range 1:1:0:33
-  Component fluentassertions:Src/FluentAssertions/Formatting/EnumerableValueFormatter.cs Issue AW11cEmaCjEt1D4cHsr8 Rule csharpsquid:S1128 Range 2:2:0:33
-  Component fluentassertions:Src/FluentAssertions/Formatting/Int32ValueFormatter.cs Issue AW11cEkcCjEt1D4cHsr1 Rule csharpsquid:S1128 Range 1:1:0:33
-  Component fluentassertions:Tests/AssemblyB/Properties/AssemblyInfo.cs Issue AW11cERxCjEt1D4cHsrg Rule csharpsquid:S1128 Range 2:2:0:38
-  Component fluentassertions:Src/FluentAssertions/Equivalency/Selection/NestedSelectionContext.cs Issue AW11cEUOCjEt1D4cHsrm Rule csharpsquid:S1128 Range 2:2:0:24
-  Component fluentassertions:Src/FluentAssertions/Formatting/XAttributeValueFormatter.cs Issue AW11cEj5CjEt1D4cHsrz Rule csharpsquid:S1128 Range 1:1:0:33
-  Component fluentassertions:Src/FluentAssertions/Formatting/XElementValueFormatter.cs Issue AW11cElkCjEt1D4cHsr5 Rule csharpsquid:S1128 Range 2:2:0:33
-  Component fluentassertions:Src/FluentAssertions/Formatting/DoubleValueFormatter.cs Issue AW11cEnwCjEt1D4cHssA Rule csharpsquid:S1128 Range 1:1:0:33
-  Component fluentassertions:Src/FluentAssertions/Execution/LateBoundTestFramework.cs Issue AW11cExWCjEt1D4cHssQ Rule csharpsquid:S1128 Range 6:6:0:33
-  Component fluentassertions:Src/FluentAssertions/Xml/XmlNodeFormatter.cs Issue AW11cE4hCjEt1D4cHssW Rule csharpsquid:S1128 Range 5:5:0:33
-  Component fluentassertions:Src/FluentAssertions/Formatting/ByteValueFormatter.cs Issue AW11cEpoCjEt1D4cHssH Rule csharpsquid:S1128 Range 2:2:0:27
-  Component fluentassertions:Src/FluentAssertions/Formatting/DoubleValueFormatter.cs Issue AW11cEnwCjEt1D4cHssB Rule csharpsquid:S1128 Range 3:3:0:37
-  Component fluentassertions:Src/FluentAssertions/Formatting/ExpressionValueFormatter.cs Issue AW11cEoiCjEt1D4cHssD Rule csharpsquid:S1128 Range 1:1:0:33
-  Component fluentassertions:Src/FluentAssertions/Equivalency/EnumerableEquivalencyStep.cs Issue AW11cEb5CjEt1D4cHsrp Rule csharpsquid:S1128 Range 5:5:0:24
-  Component fluentassertions:Src/FluentAssertions/Common/Services.cs Issue AW11cE0bCjEt1D4cHssS Rule csharpsquid:S1128 Range 3:3:0:34
-  Component fluentassertions:Src/FluentAssertions/Execution/Execute.cs Issue AW11cEv1CjEt1D4cHssN Rule csharpsquid:S1128 Range 1:1:0:30
-Rule: common-cs:InsufficientCommentDensity (size: 3):
-  Component fluentassertions:Src/FluentAssertions/Xml/XmlNodeFormatter.cs Issue AWDbwdwK-O6vncpHIRhi Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions:Src/FluentAssertions/Common/AppSettingsConfigurationStore.cs Issue AWDbwdc3-O6vncpHIRMT Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component fluentassertions:Src/FluentAssertions/Common/FullFrameworkReflector.cs Issue AWDbwdeM-O6vncpHIRNE Rule common-cs:InsufficientCommentDensity Range (empty)
 Rule: csharpsquid:S1067 (size: 2):
   Component fluentassertions:Src/FluentAssertions/Common/NetStandardReflector.cs Issue AWDbwder-O6vncpHIRNx Rule csharpsquid:S1067 Range 28:33:19:57
   Component fluentassertions:Src/FluentAssertions/Common/FullFrameworkReflector.cs Issue AWDbwdeM-O6vncpHIRNF Rule csharpsquid:S1067 Range 26:31:19:57
@@ -1962,8 +1761,6 @@ Rule: csharpsquid:S4058 (size: 12):
   Component fluentassertions:Src/FluentAssertions/Common/NetStandardReflector.cs Issue AWDbwder-O6vncpHIRN3 Rule csharpsquid:S4058 Range 31:31:20:55
   Component fluentassertions:Src/FluentAssertions/Common/FullFrameworkReflector.cs Issue AWDbwdeM-O6vncpHIRNP Rule csharpsquid:S4058 Range 27:27:20:52
   Component fluentassertions:Src/FluentAssertions/Common/NetStandardReflector.cs Issue AWDbwder-O6vncpHIRN1 Rule csharpsquid:S4058 Range 29:29:20:52
-Rule: external_roslyn:CS1030 (size: 1):
-  Component fluentassertions:Tests/Shared.Specs/EventAssertionSpecs.cs Issue AXR_esihWcSntPQC48zQ Rule external_roslyn:CS1030 Range 686:686:10:133
 Rule: csharpsquid:S2365 (size: 5):
   Component fluentassertions:Src/FluentAssertions/Events/EventMonitor.cs Issue AWDbwdof-O6vncpHIRYC Rule csharpsquid:S2365 Range 36:38:23:28
   Component fluentassertions:Src/FluentAssertions/Events/EventMonitor.cs Issue AWDbwdof-O6vncpHIRYD Rule csharpsquid:S2365 Range 59:59:23:36
@@ -1973,112 +1770,6 @@ Rule: csharpsquid:S2365 (size: 5):
 Rule: csharpsquid:S2325 (size: 2):
   Component fluentassertions:Src/FluentAssertions/Common/NetStandardReflector.cs Issue AWDbwder-O6vncpHIRN6 Rule csharpsquid:S2325 Range 24:24:21:31
   Component fluentassertions:Src/FluentAssertions/Common/FullFrameworkReflector.cs Issue AWDbwdeM-O6vncpHIRNU Rule csharpsquid:S2325 Range 22:22:21:31
-Rule: csharpsquid:S3900 (size: 105):
-  Component fluentassertions:Src/FluentAssertions/Common/TypeExtensions.cs Issue AWDbwdff-O6vncpHIRPW Rule csharpsquid:S3900 Range 337:337:28:32
-  Component fluentassertions:Src/FluentAssertions/Common/StringExtensions.cs Issue AWDbwdfQ-O6vncpHIROv Rule csharpsquid:S3900 Range 83:83:19:24
-  Component fluentassertions:Src/FluentAssertions/Equivalency/GenericEnumerableEquivalencyStep.cs Issue AWDbwdkK-O6vncpHIRS3 Rule csharpsquid:S3900 Range 51:51:50:56
-  Component fluentassertions:Src/FluentAssertions/Collections/CollectionAssertions.cs Issue AWDbwdaN-O6vncpHIRKZ Rule csharpsquid:S3900 Range 1258:1258:50:58
-  Component fluentassertions:Src/FluentAssertions/Equivalency/EquivalencyAssertionOptionsExtentions.cs Issue AWDbwdjZ-O6vncpHIRRy Rule csharpsquid:S3900 Range 12:12:19:25
-  Component fluentassertions:Src/FluentAssertions/Equivalency/AssertionRuleEquivalencyStep.cs Issue AWDbwdh1-O6vncpHIRP9 Rule csharpsquid:S3900 Range 30:30:49:56
-  Component fluentassertions:Src/FluentAssertions/Common/TypeExtensions.cs Issue AWDbwdfe-O6vncpHIRPL Rule csharpsquid:S3900 Range 108:108:20:32
-  Component fluentassertions:Src/FluentAssertions/Common/TypeExtensions.cs Issue AWDbwdfe-O6vncpHIRPJ Rule csharpsquid:S3900 Range 100:100:20:28
-  Component fluentassertions:Src/FluentAssertions/Equivalency/SubjectInfoExtensions.cs Issue AWDbwdmJ-O6vncpHIRVm Rule csharpsquid:S3900 Range 48:48:19:30
-  Component fluentassertions:Src/FluentAssertions/Common/StringExtensions.cs Issue AWDbwdfQ-O6vncpHIROk Rule csharpsquid:S3900 Range 24:24:40:45
-  Component fluentassertions:Src/FluentAssertions/Common/StringExtensions.cs Issue AWDbwdfQ-O6vncpHIROr Rule csharpsquid:S3900 Range 53:53:24:29
-  Component fluentassertions:Src/FluentAssertions/EventRaisingExtensions.cs Issue AWDbwdY3-O6vncpHIRHt Rule csharpsquid:S3900 Range 45:45:46:55
-  Component fluentassertions:Src/FluentAssertions/Equivalency/DictionaryEquivalencyStep.cs Issue AWDbwdip-O6vncpHIRQ3 Rule csharpsquid:S3900 Range 32:32:26:33
-  Component fluentassertions:Src/FluentAssertions/NumericAssertionsExtensions.cs Issue AWDbwdZC-O6vncpHIRIU Rule csharpsquid:S3900 Range 354:354:30:36
-  Component fluentassertions:Src/FluentAssertions/NumericAssertionsExtensions.cs Issue AWDbwdZC-O6vncpHIRIH Rule csharpsquid:S3900 Range 193:193:73:79
-  Component fluentassertions:Src/FluentAssertions/Common/TypeExtensions.cs Issue AWDbwdfe-O6vncpHIRO_ Rule csharpsquid:S3900 Range 43:43:57:85
-  Component fluentassertions:Src/FluentAssertions/Equivalency/ValueTypeEquivalencyStep.cs Issue AWDbwdmW-O6vncpHIRV5 Rule csharpsquid:S3900 Range 25:25:16:23
-  Component fluentassertions:Src/FluentAssertions/EventRaisingExtensions.cs Issue AWDbwdY3-O6vncpHIRHr Rule csharpsquid:S3900 Range 22:22:52:65
-  Component fluentassertions:Src/FluentAssertions/Equivalency/SubjectInfoExtensions.cs Issue AWDbwdmJ-O6vncpHIRVk Rule csharpsquid:S3900 Range 37:37:19:30
-  Component fluentassertions:Src/FluentAssertions/NumericAssertionsExtensions.cs Issue AWDbwdZD-O6vncpHIRIZ Rule csharpsquid:S3900 Range 226:226:30:36
-  Component fluentassertions:Src/FluentAssertions/Common/TypeExtensions.cs Issue AWDbwdfe-O6vncpHIRPA Rule csharpsquid:S3900 Range 51:51:57:85
-  Component fluentassertions:Src/FluentAssertions/NumericAssertionsExtensions.cs Issue AWDbwdZC-O6vncpHIRIQ Rule csharpsquid:S3900 Range 321:321:73:79
-  Component fluentassertions:Src/FluentAssertions/Common/TypeExtensions.cs Issue AWDbwdff-O6vncpHIRPS Rule csharpsquid:S3900 Range 310:310:19:23
-  Component fluentassertions:Src/FluentAssertions/Common/StringExtensions.cs Issue AWDbwdfQ-O6vncpHIROq Rule csharpsquid:S3900 Range 50:50:20:25
-  Component fluentassertions:Src/FluentAssertions/Specialized/AssemblyAssertions.cs Issue AWDbwdvU-O6vncpHIRgT Rule csharpsquid:S3900 Range 80:80:31:39
-  Component fluentassertions:Src/FluentAssertions/Common/StringExtensions.cs Issue AWDbwdfQ-O6vncpHIROm Rule csharpsquid:S3900 Range 40:40:34:39
-  Component fluentassertions:Src/FluentAssertions/NumericAssertionsExtensions.cs Issue AWDbwdZC-O6vncpHIRIE Rule csharpsquid:S3900 Range 162:162:30:36
-  Component fluentassertions:Src/FluentAssertions/AssertionExtensions.Actions.cs Issue AWDbwdYB-O6vncpHIRHF Rule csharpsquid:S3900 Range 62:62:38:59
-  Component fluentassertions:Src/FluentAssertions/Equivalency/GenericEnumerableEquivalencyStep.cs Issue AWDbwdkK-O6vncpHIRS1 Rule csharpsquid:S3900 Range 20:20:20:27
-  Component fluentassertions:Src/FluentAssertions/AssertionExtensions.Actions.cs Issue AWDbwdYA-O6vncpHIRHC Rule csharpsquid:S3900 Range 36:36:38:54
-  Component fluentassertions:Src/FluentAssertions/Collections/CollectionAssertions.cs Issue AWDbwdaN-O6vncpHIRKd Rule csharpsquid:S3900 Range 1291:1291:50:58
-  Component fluentassertions:Src/FluentAssertions/Equivalency/GenericDictionaryEquivalencyStep.cs Issue AWDbwdkB-O6vncpHIRSk Rule csharpsquid:S3900 Range 21:21:21:28
-  Component fluentassertions:Src/FluentAssertions/Equivalency/StructuralEqualityEquivalencyStep.cs Issue AWDbwdmC-O6vncpHIRVV Rule csharpsquid:S3900 Range 15:15:20:27
-  Component fluentassertions:Src/FluentAssertions/Equivalency/EnumEqualityStep.cs Issue AWDbwdiy-O6vncpHIRRB Rule csharpsquid:S3900 Range 20:20:20:27
-  Component fluentassertions:Src/FluentAssertions/NumericAssertionsExtensions.cs Issue AWDbwdZC-O6vncpHIRH4 Rule csharpsquid:S3900 Range 34:34:30:36
-  Component fluentassertions:Src/FluentAssertions/NumericAssertionsExtensions.cs Issue AWDbwdZC-O6vncpHIRIB Rule csharpsquid:S3900 Range 129:129:72:78
-  Component fluentassertions:Src/FluentAssertions/Common/TypeExtensions.cs Issue AWDbwdff-O6vncpHIRPZ Rule csharpsquid:S3900 Range 356:356:19:23
-  Component fluentassertions:Src/FluentAssertions/Equivalency/EnumerableEquivalencyStep.cs Issue AWDbwdjF-O6vncpHIRRT Rule csharpsquid:S3900 Range 34:34:42:49
-  Component fluentassertions:Src/FluentAssertions/Equivalency/StructuralEqualityEquivalencyStep.cs Issue AWDbwdmC-O6vncpHIRVW Rule csharpsquid:S3900 Range 21:21:47:54
-  Component fluentassertions:Src/FluentAssertions/Equivalency/DictionaryEquivalencyStep.cs Issue AWDbwdip-O6vncpHIRQ4 Rule csharpsquid:S3900 Range 41:41:28:34
-  Component fluentassertions:Src/FluentAssertions/Equivalency/SimpleEqualityEquivalencyStep.cs Issue AWDbwdl4-O6vncpHIRVE Rule csharpsquid:S3900 Range 25:25:12:19
-  Component fluentassertions:Src/FluentAssertions/Common/TypeExtensions.cs Issue AWDbwdff-O6vncpHIRPY Rule csharpsquid:S3900 Range 351:351:20:26
-  Component fluentassertions:Src/FluentAssertions/Equivalency/EnumerableEquivalencyStep.cs Issue AWDbwdjF-O6vncpHIRRU Rule csharpsquid:S3900 Range 38:38:50:56
-  Component fluentassertions:Src/FluentAssertions/Formatting/StringValueFormatter.cs Issue AWDbwdt4-O6vncpHIRec Rule csharpsquid:S3900 Range 24:24:79:84
-  Component fluentassertions:Src/FluentAssertions/Common/StringExtensions.cs Issue AWDbwdfQ-O6vncpHIROl Rule csharpsquid:S3900 Range 26:26:30:38
-  Component fluentassertions:Src/FluentAssertions/Collections/SelfReferencingCollectionAssertions.cs Issue AWDbwdbj-O6vncpHIRLo Rule csharpsquid:S3900 Range 564:564:46:55
-  Component fluentassertions:Src/FluentAssertions/NumericAssertionsExtensions.cs Issue AWDbwdZC-O6vncpHIRH7 Rule csharpsquid:S3900 Range 65:65:69:75
-  Component fluentassertions:Src/FluentAssertions/Specialized/AssemblyAssertions.cs Issue AWDbwdvU-O6vncpHIRgR Rule csharpsquid:S3900 Range 47:47:31:39
-  Component fluentassertions:Src/FluentAssertions/Equivalency/SimpleEqualityEquivalencyStep.cs Issue AWDbwdl4-O6vncpHIRVC Rule csharpsquid:S3900 Range 10:10:43:50
-  Component fluentassertions:Src/FluentAssertions/Formatting/ExpressionValueFormatter.cs Issue AWDbwdtC-O6vncpHIRdg Rule csharpsquid:S3900 Range 24:24:19:24
-  Component fluentassertions:Src/FluentAssertions/NumericAssertionsExtensions.cs Issue AWDbwdZD-O6vncpHIRIX Rule csharpsquid:S3900 Range 385:385:75:81
-  Component fluentassertions:Src/FluentAssertions/Equivalency/EnumEqualityStep.cs Issue AWDbwdiy-O6vncpHIRRF Rule csharpsquid:S3900 Range 36:36:20:26
-  Component fluentassertions:Src/FluentAssertions/Equivalency/SubjectInfoExtensions.cs Issue AWDbwdmJ-O6vncpHIRVi Rule csharpsquid:S3900 Range 26:26:19:30
-  Component fluentassertions:Src/FluentAssertions/Equivalency/StringEqualityEquivalencyStep.cs Issue AWDbwdl9-O6vncpHIRVL Rule csharpsquid:S3900 Range 40:40:42:49
-  Component fluentassertions:Src/FluentAssertions/Common/TypeExtensions.cs Issue AWDbwdfe-O6vncpHIRPK Rule csharpsquid:S3900 Range 100:100:60:73
-  Component fluentassertions:Src/FluentAssertions/Common/TypeExtensions.cs Issue AWDbwdff-O6vncpHIRPX Rule csharpsquid:S3900 Range 345:345:19:23
-  Component fluentassertions:Src/FluentAssertions/Equivalency/EquivalencyAssertionOptionsExtentions.cs Issue AWDbwdjZ-O6vncpHIRRx Rule csharpsquid:S3900 Range 12:12:45:52
-  Component fluentassertions:Src/FluentAssertions/Common/StringExtensions.cs Issue AWDbwdfQ-O6vncpHIROu Rule csharpsquid:S3900 Range 76:76:31:36
-  Component fluentassertions:Src/FluentAssertions/Equivalency/ReferenceEqualityEquivalencyStep.cs Issue AWDbwdle-O6vncpHIRUV Rule csharpsquid:S3900 Range 25:25:35:42
-  Component fluentassertions:Src/FluentAssertions/Equivalency/ConversionSelector.cs Issue AWDbwdiU-O6vncpHIRQh Rule csharpsquid:S3900 Range 26:26:27:36
-  Component fluentassertions:Src/FluentAssertions/NumericAssertionsExtensions.cs Issue AWDbwdZC-O6vncpHIRIK Rule csharpsquid:S3900 Range 257:257:71:77
-  Component fluentassertions:Src/FluentAssertions/Common/TypeExtensions.cs Issue AWDbwdfe-O6vncpHIRPP Rule csharpsquid:S3900 Range 189:189:16:20
-  Component fluentassertions:Src/FluentAssertions/EventRaisingExtensions.cs Issue AWDbwdY3-O6vncpHIRHw Rule csharpsquid:S3900 Range 70:70:70:83
-  Component fluentassertions:Src/FluentAssertions/Formatting/DefaultValueFormatter.cs Issue AWDbwdsm-O6vncpHIRdA Rule csharpsquid:S3900 Range 40:40:29:36
-  Component fluentassertions:Src/FluentAssertions/ObjectAssertionsExtensions.cs Issue AWDbwdZq-O6vncpHIRIv Rule csharpsquid:S3900 Range 181:181:74:84
-  Component fluentassertions:Src/FluentAssertions/Common/TypeExtensions.cs Issue AWDbwdfe-O6vncpHIRO- Rule csharpsquid:S3900 Range 37:37:19:27
-  Component fluentassertions:Src/FluentAssertions/Equivalency/EquivalencyValidator.cs Issue AWDbwdjy-O6vncpHIRSP Rule csharpsquid:S3900 Range 33:33:32:39
-  Component fluentassertions:Src/FluentAssertions/Equivalency/ValueTypeEquivalencyStep.cs Issue AWDbwdmW-O6vncpHIRV7 Rule csharpsquid:S3900 Range 43:43:12:19
-  Component fluentassertions:Src/FluentAssertions/NumericAssertionsExtensions.cs Issue AWDbwdZC-O6vncpHIRIN Rule csharpsquid:S3900 Range 290:290:30:36
-  Component fluentassertions:Src/FluentAssertions/Equivalency/GenericEnumerableEquivalencyStep.cs Issue AWDbwdkK-O6vncpHIRS2 Rule csharpsquid:S3900 Range 47:47:42:49
-  Component fluentassertions:Src/FluentAssertions/Equivalency/ValueTypeEquivalencyStep.cs Issue AWDbwdmW-O6vncpHIRV4 Rule csharpsquid:S3900 Range 20:20:16:22
-  Component fluentassertions:Src/FluentAssertions/Collections/SelfReferencingCollectionAssertions.cs Issue AWDbwdbj-O6vncpHIRLg Rule csharpsquid:S3900 Range 480:480:46:55
-  Component fluentassertions:Src/FluentAssertions/EventRaisingExtensions.cs Issue AWDbwdY3-O6vncpHIRHu Rule csharpsquid:S3900 Range 49:49:70:83
-  Component fluentassertions:Src/FluentAssertions/Equivalency/ConversionSelector.cs Issue AWDbwdiU-O6vncpHIRQi Rule csharpsquid:S3900 Range 32:32:27:36
-  Component fluentassertions:Src/FluentAssertions/Formatting/StringValueFormatter.cs Issue AWDbwdt4-O6vncpHIRed Rule csharpsquid:S3900 Range 24:24:20:27
-  Component fluentassertions:Src/FluentAssertions/Common/TypeExtensions.cs Issue AWDbwdfe-O6vncpHIRPB Rule csharpsquid:S3900 Range 59:59:57:85
-  Component fluentassertions:Src/FluentAssertions/Common/TypeExtensions.cs Issue AWDbwdfe-O6vncpHIRPN Rule csharpsquid:S3900 Range 122:122:16:32
-  Component fluentassertions:Src/FluentAssertions/Common/TypeExtensions.cs Issue AWDbwdff-O6vncpHIRPT Rule csharpsquid:S3900 Range 331:331:19:23
-  Component fluentassertions:Src/FluentAssertions/Equivalency/SubjectInfoExtensions.cs Issue AWDbwdmJ-O6vncpHIRVg Rule csharpsquid:S3900 Range 15:15:19:30
-  Component fluentassertions:Src/FluentAssertions/Common/TypeExtensions.cs Issue AWDbwdfe-O6vncpHIRO6 Rule csharpsquid:S3900 Range 27:27:20:26
-  Component fluentassertions:Src/FluentAssertions/NumericAssertionsExtensions.cs Issue AWDbwdZC-O6vncpHIRH- Rule csharpsquid:S3900 Range 98:98:30:36
-  Component fluentassertions:Src/FluentAssertions/Equivalency/GenericEnumerableEquivalencyStep.cs Issue AWDbwdkK-O6vncpHIRS4 Rule csharpsquid:S3900 Range 52:52:36:42
-  Component fluentassertions:Src/FluentAssertions/Equivalency/DictionaryEquivalencyStep.cs Issue AWDbwdip-O6vncpHIRQ5 Rule csharpsquid:S3900 Range 44:44:28:34
-  Component fluentassertions:Src/FluentAssertions/Collections/SelfReferencingCollectionAssertions.cs Issue AWDbwdbj-O6vncpHIRLp Rule csharpsquid:S3900 Range 561:561:106:115
-  Component fluentassertions:Src/FluentAssertions/Collections/SelfReferencingCollectionAssertions.cs Issue AWDbwdbj-O6vncpHIRLy Rule csharpsquid:S3900 Range 627:627:115:124
-  Component fluentassertions:Src/FluentAssertions/Equivalency/EquivalencyAssertionOptionsExtentions.cs Issue AWDbwdjZ-O6vncpHIRRw Rule csharpsquid:S3900 Range 12:12:67:74
-  Component fluentassertions:Src/FluentAssertions/Equivalency/EnumerableEquivalencyStep.cs Issue AWDbwdjF-O6vncpHIRRV Rule csharpsquid:S3900 Range 39:39:36:42
-  Component fluentassertions:Src/FluentAssertions/Collections/SelfReferencingCollectionAssertions.cs Issue AWDbwdbj-O6vncpHIRLc Rule csharpsquid:S3900 Range 453:453:102:111
-  Component fluentassertions:Src/FluentAssertions/Equivalency/TryConversionStep.cs Issue AWDbwdmQ-O6vncpHIRVw Rule csharpsquid:S3900 Range 57:57:20:47
-  Component fluentassertions:Src/FluentAssertions/Execution/ContinuationOfGiven.cs Issue AWDbwdpU-O6vncpHIRY2 Rule csharpsquid:S3900 Range 34:34:19:38
-  Component fluentassertions:Src/FluentAssertions/Collections/SelfReferencingCollectionAssertions.cs Issue AWDbwdbj-O6vncpHIRLb Rule csharpsquid:S3900 Range 456:456:33:42
-  Component fluentassertions:Src/FluentAssertions/Equivalency/EnumEqualityStep.cs Issue AWDbwdiy-O6vncpHIRRH Rule csharpsquid:S3900 Range 46:46:20:27
-  Component fluentassertions:Src/FluentAssertions/Formatting/DefaultValueFormatter.cs Issue AWDbwdsm-O6vncpHIRc_ Rule csharpsquid:S3900 Range 35:35:16:21
-  Component fluentassertions:Src/FluentAssertions/Equivalency/EnumEqualityStep.cs Issue AWDbwdiy-O6vncpHIRRG Rule csharpsquid:S3900 Range 39:39:56:63
-  Component fluentassertions:Src/FluentAssertions/Execution/Continuation.cs Issue AWDbwdpO-O6vncpHIRYw Rule csharpsquid:S3900 Range 39:39:19:31
-  Component fluentassertions:Src/FluentAssertions/Equivalency/SelfReferenceEquivalencyAssertionOptions.cs Issue AWDbwdlt-O6vncpHIRU0 Rule csharpsquid:S3900 Range 71:71:26:34
-  Component fluentassertions:Src/FluentAssertions/Equivalency/AssertionRuleEquivalencyStep.cs Issue AWDbwdh1-O6vncpHIRP8 Rule csharpsquid:S3900 Range 25:25:21:28
-  Component fluentassertions:Src/FluentAssertions/Specialized/ExecutionTimeAssertions.cs Issue AWDbwdva-O6vncpHIRgc Rule csharpsquid:S3900 Range 23:23:32:45
-  Component fluentassertions:Src/FluentAssertions/Equivalency/TryConversionStep.cs Issue AWDbwdmQ-O6vncpHIRVu Rule csharpsquid:S3900 Range 21:21:26:34
-  Component fluentassertions:Src/FluentAssertions/ObjectAssertionsExtensions.cs Issue AWDbwdZq-O6vncpHIRIp Rule csharpsquid:S3900 Range 102:102:80:90
-  Component fluentassertions:Src/FluentAssertions/Equivalency/StructuralEqualityEquivalencyStep.cs Issue AWDbwdmC-O6vncpHIRVU Rule csharpsquid:S3900 Range 15:15:38:44
-  Component fluentassertions:Src/FluentAssertions/ObjectAssertionsExtensions.cs Issue AWDbwdZq-O6vncpHIRIn Rule csharpsquid:S3900 Range 50:50:77:87
-  Component fluentassertions:Src/FluentAssertions/Equivalency/EquivalencyValidator.cs Issue AWDbwdjy-O6vncpHIRSS Rule csharpsquid:S3900 Range 46:46:34:41
-  Component fluentassertions:Src/FluentAssertions/Equivalency/SimpleEqualityEquivalencyStep.cs Issue AWDbwdl4-O6vncpHIRVB Rule csharpsquid:S3900 Range 10:10:20:26
-  Component fluentassertions:Src/FluentAssertions/Common/TypeExtensions.cs Issue AWDbwdfe-O6vncpHIRPO Rule csharpsquid:S3900 Range 171:171:16:20
 Rule: csharpsquid:S2933 (size: 1):
   Component fluentassertions:Src/FluentAssertions/ObjectAssertionsExtensions.cs Issue AWDbwdZq-O6vncpHIRIg Rule csharpsquid:S2933 Range 134:134:25:29
 ====== Vulnerabilities ======

@@ -1,6 +1,6 @@
 ====== Bugs ======
 Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
-nuget-server;593;125;78,920742;489;82,462057
+nuget-server;418;84;79,904306;440;105,263158
 ====== Added issues ======
 Rule: csharpsquid:S1118 (size: 1):
   Component nuget-server-autoscan:test/NuGet.Server.V2.Tests/Infrastructure/ControllerTestHelpers.cs Issue AYURU6nvnSJipuBJLW_A Rule csharpsquid:S1118 Range 11:11:17:38
@@ -307,30 +307,6 @@ Rule: csharpsquid:S109 (size: 49):
   Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/ServerPackageRepositoryTest.cs Issue AYURU6m8nSJipuBJLW6f Rule csharpsquid:S109 Range 596:596:29:30
   Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/ServerPackageRepositoryTest.cs Issue AYURU6m8nSJipuBJLW6g Rule csharpsquid:S109 Range 597:597:29:30
   Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/ServerPackageRepositoryTest.cs Issue AYURU6m8nSJipuBJLW6m Rule csharpsquid:S109 Range 751:751:29:30
-Rule: common-cs:InsufficientLineCoverage (size: 23):
-  Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/ApiKeyPackageAuthenticationServiceTest.cs Issue AYURU6nWnSJipuBJLW7M Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/ClientCompatibilityFactoryTests.cs Issue AYURU6nBnSJipuBJLW63 Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.V2.Tests/Infrastructure/ControllerTestHelpers.cs Issue AYURU6nvnSJipuBJLW-- Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/FeedPackageTest.cs Issue AYURU6nFnSJipuBJLW66 Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/Infrastructure/FuncSettingsProvider.cs Issue AYURU6mdnSJipuBJLW5E Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Tests/HelpersTest.cs Issue AYURU6n4nSJipuBJLW_G Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/IdAndVersionEqualityComparerTest.cs Issue AYURU6mMnSJipuBJLW4p Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/IgnoreCaseForPackageIdInterceptorTest.cs Issue AYURU6mhnSJipuBJLW5J Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.V2.Tests/TestUtils/HttpActionResultExtensions.cs Issue AYURU6nrnSJipuBJLW-1 Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Tests/IntegrationTests.cs Issue AYURU6oAnSJipuBJLW_U Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/JsonNetPackagesSerializerTests.cs Issue AYURU6mQnSJipuBJLW4w Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/NormalizeVersionInterceptorTest.cs Issue AYURU6munSJipuBJLW5d Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.V2.Tests/NuGetODataControllerTests.cs Issue AYURU6ngnSJipuBJLW7Q Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Tests/PackageAuthenticationServiceTests.cs Issue AYURU6n8nSJipuBJLW_R Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/PackageExtensionsTest.cs Issue AYURU6nOnSJipuBJLW7D Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/Core/PackageFactoryTest.cs Issue AYURU6mqnSJipuBJLW5Z Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/SemanticVersionJsonConverterTests.cs Issue AYURU6nJnSJipuBJLW6- Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/ServerPackageCacheTest.cs Issue AYURU6mmnSJipuBJLW5R Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/ServerPackageRepositoryTest.cs Issue AYURU6m8nSJipuBJLW5y Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/ServerPackageStoreTest.cs Issue AYURU6m2nSJipuBJLW5p Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/ServerPackageTest.cs Issue AYURU6nSnSJipuBJLW7J Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/Infrastructure/TemporaryDirectory.cs Issue AYURU6mZnSJipuBJLW4- Rule common-cs:InsufficientLineCoverage Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/TestData.cs Issue AYURU6mynSJipuBJLW5i Rule common-cs:InsufficientLineCoverage Range (empty)
 Rule: csharpsquid:S1449 (size: 2):
   Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/IdAndVersionEqualityComparerTest.cs Issue AYURU6mMnSJipuBJLW4u Rule csharpsquid:S1449 Range 80:80:45:52
   Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/IdAndVersionEqualityComparerTest.cs Issue AYURU6mMnSJipuBJLW4v Rule csharpsquid:S1449 Range 81:81:45:52
@@ -343,33 +319,6 @@ Rule: csharpsquid:S113 (size: 6):
   Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/Infrastructure/TemporaryDirectory.cs Issue AYURU6mZnSJipuBJLW5B Rule csharpsquid:S113 Range 42:42:0:1
 Rule: csharpsquid:S134 (size: 1):
   Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/JsonNetPackagesSerializerTests.cs Issue AYURU6mQnSJipuBJLW40 Rule csharpsquid:S134 Range 56:56:24:26
-Rule: common-cs:InsufficientCommentDensity (size: 26):
-  Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/ApiKeyPackageAuthenticationServiceTest.cs Issue AYURU6nWnSJipuBJLW7N Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/ClientCompatibilityFactoryTests.cs Issue AYURU6nBnSJipuBJLW64 Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.V2.Tests/Infrastructure/ControllerTestHelpers.cs Issue AYURU6nvnSJipuBJLW-_ Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/FeedPackageTest.cs Issue AYURU6nFnSJipuBJLW67 Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/Infrastructure/FuncSettingsProvider.cs Issue AYURU6mdnSJipuBJLW5F Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Tests/HelpersTest.cs Issue AYURU6n4nSJipuBJLW_H Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/IdAndVersionEqualityComparerTest.cs Issue AYURU6mMnSJipuBJLW4q Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/IgnoreCaseForPackageIdInterceptorTest.cs Issue AYURU6mhnSJipuBJLW5K Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.V2.Tests/TestUtils/HttpActionResultExtensions.cs Issue AYURU6nrnSJipuBJLW-2 Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Tests/IntegrationTests.cs Issue AYURU6oAnSJipuBJLW_V Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/JsonNetPackagesSerializerTests.cs Issue AYURU6mQnSJipuBJLW4x Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/NormalizeVersionInterceptorTest.cs Issue AYURU6munSJipuBJLW5e Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.V2.Tests/NuGetODataControllerTests.cs Issue AYURU6ngnSJipuBJLW7R Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/Infrastructure/NullLogger.cs Issue AYURU6mVnSJipuBJLW46 Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Tests/PackageAuthenticationServiceTests.cs Issue AYURU6n8nSJipuBJLW_S Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/PackageExtensionsTest.cs Issue AYURU6nOnSJipuBJLW7E Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/Core/PackageFactoryTest.cs Issue AYURU6mqnSJipuBJLW5a Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/SemanticVersionJsonConverterTests.cs Issue AYURU6nJnSJipuBJLW6_ Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/ServerPackageCacheTest.cs Issue AYURU6mmnSJipuBJLW5S Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/ServerPackageRepositoryTest.cs Issue AYURU6m8nSJipuBJLW5z Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/ServerPackageStoreTest.cs Issue AYURU6m2nSJipuBJLW5q Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/ServerPackageTest.cs Issue AYURU6nSnSJipuBJLW7K Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/Infrastructure/TemporaryDirectory.cs Issue AYURU6mZnSJipuBJLW4_ Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/TestData.cs Issue AYURU6mynSJipuBJLW5j Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.Tests/TestablePackagesODataController.cs Issue AYURU6oJnSJipuBJLW_0 Rule common-cs:InsufficientCommentDensity Range (empty)
-  Component nuget-server-autoscan:test/NuGet.Server.V2.Tests/TestableNuGetODataController.cs Issue AYURU6nmnSJipuBJLW-z Rule common-cs:InsufficientCommentDensity Range (empty)
 Rule: csharpsquid:S1200 (size: 1):
   Component nuget-server-autoscan:test/NuGet.Server.Core.Tests/ServerPackageRepositoryTest.cs Issue AYURU6m8nSJipuBJLW52 Rule csharpsquid:S1200 Range 19:19:17:44
 Rule: csharpsquid:S1144 (size: 5):
@@ -623,59 +572,14 @@ Rule: csharpsquid:S1200 (size: 3):
   Component nuget-server:src/NuGet.Server.V2/NuGetV2WebApiEnabler.cs Issue AWd6GIHObX1KqqG04nAg Rule csharpsquid:S1200 Range 20:20:24:44
   Component nuget-server:src/NuGet.Server.Core/Infrastructure/ServerPackageStore.cs Issue AWd6GIC-bX1KqqG04m7W Rule csharpsquid:S1200 Range 15:15:17:35
   Component nuget-server:src/NuGet.Server.Core/Infrastructure/ServerPackage.cs Issue AWd6GIEGbX1KqqG04m8I Rule csharpsquid:S1200 Range 13:13:17:30
-Rule: csharpsquid:S3900 (size: 41):
-  Component nuget-server:src/NuGet.Server.V2/OData/Conventions/EntitySetCountRoutingConvention.cs Issue AWd6GIH4bX1KqqG04nBI Rule csharpsquid:S3900 Range 21:21:19:28
-  Component nuget-server:src/NuGet.Server.Core/DataServices/PackageExtensions.cs Issue AWd6GICVbX1KqqG04m64 Rule csharpsquid:S3900 Range 20:20:21:28
-  Component nuget-server:src/NuGet.Server.Core/Infrastructure/ServerPackageExtensions.cs Issue AWd6GIEUbX1KqqG04m8Z Rule csharpsquid:S3900 Range 36:36:24:34
-  Component nuget-server:src/NuGet.Server.V2/OData/Conventions/EntitySetCountRoutingConvention.cs Issue AWd6GIH4bX1KqqG04nBH Rule csharpsquid:S3900 Range 20:20:19:28
-  Component nuget-server:src/NuGet.Server.Core/Infrastructure/ServerPackageRepositoryExtensions.cs Issue AWd6GIEnbX1KqqG04m9q Rule csharpsquid:S3900 Range 33:33:25:35
-  Component nuget-server:samples/NuGet.Server.V2.Samples.OwinHost/BasicAuthentication.cs Issue AWd6GH92bX1KqqG04m33 Rule csharpsquid:S3900 Range 32:32:27:34
-  Component nuget-server:src/NuGet.Server.Core/Infrastructure/IdAndVersionEqualityComparer.cs Issue AWd6GIENbX1KqqG04m8T Rule csharpsquid:S3900 Range 36:36:41:44
-  Component nuget-server:src/NuGet.Server.V2/OData/Conventions/ActionCountRoutingConvention.cs Issue AWd6GIHYbX1KqqG04nAs Rule csharpsquid:S3900 Range 35:35:16:25
-  Component nuget-server:src/NuGet.Server.V2/OData/Conventions/CompositeKeyRoutingConvention.cs Issue AWd6GIHfbX1KqqG04nAz Rule csharpsquid:S3900 Range 33:33:21:30
-  Component nuget-server:samples/NuGet.Server.V2.Samples.OwinHost/BasicAuthentication.cs Issue AWd6GH92bX1KqqG04m37 Rule csharpsquid:S3900 Range 81:81:12:19
-  Component nuget-server:src/NuGet.Server.Core/DataServices/IgnoreCaseForPackageIdInterceptor.cs Issue AWd6GIBubX1KqqG04m6T Rule csharpsquid:S3900 Range 17:17:16:20
-  Component nuget-server:src/NuGet.Server.Core/Infrastructure/ServerPackageRepository.cs Issue AWd6GIEbbX1KqqG04m8n Rule csharpsquid:S3900 Range 171:171:17:30
-  Component nuget-server:src/NuGet.Server.Core/Infrastructure/ServerPackageStore.cs Issue AWd6GIC-bX1KqqG04m7a Rule csharpsquid:S3900 Range 51:51:47:54
-  Component nuget-server:src/NuGet.Server/Core/ServiceResolverExtensions.cs Issue AWd6GIJwbX1KqqG04nDf Rule csharpsquid:S3900 Range 11:11:19:27
-  Component nuget-server:src/NuGet.Server.Core/Infrastructure/ServerPackageExtensions.cs Issue AWd6GIEUbX1KqqG04m8X Rule csharpsquid:S3900 Range 14:14:40:47
-  Component nuget-server:src/NuGet.Server.V2/OData/Conventions/EntitySetCountRoutingConvention.cs Issue AWd6GIH4bX1KqqG04nBG Rule csharpsquid:S3900 Range 19:19:16:33
-  Component nuget-server:src/NuGet.Server/App_Start/NuGetODataConfig.cs Issue AWd6GIJUbX1KqqG04nDM Rule csharpsquid:S3900 Range 33:33:12:18
-  Component nuget-server:samples/NuGet.Server.V2.Samples.OwinHost/BasicAuthentication.cs Issue AWd6GH92bX1KqqG04m4A Rule csharpsquid:S3900 Range 86:86:16:24
-  Component nuget-server:src/NuGet.Server.V2/NuGetV2WebApiEnabler.cs Issue AWd6GIHPbX1KqqG04nAk Rule csharpsquid:S3900 Range 42:42:12:18
-  Component nuget-server:src/NuGet.Server.V2/OData/Conventions/MethodNameActionRoutingConvention.cs Issue AWd6GIH_bX1KqqG04nBN Rule csharpsquid:S3900 Range 35:35:16:25
-  Component nuget-server:src/NuGet.Server.V2/OData/Conventions/ActionCountRoutingConvention.cs Issue AWd6GIHYbX1KqqG04nAt Rule csharpsquid:S3900 Range 49:49:16:25
-  Component nuget-server:src/NuGet.Server.Core/DataServices/PackageExtensions.cs Issue AWd6GICVbX1KqqG04m65 Rule csharpsquid:S3900 Range 44:44:42:55
-  Component nuget-server:src/NuGet.Server/Infrastructure/TraceExceptionLogger.cs Issue AWd6GIKJbX1KqqG04nD1 Rule csharpsquid:S3900 Range 13:13:29:36
-  Component nuget-server:src/NuGet.Server.V2/OData/Conventions/MethodNameActionRoutingConvention.cs Issue AWd6GIH_bX1KqqG04nBM Rule csharpsquid:S3900 Range 26:26:16:25
-  Component nuget-server:src/NuGet.Server.V2/OData/Conventions/MethodNameActionRoutingConvention.cs Issue AWd6GIH_bX1KqqG04nBO Rule csharpsquid:S3900 Range 48:48:16:25
-  Component nuget-server:src/NuGet.Server.Core/Infrastructure/ServerPackage.cs Issue AWd6GIEGbX1KqqG04m8K Rule csharpsquid:S3900 Range 53:53:26:44
-  Component nuget-server:src/NuGet.Server.Core/Infrastructure/ServerPackageRepositoryExtensions.cs Issue AWd6GIEnbX1KqqG04m9s Rule csharpsquid:S3900 Range 49:49:25:35
-  Component nuget-server:src/NuGet.Server.V2/OData/Conventions/ActionCountRoutingConvention.cs Issue AWd6GIHYbX1KqqG04nAr Rule csharpsquid:S3900 Range 26:26:16:25
-  Component nuget-server:samples/NuGet.Server.V2.Samples.OwinHost/Program.cs Issue AWd6GH-CbX1KqqG04m4L Rule csharpsquid:S3900 Range 57:57:12:22
-  Component nuget-server:src/NuGet.Server.V2/OData/Conventions/EntitySetPropertyRoutingConvention.cs Issue AWd6GIHybX1KqqG04nA_ Rule csharpsquid:S3900 Range 27:27:16:25
-  Component nuget-server:src/NuGet.Server.Core/DataServices/NormalizeVersionInterceptor.cs Issue AWd6GIBnbX1KqqG04m6N Rule csharpsquid:S3900 Range 16:16:16:20
-  Component nuget-server:src/NuGet.Server.Core/Infrastructure/ServerPackageRepository.cs Issue AWd6GIEbbX1KqqG04m8z Rule csharpsquid:S3900 Range 328:328:72:79
-  Component nuget-server:src/NuGet.Server.V2/OData/Conventions/CompositeKeyRoutingConvention.cs Issue AWd6GIHfbX1KqqG04nAy Rule csharpsquid:S3900 Range 18:18:30:47
-  Component nuget-server:src/NuGet.Server.Core/Infrastructure/SemanticVersionJsonConverter.cs Issue AWd6GID_bX1KqqG04m8B Rule csharpsquid:S3900 Range 48:48:46:51
-  Component nuget-server:src/NuGet.Server.Core/Infrastructure/ServerPackageCache.cs Issue AWd6GIEvbX1KqqG04m98 Rule csharpsquid:S3900 Range 166:166:39:47
-  Component nuget-server:src/NuGet.Server.V2/OData/Conventions/EntitySetPropertyRoutingConvention.cs Issue AWd6GIHybX1KqqG04nBA Rule csharpsquid:S3900 Range 36:36:16:25
-  Component nuget-server:src/NuGet.Server.Core/Infrastructure/ServerPackageRepositoryExtensions.cs Issue AWd6GIEnbX1KqqG04m9o Rule csharpsquid:S3900 Range 21:21:33:43
-  Component nuget-server:src/NuGet.Server.Core/Infrastructure/ServerPackage.cs Issue AWd6GIEGbX1KqqG04m8J Rule csharpsquid:S3900 Range 24:24:17:24
-  Component nuget-server:src/NuGet.Server.V2/Controllers/NuGetODataController.cs Issue AWd6GIIZbX1KqqG04nB0 Rule csharpsquid:S3900 Range 118:118:20:32
-  Component nuget-server:src/NuGet.Server.V2/OData/Conventions/EntitySetPropertyRoutingConvention.cs Issue AWd6GIHybX1KqqG04nBB Rule csharpsquid:S3900 Range 47:47:16:25
-  Component nuget-server:src/NuGet.Server.Core/Core/PackageExtensions.cs Issue AWd6GIBYbX1KqqG04m6F Rule csharpsquid:S3900 Range 13:13:29:36
 Rule: csharpsquid:S3240 (size: 3):
   Component nuget-server:src/NuGet.Server.Core/Infrastructure/ServerPackageRepository.cs Issue AWd6GIEbbX1KqqG04m9E Rule csharpsquid:S3240 Range 406:406:16:18
   Component nuget-server:src/NuGet.Server.Core/Infrastructure/SemanticVersionJsonConverter.cs Issue AWd6GID_bX1KqqG04m8C Rule csharpsquid:S3240 Range 42:42:12:14
   Component nuget-server:src/NuGet.Server.Core/DataServices/PackageExtensions.cs Issue AWd6GICVbX1KqqG04m69 Rule csharpsquid:S3240 Range 76:76:16:18
 ====== Vulnerabilities ======
 Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
-nuget-server;3;0;100,000000;2;66,666667
+nuget-server;2;0;100,000000;0;0,000000
 ====== Added issues ======
-Rule: csharpsquid:S2228 (size: 2):
-  Component nuget-server-autoscan:samples/NuGet.Server.V2.Samples.OwinHost/Program.cs Issue AYURU6oinSJipuBJLXAN Rule csharpsquid:S2228 Range 45:45:16:33
-  Component nuget-server-autoscan:samples/NuGet.Server.V2.Samples.OwinHost/Program.cs Issue AYURU6oinSJipuBJLXAO Rule csharpsquid:S2228 Range 46:46:16:33
 
 ====== Missing issues ======
 ====== Metrics ======

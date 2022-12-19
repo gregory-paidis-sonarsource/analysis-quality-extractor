@@ -1,6 +1,6 @@
 ====== Bugs ======
 Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
-nopowershell;433;13;96,997691;20;4,618938
+nopowershell;356;2;99,438202;20;5,617978
 ====== Added issues ======
 Rule: csharpsquid:S4058 (size: 9):
   Component nopowershell-autoscan:Commands/Management/GetChildItemCommand.cs Issue AYURUxrnnSJipuBJLV8s Rule csharpsquid:S4058 Range 56:56:26:61
@@ -28,37 +28,12 @@ Rule: csharpsquid:S106 (size: 11):
 ====== Missing issues ======
 Rule: csharpsquid:S4056 (size: 1):
   Component nopowershell:HelperClasses/WmiHelper.cs Issue AWdkNy7sQQV07Y2x58ek Rule csharpsquid:S4056 Range 83:83:36:64
-Rule: csharpsquid:S1128 (size: 1):
-  Component nopowershell:Properties/AssemblyInfo.cs Issue AW11L5BApRghTRB9a5Pa Rule csharpsquid:S1128 Range 2:2:0:38
 Rule: csharpsquid:S3217 (size: 1):
   Component nopowershell:HelperClasses/WmiHelper.cs Issue AWdkNy7sQQV07Y2x58en Rule csharpsquid:S3217 Range 55:55:21:37
-Rule: csharpsquid:S3900 (size: 10):
-  Component nopowershell:HelperClasses/ResultPrinter.cs Issue AWdkNy7mQQV07Y2x58ea Rule csharpsquid:S3900 Range 110:110:16:23
-  Component nopowershell:Commands/Utility/SelectObjectCommand.cs Issue AWdkNy62QQV07Y2x58dW Rule csharpsquid:S3900 Range 22:22:44:50
-  Component nopowershell:Commands/PSCommand.cs Issue AWdkNy6iQQV07Y2x58ce Rule csharpsquid:S3900 Range 33:33:12:30
-  Component nopowershell:Commands/Utility/FormatListCommand.cs Issue AWdkNy6rQQV07Y2x58dB Rule csharpsquid:S3900 Range 24:24:44:50
-  Component nopowershell:Commands/Utility/FormatTableCommand.cs Issue AWdkNy6xQQV07Y2x58dM Rule csharpsquid:S3900 Range 24:24:44:50
-  Component nopowershell:Commands/Core/WhereObjectCommand.cs Issue AWdkNy6LQQV07Y2x58b- Rule csharpsquid:S3900 Range 27:27:44:50
-  Component nopowershell:Arguments/Argument.cs Issue AWdkNy5TQQV07Y2x58aL Rule csharpsquid:S3900 Range 31:31:19:24
-  Component nopowershell:Commands/PSCommand.cs Issue AWdkNy6iQQV07Y2x58cy Rule csharpsquid:S3900 Range 63:63:45:63
-  Component nopowershell:HelperClasses/ResultPrinter.cs Issue AWdkNy7mQQV07Y2x58eZ Rule csharpsquid:S3900 Range 55:55:16:23
-  Component nopowershell:HelperClasses/ResultPrinter.cs Issue AWdkNy7mQQV07Y2x58eQ Rule csharpsquid:S3900 Range 36:36:16:23
 ====== Vulnerabilities ======
 Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
-nopowershell;0;0;NaN;11;Infinity
+nopowershell;0;0;NaN;0;NaN
 ====== Added issues ======
-Rule: csharpsquid:S2228 (size: 11):
-  Component nopowershell-autoscan:Commands/Management/GetChildItemCommand.cs Issue AYURUxrnnSJipuBJLV8l Rule csharpsquid:S2228 Range 110:110:16:33
-  Component nopowershell-autoscan:Program.cs Issue AYURUxtjnSJipuBJLWCQ Rule csharpsquid:S2228 Range 25:25:16:33
-  Component nopowershell-autoscan:Program.cs Issue AYURUxtjnSJipuBJLWCR Rule csharpsquid:S2228 Range 51:51:16:29
-  Component nopowershell-autoscan:HelperClasses/ResultPrinter.cs Issue AYURUxtenSJipuBJLWBr Rule csharpsquid:S2228 Range 49:49:12:25
-  Component nopowershell-autoscan:HelperClasses/ResultPrinter.cs Issue AYURUxtenSJipuBJLWBw Rule csharpsquid:S2228 Range 79:79:16:29
-  Component nopowershell-autoscan:HelperClasses/ResultPrinter.cs Issue AYURUxtenSJipuBJLWBx Rule csharpsquid:S2228 Range 81:81:12:29
-  Component nopowershell-autoscan:HelperClasses/ResultPrinter.cs Issue AYURUxtenSJipuBJLWBy Rule csharpsquid:S2228 Range 82:82:12:29
-  Component nopowershell-autoscan:HelperClasses/ResultPrinter.cs Issue AYURUxtenSJipuBJLWBz Rule csharpsquid:S2228 Range 101:101:20:33
-  Component nopowershell-autoscan:HelperClasses/ResultPrinter.cs Issue AYURUxtenSJipuBJLWB0 Rule csharpsquid:S2228 Range 103:103:16:33
-  Component nopowershell-autoscan:HelperClasses/ResultPrinter.cs Issue AYURUxtenSJipuBJLWBt Rule csharpsquid:S2228 Range 128:128:20:37
-  Component nopowershell-autoscan:HelperClasses/ResultPrinter.cs Issue AYURUxtenSJipuBJLWBv Rule csharpsquid:S2228 Range 130:130:16:33
 
 ====== Missing issues ======
 ====== Metrics ======

@@ -1,6 +1,6 @@
 ====== Bugs ======
 Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
-codehub;3338;537;83,912522;276;8,268424
+codehub;3142;341;89,147040;276;8,784214
 ====== Added issues ======
 Rule: csharpsquid:S3906 (size: 4):
   Component codehub-autoscan:CodeHub.iOS/ViewControllers/ViewModelDrivenDialogViewController.cs Issue AYURU5juozEprKvtbiwB Rule csharpsquid:S3906 Range 262:262:21:58
@@ -450,56 +450,6 @@ Rule: csharpsquid:S1449 (size: 8):
   Component codehub:CodeHub.iOS/Views/NotificationsView.cs Issue AWc6nLaw-D5hmrSZEikA Rule csharpsquid:S1449 Range 51:51:45:52
   Component codehub:CodeHub.iOS/DialogElements/PullRequestElement.cs Issue AWc6nLlO-D5hmrSZEi36 Rule csharpsquid:S1449 Range 30:30:32:39
   Component codehub:CodeHub.iOS/ViewControllers/Gists/GistsViewController.cs Issue AWc6nLpU-D5hmrSZEjA3 Rule csharpsquid:S1449 Range 46:46:59:66
-Rule: csharpsquid:S1128 (size: 49):
-  Component codehub:CodeHub.iOS/DialogElements/LoadMoreElement.cs Issue AW11Tx2rCjEt1D4cDTe0 Rule csharpsquid:S1128 Range 7:7:0:23
-  Component codehub:CodeHub.Core/ViewModels/Repositories/RepositoriesViewModel.cs Issue AW11TxQ3CjEt1D4cDTee Rule csharpsquid:S1128 Range 10:10:0:18
-  Component codehub:CodeHub.Core/Properties/AssemblyInfo.cs Issue AW11TxbYCjEt1D4cDTek Rule csharpsquid:S1128 Range 2:2:0:38
-  Component codehub:CodeHub.Core/ViewModels/Repositories/RepositoryViewModel.cs Issue AW11TxQgCjEt1D4cDTeb Rule csharpsquid:S1128 Range 6:6:0:35
-  Component codehub:CodeHub.iOS/Utilities/UIImageExtensions.cs Issue AW11TyIACjEt1D4cDTfA Rule csharpsquid:S1128 Range 2:2:0:19
-  Component codehub:CodeHub.Core/ViewModels/PullRequests/PullRequestFilesViewModel.cs Issue AW11TxN4CjEt1D4cDTeW Rule csharpsquid:S1128 Range 7:7:0:32
-  Component codehub:CodeHub.iOS/ViewControllers/Repositories/ReadmeViewController.cs Issue AW11TxjOCjEt1D4cDTeo Rule csharpsquid:S1128 Range 3:3:0:34
-  Component codehub:CodeHub.iOS/ViewControllers/Repositories/PrivateRepositoryViewController.cs Issue AW11TxjvCjEt1D4cDTep Rule csharpsquid:S1128 Range 5:5:0:27
-  Component codehub:CodeHub.iOS/DialogElements/BooleanElement.cs Issue AW11Tx4uCjEt1D4cDTe4 Rule csharpsquid:S1128 Range 3:3:0:33
-  Component codehub:CodeHub.Core/ViewModels/App/FeedbackComposerViewModel.cs Issue AW11TxLQCjEt1D4cDTeT Rule csharpsquid:S1128 Range 7:7:0:16
-  Component codehub:CodeHub.Core/ViewModels/Organizations/OrganizationsViewModel.cs Issue AW11TxOLCjEt1D4cDTeY Rule csharpsquid:S1128 Range 3:3:0:30
-  Component codehub:CodeHub.iOS/ViewControllers/FilterViewController.cs Issue AW11Tx1HCjEt1D4cDTex Rule csharpsquid:S1128 Range 3:3:0:34
-  Component codehub:CodeHub.Core/ViewModels/Issues/BaseIssuesViewModel.cs Issue AW11TxJVCjEt1D4cDTeP Rule csharpsquid:S1128 Range 2:2:0:30
-  Component codehub:CodeHub.Core/ViewModels/IListViewModel.cs Issue AW11TxTsCjEt1D4cDTei Rule csharpsquid:S1128 Range 1:1:0:13
-  Component codehub:CodeHub/Properties/AssemblyInfo.cs Issue AW11TyR-CjEt1D4cDTfC Rule csharpsquid:S1128 Range 2:2:0:38
-  Component codehub:CodeHub.iOS/ViewControllers/Application/EnterpriseSupportViewController.cs Issue AW11TxxdCjEt1D4cDTeu Rule csharpsquid:S1128 Range 7:7:0:17
-  Component codehub:CodeHub.iOS/ViewControllers/ViewModelDrivenDialogViewController.cs Issue AW11Tx0xCjEt1D4cDTew Rule csharpsquid:S1128 Range 3:3:0:34
-  Component codehub:CodeHub.iOS/Views/AddRemoveView.cs Issue AW11TyFSCjEt1D4cDTe- Rule csharpsquid:S1128 Range 4:4:0:18
-  Component codehub:CodeHub.iOS/ViewControllers/Users/UserViewController.cs Issue AW11TxhwCjEt1D4cDTen Rule csharpsquid:S1128 Range 1:1:0:34
-  Component codehub:CodeHub.iOS/ViewControllers/Events/BaseEventsViewController.cs Issue AW11TxvFCjEt1D4cDTet Rule csharpsquid:S1128 Range 9:9:0:27
-  Component codehub:CodeHub.iOS/ViewControllers/Repositories/LanguagesViewController.cs Issue AW11TxkZCjEt1D4cDTer Rule csharpsquid:S1128 Range 11:11:0:17
-  Component codehub:CodeHub.iOS/DialogElements/LoadMoreElement.cs Issue AW11Tx2rCjEt1D4cDTe1 Rule csharpsquid:S1128 Range 8:8:0:21
-  Component codehub:CodeHub.Core/ViewModels/App/FeedbackComposerViewModel.cs Issue AW11TxLQCjEt1D4cDTeS Rule csharpsquid:S1128 Range 5:5:0:18
-  Component codehub:CodeHub.Core/Services/IMessageService.cs Issue AW11Txd-CjEt1D4cDTem Rule csharpsquid:S1128 Range 2:2:0:33
-  Component codehub:CodeHub.Core/ViewModels/Events/BaseEventsViewModel.cs Issue AW11TxS4CjEt1D4cDTeg Rule csharpsquid:S1128 Range 16:16:0:22
-  Component codehub:CodeHub.iOS/DialogElements/NewsFeedElement.cs Issue AW11Tx3CCjEt1D4cDTe2 Rule csharpsquid:S1128 Range 3:3:0:19
-  Component codehub:CodeHub.Core/ViewModels/Gists/GistViewModel.cs Issue AW11TxGOCjEt1D4cDTeO Rule csharpsquid:S1128 Range 1:1:0:13
-  Component codehub:CodeHub.Core/ViewModels/PullRequests/PullRequestFilesViewModel.cs Issue AW11TxN4CjEt1D4cDTeX Rule csharpsquid:S1128 Range 8:8:0:25
-  Component codehub:CodeHub.iOS/Properties/AssemblyInfo.cs Issue AW11Tx9KCjEt1D4cDTe8 Rule csharpsquid:S1128 Range 2:2:0:38
-  Component codehub:CodeHub.Core/ViewModels/LoadableViewModel.cs Issue AW11TxUZCjEt1D4cDTej Rule csharpsquid:S1128 Range 4:4:0:30
-  Component codehub:CodeHub.iOS/DialogElements/UserElement.cs Issue AW11Tx5hCjEt1D4cDTe5 Rule csharpsquid:S1128 Range 3:3:0:18
-  Component codehub:CodeHub.Core/ViewModels/Accounts/AddAccountViewModel.cs Issue AW11TxQICjEt1D4cDTeZ Rule csharpsquid:S1128 Range 9:9:0:18
-  Component codehub:CodeHub.iOS/DialogElements/NewsFeedElement.cs Issue AW11Tx3CCjEt1D4cDTe3 Rule csharpsquid:S1128 Range 4:4:0:18
-  Component codehub:CodeHub.Core/ViewModels/PullRequests/PullRequestFilesViewModel.cs Issue AW11TxN4CjEt1D4cDTeV Rule csharpsquid:S1128 Range 5:5:0:37
-  Component codehub:CodeHub.Core/ViewModels/Events/BaseEventsViewModel.cs Issue AW11TxS4CjEt1D4cDTef Rule csharpsquid:S1128 Range 3:3:0:18
-  Component codehub:CodeHub.Core/ViewModels/Changesets/ChangesetViewModel.cs Issue AW11TxJ4CjEt1D4cDTeQ Rule csharpsquid:S1128 Range 7:7:0:37
-  Component codehub:CodeHub.iOS/Views/ProfileButton.cs Issue AW11Tx_8CjEt1D4cDTe9 Rule csharpsquid:S1128 Range 4:4:0:18
-  Component codehub:CodeHub.iOS/TableViewCells/NewsCellView.cs Issue AW11TyJjCjEt1D4cDTfB Rule csharpsquid:S1128 Range 5:5:0:18
-  Component codehub:CodeHub.Core/ViewModels/PullRequests/PullRequestFilesViewModel.cs Issue AW11TxN4CjEt1D4cDTeU Rule csharpsquid:S1128 Range 3:3:0:27
-  Component codehub:CodeHub.iOS/ViewControllers/Organizations/OrganizationViewController.cs Issue AW11TxzxCjEt1D4cDTev Rule csharpsquid:S1128 Range 1:1:0:34
-  Component codehub:CodeHub.iOS/ViewControllers/ViewModelCollectionDrivenDialogViewController.cs Issue AW11Tx1yCjEt1D4cDTez Rule csharpsquid:S1128 Range 5:5:0:34
-  Component codehub:CodeHub.iOS/ViewControllers/Gists/GistFileViewController.cs Issue AW11TxqHCjEt1D4cDTes Rule csharpsquid:S1128 Range 2:2:0:18
-  Component codehub:CodeHub.iOS/DialogElements/DummyInputElement.cs Issue AW11Tx7yCjEt1D4cDTe6 Rule csharpsquid:S1128 Range 3:3:0:33
-  Component codehub:CodeHub.iOS/ViewControllers/MultipleChoiceViewController.cs Issue AW11Tx1bCjEt1D4cDTey Rule csharpsquid:S1128 Range 2:2:0:34
-  Component codehub:CodeHub.Core/ViewModels/Changesets/ChangesetViewModel.cs Issue AW11TxJ4CjEt1D4cDTeR Rule csharpsquid:S1128 Range 8:8:0:25
-  Component codehub:CodeHub.Core/ViewModels/Repositories/RepositoryViewModel.cs Issue AW11TxQgCjEt1D4cDTec Rule csharpsquid:S1128 Range 8:8:0:41
-  Component codehub:CodeHub.Core/Extensions/ObservableExtensions.cs Issue AW11TxbpCjEt1D4cDTel Rule csharpsquid:S1128 Range 4:4:4:17
-  Component codehub:CodeHub.Core/ViewModels/Repositories/RepositoryViewModel.cs Issue AW11TxQgCjEt1D4cDTed Rule csharpsquid:S1128 Range 13:13:0:37
-  Component codehub:CodeHub.Core/ViewModels/Repositories/RepositoryViewModel.cs Issue AW11TxQgCjEt1D4cDTea Rule csharpsquid:S1128 Range 5:5:0:25
 Rule: csharpsquid:S1168 (size: 4):
   Component codehub:CodeHub.iOS/DialogElements/Element.cs Issue AYTvMhsiKdlTR12TC82r Rule csharpsquid:S1168 Range 42:42:34:38
   Component codehub:CodeHub.iOS/ViewControllers/Walkthrough/WelcomePageViewController.cs Issue AYTvMhaAKdlTR12TC82o Rule csharpsquid:S1168 Range 141:141:53:57
@@ -724,162 +674,10 @@ Rule: csharpsquid:S2931 (size: 8):
   Component codehub:CodeHub.iOS/DialogElements/StringElement.cs Issue AWc6nLkf-D5hmrSZEi2R Rule csharpsquid:S2931 Range 25:25:17:30
   Component codehub:CodeHub.iOS/DialogElements/BooleanElement.cs Issue AWc6nLkX-D5hmrSZEi2F Rule csharpsquid:S2931 Range 9:9:17:31
   Component codehub:CodeHub.iOS/Services/MarkdownService.cs Issue AWc6nLdB-D5hmrSZEipJ Rule csharpsquid:S2931 Range 8:8:17:32
-Rule: csharpsquid:S3900 (size: 147):
-  Component codehub:CodeHub.Core/ViewModels/Repositories/RepositoryViewModel.cs Issue AWc6nL2n-D5hmrSZEjVn Rule csharpsquid:S3900 Range 69:69:23:32
-  Component codehub:CodeHub.Core/ViewModels/Organizations/TeamsViewModel.cs Issue AWc6nL0s-D5hmrSZEjS3 Rule csharpsquid:S3900 Range 20:20:31:40
-  Component codehub:CodeHub.Core/ViewModels/Repositories/RepositoryItemViewModel.cs Issue AWc6nL2v-D5hmrSZEjWD Rule csharpsquid:S3900 Range 34:34:42:52
-  Component codehub:CodeHub.iOS/DialogElements/OwnerDrawnElement.cs Issue AWc6nLmT-D5hmrSZEi6R Rule csharpsquid:S3900 Range 33:33:34:36
-  Component codehub:CodeHub.Core/ViewModels/Issues/IssueAssignedToViewModel.cs Issue AWc6nL0L-D5hmrSZEjSR Rule csharpsquid:S3900 Range 59:59:23:32
-  Component codehub:CodeHub.Core/ViewModels/Users/UserViewModel.cs Issue AWc6nL5v-D5hmrSZEjZa Rule csharpsquid:S3900 Range 72:72:31:40
-  Component codehub:CodeHub.Core/ViewModels/Issues/IssueEditViewModel.cs Issue AWc6nLz9-D5hmrSZEjR8 Rule csharpsquid:S3900 Range 109:109:22:31
-  Component codehub:CodeHub.iOS/Utilities/ViewControllerExtensions.cs Issue AWc6nLgZ-D5hmrSZEivm Rule csharpsquid:S3900 Range 26:26:16:26
-  Component codehub:CodeHub.iOS/Setup.cs Issue AWc6nLYz-D5hmrSZEihE Rule csharpsquid:S3900 Range 56:56:12:15
-  Component codehub:CodeHub.iOS/DialogElements/CommentElement.cs Issue AWc6nLlf-D5hmrSZEi4b Rule csharpsquid:S3900 Range 30:30:48:52
-  Component codehub:CodeHub.iOS/Utilities/UIKitExtensions.cs Issue AWc6nLg0-D5hmrSZEiwk Rule csharpsquid:S3900 Range 56:56:16:21
-  Component codehub:CodeHub.iOS/TouchViewPresenter.cs Issue AWc6nLZE-D5hmrSZEihT Rule csharpsquid:S3900 Range 49:49:16:23
-  Component codehub:CodeHub.iOS/ViewControllers/Application/UpgradeViewController.cs Issue AWc6nLo8-D5hmrSZEjAG Rule csharpsquid:S3900 Range 82:82:22:38
-  Component codehub:CodeHub.Core/ViewModels/WebBrowserViewModel.cs Issue AWc6nLv7-D5hmrSZEjMg Rule csharpsquid:S3900 Range 9:9:18:27
-  Component codehub:CodeHub.Core/Extensions/ReactiveListExtensions.cs Issue AWc6nL5W-D5hmrSZEjZC Rule csharpsquid:S3900 Range 10:10:19:24
-  Component codehub:CodeHub.iOS/DialogElements/CommentElement.cs Issue AWc6nLlf-D5hmrSZEi4X Rule csharpsquid:S3900 Range 23:23:20:22
-  Component codehub:CodeHub.iOS/TableViewSources/DialogTableViewSource.cs Issue AWc6nLqg-D5hmrSZEjDd Rule csharpsquid:S3900 Range 35:35:12:21
-  Component codehub:CodeHub.Core/ViewModels/Changesets/ChangesetsViewModel.cs Issue AWc6nL4D-D5hmrSZEjW9 Rule csharpsquid:S3900 Range 22:22:21:30
-  Component codehub:CodeHub.iOS/ViewControllers/Accounts/OAuthLoginViewController.cs Issue AWc6nLnX-D5hmrSZEi8o Rule csharpsquid:S3900 Range 60:60:20:36
-  Component codehub:CodeHub.iOS/DialogElements/RootElement.cs Issue AWc6nLkF-D5hmrSZEi1U Rule csharpsquid:S3900 Range 63:63:30:38
-  Component codehub:CodeHub.Core/ViewModels/Source/EditSourceViewModel.cs Issue AWc6nL37-D5hmrSZEjW0 Rule csharpsquid:S3900 Range 37:37:23:32
-  Component codehub:CodeHub.iOS/Utilities/Graphics.cs Issue AWc6nLgf-D5hmrSZEivu Rule csharpsquid:S3900 Range 65:65:16:19
-  Component codehub:CodeHub.Core/ViewModels/Issues/IssueAddViewModel.cs Issue AWc6nL0E-D5hmrSZEjSM Rule csharpsquid:S3900 Range 54:54:22:31
-  Component codehub:CodeHub.iOS/ViewControllers/DialogViewController.cs Issue AWc6nLfG-D5hmrSZEitt Rule csharpsquid:S3900 Range 135:135:16:25
-  Component codehub:CodeHub.Core/Services/IAlertDialogService.cs Issue AWc6nLx2-D5hmrSZEjOl Rule csharpsquid:S3900 Range 53:53:19:24
-  Component codehub:CodeHub.Core/ViewModels/Events/RepositoryEventsViewModel.cs Issue AWc6nLu_-D5hmrSZEjLK Rule csharpsquid:S3900 Range 23:23:23:32
-  Component codehub:CodeHub.Core/ViewModels/Issues/IssueMilestonesViewModel.cs Issue AWc6nLzZ-D5hmrSZEjQl Rule csharpsquid:S3900 Range 58:58:23:32
-  Component codehub:CodeHub.Core/ViewModels/PullRequests/PullRequestViewModel.cs Issue AWc6nL1B-D5hmrSZEjTS Rule csharpsquid:S3900 Range 246:246:23:32
-  Component codehub:CodeHub.iOS/DialogElements/SplitButtonElement.cs Issue AWc6nLlF-D5hmrSZEi3l Rule csharpsquid:S3900 Range 67:67:23:25
-  Component codehub:CodeHub.iOS/Utilities/UIKitExtensions.cs Issue AWc6nLg0-D5hmrSZEiwf Rule csharpsquid:S3900 Range 132:132:29:33
-  Component codehub:CodeHub.iOS/DialogElements/HtmlElement.cs Issue AWc6nLmp-D5hmrSZEi7L Rule csharpsquid:S3900 Range 141:141:23:25
-  Component codehub:CodeHub.iOS/Services/InAppPurchaseService.cs Issue AWc6nLdg-D5hmrSZEiqH Rule csharpsquid:S3900 Range 199:199:31:38
-  Component codehub:CodeHub.iOS/AppDelegate.cs Issue AWc6nLYc-D5hmrSZEifw Rule csharpsquid:S3900 Range 256:256:12:23
-  Component codehub:CodeHub.iOS/Utilities/Hud.cs Issue AWc6nLgM-D5hmrSZEivX Rule csharpsquid:S3900 Range 71:71:12:15
-  Component codehub:CodeHub.iOS/ViewControllers/Repositories/RepositoryViewController.cs Issue AWc6nLja-D5hmrSZEi0H Rule csharpsquid:S3900 Range 197:197:19:29
-  Component codehub:CodeHub.iOS/TableViewSources/DialogTableViewSource.cs Issue AWc6nLqg-D5hmrSZEjDg Rule csharpsquid:S3900 Range 68:68:31:40
-  Component codehub:CodeHub.iOS/DialogElements/StringElement.cs Issue AWc6nLkf-D5hmrSZEi2z Rule csharpsquid:S3900 Range 225:225:12:16
-  Component codehub:CodeHub.iOS/ViewControllers/DialogViewController.cs Issue AWc6nLfG-D5hmrSZEitr Rule csharpsquid:S3900 Range 251:251:36:45
-  Component codehub:CodeHub.iOS/TableViewSources/FeedbackTableViewSource.cs Issue AWc6nLqm-D5hmrSZEjDn Rule csharpsquid:S3900 Range 13:13:12:21
-  Component codehub:CodeHub.Core/ViewModels/Gists/GistViewModel.cs Issue AWc6nLwn-D5hmrSZEjNO Rule csharpsquid:S3900 Range 76:76:17:26
-  Component codehub:CodeHub.iOS/DialogElements/NewsFeedElement.cs Issue AWc6nLl0-D5hmrSZEi5I Rule csharpsquid:S3900 Range 105:105:23:25
-  Component codehub:CodeHub.iOS/ViewControllers/MultipleChoiceViewController.cs Issue AWc6nLeu-D5hmrSZEisX Rule csharpsquid:S3900 Range 30:30:25:28
-  Component codehub:CodeHub.Core/ViewModels/ViewModelExtensions.cs Issue AWc6nLvH-D5hmrSZEjLX Rule csharpsquid:S3900 Range 96:96:18:25
-  Component codehub:CodeHub.Core/ViewModels/Gists/GistItemViewModel.cs Issue AWc6nLw2-D5hmrSZEjNq Rule csharpsquid:S3900 Range 40:40:17:21
-  Component codehub:CodeHub.iOS/ViewControllers/Gists/GistEditViewController.cs Issue AWc6nLpt-D5hmrSZEjCH Rule csharpsquid:S3900 Range 27:27:33:37
-  Component codehub:CodeHub.Core/Utils/Emojis.cs Issue AWc6nL2E-D5hmrSZEjU2 Rule csharpsquid:S3900 Range 900:900:31:35
-  Component codehub:CodeHub.iOS/DialogElements/IssueElement.cs Issue AWc6nLlm-D5hmrSZEi4l Rule csharpsquid:S3900 Range 45:45:23:25
-  Component codehub:CodeHub.iOS/Utilities/UIKitExtensions.cs Issue AWc6nLg0-D5hmrSZEiwl Rule csharpsquid:S3900 Range 58:58:16:21
-  Component codehub:CodeHub.iOS/DialogElements/StringElement.cs Issue AWc6nLkf-D5hmrSZEi2x Rule csharpsquid:S3900 Range 219:219:23:25
-  Component codehub:CodeHub.Core/Data/Account.cs Issue AWc6nL41-D5hmrSZEjYk Rule csharpsquid:S3900 Range 103:103:12:18
-  Component codehub:CodeHub.iOS/Views/ButtonAccessoryView.cs Issue AWc6nLcq-D5hmrSZEioj Rule csharpsquid:S3900 Range 19:19:35:42
-  Component codehub:CodeHub.Core/ViewModels/Changesets/CommitsViewModel.cs Issue AWc6nL4P-D5hmrSZEjXM Rule csharpsquid:S3900 Range 57:57:23:32
-  Component codehub:CodeHub.iOS/TableViewSources/UserTableViewSource.cs Issue AWc6nLqT-D5hmrSZEjDT Rule csharpsquid:S3900 Range 12:12:3:12
-  Component codehub:CodeHub.iOS/DialogElements/RootElement.cs Issue AWc6nLkF-D5hmrSZEi1g Rule csharpsquid:S3900 Range 147:147:30:38
-  Component codehub:CodeHub.iOS/DialogElements/ExpandingInputElement.cs Issue AWc6nLm4-D5hmrSZEi70 Rule csharpsquid:S3900 Range 138:138:83:92
-  Component codehub:CodeHub.Core/Utils/GitHubExtensions.cs Issue AWc6nL12-D5hmrSZEjUd Rule csharpsquid:S3900 Range 13:13:12:13
-  Component codehub:CodeHub.Core/ViewModels/Changesets/ChangesetViewModel.cs Issue AWc6nL4J-D5hmrSZEjXC Rule csharpsquid:S3900 Range 72:72:19:28
-  Component codehub:CodeHub.Core/ViewModels/Organizations/OrganizationsViewModel.cs Issue AWc6nL0g-D5hmrSZEjSu Rule csharpsquid:S3900 Range 17:17:23:32
-  Component codehub:CodeHub.iOS/Services/InAppPurchaseService.cs Issue AWc6nLdg-D5hmrSZEiqL Rule csharpsquid:S3900 Range 42:42:37:47
-  Component codehub:CodeHub.Core/ViewModels/PullRequests/PullRequestCommitsViewModel.cs Issue AWc6nL00-D5hmrSZEjS7 Rule csharpsquid:S3900 Range 25:25:28:37
-  Component codehub:CodeHub.Core/Data/Account.cs Issue AWc6nL41-D5hmrSZEjYq Rule csharpsquid:S3900 Range 56:56:16:23
-  Component codehub:CodeHub.Core/Utils/WeakReferenceExtensions.cs Issue AWc6nL19-D5hmrSZEjUs Rule csharpsquid:S3900 Range 8:8:8:13
-  Component codehub:CodeHub.iOS/ViewControllers/DialogViewController.cs Issue AWc6nLfG-D5hmrSZEitu Rule csharpsquid:S3900 Range 129:129:16:25
-  Component codehub:CodeHub.Core/ViewModels/Issues/IssuesViewModel.cs Issue AWc6nLzo-D5hmrSZEjRL Rule csharpsquid:S3900 Range 34:34:23:26
-  Component codehub:CodeHub.iOS/ViewControllers/DialogViewController.cs Issue AWc6nLfG-D5hmrSZEitv Rule csharpsquid:S3900 Range 147:147:16:25
-  Component codehub:CodeHub.iOS/DialogElements/Element.cs Issue AWc6nLj9-D5hmrSZEi1K Rule csharpsquid:S3900 Range 30:30:12:21
-  Component codehub:CodeHub.Core/ViewModels/BaseViewModel.cs Issue AWc6nLvW-D5hmrSZEjL6 Rule csharpsquid:S3900 Range 42:42:38:42
-  Component codehub:CodeHub.iOS/TableViewCells/NewsCellView.cs Issue AWc6nLhc-D5hmrSZEixo Rule csharpsquid:S3900 Range 84:84:30:41
-  Component codehub:CodeHub.iOS/ViewControllers/DialogViewController.cs Issue AWc6nLfG-D5hmrSZEits Rule csharpsquid:S3900 Range 255:255:67:76
-  Component codehub:CodeHub.iOS/ViewControllers/Gists/GistsViewController.cs Issue AWc6nLpU-D5hmrSZEjA2 Rule csharpsquid:S3900 Range 46:46:76:84
-  Component codehub:CodeHub.iOS/Views/ScrollingToolbarView.cs Issue AWc6nLbW-D5hmrSZEilj Rule csharpsquid:S3900 Range 40:40:35:42
-  Component codehub:CodeHub.Core/ViewModels/Organizations/OrganizationViewModel.cs Issue AWc6nL0m-D5hmrSZEjSy Rule csharpsquid:S3900 Range 17:17:19:28
-  Component codehub:CodeHub.iOS/DialogElements/CommitElement.cs Issue AWc6nLkp-D5hmrSZEi2- Rule csharpsquid:S3900 Range 32:32:20:22
-  Component codehub:CodeHub.iOS/TableViewSources/DialogTableViewSource.cs Issue AWc6nLqg-D5hmrSZEjDi Rule csharpsquid:S3900 Range 112:112:31:40
-  Component codehub:CodeHub.Core/Utils/RepositoryIdentifier.cs Issue AWc6nL1p-D5hmrSZEjUG Rule csharpsquid:S3900 Range 18:18:24:26
-  Component codehub:CodeHub.iOS/DialogElements/CommitElement.cs Issue AWc6nLkp-D5hmrSZEi27 Rule csharpsquid:S3900 Range 42:42:63:67
-  Component codehub:CodeHub.iOS/TableViewCells/NewsCellView.cs Issue AWc6nLhc-D5hmrSZEixp Rule csharpsquid:S3900 Range 87:87:30:39
-  Component codehub:CodeHub.iOS/DialogElements/PullRequestElement.cs Issue AWc6nLlO-D5hmrSZEi38 Rule csharpsquid:S3900 Range 23:23:20:22
-  Component codehub:CodeHub.iOS/DialogElements/PaginateElement.cs Issue AWc6nLmi-D5hmrSZEi65 Rule csharpsquid:S3900 Range 23:23:12:16
-  Component codehub:CodeHub.iOS/Utilities/UIKitExtensions.cs Issue AWc6nLg0-D5hmrSZEiwz Rule csharpsquid:S3900 Range 92:92:24:33
-  Component codehub:CodeHub.Core/ViewModels/Gists/GistViewModel.cs Issue AWc6nLwn-D5hmrSZEjNN Rule csharpsquid:S3900 Range 70:70:21:25
-  Component codehub:CodeHub.Core/Data/Account.cs Issue AWc6nL41-D5hmrSZEjYr Rule csharpsquid:S3900 Range 65:65:16:23
-  Component codehub:CodeHub.Core/ViewModels/Issues/IssueLabelsViewModel.cs Issue AWc6nL0Y-D5hmrSZEjSl Rule csharpsquid:S3900 Range 49:49:23:32
-  Component codehub:CodeHub.iOS/Utilities/UIKitExtensions.cs Issue AWc6nLg0-D5hmrSZEiw1 Rule csharpsquid:S3900 Range 110:110:12:16
-  Component codehub:CodeHub.iOS/TableViewSources/ReactiveTableViewSource.cs Issue AWc6nLqN-D5hmrSZEjDO Rule csharpsquid:S3900 Range 54:54:16:25
-  Component codehub:CodeHub.iOS/DialogElements/BooleanElement.cs Issue AWc6nLkX-D5hmrSZEi2N Rule csharpsquid:S3900 Range 62:62:23:25
-  Component codehub:CodeHub.Core/ViewModels/App/MenuViewModel.cs Issue AWc6nLyy-D5hmrSZEjP2 Rule csharpsquid:S3900 Range 55:55:38:52
-  Component codehub:CodeHub.Core/ViewModels/ViewModelExtensions.cs Issue AWc6nLvH-D5hmrSZEjLV Rule csharpsquid:S3900 Range 64:64:62:69
-  Component codehub:CodeHub.iOS/DialogElements/Section.cs Issue AWc6nLkO-D5hmrSZEi1s Rule csharpsquid:S3900 Range 125:125:30:38
-  Component codehub:CodeHub.iOS/DialogElements/LoadMoreElement.cs Issue AWc6nLma-D5hmrSZEi6l Rule csharpsquid:S3900 Range 67:67:12:16
-  Component codehub:CodeHub.iOS/TableViewSources/RepositoryTableViewSource.cs Issue AWc6nLqH-D5hmrSZEjDC Rule csharpsquid:S3900 Range 16:16:12:21
-  Component codehub:CodeHub.iOS/TableViewSources/GistTableViewSource.cs Issue AWc6nLqZ-D5hmrSZEjDY Rule csharpsquid:S3900 Range 13:13:12:21
-  Component codehub:CodeHub.iOS/TableViewSources/DialogTableViewSource.cs Issue AWc6nLqg-D5hmrSZEjDj Rule csharpsquid:S3900 Range 115:115:37:46
-  Component codehub:CodeHub.iOS/AppDelegate.cs Issue AWc6nLYc-D5hmrSZEift Rule csharpsquid:S3900 Range 184:184:16:27
-  Component codehub:CodeHub.Core/ViewModels/Issues/IssueViewModel.cs Issue AWc6nLzg-D5hmrSZEjQ- Rule csharpsquid:S3900 Range 218:218:23:32
-  Component codehub:CodeHub.Core/ViewModels/Gists/GistsViewModel.cs Issue AWc6nLwf-D5hmrSZEjM- Rule csharpsquid:S3900 Range 22:22:24:38
-  Component codehub:CodeHub.iOS/ViewControllers/DialogViewController.cs Issue AWc6nLfG-D5hmrSZEitm Rule csharpsquid:S3900 Range 205:205:36:45
-  Component codehub:CodeHub.iOS/DialogElements/MultilinedElement.cs Issue AWc6nLmM-D5hmrSZEi6H Rule csharpsquid:S3900 Range 64:64:23:25
-  Component codehub:CodeHub.iOS/Utilities/ViewControllerExtensions.cs Issue AWc6nLgZ-D5hmrSZEivi Rule csharpsquid:S3900 Range 12:12:48:57
-  Component codehub:CodeHub.iOS/Utilities/UIKitExtensions.cs Issue AWc6nLg0-D5hmrSZEiwd Rule csharpsquid:S3900 Range 123:123:29:33
-  Component codehub:CodeHub.iOS/ViewControllers/PullRequests/PullRequestDiffViewController.cs Issue AWc6nLsZ-D5hmrSZEjGm Rule csharpsquid:S3900 Range 131:131:22:38
-  Component codehub:CodeHub.iOS/AppDelegate.cs Issue AWc6nLYd-D5hmrSZEifz Rule csharpsquid:S3900 Range 261:261:26:37
-  Component codehub:CodeHub.iOS/TableViewSources/ReactiveTableViewSource.cs Issue AWc6nLqN-D5hmrSZEjDI Rule csharpsquid:S3900 Range 29:29:34:44
-  Component codehub:CodeHub.iOS/Utilities/UIKitExtensions.cs Issue AWc6nLg0-D5hmrSZEiw0 Rule csharpsquid:S3900 Range 106:106:15:19
-  Component codehub:CodeHub.iOS/AppDelegate.cs Issue AWc6nLYd-D5hmrSZEigA Rule csharpsquid:S3900 Range 280:280:30:33
-  Component codehub:CodeHub.iOS/ViewControllers/Composer.cs Issue AWc6nLef-D5hmrSZEir- Rule csharpsquid:S3900 Range 117:117:35:42
-  Component codehub:CodeHub.iOS/DialogElements/PullRequestElement.cs Issue AWc6nLlO-D5hmrSZEi35 Rule csharpsquid:S3900 Range 30:30:51:55
-  Component codehub:CodeHub.Core/ViewModels/Events/OrganizationEventsViewModel.cs Issue AWc6nLue-D5hmrSZEjJc Rule csharpsquid:S3900 Range 23:23:23:32
-  Component codehub:CodeHub.iOS/ViewControllers/DialogViewController.cs Issue AWc6nLfG-D5hmrSZEiti Rule csharpsquid:S3900 Range 289:289:31:40
-  Component codehub:CodeHub.iOS/ViewControllers/Source/CommitDiffViewController.cs Issue AWc6nLsJ-D5hmrSZEjGG Rule csharpsquid:S3900 Range 128:128:22:38
-  Component codehub:CodeHub.iOS/DialogElements/OwnerDrawnElement.cs Issue AWc6nLmT-D5hmrSZEi6Q Rule csharpsquid:S3900 Range 28:28:26:35
-  Component codehub:CodeHub.iOS/ViewControllers/Accounts/OAuthLoginViewController.cs Issue AWc6nLnX-D5hmrSZEi8g Rule csharpsquid:S3900 Range 90:90:16:17
-  Component codehub:CodeHub.iOS/TableViewSources/ReactiveTableViewSource.cs Issue AWc6nLqN-D5hmrSZEjDN Rule csharpsquid:S3900 Range 48:48:12:21
-  Component codehub:CodeHub.Core/Services/INetworkActivityService.cs Issue AWc6nLyU-D5hmrSZEjO4 Rule csharpsquid:S3900 Range 17:17:12:17
-  Component codehub:CodeHub.iOS/TableViewSources/ReactiveTableViewSource.cs Issue AWc6nLqN-D5hmrSZEjDK Rule csharpsquid:S3900 Range 40:40:12:21
-  Component codehub:CodeHub.Core/ViewModels/PullRequests/PullRequestFilesViewModel.cs Issue AWc6nL1I-D5hmrSZEjTj Rule csharpsquid:S3900 Range 31:31:23:32
-  Component codehub:CodeHub.iOS/Utilities/ViewControllerExtensions.cs Issue AWc6nLgZ-D5hmrSZEivp Rule csharpsquid:S3900 Range 58:58:16:26
-  Component codehub:CodeHub.iOS/DialogElements/MilestoneElement.cs Issue AWc6nLk3-D5hmrSZEi3M Rule csharpsquid:S3900 Range 32:32:23:25
-  Component codehub:CodeHub.iOS/TableViewSources/DialogTableViewSource.cs Issue AWc6nLqg-D5hmrSZEjDf Rule csharpsquid:S3900 Range 61:61:31:40
-  Component codehub:CodeHub.iOS/Utilities/UIWindowExtensions.cs Issue AWc6nLg8-D5hmrSZEiw6 Rule csharpsquid:S3900 Range 8:8:36:41
-  Component codehub:CodeHub.Core/Extensions/CommandExtensions.cs Issue AWc6nL5b-D5hmrSZEjZI Rule csharpsquid:S3900 Range 11:11:15:18
-  Component codehub:CodeHub.Core/Data/Account.cs Issue AWc6nL41-D5hmrSZEjYj Rule csharpsquid:S3900 Range 93:93:56:62
-  Component codehub:CodeHub.iOS/ViewControllers/Users/UserViewController.cs Issue AWc6nLp4-D5hmrSZEjCx Rule csharpsquid:S3900 Range 30:30:19:23
-  Component codehub:CodeHub.iOS/Utilities/EasyLayout.cs Issue AWc6nLgm-D5hmrSZEiv- Rule csharpsquid:S3900 Range 61:61:23:34
-  Component codehub:CodeHub.iOS/ViewControllers/ThemedNavigationController.cs Issue AWc6nLfU-D5hmrSZEit5 Rule csharpsquid:S3900 Range 10:10:37:41
-  Component codehub:CodeHub.Core/Services/IAlertDialogService.cs Issue AWc6nLx2-D5hmrSZEjOi Rule csharpsquid:S3900 Range 42:42:19:26
-  Component codehub:CodeHub.Core/Services/ApplicationService.cs Issue AWc6nLxG-D5hmrSZEjN2 Rule csharpsquid:S3900 Range 45:45:25:32
-  Component codehub:CodeHub.iOS/Utilities/Graphics.cs Issue AWc6nLgf-D5hmrSZEivt Rule csharpsquid:S3900 Range 19:19:12:21
-  Component codehub:CodeHub.iOS/Utilities/UIKitExtensions.cs Issue AWc6nLg0-D5hmrSZEiwm Rule csharpsquid:S3900 Range 63:63:12:23
-  Component codehub:CodeHub.Core/ViewModels/PullRequests/PullRequestsViewModel.cs Issue AWc6nL05-D5hmrSZEjTD Rule csharpsquid:S3900 Range 51:51:23:32
-  Component codehub:CodeHub.iOS/DialogElements/SplitViewElement.cs Issue AWc6nLlW-D5hmrSZEi4I Rule csharpsquid:S3900 Range 29:29:23:25
-  Component codehub:CodeHub.iOS/ViewControllers/Source/FileSourceViewController.cs Issue AWc6nLsA-D5hmrSZEjFZ Rule csharpsquid:S3900 Range 115:115:26:40
-  Component codehub:CodeHub.Core/ViewModels/Issues/MyIssuesViewModel.cs Issue AWc6nLzv-D5hmrSZEjRd Rule csharpsquid:S3900 Range 43:43:25:39
-  Component codehub:CodeHub.iOS/Utilities/ViewControllerExtensions.cs Issue AWc6nLgZ-D5hmrSZEivj Rule csharpsquid:S3900 Range 17:17:27:37
-  Component codehub:CodeHub.iOS/DialogElements/LoadMoreElement.cs Issue AWc6nLma-D5hmrSZEi6m Rule csharpsquid:S3900 Range 69:69:12:16
-  Component codehub:CodeHub.iOS/ViewControllers/Repositories/ReadmeViewController.cs Issue AWc6nLjz-D5hmrSZEi1B Rule csharpsquid:S3900 Range 107:107:17:33
-  Component codehub:CodeHub.iOS/ViewControllers/DialogViewController.cs Issue AWc6nLfG-D5hmrSZEitx Rule csharpsquid:S3900 Range 158:158:54:63
-  Component codehub:CodeHub.iOS/TableViewSources/RepositoryTableViewSource.cs Issue AWc6nLqH-D5hmrSZEjDD Rule csharpsquid:S3900 Range 22:22:12:21
-  Component codehub:CodeHub.iOS/ViewControllers/Repositories/PrivateRepositoryViewController.cs Issue AWc6nLjM-D5hmrSZEizu Rule csharpsquid:S3900 Range 36:36:58:63
-  Component codehub:CodeHub.Core/Services/IAlertDialogService.cs Issue AWc6nLx2-D5hmrSZEjOd Rule csharpsquid:S3900 Range 25:25:12:17
-  Component codehub:CodeHub.iOS/OcticonExtensions.cs Issue AWc6nLZL-D5hmrSZEihd Rule csharpsquid:S3900 Range 33:33:72:77
-  Component codehub:CodeHub.iOS/TableViewSources/DialogTableViewSource.cs Issue AWc6nLqg-D5hmrSZEjDh Rule csharpsquid:S3900 Range 75:75:31:40
-  Component codehub:CodeHub.Core/ViewModels/Events/UserEventsViewModel.cs Issue AWc6nLuk-D5hmrSZEjJg Rule csharpsquid:S3900 Range 17:17:23:32
-  Component codehub:CodeHub.iOS/ViewControllers/DialogViewController.cs Issue AWc6nLfG-D5hmrSZEitf Rule csharpsquid:S3900 Range 281:281:31:40
-  Component codehub:CodeHub.iOS/AppDelegate.cs Issue AWc6nLYd-D5hmrSZEif4 Rule csharpsquid:S3900 Range 275:275:80:85
-  Component codehub:CodeHub.iOS/ViewControllers/Accounts/AccountsViewController.cs Issue AWc6nLng-D5hmrSZEi9A Rule csharpsquid:S3900 Range 150:150:28:30
-  Component codehub:CodeHub.iOS/UrlRouterProvider.cs Issue AWc6nLY7-D5hmrSZEihN Rule csharpsquid:S3900 Range 34:34:17:21
 ====== Vulnerabilities ======
 Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
-codehub;244;0;100,000000;3;1,229508
+codehub;244;0;100,000000;0;0,000000
 ====== Added issues ======
-Rule: csharpsquid:S2228 (size: 3):
-  Component codehub-autoscan:CodeHub.iOS/AppDelegate.cs Issue AYURU50kozEprKvtbjG1 Rule csharpsquid:S2228 Range 250:250:16:33
-  Component codehub-autoscan:CodeHub.iOS/TableViewCells/IssueCellView.cs Issue AYURU5tIozEprKvtbjCZ Rule csharpsquid:S2228 Range 22:22:16:33
-  Component codehub-autoscan:CodeHub.iOS/TableViewCells/NewsCellView.cs Issue AYURU5t7ozEprKvtbjC3 Rule csharpsquid:S2228 Range 54:54:20:37
 
 ====== Missing issues ======
 ====== Metrics ======

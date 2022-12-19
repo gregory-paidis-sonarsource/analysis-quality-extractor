@@ -1,6 +1,6 @@
 ====== Bugs ======
 Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
-net5-solution;1134;144;87,301587;69;6,084656
+net5-solution;845;11;98,698225;69;8,165680
 ====== Added issues ======
 Rule: csharpsquid:S2325 (size: 1):
   Component net5-solution-autoscan:Net5/S3927.cs Issue AYURVMzrwnv8wyLtwDlS Rule csharpsquid:S2325 Range 9:9:20:37
@@ -76,252 +76,31 @@ Rule: csharpsquid:S1067 (size: 1):
   Component net5-solution-autoscan:Net5/S1067.cs Issue AYURVMzvwnv8wyLtwDlW Rule csharpsquid:S1067 Range 8:8:16:57
 
 ====== Missing issues ======
-Rule: external_roslyn:CS0649 (size: 4):
-  Component net5-solution:Net5/S3776.cs Issue AX9KfvTFkhQIqndBXT4X Rule external_roslyn:CS0649 Range 6:6:25:28
-  Component net5-solution:Net5/S3247.cs Issue AX9KfvUNkhQIqndBXT5k Rule external_roslyn:CS0649 Range 7:7:33:37
-  Component net5-solution:Net5/S3776.cs Issue AX9KfvTFkhQIqndBXT4W Rule external_roslyn:CS0649 Range 6:6:20:23
-  Component net5-solution:Net5/Records.cs Issue AX9KfvZ2khQIqndBXT_9 Rule external_roslyn:CS0649 Range 90:90:20:21
-Rule: external_roslyn:CS0108 (size: 1):
-  Component net5-solution:Net5/S4015.cs Issue AX9KfvRAkhQIqndBXT1g Rule external_roslyn:CS0108 Range 12:12:23:31
-Rule: external_roslyn:CS8509 (size: 1):
-  Component net5-solution:Net5/S3440.cs Issue AX9KfvUmkhQIqndBXT6B Rule external_roslyn:CS8509 Range 8:8:18:24
-Rule: external_roslyn:CA1821 (size: 1):
-  Component net5-solution:Net5/Records.cs Issue AX9KfvZ2khQIqndBXUAA Rule external_roslyn:CA1821 Range 77:77:9:18
-Rule: csharpsquid:S1075 (size: 1):
-  Component net5-solution:Net5/Main.cs Issue AX9KfvOVkhQIqndBXTy- Rule csharpsquid:S1075 Range 88:88:25:38
-Rule: external_roslyn:CA1816 (size: 1):
-  Component net5-solution:Net5/Records.cs Issue AX9KfvZ2khQIqndBXT__ Rule external_roslyn:CA1816 Range 103:103:20:27
-Rule: external_roslyn:CS8321 (size: 12):
-  Component net5-solution:Net5/S3603.cs Issue AX9KfvZmkhQIqndBXT_T Rule external_roslyn:CS8321 Range 13:13:21:40
-  Component net5-solution:Net5/S3927.cs Issue AX9KfvSKkhQIqndBXT2P Rule external_roslyn:CS8321 Range 12:12:17:30
-  Component net5-solution:Net5/Main.cs Issue AX9KfvOVkhQIqndBXTzM Rule external_roslyn:CS8321 Range 132:132:5:12
-  Component net5-solution:Net5Test/S2699.cs Issue AX9KfvdEkhQIqndBXUCo Rule external_roslyn:CS8321 Range 10:10:17:27
-  Component net5-solution:Net5Test/S3433_Mstest.cs Issue AX9KfvdNkhQIqndBXUCv Rule external_roslyn:CS8321 Range 11:11:17:27
-  Component net5-solution:Net5/Main.cs Issue AX9KfvOVkhQIqndBXTzK Rule external_roslyn:CS8321 Range 102:102:5:13
-  Component net5-solution:Net5Test/S3433_Xunit.cs Issue AX9Kfvc8khQIqndBXUCk Rule external_roslyn:CS8321 Range 10:10:17:27
-  Component net5-solution:Net5/Main.cs Issue AX9KfvOVkhQIqndBXTzN Rule external_roslyn:CS8321 Range 139:139:5:17
-  Component net5-solution:Net5/S3603.cs Issue AX9KfvZmkhQIqndBXT_U Rule external_roslyn:CS8321 Range 10:10:17:30
-  Component net5-solution:Net5Test/S2699.cs Issue AX9KfvdEkhQIqndBXUCq Rule external_roslyn:CS8321 Range 16:16:24:38
-  Component net5-solution:Net5Test/S2699.cs Issue AX9KfvdEkhQIqndBXUCp Rule external_roslyn:CS8321 Range 13:13:17:25
-  Component net5-solution:Net5/Main.cs Issue AX9KfvOVkhQIqndBXTzL Rule external_roslyn:CS8321 Range 127:127:5:12
-Rule: csharpsquid:S4004 (size: 1):
-  Component net5-solution:Net5/S4004.cs Issue AX9KfvOrkhQIqndBXTzU Rule csharpsquid:S4004 Range 8:8:25:39
-Rule: csharpsquid:S2201 (size: 1):
-  Component net5-solution:Net5/LambdaDiscardParameters.cs Issue AX9KfvQskhQIqndBXT1P Rule csharpsquid:S2201 Range 14:14:12:37
-Rule: external_roslyn:CA2208 (size: 2):
-  Component net5-solution:Net5/Main.cs Issue AX9KfvOVkhQIqndBXTzQ Rule external_roslyn:CA2208 Range 23:23:10:50
-  Component net5-solution:Net5/S3928.cs Issue AX9KfvZWkhQIqndBXT_E Rule external_roslyn:CA2208 Range 13:13:22:54
-Rule: external_roslyn:CS0168 (size: 1):
-  Component net5-solution:Net5/SkipLocalsInit.cs Issue AX9KfvPzkhQIqndBXT0O Rule external_roslyn:CS0168 Range 10:10:16:17
-Rule: external_roslyn:CS0169 (size: 1):
-  Component net5-solution:Net5/Main.cs Issue AX9KfvOVkhQIqndBXTzO Rule external_roslyn:CS0169 Range 227:227:16:17
-Rule: external_roslyn:CS0612 (size: 1):
-  Component net5-solution:Net5/AttributesOnLocalFunctions.cs Issue AX9KfvN7khQIqndBXTw9 Rule external_roslyn:CS0612 Range 9:9:12:27
-Rule: external_roslyn:CS0414 (size: 4):
-  Component net5-solution:Net5/S3776.cs Issue AX9KfvTFkhQIqndBXT4Y Rule external_roslyn:CS0414 Range 5:5:15:20
-  Component net5-solution:Net5/S3604.cs Issue AX9KfvO2khQIqndBXTzi Rule external_roslyn:CS0414 Range 7:7:19:22
-  Component net5-solution:Net5/S3604.cs Issue AX9KfvO2khQIqndBXTzj Rule external_roslyn:CS0414 Range 24:24:15:18
-  Component net5-solution:Net5/S3604.cs Issue AX9KfvO2khQIqndBXTzh Rule external_roslyn:CS0414 Range 8:8:19:22
-Rule: csharpsquid:S1128 (size: 6):
-  Component net5-solution:Net5/S4201.cs Issue AX9KfvYOkhQIqndBXT9n Rule csharpsquid:S1128 Range 2:2:0:33
-  Component net5-solution:Net5Samples/RecordsAndNullability/Program.cs Issue AX9KfvcokhQIqndBXUCS Rule csharpsquid:S1128 Range 3:3:0:38
-  Component net5-solution:Net5Samples/RecordsVsClasses/Program.cs Issue AX9KfvbekhQIqndBXUA8 Rule csharpsquid:S1128 Range 2:2:0:18
-  Component net5-solution:Net5/S4201.cs Issue AX9KfvYOkhQIqndBXT9o Rule csharpsquid:S1128 Range 3:3:0:18
-  Component net5-solution:Net5/S4201.cs Issue AX9KfvYOkhQIqndBXT9q Rule csharpsquid:S1128 Range 5:5:0:29
-  Component net5-solution:Net5/S4201.cs Issue AX9KfvYOkhQIqndBXT9p Rule csharpsquid:S1128 Range 4:4:0:18
-Rule: external_roslyn:CA1050 (size: 26):
-  Component net5-solution:Net5Samples/VariousPatternsOfPatterns/Program.cs Issue AX9KfvcFkhQIqndBXUB2 Rule external_roslyn:CA1050 Range 128:128:12:23
-  Component net5-solution:Net5Samples/VariousPatternsOfRecords/Program.cs Issue AX9KfvcZkhQIqndBXUCJ Rule external_roslyn:CA1050 Range 41:41:14:17
-  Component net5-solution:Net5Samples/RecordsUsingWith/Program.cs Issue AX9KfvamkhQIqndBXUAa Rule external_roslyn:CA1050 Range 15:15:14:21
-  Component net5-solution:Net5Samples/JsonSerializerImmutableTypes/Program.cs Issue AX9KfvcwkhQIqndBXUCj Rule external_roslyn:CA1050 Range 23:23:14:22
-  Component net5-solution:Net5Samples/RecordsWithMutableData/Program.cs Issue AX9KfvbHkhQIqndBXUAw Rule external_roslyn:CA1050 Range 17:17:14:21
-  Component net5-solution:Net5Samples/VariousPatternsOfRecords/Program.cs Issue AX9KfvcZkhQIqndBXUCM Rule external_roslyn:CA1050 Range 58:58:14:18
-  Component net5-solution:Net5Samples/VariousPatternsOfPatterns/Program.cs Issue AX9KfvcFkhQIqndBXUB5 Rule external_roslyn:CA1050 Range 113:113:14:21
-  Component net5-solution:Net5Samples/JsonSerializerRecords/Program.cs Issue AX9KfvbSkhQIqndBXUA2 Rule external_roslyn:CA1050 Range 14:14:14:22
-  Component net5-solution:Net5Samples/VariousPatternsOfPatterns/Program.cs Issue AX9KfvcFkhQIqndBXUB4 Rule external_roslyn:CA1050 Range 73:73:13:24
-  Component net5-solution:Net5Samples/VariousPatternsOfPatterns/Program.cs Issue AX9KfvcFkhQIqndBXUBz Rule external_roslyn:CA1050 Range 111:111:14:26
-  Component net5-solution:Net5Samples/RecordsAndNullability/Program.cs Issue AX9KfvcokhQIqndBXUCZ Rule external_roslyn:CA1050 Range 46:46:14:18
-  Component net5-solution:Net5Samples/VariousPatternsOfRecords/Program.cs Issue AX9KfvcZkhQIqndBXUCI Rule external_roslyn:CA1050 Range 27:27:14:17
-  Component net5-solution:Net5Samples/RecordsVsClasses/Program.cs Issue AX9KfvbekhQIqndBXUBC Rule external_roslyn:CA1050 Range 24:24:14:33
-  Component net5-solution:Net5Samples/VariousPatternsOfPatterns/Program.cs Issue AX9KfvcFkhQIqndBXUB3 Rule external_roslyn:CA1050 Range 109:109:14:20
-  Component net5-solution:Net5Samples/VariousPatternsOfRecords/Program.cs Issue AX9KfvcZkhQIqndBXUCK Rule external_roslyn:CA1050 Range 29:29:14:27
-  Component net5-solution:Net5Samples/VariousPatternsOfRecords/Program.cs Issue AX9KfvcZkhQIqndBXUCL Rule external_roslyn:CA1050 Range 46:46:14:19
-  Component net5-solution:Net5Samples/JsonSerializerSupportsFields/Program.cs Issue AX9Kfvb1khQIqndBXUBY Rule external_roslyn:CA1050 Range 22:22:13:21
-  Component net5-solution:Net5/Main.cs Issue AX9KfvOVkhQIqndBXTzP Rule external_roslyn:CA1050 Range 224:224:14:20
-  Component net5-solution:Net5Samples/ShouldRichGoToTheDoctor/Program.cs Issue AX9KfvcNkhQIqndBXUB_ Rule external_roslyn:CA1050 Range 21:21:14:20
-  Component net5-solution:Net5Samples/JsonSerializerPreserveReference/Program.cs Issue AX9Kfva_khQIqndBXUAr Rule external_roslyn:CA1050 Range 38:38:13:21
-  Component net5-solution:Net5Samples/RecordWithStaticHelper/Program.cs Issue AX9KfvazkhQIqndBXUAi Rule external_roslyn:CA1050 Range 11:11:14:31
-  Component net5-solution:Net5Samples/VariousPatternsOfPatterns/Program.cs Issue AX9KfvcFkhQIqndBXUB0 Rule external_roslyn:CA1050 Range 118:118:14:21
-  Component net5-solution:Net5Samples/VariousPatternsOfPatterns/Program.cs Issue AX9KfvcFkhQIqndBXUB1 Rule external_roslyn:CA1050 Range 120:120:12:22
-  Component net5-solution:Net5Samples/GetWeatherForecastWithRecords/Program.cs Issue AX9KfvaMkhQIqndBXUAR Rule external_roslyn:CA1050 Range 15:15:14:22
-  Component net5-solution:Net5Samples/RecordsVsClasses/Program.cs Issue AX9KfvbekhQIqndBXUBD Rule external_roslyn:CA1050 Range 26:26:13:31
-  Component net5-solution:Net5Samples/RecordsAndNullability/Program.cs Issue AX9KfvcokhQIqndBXUCa Rule external_roslyn:CA1050 Range 35:35:14:20
-Rule: external_roslyn:CS0219 (size: 7):
-  Component net5-solution:Net5/Main.cs Issue AX9KfvOVkhQIqndBXTzF Rule external_roslyn:CS0219 Range 66:66:7:12
-  Component net5-solution:Net5/Main.cs Issue AX9KfvOVkhQIqndBXTzH Rule external_roslyn:CS0219 Range 92:92:7:9
-  Component net5-solution:Net5/Main.cs Issue AX9KfvOVkhQIqndBXTzJ Rule external_roslyn:CS0219 Range 94:94:7:9
-  Component net5-solution:Net5/S1854.cs Issue AX9KfvUVkhQIqndBXT5w Rule external_roslyn:CS0219 Range 10:10:20:21
-  Component net5-solution:Net5/S3353.cs Issue AX9KfvX2khQIqndBXT9T Rule external_roslyn:CS0219 Range 7:7:17:20
-  Component net5-solution:Net5/Main.cs Issue AX9KfvOVkhQIqndBXTzG Rule external_roslyn:CS0219 Range 91:91:7:9
-  Component net5-solution:Net5/Main.cs Issue AX9KfvOVkhQIqndBXTzI Rule external_roslyn:CS0219 Range 93:93:7:9
-Rule: csharpsquid:S1067 (size: 1):
-  Component net5-solution:Net5/S1067.cs Issue AX9KfvSTkhQIqndBXT2U Rule csharpsquid:S1067 Range 8:8:21:57
-Rule: external_roslyn:CA1507 (size: 1):
-  Component net5-solution:Net5/S3928.cs Issue AX9KfvZWkhQIqndBXT_D Rule external_roslyn:CA1507 Range 12:12:48:55
 Rule: csharpsquid:S3242 (size: 1):
   Component net5-solution:Net5/S2612.cs Issue AX9KfvZOkhQIqndBXT-3 Rule csharpsquid:S3242 Range 7:7:30:42
 Rule: csharpsquid:S4057 (size: 1):
   Component net5-solution:Net5/S4057.cs Issue AX9KfvVJkhQIqndBXT6i Rule csharpsquid:S4057 Range 8:8:29:35
-Rule: external_roslyn:CA1829 (size: 1):
-  Component net5-solution:Net5/S3981.cs Issue AX9KfvWykhQIqndBXT71 Rule external_roslyn:CA1829 Range 12:12:16:38
 Rule: csharpsquid:S3981 (size: 1):
   Component net5-solution:Net5/S3981.cs Issue AX9KfvWykhQIqndBXT7y Rule csharpsquid:S3981 Range 12:12:43:61
-Rule: external_roslyn:CA1806 (size: 2):
-  Component net5-solution:Net5/Main.cs Issue AX9KfvOVkhQIqndBXTzR Rule external_roslyn:CA1806 Range 11:11:0:49
-  Component net5-solution:Net5/LambdaDiscardParameters.cs Issue AX9KfvQskhQIqndBXT1T Rule external_roslyn:CA1806 Range 14:14:12:37
+Rule: csharpsquid:S4004 (size: 1):
+  Component net5-solution:Net5/S4004.cs Issue AX9KfvOrkhQIqndBXTzU Rule csharpsquid:S4004 Range 8:8:25:39
+Rule: csharpsquid:S2201 (size: 1):
+  Component net5-solution:Net5/LambdaDiscardParameters.cs Issue AX9KfvQskhQIqndBXT1P Rule csharpsquid:S2201 Range 14:14:12:37
 Rule: csharpsquid:S2971 (size: 1):
   Component net5-solution:Net5/S3981.cs Issue AX9KfvWykhQIqndBXT7x Rule csharpsquid:S2971 Range 12:12:31:36
-Rule: external_roslyn:CA1822 (size: 58):
-  Component net5-solution:Net5Test/S2699.cs Issue AX9KfvdEkhQIqndBXUCr Rule external_roslyn:CA1822 Range 7:7:20:31
-  Component net5-solution:Net5/PatternMatchingImprovements.cs Issue AX9KfvXCkhQIqndBXT8f Rule external_roslyn:CA1822 Range 41:41:23:35
-  Component net5-solution:Net5/PatternMatchingImprovements.cs Issue AX9KfvXCkhQIqndBXT8e Rule external_roslyn:CA1822 Range 65:65:20:30
-  Component net5-solution:Net5Test/S3433_Mstest.cs Issue AX9KfvdNkhQIqndBXUCw Rule external_roslyn:CA1822 Range 8:8:20:26
-  Component net5-solution:Net5/S3453.cs Issue AX9KfvPpkhQIqndBXT0K Rule external_roslyn:CA1822 Range 9:9:24:32
-  Component net5-solution:Net5/S2330.cs Issue AX9KfvTtkhQIqndBXT5D Rule external_roslyn:CA1822 Range 9:9:20:29
-  Component net5-solution:Net5/NativeInts.cs Issue AX9KfvVbkhQIqndBXT6t Rule external_roslyn:CA1822 Range 7:7:20:26
-  Component net5-solution:Net5/CovariantReturn.cs Issue AX9KfvQGkhQIqndBXT0t Rule external_roslyn:CA1822 Range 38:38:20:27
-  Component net5-solution:Net5/S3251.Part2.cs Issue AX9KfvRTkhQIqndBXT19 Rule external_roslyn:CA1822 Range 27:27:28:31
-  Component net5-solution:Net5/LambdaDiscardParameters.cs Issue AX9KfvQskhQIqndBXT1U Rule external_roslyn:CA1822 Range 30:30:21:31
-  Component net5-solution:Net5/S3247.cs Issue AX9KfvUNkhQIqndBXT5l Rule external_roslyn:CA1822 Range 10:10:20:23
-  Component net5-solution:Net5/S3776.cs Issue AX9KfvTFkhQIqndBXT4Z Rule external_roslyn:CA1822 Range 23:23:13:52
-  Component net5-solution:Net5/PatternMatchingImprovements.cs Issue AX9KfvXCkhQIqndBXT8c Rule external_roslyn:CA1822 Range 51:51:23:41
-  Component net5-solution:Net5/S3251.Part2.cs Issue AX9KfvRTkhQIqndBXT16 Rule external_roslyn:CA1822 Range 12:12:28:30
-  Component net5-solution:Net5/S1854.cs Issue AX9KfvUVkhQIqndBXT5x Rule external_roslyn:CA1822 Range 5:5:19:31
-  Component net5-solution:Net5/S1541.cs Issue AX9KfvYfkhQIqndBXT-Y Rule external_roslyn:CA1822 Range 5:5:19:27
-  Component net5-solution:Net5/ExtendingPartial.cs Issue AX9KfvRJkhQIqndBXT1s Rule external_roslyn:CA1822 Range 25:25:30:38
-  Component net5-solution:Net5/S3240.cs Issue AX9KfvXfkhQIqndBXT9B Rule external_roslyn:CA1822 Range 8:8:20:23
-  Component net5-solution:Net5/S3353.cs Issue AX9KfvX2khQIqndBXT9U Rule external_roslyn:CA1822 Range 5:5:20:24
-  Component net5-solution:Net5/S3251.Part2.cs Issue AX9KfvRTkhQIqndBXT1- Rule external_roslyn:CA1822 Range 7:7:21:28
-  Component net5-solution:Net5/S3251.Part2.cs Issue AX9KfvRTkhQIqndBXT17 Rule external_roslyn:CA1822 Range 17:17:28:31
-  Component net5-solution:Net5/SkipLocalsInit.cs Issue AX9KfvPzkhQIqndBXT0P Rule external_roslyn:CA1822 Range 8:8:20:26
-  Component net5-solution:Net5/S3251.Part2.cs Issue AX9KfvRTkhQIqndBXT18 Rule external_roslyn:CA1822 Range 22:22:27:30
-  Component net5-solution:Net5/Records.cs Issue AX9KfvZ2khQIqndBXUAB Rule external_roslyn:CA1822 Range 51:51:20:26
-  Component net5-solution:Net5/S3453.cs Issue AX9KfvPpkhQIqndBXT0J Rule external_roslyn:CA1822 Range 18:18:24:32
-  Component net5-solution:Net5/S1862.cs Issue AX9KfvPdkhQIqndBXT0D Rule external_roslyn:CA1822 Range 5:5:20:23
-  Component net5-solution:Net5/S4201.cs Issue AX9KfvYOkhQIqndBXT91 Rule external_roslyn:CA1822 Range 11:11:20:26
-  Component net5-solution:Net5/Records.cs Issue AX9KfvZ2khQIqndBXT_- Rule external_roslyn:CA1822 Range 121:121:21:27
-  Component net5-solution:Net5/AttributesOnLocalFunctions.cs Issue AX9KfvN7khQIqndBXTw- Rule external_roslyn:CA1822 Range 7:7:20:26
-  Component net5-solution:Net5/S3626.cs Issue AX9KfvXTkhQIqndBXT83 Rule external_roslyn:CA1822 Range 5:5:12:16
-  Component net5-solution:Net5/S2077.cs Issue AX9KfvVjkhQIqndBXT60 Rule external_roslyn:CA1822 Range 7:7:13:16
-  Component net5-solution:Net5/FunctionPointers.cs Issue AX9KfvW6khQIqndBXT7- Rule external_roslyn:CA1822 Range 7:7:20:26
-  Component net5-solution:Net5/S3440.cs Issue AX9KfvUmkhQIqndBXT6C Rule external_roslyn:CA1822 Range 5:5:20:23
-  Component net5-solution:Net5/S3981.cs Issue AX9KfvWykhQIqndBXT72 Rule external_roslyn:CA1822 Range 8:8:20:23
-  Component net5-solution:Net5/S2219.cs Issue AX9KfvS5khQIqndBXT21 Rule external_roslyn:CA1822 Range 8:8:20:23
-  Component net5-solution:Net5/TargetTypedConditionals.cs Issue AX9KfvP8khQIqndBXT0Y Rule external_roslyn:CA1822 Range 9:9:20:26
-  Component net5-solution:Net5/S2612.cs Issue AX9KfvZOkhQIqndBXT-4 Rule external_roslyn:CA1822 Range 7:7:13:16
-  Component net5-solution:Net5/S3928.cs Issue AX9KfvZWkhQIqndBXT_F Rule external_roslyn:CA1822 Range 8:8:19:23
-  Component net5-solution:Net5Test/S3433_Xunit.cs Issue AX9Kfvc8khQIqndBXUCl Rule external_roslyn:CA1822 Range 7:7:20:26
-  Component net5-solution:Net5/ExtendingPartial.cs Issue AX9KfvRJkhQIqndBXT1r Rule external_roslyn:CA1822 Range 14:14:29:31
-  Component net5-solution:Net5/S4830.cs Issue AX9KfvTUkhQIqndBXT4l Rule external_roslyn:CA1822 Range 5:5:13:16
-  Component net5-solution:Net5/S2437.cs Issue AX9KfvSvkhQIqndBXT2t Rule external_roslyn:CA1822 Range 5:5:20:23
-  Component net5-solution:Net5/Records.cs Issue AX9KfvZ2khQIqndBXUAC Rule external_roslyn:CA1822 Range 7:7:20:31
-  Component net5-solution:Net5/S3267.cs Issue AX9KfvSAkhQIqndBXT2L Rule external_roslyn:CA1822 Range 23:23:25:46
-  Component net5-solution:Net5/CovariantReturn.cs Issue AX9KfvQGkhQIqndBXT0r Rule external_roslyn:CA1822 Range 24:24:32:47
-  Component net5-solution:Net5/S1067.cs Issue AX9KfvSTkhQIqndBXT2Y Rule external_roslyn:CA1822 Range 5:5:20:23
-  Component net5-solution:Net5/S2760.cs Issue AX9KfvTlkhQIqndBXT44 Rule external_roslyn:CA1822 Range 5:5:20:23
-  Component net5-solution:Net5/S5659.cs Issue AX9KfvPSkhQIqndBXTz2 Rule external_roslyn:CA1822 Range 7:7:20:23
-  Component net5-solution:Net5/PatternMatchingImprovements.cs Issue AX9KfvXCkhQIqndBXT8d Rule external_roslyn:CA1822 Range 58:58:23:38
-  Component net5-solution:Net5/CovariantReturn.cs Issue AX9KfvQGkhQIqndBXT0s Rule external_roslyn:CA1822 Range 33:33:29:44
-  Component net5-solution:Net5/S4583.Part1.cs Issue AX9KfvXLkhQIqndBXT8s Rule external_roslyn:CA1822 Range 62:62:28:37
-  Component net5-solution:Net5/S134.cs Issue AX9KfvV7khQIqndBXT7O Rule external_roslyn:CA1822 Range 5:5:19:27
-  Component net5-solution:Net5/ExtensionGetEnumerator.cs Issue AX9KfvWLkhQIqndBXT7Z Rule external_roslyn:CA1822 Range 20:20:20:26
-  Component net5-solution:Net5/S4583.Part2.cs Issue AX9KfvPJkhQIqndBXTzw Rule external_roslyn:CA1822 Range 10:10:28:37
-  Component net5-solution:Net5/S2221.cs Issue AX9KfvY3khQIqndBXT-j Rule external_roslyn:CA1822 Range 8:8:20:23
-  Component net5-solution:Net5/S3267.cs Issue AX9KfvSAkhQIqndBXT2K Rule external_roslyn:CA1822 Range 8:8:28:40
-  Component net5-solution:Net5/S3927.cs Issue AX9KfvSKkhQIqndBXT2Q Rule external_roslyn:CA1822 Range 9:9:20:37
-  Component net5-solution:Net5/S2953.Part2.cs Issue AX9KfvXvkhQIqndBXT9K Rule external_roslyn:CA1822 Range 5:5:28:35
 Rule: csharpsquid:S2930 (size: 2):
   Component net5-solution:Net5/Main.cs Issue AX9KfvOVkhQIqndBXTxH Rule csharpsquid:S2930 Range 88:88:4:54
   Component net5-solution:Net5/S2930.cs Issue AX9KfvSckhQIqndBXT2c Rule csharpsquid:S2930 Range 12:12:16:55
-Rule: external_roslyn:CS0693 (size: 1):
-  Component net5-solution:Net5/Records.cs Issue AX9KfvZ2khQIqndBXT_8 Rule external_roslyn:CS0693 Range 121:121:28:29
-Rule: csharpsquid:S3900 (size: 2):
-  Component net5-solution:Net5/S3267.cs Issue AX9KfvSAkhQIqndBXT2J Rule csharpsquid:S3900 Range 12:12:36:46
-  Component net5-solution:Net5/S3267.cs Issue AX9KfvSAkhQIqndBXT2I Rule csharpsquid:S3900 Range 27:27:36:46
+Rule: csharpsquid:S1067 (size: 1):
+  Component net5-solution:Net5/S1067.cs Issue AX9KfvSTkhQIqndBXT2U Rule csharpsquid:S1067 Range 8:8:21:57
+Rule: csharpsquid:S1075 (size: 1):
+  Component net5-solution:Net5/Main.cs Issue AX9KfvOVkhQIqndBXTy- Rule csharpsquid:S1075 Range 88:88:25:38
 Rule: csharpsquid:S3927 (size: 1):
   Component net5-solution:Net5/S3927.cs Issue AX9KfvSKkhQIqndBXT2O Rule csharpsquid:S3927 Range 11:11:13:26
 ====== Vulnerabilities ======
 Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
-net5-solution;11;0;100,000000;67;609,090909
+net5-solution;11;0;100,000000;0;0,000000
 ====== Added issues ======
-Rule: csharpsquid:S2228 (size: 67):
-  Component net5-solution-autoscan:Net5/ExtensionGetEnumerator.cs Issue AYURVM1jwnv8wyLtwDqJ Rule csharpsquid:S2228 Range 25:25:16:33
-  Component net5-solution-autoscan:Net5/LambdaDiscardParameters.cs Issue AYURVMzSwnv8wyLtwDkZ Rule csharpsquid:S2228 Range 13:13:31:48
-  Component net5-solution-autoscan:Net5/Main.cs Issue AYURVMyXwnv8wyLtwDhE Rule csharpsquid:S2228 Range 6:6:0:17
-  Component net5-solution-autoscan:Net5/Main.cs Issue AYURVMyXwnv8wyLtwDhF Rule csharpsquid:S2228 Range 124:124:0:17
-  Component net5-solution-autoscan:Net5/Main.cs Issue AYURVMyXwnv8wyLtwDhG Rule csharpsquid:S2228 Range 130:130:4:21
-  Component net5-solution-autoscan:Net5/Main.cs Issue AYURVMyXwnv8wyLtwDhH Rule csharpsquid:S2228 Range 135:135:4:21
-  Component net5-solution-autoscan:Net5/NativeInts.cs Issue AYURVM1Lwnv8wyLtwDpa Rule csharpsquid:S2228 Range 11:11:12:29
-  Component net5-solution-autoscan:Net5/NativeInts.cs Issue AYURVM1Lwnv8wyLtwDpb Rule csharpsquid:S2228 Range 12:12:12:29
-  Component net5-solution-autoscan:Net5/PatternMatchingImprovements.cs Issue AYURVM1_wnv8wyLtwDqv Rule csharpsquid:S2228 Range 75:75:16:33
-  Component net5-solution-autoscan:Net5Samples/RecordsWithMutableData/Program.cs Issue AYURVM3nwnv8wyLtwDux Rule csharpsquid:S2228 Range 8:8:0:17
-  Component net5-solution-autoscan:Net5Samples/RecordsWithMutableData/Program.cs Issue AYURVM3nwnv8wyLtwDuy Rule csharpsquid:S2228 Range 15:15:0:17
-  Component net5-solution-autoscan:Net5Samples/TopLevelProgram/Program.cs Issue AYURVM3jwnv8wyLtwDuq Rule csharpsquid:S2228 Range 3:3:0:17
-  Component net5-solution-autoscan:Net5Samples/GetWeatherForecastWithRecords/Program.cs Issue AYURVM38wnv8wyLtwDvy Rule csharpsquid:S2228 Range 11:11:4:21
-  Component net5-solution-autoscan:Net5Samples/JsonSerializerRecords/Program.cs Issue AYURVM3vwnv8wyLtwDvC Rule csharpsquid:S2228 Range 10:10:0:17
-  Component net5-solution-autoscan:Net5Samples/JsonSerializerRecords/Program.cs Issue AYURVM3vwnv8wyLtwDvD Rule csharpsquid:S2228 Range 12:12:0:13
-  Component net5-solution-autoscan:Net5Samples/RecordWithStaticHelper/Program.cs Issue AYURVM3rwnv8wyLtwDu5 Rule csharpsquid:S2228 Range 9:9:0:17
-  Component net5-solution-autoscan:Net5Samples/RecordsUsingWith/Program.cs Issue AYURVM34wnv8wyLtwDvq Rule csharpsquid:S2228 Range 5:5:0:17
-  Component net5-solution-autoscan:Net5Samples/RecordsUsingWith/Program.cs Issue AYURVM34wnv8wyLtwDvr Rule csharpsquid:S2228 Range 13:13:0:17
-  Component net5-solution-autoscan:Net5Samples/RecordsVsClasses/Program.cs Issue AYURVM30wnv8wyLtwDvO Rule csharpsquid:S2228 Range 13:13:0:9
-  Component net5-solution-autoscan:Net5Samples/RecordsVsClasses/Program.cs Issue AYURVM30wnv8wyLtwDvP Rule csharpsquid:S2228 Range 14:14:0:9
-  Component net5-solution-autoscan:Net5Samples/RecordsVsClasses/Program.cs Issue AYURVM30wnv8wyLtwDvQ Rule csharpsquid:S2228 Range 15:15:0:9
-  Component net5-solution-autoscan:Net5Samples/RecordsVsClasses/Program.cs Issue AYURVM30wnv8wyLtwDvR Rule csharpsquid:S2228 Range 16:16:0:9
-  Component net5-solution-autoscan:Net5Samples/RecordsVsClasses/Program.cs Issue AYURVM30wnv8wyLtwDvS Rule csharpsquid:S2228 Range 17:17:0:9
-  Component net5-solution-autoscan:Net5Samples/RecordsVsClasses/Program.cs Issue AYURVM30wnv8wyLtwDvT Rule csharpsquid:S2228 Range 18:18:0:9
-  Component net5-solution-autoscan:Net5Samples/RecordsVsClasses/Program.cs Issue AYURVM30wnv8wyLtwDvU Rule csharpsquid:S2228 Range 19:19:0:9
-  Component net5-solution-autoscan:Net5Samples/RecordsVsClasses/Program.cs Issue AYURVM30wnv8wyLtwDvV Rule csharpsquid:S2228 Range 20:20:0:9
-  Component net5-solution-autoscan:Net5Samples/RecordsVsClasses/Program.cs Issue AYURVM30wnv8wyLtwDvW Rule csharpsquid:S2228 Range 21:21:0:9
-  Component net5-solution-autoscan:Net5Samples/RecordsVsClasses/Program.cs Issue AYURVM30wnv8wyLtwDvX Rule csharpsquid:S2228 Range 22:22:0:9
-  Component net5-solution-autoscan:Net5Samples/JsonDictionaryKeys/Program.cs Issue AYURVM4Nwnv8wyLtwDwy Rule csharpsquid:S2228 Range 21:21:0:17
-  Component net5-solution-autoscan:Net5Samples/JsonDictionaryKeys/Program.cs Issue AYURVM4Nwnv8wyLtwDwz Rule csharpsquid:S2228 Range 25:25:0:17
-  Component net5-solution-autoscan:Net5Samples/JsonSerializerImmutableTypes/Program.cs Issue AYURVM4Rwnv8wyLtwDw9 Rule csharpsquid:S2228 Range 14:14:0:17
-  Component net5-solution-autoscan:Net5Samples/JsonSerializerImmutableTypes/Program.cs Issue AYURVM4Rwnv8wyLtwDw- Rule csharpsquid:S2228 Range 15:15:0:17
-  Component net5-solution-autoscan:Net5Samples/JsonSerializerImmutableTypes/Program.cs Issue AYURVM4Rwnv8wyLtwDw_ Rule csharpsquid:S2228 Range 16:16:0:17
-  Component net5-solution-autoscan:Net5Samples/JsonSerializerImmutableTypes/Program.cs Issue AYURVM4Rwnv8wyLtwDxA Rule csharpsquid:S2228 Range 17:17:0:17
-  Component net5-solution-autoscan:Net5Samples/JsonSerializerImmutableTypes/Program.cs Issue AYURVM4Rwnv8wyLtwDxB Rule csharpsquid:S2228 Range 21:21:0:17
-  Component net5-solution-autoscan:Net5Samples/JsonSerializerSupportsFields/Program.cs Issue AYURVM4Awnv8wyLtwDwD Rule csharpsquid:S2228 Range 13:13:0:17
-  Component net5-solution-autoscan:Net5Samples/JsonSerializerSupportsFields/Program.cs Issue AYURVM4Awnv8wyLtwDwE Rule csharpsquid:S2228 Range 14:14:0:17
-  Component net5-solution-autoscan:Net5Samples/JsonSerializerSupportsFields/Program.cs Issue AYURVM4Awnv8wyLtwDwF Rule csharpsquid:S2228 Range 15:15:0:17
-  Component net5-solution-autoscan:Net5Samples/JsonSerializerSupportsFields/Program.cs Issue AYURVM4Awnv8wyLtwDwG Rule csharpsquid:S2228 Range 16:16:0:17
-  Component net5-solution-autoscan:Net5Samples/JsonSerializerSupportsFields/Program.cs Issue AYURVM4Awnv8wyLtwDwH Rule csharpsquid:S2228 Range 20:20:0:17
-  Component net5-solution-autoscan:Net5Samples/ShouldRichGoToTheDoctor/Program.cs Issue AYURVM4Ewnv8wyLtwDwT Rule csharpsquid:S2228 Range 19:19:0:9
-  Component net5-solution-autoscan:Net5Samples/VariousPatternsOfRecords/Program.cs Issue AYURVM4Jwnv8wyLtwDwe Rule csharpsquid:S2228 Range 7:7:0:9
-  Component net5-solution-autoscan:Net5Samples/VariousPatternsOfRecords/Program.cs Issue AYURVM4Jwnv8wyLtwDwf Rule csharpsquid:S2228 Range 8:8:0:9
-  Component net5-solution-autoscan:Net5Samples/VariousPatternsOfRecords/Program.cs Issue AYURVM4Jwnv8wyLtwDwg Rule csharpsquid:S2228 Range 9:9:0:9
-  Component net5-solution-autoscan:Net5Samples/VariousPatternsOfRecords/Program.cs Issue AYURVM4Jwnv8wyLtwDwh Rule csharpsquid:S2228 Range 14:14:0:9
-  Component net5-solution-autoscan:Net5Samples/VariousPatternsOfRecords/Program.cs Issue AYURVM4Jwnv8wyLtwDwi Rule csharpsquid:S2228 Range 15:15:0:9
-  Component net5-solution-autoscan:Net5Samples/VariousPatternsOfRecords/Program.cs Issue AYURVM4Jwnv8wyLtwDwj Rule csharpsquid:S2228 Range 20:20:0:9
-  Component net5-solution-autoscan:Net5Samples/VariousPatternsOfRecords/Program.cs Issue AYURVM4Jwnv8wyLtwDwk Rule csharpsquid:S2228 Range 21:21:0:9
-  Component net5-solution-autoscan:Net5Samples/VariousPatternsOfRecords/Program.cs Issue AYURVM4Jwnv8wyLtwDwl Rule csharpsquid:S2228 Range 25:25:0:9
-  Component net5-solution-autoscan:Net5/Records.cs Issue AYURVM3awnv8wyLtwDuG Rule csharpsquid:S2228 Range 11:11:12:29
-  Component net5-solution-autoscan:Net5/Records.cs Issue AYURVM3awnv8wyLtwDuH Rule csharpsquid:S2228 Range 14:14:12:29
-  Component net5-solution-autoscan:Net5/Records.cs Issue AYURVM3awnv8wyLtwDuI Rule csharpsquid:S2228 Range 16:16:12:29
-  Component net5-solution-autoscan:Net5/Records.cs Issue AYURVM3awnv8wyLtwDuJ Rule csharpsquid:S2228 Range 21:21:16:33
-  Component net5-solution-autoscan:Net5/Records.cs Issue AYURVM3awnv8wyLtwDuK Rule csharpsquid:S2228 Range 22:22:16:33
-  Component net5-solution-autoscan:Net5/Records.cs Issue AYURVM3awnv8wyLtwDuL Rule csharpsquid:S2228 Range 24:24:12:29
-  Component net5-solution-autoscan:Net5/Records.cs Issue AYURVM3awnv8wyLtwDuM Rule csharpsquid:S2228 Range 25:25:12:29
-  Component net5-solution-autoscan:Net5Samples/JsonSerializerPreserveReference/Program.cs Issue AYURVM4Wwnv8wyLtwDxP Rule csharpsquid:S2228 Range 32:32:0:17
-  Component net5-solution-autoscan:Net5Samples/JsonSerializerPreserveReference/Program.cs Issue AYURVM4Wwnv8wyLtwDxQ Rule csharpsquid:S2228 Range 35:35:0:13
-  Component net5-solution-autoscan:Net5Samples/JsonSerializerPreserveReference/Program.cs Issue AYURVM4Wwnv8wyLtwDxR Rule csharpsquid:S2228 Range 36:36:0:17
-  Component net5-solution-autoscan:Net5Samples/RecordsAndNullability/Program.cs Issue AYURVM4fwnv8wyLtwDyA Rule csharpsquid:S2228 Range 30:30:0:17
-  Component net5-solution-autoscan:Net5Samples/RecordsAndNullability/Program.cs Issue AYURVM4fwnv8wyLtwDyB Rule csharpsquid:S2228 Range 31:31:0:17
-  Component net5-solution-autoscan:Net5Samples/RecordsAndNullability/Program.cs Issue AYURVM4fwnv8wyLtwDyC Rule csharpsquid:S2228 Range 32:32:0:17
-  Component net5-solution-autoscan:Net5Samples/VariousPatternsOfPatterns/Program.cs Issue AYURVM4awnv8wyLtwDxi Rule csharpsquid:S2228 Range 6:6:0:17
-  Component net5-solution-autoscan:Net5Samples/VariousPatternsOfPatterns/Program.cs Issue AYURVM4awnv8wyLtwDxj Rule csharpsquid:S2228 Range 12:12:4:21
-  Component net5-solution-autoscan:Net5Samples/VariousPatternsOfPatterns/Program.cs Issue AYURVM4awnv8wyLtwDxk Rule csharpsquid:S2228 Range 59:59:12:29
-  Component net5-solution-autoscan:Net5/S4583.Part1.cs Issue AYURVM2Ewnv8wyLtwDrW Rule csharpsquid:S2228 Range 42:42:12:29
-  Component net5-solution-autoscan:Net5/TargetTypedNew.cs Issue AYURVM2dwnv8wyLtwDsC Rule csharpsquid:S2228 Range 18:18:12:29
 
 ====== Missing issues ======
 ====== Metrics ======
