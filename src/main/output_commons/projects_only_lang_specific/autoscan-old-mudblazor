@@ -1,0 +1,69 @@
+====== Bugs ======
+Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
+autoscan-old-mudblazor;8752;4;99.954296;44;0.502742
+====== Added issues ======
+Rule: csharpsquid:S4056 (size: 1):
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/TreeView/Examples/TreeViewCustomExample.razor Issue 45501391-f468-4f06-bfe5-d0a6586e1916 Rule csharpsquid:S4056 Range 19:19:51:84
+Rule: csharpsquid:S100 (size: 41):
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/Autocomplete/Examples/AutocompleteClrObjectsExample.razor Issue a475b77e-ef94-49f3-b89e-a01bb1c07d50 Rule csharpsquid:S100 Range 5:5:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/Autocomplete/Examples/AutocompletePresentationExtrasExample.razor Issue cc12bccc-0ca0-42f5-8f1a-29f294ec96fc Rule csharpsquid:S100 Range 5:5:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/Autocomplete/Examples/AutocompleteStrictFalseExample.razor Issue b011ad02-990e-4fe9-bc6f-5b718bb48de0 Rule csharpsquid:S100 Range 5:5:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/DataGrid/Examples/DataGridAdvancedExample.razor Issue 73a16a89-492c-48ce-9474-5de0b0676c9a Rule csharpsquid:S100 Range 4:4:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/DataGrid/Examples/DataGridAdvancedFilteringExample.razor Issue da4db4ed-2ae8-486b-a6cd-d2c14dd756b6 Rule csharpsquid:S100 Range 4:4:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/DataGrid/Examples/DataGridAggregationExample.razor Issue 92a2ac4b-6084-46ef-997e-8d9c5eeed67b Rule csharpsquid:S100 Range 3:3:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/DataGrid/Examples/DataGridBasicExample.razor Issue 3f61e93a-fcf3-4634-aeaf-61cf03f28393 Rule csharpsquid:S100 Range 4:4:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/DataGrid/Examples/DataGridColumnTypesExample.razor Issue 8ed5e9db-0302-4192-a473-cf478d9403a1 Rule csharpsquid:S100 Range 4:4:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/DataGrid/Examples/DataGridColumnsPanelExample.razor Issue 16ffcc64-0cd3-43dc-b125-09091280bcfd Rule csharpsquid:S100 Range 4:4:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/DataGrid/Examples/DataGridColumReorderingExample.razor Issue a716f97c-b440-4416-934c-5c5b5903965d Rule csharpsquid:S100 Range 4:4:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/DataGrid/Examples/DataGridDetailRowExample.razor Issue ceb1cb49-c3dd-44cc-9e90-edae5e4ed00d Rule csharpsquid:S100 Range 4:4:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/DataGrid/Examples/DataGridEditingExample.razor Issue 71d86b65-3439-46fa-9f4d-0b4b6616eb36 Rule csharpsquid:S100 Range 4:4:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/DataGrid/Examples/DataGridFilteringExample.razor Issue fee5edc7-0bf7-4a84-9011-7caa511350fb Rule csharpsquid:S100 Range 4:4:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/DataGrid/Examples/DataGridGroupingExample.razor Issue fbc27dc2-5b1b-4e18-be5c-7df441ecbbd1 Rule csharpsquid:S100 Range 4:4:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/DataGrid/Examples/DataGridObservabilityExample.razor Issue 400e9597-a31c-4c78-a669-13346c643f20 Rule csharpsquid:S100 Range 4:4:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/DataGrid/Examples/DataGridResizeExample.razor Issue abf511d6-8b98-4b37-81e8-b75086385878 Rule csharpsquid:S100 Range 4:4:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/DataGrid/Examples/DataGridSelectionExample.razor Issue 6eb4c88a-655b-4e49-abe0-fad7d0446bf8 Rule csharpsquid:S100 Range 4:4:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/DataGrid/Examples/DataGridServerSideExample.razor Issue 2521c041-a72a-4432-8854-321cbe214978 Rule csharpsquid:S100 Range 5:5:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/DataGrid/Examples/DataGridSortingExample.razor Issue 744c85c7-e7e5-4cf9-ab98-acfdf6e2636f Rule csharpsquid:S100 Range 4:4:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/DataGrid/Examples/DataGridVisualStylingExample.razor Issue e810cea9-ee39-4f9c-905e-b1b5b1a711c5 Rule csharpsquid:S100 Range 4:4:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/Highlighter/Examples/HighlighterWithTableExample.razor Issue 40a70e4e-cc7b-4b15-aac6-5dadab9f16ba Rule csharpsquid:S100 Range 4:4:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/Pagination/Examples/PaginationTableExample.razor Issue 7b455d03-2a4d-428e-b678-19895a232691 Rule csharpsquid:S100 Range 4:4:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Mud/Project/Releases.razor Issue 3d359823-b29f-481d-a190-56ccd3b17174 Rule csharpsquid:S100 Range 4:4:24:40
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/Table/Examples/TableBasicExample.razor Issue 4d5f89ab-7895-4733-b044-7fbaba3a6cb7 Rule csharpsquid:S100 Range 4:4:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/Table/Examples/TableBasicGroupingExample.razor Issue 23edc679-c981-4583-8785-9d1dd69fb135 Rule csharpsquid:S100 Range 4:4:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/Table/Examples/TableBasicGroupingInitiallyCollapsedExample.razor Issue c876c714-9aa4-42c7-adea-f8e2c39e5b06 Rule csharpsquid:S100 Range 4:4:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/Table/Examples/TableColGroupExample.razor Issue 33dd2470-ab44-4beb-b01a-ca2dc59a06d5 Rule csharpsquid:S100 Range 4:4:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/Table/Examples/TableExample.razor Issue d55828b5-f740-47b9-a78d-97e94231fc37 Rule csharpsquid:S100 Range 4:4:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/Table/Examples/TableFixedHeaderExample.razor Issue a0bfe348-d00a-4b9c-b20a-e68a9fdcefdb Rule csharpsquid:S100 Range 4:4:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/Table/Examples/TableHeaderAndFooterExample.razor Issue 7a0a9ad2-8ef7-4c70-9166-a4270e574d5d Rule csharpsquid:S100 Range 4:4:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/Table/Examples/TableInlineEditExample.razor Issue 23b8beba-8444-452b-8b6a-85c604b232a2 Rule csharpsquid:S100 Range 5:5:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/Table/Examples/TableMultiGroupingExample.razor Issue 7dfe9564-f7ed-42b7-8927-f4ba5610ce1c Rule csharpsquid:S100 Range 4:4:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/Table/Examples/TableMultiSelectExample.razor Issue 2bc57700-4779-44b1-b05c-44a41d1000f3 Rule csharpsquid:S100 Range 4:4:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/Table/Examples/TablePagerExample.razor Issue 59d60548-e98a-4c19-af89-35f0992f3e9d Rule csharpsquid:S100 Range 4:4:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/Table/Examples/TableRecordComparerExample.razor Issue 5891a93b-bc62-40c1-ad03-5d7a0b228866 Rule csharpsquid:S100 Range 5:5:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/Table/Examples/TableRowClassFuncExample.razor Issue 9f8a98f3-a11e-4909-81a1-af85104d5fb2 Rule csharpsquid:S100 Range 4:4:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/Table/Examples/TableRowHoverEventsExample.razor Issue 7d07bd6a-c1d7-48f5-aefd-e4b7f582be04 Rule csharpsquid:S100 Range 4:4:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/Table/Examples/TableServerSideCancellationTokenExample.razor Issue f11f6fd6-3fd6-4bdc-ac1b-c30cac36a4fe Rule csharpsquid:S100 Range 5:5:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/Table/Examples/TableServerSidePaginateExample.razor Issue 8f77f860-20e6-4955-9b5f-0b20955b960a Rule csharpsquid:S100 Range 5:5:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Components/Table/Examples/TableSortingExample.razor Issue 5557c57a-0b77-49ba-82db-794a37a2f6c6 Rule csharpsquid:S100 Range 4:4:19:29
+  Component autoscan-new-mudblazor:MudBlazor.Docs/Pages/Mud/Project/Team.razor Issue 7c1568a9-2e3a-4a00-bdea-a80ef2b53dab Rule csharpsquid:S100 Range 2:2:24:40
+Rule: csharpsquid:S138 (size: 2):
+  Component autoscan-new-mudblazor:MudBlazor/Components/DataGrid/MudDataGrid.razor Issue 31784a88-4373-4e76-962c-e194e59dccb4 Rule csharpsquid:S138 Range 414:414:28:39
+  Component autoscan-new-mudblazor:MudBlazor/Components/Tabs/MudTabs.razor Issue 12a3f64b-5acd-4271-a34a-d09c4412265d Rule csharpsquid:S138 Range 75:75:19:28
+
+====== Missing issues ======
+Rule: csharpsquid:S3257 (size: 1):
+  Component autoscan-old-mudblazor:MudBlazor.Docs/Pages/Components/Table/Examples/TableInlineEditExample.razor Issue fab0a7d4-d960-4c45-8865-6ea78eb9f499 Rule csharpsquid:S3257 Range 8:8:115:137
+Rule: csharpsquid:S108 (size: 1):
+  Component autoscan-old-mudblazor:MudBlazor.Docs/Pages/Components/TreeView/Examples/TreeViewCustomExample.razor Issue 6d6e5a3c-2b59-420c-a7c4-8e725abe7e61 Rule csharpsquid:S108 Range 18:18:0:58
+Rule: csharpsquid:S3240 (size: 2):
+  Component autoscan-old-mudblazor:MudBlazor.Docs/Pages/Components/Slider/Examples/SliderNullableExample.razor Issue 8f2817ec-dfdb-4b4d-938b-3895410527c3 Rule csharpsquid:S3240 Range 6:6:44:92
+  Component autoscan-old-mudblazor:MudBlazor/Components/Toggle/MudToggleItem.razor Issue f9643cc5-dabf-4059-8e76-34ccbd8dafe8 Rule csharpsquid:S3240 Range 26:26:10:37
+====== Vulnerabilities ======
+Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
+autoscan-old-mudblazor;0;0;NaN;0;NaN
+====== Added issues ======
+
+====== Missing issues ======
+====== Metrics ======
+JavaAnalysisFinishedCount; WorkerForJavaCloneDuration; WorkerForJavaTaskDuration; DownloadedArtifactsPercentage; ParsedArtifactsCount; ConstructDependencyGraphDuration; DownloadDependenciesDuration; ResolveDependenciesDuration; WorkerForJavaQueueLatency
+No metric

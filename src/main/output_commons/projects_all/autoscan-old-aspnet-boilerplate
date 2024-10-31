@@ -1,0 +1,23 @@
+====== Bugs ======
+Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
+autoscan-old-aspnet-boilerplate;7042;2;99.971599;3;0.042602
+====== Added issues ======
+Rule: csharpsquid:S3236 (size: 1):
+  Component autoscan-new-aspnet-boilerplate:src/Abp/Text/FormattedStringValueExtracter.cs Issue f730dba4-8d48-41df-bf0b-19e26a37a011 Rule csharpsquid:S3236 Range 66:66:64:112
+Rule: csharpsquid:S6966 (size: 2):
+  Component autoscan-new-aspnet-boilerplate:test/aspnet-core-demo/AbpAspNetCoreDemo/Views/Shared/_Layout.cshtml Issue ded0cb2b-f7c5-4d0a-9a3c-0ac26ef0224d Rule csharpsquid:S6966 Range 24:24:5:35
+  Component autoscan-new-aspnet-boilerplate:test/aspnet-core-demo/AbpAspNetCoreDemo/Views/Shared/_Layout.cshtml Issue 973fae71-8ebf-4b71-bde7-6cb97df31428 Rule csharpsquid:S6966 Range 77:77:5:46
+
+====== Missing issues ======
+Rule: csharpsquid:S6966 (size: 2):
+  Component autoscan-old-aspnet-boilerplate:test/aspnet-core-demo/AbpAspNetCoreDemo/Views/Shared/_Layout.cshtml Issue d1675209-d526-4ecc-be76-d704e6181720 Rule csharpsquid:S6966 Range 24:24:0:35
+  Component autoscan-old-aspnet-boilerplate:test/aspnet-core-demo/AbpAspNetCoreDemo/Views/Shared/_Layout.cshtml Issue fec0a2f9-1955-4a53-beeb-e3a45e1d0963 Rule csharpsquid:S6966 Range 77:77:0:46
+====== Vulnerabilities ======
+Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
+autoscan-old-aspnet-boilerplate;2;0;100.000000;0;0.000000
+====== Added issues ======
+
+====== Missing issues ======
+====== Metrics ======
+JavaAnalysisFinishedCount; WorkerForJavaCloneDuration; WorkerForJavaTaskDuration; DownloadedArtifactsPercentage; ParsedArtifactsCount; ConstructDependencyGraphDuration; DownloadDependenciesDuration; ResolveDependenciesDuration; WorkerForJavaQueueLatency
+No metric

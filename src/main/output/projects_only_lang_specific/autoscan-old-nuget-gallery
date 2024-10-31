@@ -1,0 +1,24 @@
+====== Bugs ======
+Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
+autoscan-old-nuget-gallery;7434;0;100.000000;5;0.067259
+====== Added issues ======
+Rule: csharpsquid:S3059 (size: 1):
+  Component autoscan-new-nuget-gallery:src/Common/HashCodeCombiner.cs Issue 6d2f60fb-04bb-4a13-b199-595512d10383 Rule csharpsquid:S3059 Range 10:10:19:35
+Rule: csharpsquid:S113 (size: 1):
+  Component autoscan-new-nuget-gallery:src/Common/HashCodeCombiner.cs Issue 20809cbc-40f8-40b2-9584-44fe8749890c Rule csharpsquid:S113 Range 56:56:0:1
+Rule: csharpsquid:S1451 (size: 2):
+  Component autoscan-new-nuget-gallery:src/CommonAssemblyInfo.cs Issue a4528e70-21ab-45be-bdd4-74c8c87b9cb6 Rule csharpsquid:S1451 Range (empty)
+  Component autoscan-new-nuget-gallery:src/Common/HashCodeCombiner.cs Issue f9cf91f4-6d08-4718-83ea-388485531b50 Rule csharpsquid:S1451 Range (empty)
+Rule: csharpsquid:S109 (size: 1):
+  Component autoscan-new-nuget-gallery:src/Common/HashCodeCombiner.cs Issue 0500df45-9413-4db4-9049-379ace35dc20 Rule csharpsquid:S109 Range 40:40:51:52
+
+====== Missing issues ======
+====== Vulnerabilities ======
+Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
+autoscan-old-nuget-gallery;0;0;NaN;0;NaN
+====== Added issues ======
+
+====== Missing issues ======
+====== Metrics ======
+JavaAnalysisFinishedCount; WorkerForJavaCloneDuration; WorkerForJavaTaskDuration; DownloadedArtifactsPercentage; ParsedArtifactsCount; ConstructDependencyGraphDuration; DownloadDependenciesDuration; ResolveDependenciesDuration; WorkerForJavaQueueLatency
+No metric

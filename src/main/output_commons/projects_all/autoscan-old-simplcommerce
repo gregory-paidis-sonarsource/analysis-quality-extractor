@@ -1,0 +1,51 @@
+====== Bugs ======
+Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
+autoscan-old-simplcommerce;2700;14;99.481481;14;0.518519
+====== Added issues ======
+Rule: csharpsquid:S4056 (size: 9):
+  Component autoscan-new-simplcommerce:src/Modules/SimplCommerce.Module.Catalog/Areas/Catalog/Views/Brand/BrandDetail.cshtml Issue cdae9040-9849-4cc6-85af-cbe4b5f536dc Rule csharpsquid:S4056 Range 74:74:85:133
+  Component autoscan-new-simplcommerce:src/Modules/SimplCommerce.Module.Catalog/Areas/Catalog/Views/Brand/BrandDetail.cshtml Issue a7e97d3a-94bc-43a7-a42e-7b762c0d2662 Rule csharpsquid:S4056 Range 75:75:85:133
+  Component autoscan-new-simplcommerce:src/Modules/SimplCommerce.Module.Catalog/Areas/Catalog/Views/Category/CategoryDetail.cshtml Issue fe2d2f8b-596c-41af-b208-06deee5c5294 Rule csharpsquid:S4056 Range 121:121:85:133
+  Component autoscan-new-simplcommerce:src/Modules/SimplCommerce.Module.Catalog/Areas/Catalog/Views/Category/CategoryDetail.cshtml Issue 03221591-d159-4c7d-bcf1-9c6786bb399f Rule csharpsquid:S4056 Range 122:122:85:133
+  Component autoscan-new-simplcommerce:src/SimplCommerce.WebHost/Themes/CozaStore/Areas/Catalog/Views/Category/CategoryDetail.cshtml Issue 26f0495e-f529-414f-b9d9-7780e2b2f4e0 Rule csharpsquid:S4056 Range 130:130:85:133
+  Component autoscan-new-simplcommerce:src/SimplCommerce.WebHost/Themes/CozaStore/Areas/Catalog/Views/Category/CategoryDetail.cshtml Issue 3fd95b12-96b5-4e4f-8df4-c1cc775badbb Rule csharpsquid:S4056 Range 131:131:85:133
+  Component autoscan-new-simplcommerce:src/Modules/SimplCommerce.Module.Core/Areas/Core/Views/HomeAdmin/Index.cshtml Issue e8572fc7-96a3-4c92-aa7c-ba9fb1328219 Rule csharpsquid:S4056 Range 64:64:73:114
+  Component autoscan-new-simplcommerce:src/Modules/SimplCommerce.Module.Search/Areas/Search/Views/Search/Index.cshtml Issue 45a945b3-771c-4b05-8668-8c9aad4a7c1f Rule csharpsquid:S4056 Range 106:106:85:133
+  Component autoscan-new-simplcommerce:src/Modules/SimplCommerce.Module.Search/Areas/Search/Views/Search/Index.cshtml Issue 9d4e797f-4b47-4875-8cc8-88358e574288 Rule csharpsquid:S4056 Range 107:107:85:133
+Rule: csharpsquid:S1449 (size: 1):
+  Component autoscan-new-simplcommerce:src/Modules/SimplCommerce.Module.Core/Areas/Core/Views/HomeAdmin/Index.cshtml Issue fb1b9242-1ee1-4d8e-96ef-f503d00b0a3f Rule csharpsquid:S1449 Range 64:64:105:112
+Rule: csharpsquid:S4040 (size: 3):
+  Component autoscan-new-simplcommerce:src/SimplCommerce.WebHost/Themes/CozaStore/Views/Shared/_Layout.cshtml Issue d0da36be-39ac-4595-9a3a-83a325b80207 Rule csharpsquid:S4040 Range 4:4:47:63
+  Component autoscan-new-simplcommerce:src/SimplCommerce.WebHost/Themes/SampleTheme/Views/Shared/_Layout.cshtml Issue dd2f6450-f7f4-4f8d-8038-7bcd1d85a89f Rule csharpsquid:S4040 Range 4:4:47:63
+  Component autoscan-new-simplcommerce:src/SimplCommerce.WebHost/Views/Shared/_Layout.cshtml Issue 5c0d94e0-929a-4336-aa2e-516138b7cf19 Rule csharpsquid:S4040 Range 4:4:47:63
+Rule: csharpsquid:S6608 (size: 1):
+  Component autoscan-new-simplcommerce:src/Modules/SimplCommerce.Module.Cms/Areas/Cms/Views/Shared/Components/CarouselWidget/Default.cshtml Issue 074de073-e3a8-41a3-a11e-034fa9313682 Rule csharpsquid:S6608 Range 20:20:56:61
+
+====== Missing issues ======
+Rule: csharpsquid:S4056 (size: 9):
+  Component autoscan-old-simplcommerce:src/Modules/SimplCommerce.Module.Catalog/Areas/Catalog/Views/Brand/BrandDetail.cshtml Issue 249a327d-90c2-4a3c-9c02-2a120146c94f Rule csharpsquid:S4056 Range 74:74:84:132
+  Component autoscan-old-simplcommerce:src/Modules/SimplCommerce.Module.Catalog/Areas/Catalog/Views/Category/CategoryDetail.cshtml Issue ca9d8e5f-5d86-466c-a4e5-486f323bddd0 Rule csharpsquid:S4056 Range 121:121:84:132
+  Component autoscan-old-simplcommerce:src/SimplCommerce.WebHost/Themes/CozaStore/Areas/Catalog/Views/Category/CategoryDetail.cshtml Issue e8b03f5a-3c6e-447b-9c6f-4ecbb8335254 Rule csharpsquid:S4056 Range 131:131:84:132
+  Component autoscan-old-simplcommerce:src/Modules/SimplCommerce.Module.Search/Areas/Search/Views/Search/Index.cshtml Issue 753d639d-e61c-4f2b-9bd0-5adfe91f93ef Rule csharpsquid:S4056 Range 106:106:84:132
+  Component autoscan-old-simplcommerce:src/Modules/SimplCommerce.Module.Catalog/Areas/Catalog/Views/Brand/BrandDetail.cshtml Issue 67859081-9438-4d5d-8ff0-e853292e2d76 Rule csharpsquid:S4056 Range 75:75:84:132
+  Component autoscan-old-simplcommerce:src/Modules/SimplCommerce.Module.Catalog/Areas/Catalog/Views/Category/CategoryDetail.cshtml Issue 3a961c69-1b77-441a-89bd-03eaaecb0353 Rule csharpsquid:S4056 Range 122:122:84:132
+  Component autoscan-old-simplcommerce:src/Modules/SimplCommerce.Module.Core/Areas/Core/Views/HomeAdmin/Index.cshtml Issue f467f1c9-44ee-44d4-87bc-013780b04baa Rule csharpsquid:S4056 Range 64:64:71:112
+  Component autoscan-old-simplcommerce:src/SimplCommerce.WebHost/Themes/CozaStore/Areas/Catalog/Views/Category/CategoryDetail.cshtml Issue 62522bee-8120-4907-bec7-ea5aab737939 Rule csharpsquid:S4056 Range 130:130:84:132
+  Component autoscan-old-simplcommerce:src/Modules/SimplCommerce.Module.Search/Areas/Search/Views/Search/Index.cshtml Issue 1936a30c-f310-4a70-8e87-1ccbdb1485a0 Rule csharpsquid:S4056 Range 107:107:84:132
+Rule: csharpsquid:S1449 (size: 1):
+  Component autoscan-old-simplcommerce:src/Modules/SimplCommerce.Module.Core/Areas/Core/Views/HomeAdmin/Index.cshtml Issue cb956d91-faaa-4ee2-bad8-2333bd5b549e Rule csharpsquid:S1449 Range 64:64:103:110
+Rule: csharpsquid:S4040 (size: 3):
+  Component autoscan-old-simplcommerce:src/SimplCommerce.WebHost/Themes/SampleTheme/Views/Shared/_Layout.cshtml Issue 5c46b3a3-401e-46ab-81eb-6561520ca004 Rule csharpsquid:S4040 Range 4:4:46:62
+  Component autoscan-old-simplcommerce:src/SimplCommerce.WebHost/Views/Shared/_Layout.cshtml Issue c3f619c6-28b1-4a48-9d59-bff8fab6984c Rule csharpsquid:S4040 Range 4:4:46:62
+  Component autoscan-old-simplcommerce:src/SimplCommerce.WebHost/Themes/CozaStore/Views/Shared/_Layout.cshtml Issue 02bf1ac5-1531-410f-94aa-d77c5add822c Rule csharpsquid:S4040 Range 4:4:46:62
+Rule: csharpsquid:S6608 (size: 1):
+  Component autoscan-old-simplcommerce:src/Modules/SimplCommerce.Module.Cms/Areas/Cms/Views/Shared/Components/CarouselWidget/Default.cshtml Issue 5db926c6-57bd-457c-95f6-9750b3fff94d Rule csharpsquid:S6608 Range 20:20:53:58
+====== Vulnerabilities ======
+Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
+autoscan-old-simplcommerce;13;0;100.000000;0;0.000000
+====== Added issues ======
+
+====== Missing issues ======
+====== Metrics ======
+JavaAnalysisFinishedCount; WorkerForJavaCloneDuration; WorkerForJavaTaskDuration; DownloadedArtifactsPercentage; ParsedArtifactsCount; ConstructDependencyGraphDuration; DownloadDependenciesDuration; ResolveDependenciesDuration; WorkerForJavaQueueLatency
+No metric
