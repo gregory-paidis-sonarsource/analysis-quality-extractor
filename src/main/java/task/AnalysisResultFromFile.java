@@ -15,23 +15,23 @@ import static task.AnalysisQualityLocComparison.compareLoc;
 public class AnalysisResultFromFile {
 
   public static final String OUTPUT_FOLDER = "src/main/output_issues/";
-  public static final String OUTPUT_FOLDER_BASE = OUTPUT_FOLDER + "base/";
-  public static final String OUTPUT_FOLDER_TARGET = OUTPUT_FOLDER + "target/";
-  public static final String AUTOSCAN_SUFFIX = "autoscan";
+  public static final String OUTPUT_FOLDER_OLD = OUTPUT_FOLDER + "old/";
+  public static final String OUTPUT_FOLDER_NEW = OUTPUT_FOLDER + "new/";
+  public static final String AUTOSCAN_PREFIX = "autoscan";
 
   public static void main(String[] args) throws IOException {
     Gson gson = new Gson();
 
     List<ProjectAnalysisQuality> baseQualities = new ArrayList<>();
 
-    for (File file : new File(OUTPUT_FOLDER_BASE).listFiles()) {
+    for (File file : new File(OUTPUT_FOLDER_OLD).listFiles()) {
       ProjectAnalysisQuality object = gson.fromJson(new FileReader(file), ProjectAnalysisQuality.class);
       baseQualities.add(object);
     }
 
     List<ProjectAnalysisQuality> targetQualities = new ArrayList<>();
 
-    for (File file : new File(OUTPUT_FOLDER_TARGET).listFiles()) {
+    for (File file : new File(OUTPUT_FOLDER_NEW).listFiles()) {
       ProjectAnalysisQuality object = gson.fromJson(new FileReader(file), ProjectAnalysisQuality.class);
       targetQualities.add(object);
     }
@@ -47,7 +47,6 @@ public class AnalysisResultFromFile {
         .findFirst()
         .ifPresent(target -> {
           paq.setTargetComponent(target.getBaseComponent());
-          paq.setTargetComponentDefaultBranch(target.getBaseComponentDefaultBranch());
           paq.setTargetComponentResult(target.getBaseComponentResult());
         });
     });
@@ -74,6 +73,6 @@ public class AnalysisResultFromFile {
   }
 
   private static String getTargetName(String project){
-    return project + "-" + AUTOSCAN_SUFFIX;
+    return project.replace("old","new");
   }
 }
