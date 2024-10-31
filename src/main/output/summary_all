@@ -1,39 +1,25 @@
 ====== Summary ======
 ====== Bugs / Code Smells ======
 Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
-akka;15551;77;99,504855;3052;19,625748
-beyourmarket;1868;273;85,385439;163;8,725910
-codehub;3142;341;89,147040;276;8,784214
-fluentassertions;1017;75;92,625369;1596;156,932153
-flurl;715;7;99,020979;28;3,916084
-fody;427;7;98,360656;55;12,880562
-jabbr;1448;108;92,541436;214;14,779006
-masstransit;17625;189;98,927660;99;0,561702
-net5-solution;845;11;98,698225;69;8,165680
-net6-solution;90;13;85,555556;1;1,111111
-nhibernate;18493;351;98,101985;455;2,460390
-nodatime;2203;22;99,001362;79;3,586019
-nopowershell;356;2;99,438202;20;5,617978
-nuget-server;418;84;79,904306;440;105,263158
-obsidian;4587;59;98,713756;200;4,360148
-ocelot;955;21;97,801047;130;13,612565
-openiddict-core;3006;168;94,411178;273;9,081836
+autoscan-old-aspnet-boilerplate;7042;2;99.971599;3;0.042602
+autoscan-old-bunit;2082;4;99.807877;15;0.720461
+autoscan-old-CSharpLatest;1209;0;100.000000;0;0.000000
+autoscan-old-egroo;641;0;100.000000;0;0.000000
+autoscan-old-gittrends;2726;0;100.000000;3;0.110051
+autoscan-old-mudblazor;8765;4;99.954364;44;0.501997
+autoscan-old-nuget-gallery;7450;0;100.000000;5;0.067114
+autoscan-old-shadowsocks-windows;1534;0;100.000000;0;0.000000
+autoscan-old-simplcommerce;2700;14;99.481481;16;0.592593
+autoscan-old-staxrip;7373;0;100.000000;0;0.000000
 ====== Vulnerabilities ======
 Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
-akka;16;0;100,000000;1;6,250000
-beyourmarket;46;44;4,347826;0;0,000000
-codehub;244;0;100,000000;0;0,000000
-fluentassertions;1;0;100,000000;0;0,000000
-flurl;0;0;NaN;0;NaN
-fody;22;0;100,000000;0;0,000000
-jabbr;0;0;NaN;0;NaN
-masstransit;16;2;87,500000;0;0,000000
-net5-solution;11;0;100,000000;0;0,000000
-net6-solution;0;0;NaN;0;NaN
-nhibernate;63;0;100,000000;0;0,000000
-nodatime;0;0;NaN;0;NaN
-nopowershell;0;0;NaN;0;NaN
-nuget-server;2;0;100,000000;0;0,000000
-obsidian;1;0;100,000000;0;0,000000
-ocelot;1;0;100,000000;0;0,000000
-openiddict-core;0;0;NaN;0;NaN
+autoscan-old-aspnet-boilerplate;2;0;100.000000;0;0.000000
+autoscan-old-bunit;0;0;NaN;0;NaN
+autoscan-old-CSharpLatest;16;0;100.000000;0;0.000000
+autoscan-old-egroo;4;0;100.000000;0;0.000000
+autoscan-old-gittrends;1;0;100.000000;0;0.000000
+autoscan-old-mudblazor;0;0;NaN;0;NaN
+autoscan-old-nuget-gallery;0;0;NaN;0;NaN
+autoscan-old-shadowsocks-windows;0;0;NaN;0;NaN
+autoscan-old-simplcommerce;13;0;100.000000;0;0.000000
+autoscan-old-staxrip;2;0;100.000000;0;0.000000

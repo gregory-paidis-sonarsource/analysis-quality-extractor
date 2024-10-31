@@ -1,9 +1,10 @@
 package extractor;
 
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Optional;
 import java.util.Set;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
@@ -21,30 +22,29 @@ public class ProjectAnalysis {
   private static final Logger LOGGER = Logger.getLogger(ProjectAnalysis.class.getName());
 
   private final ApiConnector apiConnector;
-  private final MetricsConnector metricsConnector;
 
   public ProjectAnalysis(ApiConnector apiConnector, MetricsConnector metricsConnector) {
     this.apiConnector = apiConnector;
-    this.metricsConnector = metricsConnector;
   }
 
-  public ProjectAnalysisResult extractResult(String projectKey, String branch) {
+  public ProjectAnalysisResult extractResult(String projectKey) {
     // This does not fetch project/assembly level issues, 
     // so the number might be less in contrast to peachy issues/ tab
     int pageSize = 5;
     long start = System.currentTimeMillis();
 
     List<Issue> issues = new ArrayList<>();
-    List<Component> mainComponents = apiConnector.getAllComponents(projectKey, branch, "FIL");
+    List<Component> mainComponents = apiConnector.getAllComponents(projectKey, "FIL");
     for (int i = 0; i < mainComponents.size(); i += pageSize) {
-      String componentKeys = mainComponents.subList(i, Math.min(i + pageSize, mainComponents.size())).stream()
-        .map(Component::getKey)
-        .collect(Collectors.joining(","));
-      List<Issue> allComponentIssues = apiConnector.getAllComponentIssues(componentKeys);
+      var componentKeys = mainComponents.subList(i, Math.min(i + pageSize, mainComponents.size())).stream()
+        .map(Component::getKey).collect(Collectors.toList());
+      componentKeys.replaceAll(s -> URLEncoder.encode(s, StandardCharsets.UTF_8));
+      String componentQuery = String.join(",", componentKeys);
+      List<Issue> allComponentIssues = apiConnector.getAllComponentIssues(componentQuery);
       issues.addAll(allComponentIssues);
     }
 
-    List<Component> testComponents = apiConnector.getAllComponents(projectKey, branch, "UTS");
+    List<Component> testComponents = apiConnector.getAllComponents(projectKey, "UTS");
     for (int i = 0; i < testComponents.size(); i += pageSize) {
       String componentKeys = testComponents.subList(i, Math.min(i + pageSize, testComponents.size())).stream()
         .map(Component::getKey)
@@ -117,47 +117,19 @@ public class ProjectAnalysis {
   public ProjectAnalysisQuality toAnalysisQuality(Component component) {
     ProjectAnalysisQuality projectQuality = new ProjectAnalysisQuality();
     projectQuality.setBaseComponent(component);
-    projectQuality.setBaseComponentDefaultBranch(
-        apiConnector.getDefaultBranch(component.getKey()).getName());
     return projectQuality;
   }
 
   public ProjectAnalysisQuality extractResult(ProjectAnalysisQuality pq) {
     return pq.setBaseComponentResult(
         extractResult(
-            pq.getBaseComponent().getKey(),
-            pq.getBaseComponentDefaultBranch()));
-  }
-
-  public ProjectAnalysisQuality extractTargetResult(ProjectAnalysisQuality pq, List<Component> availableTargets) {
-    LOGGER.log(INFO, "Processing: {0}", pq.getBaseComponent().getName());
-    findMatchingComponent(pq.getBaseComponent(), availableTargets)
-        .ifPresent(c -> pq.setTargetComponentDefaultBranch(apiConnector.getDefaultBranch(c.getKey()).getName())
-            .setTargetComponent(c).setTargetComponentResult(
-                extractResult(
-                    pq.getTargetComponent().getKey(),
-                    pq.getTargetComponentDefaultBranch())));
-    return pq;
+          pq.getBaseComponent().getKey()
+          ));
   }
 
   public static ProjectAnalysisQuality processDifferences(ProjectAnalysisQuality pq) {
     return pq.setDifferences(processDifferences(
         pq.getBaseComponentResult(), pq.getTargetComponentResult()));
-  }
-
-  public ProjectAnalysisQuality extractMetrics(ProjectAnalysisQuality pq) {
-    pq.setTargetComponentAnalysisMetrics(
-        metricsConnector.getMetrics(
-            pq.getTargetComponent().getKey(),
-            pq.getTargetComponentDefaultBranch(),
-            pq.getBaseComponent().getAnalysisDate()));
-    return pq;
-  }
-
-  private Optional<Component> findMatchingComponent(Component base, List<Component> availableTargets) {
-    return availableTargets.stream()
-        .filter(component -> base.getName().equalsIgnoreCase(component.getName()))
-        .findFirst();
   }
 
   private List<QualityProfile> extractRulesFromQualityProfiles(List<QualityProfile> qualityProfiles) {

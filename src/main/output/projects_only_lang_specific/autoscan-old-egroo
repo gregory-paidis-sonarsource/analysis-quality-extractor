@@ -1,0 +1,15 @@
+====== Bugs ======
+Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
+autoscan-old-egroo;618;0;100.000000;0;0.000000
+====== Added issues ======
+
+====== Missing issues ======
+====== Vulnerabilities ======
+Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
+autoscan-old-egroo;4;0;100.000000;0;0.000000
+====== Added issues ======
+
+====== Missing issues ======
+====== Metrics ======
+JavaAnalysisFinishedCount; WorkerForJavaCloneDuration; WorkerForJavaTaskDuration; DownloadedArtifactsPercentage; ParsedArtifactsCount; ConstructDependencyGraphDuration; DownloadDependenciesDuration; ResolveDependenciesDuration; WorkerForJavaQueueLatency
+No metric

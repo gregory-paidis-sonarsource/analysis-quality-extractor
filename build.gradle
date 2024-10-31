@@ -14,7 +14,7 @@ repositories {
         url "https://repox.jfrog.io/repox/sonarsource"
         // The environment variables ARTIFACTORY_USERNAME and ARTIFACTORY_PASSWORD are used on QA env
         // On local box, please add artifactoryUsername and artifactoryPassword to ~/.gradle/gradle.properties
-        def artifactoryUsername = System.env.'ARTIFACTORY_USERNAME' ?: (project.hasProperty('artifactoryUsername') ? project.getProperty('artifactoryUsername') : '')
+        def artifactoryUsername = System.env.'ARTIFACTORY_USER' ?: (project.hasProperty('artifactoryUsername') ? project.getProperty('artifactoryUsername') : '')
         def artifactoryPassword = System.env.'ARTIFACTORY_PASSWORD' ?: (project.hasProperty('artifactoryPassword') ? project.getProperty('artifactoryPassword') : '')
         if (artifactoryUsername && artifactoryPassword) {
             credentials {

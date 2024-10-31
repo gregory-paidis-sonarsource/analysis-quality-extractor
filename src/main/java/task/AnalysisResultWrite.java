@@ -15,31 +15,24 @@ import java.util.stream.Collectors;
 import model.Component;
 import model.ProjectAnalysisQuality;
 
-import static task.AnalysisResultFromFile.OUTPUT_FOLDER_BASE;
-import static task.AnalysisResultFromFile.OUTPUT_FOLDER_TARGET;
-import static task.AnalysisResultFromFile.AUTOSCAN_SUFFIX;
+import static task.AnalysisResultFromFile.OUTPUT_FOLDER_OLD;
+import static task.AnalysisResultFromFile.OUTPUT_FOLDER_NEW;
+import static task.AnalysisResultFromFile.AUTOSCAN_PREFIX;
 
 public class AnalysisResultWrite {
-  private static final String SQ_INSTANCE_URL = "https://peach.sonarsource.com/";
+  private static final String SQ_INSTANCE_URL = "https://peach.sonarsource.com";
 
   private static final List<String> projects = List.of(
-    "akka",
-    "beyourmarket",
-    "codehub",
-    "flurl",
-    "fody",
-    "jabbr",
-    "fluentassertions",
-    "masstransit",
-    "net5-solution",
-    "net6-solution",
-    "nhibernate",
-    "nodatime",
-    "nopowershell",
-    "nuget-server",
-    "obsidian",
-    "ocelot",
-    "openiddict-core"
+    "mudblazor",
+    "aspnet-boilerplate",
+     "bunit",
+    "CSharpLatest",
+    "gittrends",
+    "nuget-gallery",
+    "shadowsocks-windows",
+    "simplcommerce",
+    "staxrip",
+    "egroo"
   );
 
   public static void main(String[] args) throws IOException {
@@ -47,13 +40,13 @@ public class AnalysisResultWrite {
     ExtractStatistics(false);
   }
 
-  private static void ExtractStatistics(boolean isBase) throws IOException {
+  private static void ExtractStatistics(boolean isOldVersion) throws IOException {
     ApiConnector apiConnector = new ApiConnector(SQ_INSTANCE_URL);
     ProjectAnalysis projectAnalysis = new ProjectAnalysis(apiConnector, null);
 
-    String outputFolder = isBase ? OUTPUT_FOLDER_BASE : OUTPUT_FOLDER_TARGET;
+    String outputFolder = isOldVersion ? OUTPUT_FOLDER_OLD : OUTPUT_FOLDER_NEW;
 
-    List<Component> components = apiConnector.getProjects(getProjectPaths(isBase));
+    List<Component> components = apiConnector.getProjects(getProjectPaths(isOldVersion));
 
     Gson gson = new Gson();
     Files.createDirectories(Paths.get(outputFolder));
@@ -78,13 +71,9 @@ public class AnalysisResultWrite {
     executor.shutdown();
   }
 
-  private static List<String> getProjectPaths(boolean isBase) {
-    if (isBase) {
-      return projects;
-    }
-
+  private static List<String> getProjectPaths(boolean isOldVersion) {
     return projects.stream()
-        .map(s -> s + "-" + AUTOSCAN_SUFFIX)
-        .collect(Collectors.toList());
+      .map(s -> AUTOSCAN_PREFIX + "-" + (isOldVersion ? "old" : "new") + "-" + s)
+      .collect(Collectors.toList());
   }
 }

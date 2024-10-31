@@ -1,0 +1,20 @@
+====== Bugs ======
+Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
+autoscan-old-gittrends;2726;0;100.000000;3;0.110051
+====== Added issues ======
+Rule: csharpsquid:S1109 (size: 2):
+  Component autoscan-new-gittrends:GitTrends.Shared/Interfaces/IGitHubGraphQLAPI.cs Issue 476fa9d2-ea00-4f82-af49-5998540b7780 Rule csharpsquid:S1109 Range (empty)
+  Component autoscan-new-gittrends:GitTrends/Database/RepositoryDatabase.cs Issue b984a57b-05ef-45c1-a36d-8ceec1c9bc43 Rule csharpsquid:S1109 Range (empty)
+Rule: csharpsquid:S1104 (size: 1):
+  Component autoscan-new-gittrends:GitTrends.Shared/Interfaces/IGitHubGraphQLAPI.cs Issue 04285aba-0061-42c1-b4fa-5d63864a62ce Rule csharpsquid:S1104 Range 28:28:15:36
+
+====== Missing issues ======
+====== Vulnerabilities ======
+Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
+autoscan-old-gittrends;1;0;100.000000;0;0.000000
+====== Added issues ======
+
+====== Missing issues ======
+====== Metrics ======
+JavaAnalysisFinishedCount; WorkerForJavaCloneDuration; WorkerForJavaTaskDuration; DownloadedArtifactsPercentage; ParsedArtifactsCount; ConstructDependencyGraphDuration; DownloadDependenciesDuration; ResolveDependenciesDuration; WorkerForJavaQueueLatency
+No metric

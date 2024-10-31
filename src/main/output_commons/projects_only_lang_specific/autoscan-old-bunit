@@ -1,0 +1,43 @@
+====== Bugs ======
+Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
+autoscan-old-bunit;2073;4;99.807043;15;0.723589
+====== Added issues ======
+Rule: csharpsquid:S4055 (size: 2):
+  Component autoscan-new-bunit:tests/bunit.testassets/BlazorE2E/HtmlEncodedChildContent.razor Issue b64fc906-e258-4c00-a08f-2246fd66f170 Rule csharpsquid:S4055 Range 5:5:24:43
+  Component autoscan-new-bunit:tests/bunit.testassets/BlazorE2E/HtmlMixedChildContent.razor Issue e789ef81-4102-4a02-ac9d-5967d8e021e3 Rule csharpsquid:S4055 Range 5:5:24:43
+Rule: csharpsquid:S4056 (size: 1):
+  Component autoscan-new-bunit:tests/bunit.testassets/BlazorE2E/RazorTemplates.razor Issue ddc05a2a-56d8-4355-8793-c7928ccc3a6a Rule csharpsquid:S4056 Range 7:7:98:120
+Rule: csharpsquid:S1449 (size: 1):
+  Component autoscan-new-bunit:tests/bunit.testassets/BlazorE2E/RazorTemplates.razor Issue 7c767f73-9af5-4737-9ece-47be83ed9025 Rule csharpsquid:S1449 Range 7:7:111:118
+Rule: csharpsquid:S100 (size: 4):
+  Component autoscan-new-bunit:tests/bunit.testassets/SampleComponents/AsyncRenderOfSubComponentDuringInit.razor Issue 18ca3c36-587f-4bae-a329-ca4eef6ca1ca Rule csharpsquid:S100 Range 1:1:53:56
+  Component autoscan-new-bunit:tests/bunit.testassets/SampleComponents/SimpleWithAyncDeps.razor Issue 68cba442-afe9-4d6a-881b-15de61984fd8 Rule csharpsquid:S100 Range 1:1:22:29
+  Component autoscan-new-bunit:tests/bunit.testassets/SampleComponents/SimpleWithDeps.razor Issue 555a074a-c944-41e4-bb36-051d7919dc46 Rule csharpsquid:S100 Range 1:1:17:24
+  Component autoscan-new-bunit:tests/bunit.testassets/SampleComponents/SimpleWithJSRuntimeDep.razor Issue 94d3a4d4-8d7c-488a-b077-1da1df0432f4 Rule csharpsquid:S100 Range 1:1:19:28
+Rule: csharpsquid:S3059 (size: 1):
+  Component autoscan-new-bunit:src/bunit.web/JSInterop/Implementation/BunitJSRuntime.net5.cs Issue 485d61fa-bad2-49de-9e5d-1acdda6a85a4 Rule csharpsquid:S3059 Range 11:11:30:44
+Rule: csharpsquid:S3236 (size: 6):
+  Component autoscan-new-bunit:src/bunit.web/Rendering/BunitHtmlParser.cs Issue 59fdc887-a388-4e26-9464-0ce2ede3a2d0 Rule csharpsquid:S3236 Range 107:107:42:100
+  Component autoscan-new-bunit:src/bunit.web/Rendering/Internal/Htmlizer.cs Issue 78cf4b2c-be7c-410a-b690-bdef149b4ec4 Rule csharpsquid:S3236 Range 65:65:3:66
+  Component autoscan-new-bunit:src/bunit.web/Rendering/Internal/Htmlizer.cs Issue 982517f7-78db-477b-838c-7afc0aafb2f5 Rule csharpsquid:S3236 Range 219:219:3:123
+  Component autoscan-new-bunit:src/bunit.web/JSInterop/InvocationHandlers/Implementation/VirtualizeJSRuntimeInvocationHandler.cs Issue 3f4711c3-9fbe-4f96-90de-a8853f1555c5 Rule csharpsquid:S3236 Range 50:50:101:180
+  Component autoscan-new-bunit:src/bunit.web/JSInterop/InvocationHandlers/Implementation/VirtualizeJSRuntimeInvocationHandler.cs Issue 4769a381-5252-4aaa-9e8c-133b4cd5aaca Rule csharpsquid:S3236 Range 51:51:50:127
+  Component autoscan-new-bunit:src/bunit.web/JSInterop/InvocationHandlers/Implementation/VirtualizeJSRuntimeInvocationHandler.cs Issue a9ffb7d7-d5c5-4964-bfda-5c09100e238d Rule csharpsquid:S3236 Range 52:52:54:158
+
+====== Missing issues ======
+Rule: csharpsquid:S4055 (size: 2):
+  Component autoscan-old-bunit:tests/bunit.testassets/BlazorE2E/HtmlEncodedChildContent.razor Issue 94e56aac-e38f-48ad-93a9-116527210e08 Rule csharpsquid:S4055 Range 5:5:25:44
+  Component autoscan-old-bunit:tests/bunit.testassets/BlazorE2E/HtmlMixedChildContent.razor Issue baa02a49-94ff-4125-9371-d936a55ce05b Rule csharpsquid:S4055 Range 5:5:25:44
+Rule: csharpsquid:S4056 (size: 1):
+  Component autoscan-old-bunit:tests/bunit.testassets/BlazorE2E/RazorTemplates.razor Issue 4abaa7f0-7de3-43f3-883d-6cb85c830501 Rule csharpsquid:S4056 Range 7:7:25:47
+Rule: csharpsquid:S1449 (size: 1):
+  Component autoscan-old-bunit:tests/bunit.testassets/BlazorE2E/RazorTemplates.razor Issue 33bd1253-0a3c-4f7b-926c-d9c8803b0321 Rule csharpsquid:S1449 Range 7:7:38:45
+====== Vulnerabilities ======
+Project name; Issues on base; FN; Detection (%); FP; Deviation (%)
+autoscan-old-bunit;0;0;NaN;0;NaN
+====== Added issues ======
+
+====== Missing issues ======
+====== Metrics ======
+JavaAnalysisFinishedCount; WorkerForJavaCloneDuration; WorkerForJavaTaskDuration; DownloadedArtifactsPercentage; ParsedArtifactsCount; ConstructDependencyGraphDuration; DownloadDependenciesDuration; ResolveDependenciesDuration; WorkerForJavaQueueLatency
+No metric
