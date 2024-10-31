@@ -22,11 +22,9 @@ public class ProjectAnalysis {
   private static final Logger LOGGER = Logger.getLogger(ProjectAnalysis.class.getName());
 
   private final ApiConnector apiConnector;
-  private final MetricsConnector metricsConnector;
 
   public ProjectAnalysis(ApiConnector apiConnector, MetricsConnector metricsConnector) {
     this.apiConnector = apiConnector;
-    this.metricsConnector = metricsConnector;
   }
 
   public ProjectAnalysisResult extractResult(String projectKey) {

@@ -109,7 +109,6 @@ public class ApiConnector {
   }
 
   private String renderComponentTreePath(int page, String projectKey, String qualifier) {
-    // TODO: create a url factory using request object
     return "ps=" + PAGE_SIZE + "&component=" +
         projectKey + "&p=" + page + "&branch=" + DEFAULT_ANALYSIS_BRANCH + "&qualifiers=" + qualifier;
   }
